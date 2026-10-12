@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cheapify — Master Project Budget & GIZ Allocation</title>
+<style>
+    @page {
+        size: A4 portrait;
+        margin: 8mm 10mm 8mm 10mm;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #292F33;
+        background-color: #FFFFFF;
+        line-height: 1.25;
+        font-size: 8pt;
+        margin: 0;
+        padding: 0;
+    }
+    .page-break {
+        page-break-before: always;
+        clear: both;
+    }
+    p {
+        margin: 0 0 4px 0;
+    }
+    h1 {
+        color: #0E82C4;
+        font-size: 16pt;
+        margin: 0 0 2px 0;
+        font-weight: bold;
+    }
+    .subtitle {
+        color: #148C53;
+        font-size: 9pt;
+        font-weight: bold;
+        margin: 0 0 6px 0;
+    }
+    h2 {
+        font-size: 9.5pt;
+        color: #0E82C4;
+        border-bottom: 1.5px solid #0E82C4;
+        padding-bottom: 2px;
+        margin: 6px 0 4px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    h3 {
+        font-size: 8pt;
+        color: #1E293B;
+        background-color: #F1F5F9;
+        padding: 2px 5px;
+        border-left: 3px solid #0E82C4;
+        margin: 5px 0 3px 0;
+    }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1: EXECUTIVE DASHBOARD & MASTER BUDGET ================= -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 4px; border-bottom: 2px solid #0E82C4; padding-bottom: 3px;">
+    <tr>
+        <td width="70%" valign="bottom">
+            <h1>CHEAPIFY</h1>
+            <div class="subtitle">Smart Deals. Verified Sellers. One App. — 6-Month Pilot Budget & GIZ Grant Allocation</div>
+        </td>
+        <td width="30%" align="right" valign="bottom" style="font-size: 7.5pt; color: #64748B;">
+            <strong>Confidential / Donor Proposal</strong><br>
+            GIZ Youth Entrepreneurship (CAPA / AUK)<br>
+            Duhok Metropolitan Area, KRI
+        </td>
+    </tr>
+</table>
+
+<!-- Metadata Table -->
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; margin-bottom: 6px; font-size: 7.5pt;">
+    <tr bgcolor="#F8FAFC">
+        <td width="15%" style="color: #475569; font-weight: bold;">Project:</td>
+        <td width="35%">Cheapify (Single-SKU Retail Marketplace)</td>
+        <td width="18%" style="color: #475569; font-weight: bold;">Founder & Tech Lead:</td>
+        <td width="32%">Shakir Bashar (Computer Engineer)</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+        <td style="color: #475569; font-weight: bold;">Pilot Geography:</td>
+        <td>Duhok City (Bazaar, Malta, KRO Commercial Hubs)</td>
+        <td style="color: #475569; font-weight: bold;">Budget Period:</td>
+        <td>6-Month Pilot (Nov 2026 – Apr 2027)</td>
+    </tr>
+    <tr bgcolor="#F8FAFC">
+        <td style="color: #475569; font-weight: bold;">Currency Rate:</td>
+        <td>Iraqi Dinar & USD (1 USD ≈ 1,500 IQD)</td>
+        <td style="color: #475569; font-weight: bold;">Excel References:</td>
+        <td>Cheapify_Budget_GIZ.xlsx (Budget) & Cheapify_Monthly_Profit_and_Loss.xlsx (P&L)</td>
+    </tr>
+</table>
+
+<!-- KPI Dashboard Cards -->
+<table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; margin-bottom: 8px; text-align: center;">
+    <tr>
+        <td width="25%" bgcolor="#F0F9FF">
+            <div style="font-size: 11pt; font-weight: bold; color: #0E82C4;">$3,500 USD</div>
+            <div style="font-size: 7pt; font-weight: bold; color: #475569; text-transform: uppercase;">Total Pilot Revenue (5.25M IQD)</div>
+        </td>
+        <td width="25%" bgcolor="#F0FDF4">
+            <div style="font-size: 11pt; font-weight: bold; color: #166534;">$0 Dev & Content Fee</div>
+            <div style="font-size: 7pt; font-weight: bold; color: #166534; text-transform: uppercase;">100% In-House Engineering & Media</div>
+        </td>
+        <td width="25%" bgcolor="#DCFCE7">
+            <div style="font-size: 11pt; font-weight: bold; color: #148C53;">$2,200 USD</div>
+            <div style="font-size: 7pt; font-weight: bold; color: #14532D; text-transform: uppercase;">GIZ Grant Ask (3.30M IQD)</div>
+        </td>
+        <td width="25%" bgcolor="#F0FDF4">
+            <div style="font-size: 11pt; font-weight: bold; color: #15803D;">+$1,400 to $3,000/mo</div>
+            <div style="font-size: 7pt; font-weight: bold; color: #15803D; text-transform: uppercase;">Steady State Profit (+78% to 83% Margin)</div>
+        </td>
+    </tr>
+</table>
+
+<h2>1. Executive Strategy: In-House Software Engineering & Sustainable Profitability</h2>
+<p style="font-size: 7.8pt;">
+    In Iraq, over 80% of digital retail happens across fragmented social pages plagued by the "Interrogation Tax" (hidden prices, unlisted variants, missing dimensions). Cheapify organizes local retail into a structured Single-SKU catalog with side-by-side merchant price transparency and automated WhatsApp routing.
+</p>
+<p style="font-size: 7.8pt;">
+    <strong>Why this financial model is compelling for GIZ approval:</strong> Because the founder is a computer engineer who develops the software, database, and APIs directly in-house, and produces all video marketing content, <strong>cash software development and creator fees are $0</strong>—saving over $6,000 in agency costs. With steady order volume and lean operational overhead ($156/mo), the business model demonstrates a <strong>healthy 88.6% gross margin and +37.1% positive net operating profit (+1,950,000 IQD) during the pilot</strong>, scaling to <strong>+$1,400 to +$3,000 USD/month in net cash profit post-pilot</strong>. The requested seed grant of <strong>$2,200 USD (3,300,000 IQD)</strong> strictly funds verified third-party operational bills: high-concurrency servers, Cloudflare edge security, WhatsApp APIs, local Meta ads in Duhok, and official commercial trade registration.
+</p>
+
+<h2>2. Master Budget Alignment (Official Template: Cheapify_Budget_GIZ.xlsx)</h2>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.5pt;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="20%" align="left" style="color: #FFFFFF;">Template Section</th>
+            <th width="48%" align="left" style="color: #FFFFFF;">Operational Scope & Deliverable Description</th>
+            <th width="16%" align="right" style="color: #FFFFFF;">Total (USD)</th>
+            <th width="16%" align="right" style="color: #FFFFFF;">Total (IQD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Revenue (Tab 2)</strong></td>
+            <td>3,000 orders across tiered take-rates (avg 1,500 IQD) + 5 category sponsorships</td>
+            <td align="right"><strong>$3,500</strong></td>
+            <td align="right"><strong>5,250,000</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Direct Costs (Tab 3)</strong></td>
+            <td>90 courier pilot test deliveries, 90 first-order vouchers, partner packaging supplies</td>
+            <td align="right"><strong>$400</strong></td>
+            <td align="right"><strong>600,000</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF" style="font-weight: bold;">
+            <td><strong>Gross Profit (Line 14)</strong></td>
+            <td>Net revenue after direct transaction validation expenses <strong>(88.6% Gross Margin)</strong></td>
+            <td align="right" style="color: #148C53;"><strong>$3,100</strong></td>
+            <td align="right" style="color: #148C53;"><strong>4,650,000</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Indirect Expenses (Tab 4)</strong></td>
+            <td>Scalable servers, Cloudflare Pro, WhatsApp API, Duhok Meta ads, DCCI registration</td>
+            <td align="right"><strong>$1,800</strong></td>
+            <td align="right"><strong>2,700,000</strong></td>
+        </tr>
+        <tr bgcolor="#DCFCE7" style="font-weight: bold; color: #14532D;">
+            <td><strong style="color: #14532D;">Net Operating Profit (Line 18)</strong></td>
+            <td><strong>Sustainable Business Profit (+37.1% Net Profit Margin — Zero Loss!)</strong></td>
+            <td align="right" style="color: #14532D;"><strong>+$1,300</strong></td>
+            <td align="right" style="color: #14532D;"><strong>+1,950,000</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Asset Purchases (Tab 5)</strong></td>
+            <td>CAPEX physical equipment (0 IQD — platform operates 100% asset-light)</td>
+            <td align="right"><strong>$0</strong></td>
+            <td align="right"><strong>0</strong></td>
+        </tr>
+        <tr bgcolor="#E2E8F0" style="font-weight: bold;">
+            <td><strong>TOTAL PROJECT BUDGET</strong></td>
+            <td>Total operational cash requirements to launch & pilot (Summary Line 40)</td>
+            <td align="right"><strong>$2,200</strong></td>
+            <td align="right"><strong>3,300,000</strong></td>
+        </tr>
+        <tr bgcolor="#F1F5F9" style="color: #475569;">
+            <td><strong>Software & Content Creation Fee</strong></td>
+            <td>Executed 100% in-house by Founder ($0 outside agency/creator fees)</td>
+            <td align="right"><strong>$0</strong></td>
+            <td align="right"><strong>0</strong></td>
+        </tr>
+        <tr bgcolor="#DCFCE7" style="font-weight: bold; color: #14532D;">
+            <td><strong style="color: #14532D;">FUNDING NEEDED FROM GIZ</strong></td>
+            <td><strong>Official Seed Grant Request for 6-Month Pilot (Summary Line 44)</strong></td>
+            <td align="right" style="color: #14532D; font-size: 8.5pt;"><strong>$2,200</strong></td>
+            <td align="right" style="color: #14532D; font-size: 8.5pt;"><strong>3,300,000</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ================= PAGE 2: ITEMIZED OPERATIONAL EXPENSES (PILLARS 1-3) ================= -->
+<div class="page-break"></div>
+
+<h2 style="page-break-before: always;">3. Detailed Operational Breakdown & Real Market Evidences (Part 1)</h2>
+
+<h3>Pillar 1: Scalable Cloud & Edge Infrastructure ($670 USD / 1,005,000 IQD)</h3>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.2pt; margin-bottom: 6px;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="24%" align="left" style="color: #FFFFFF;">Item / Component</th>
+            <th width="50%" align="left" style="color: #FFFFFF;">Technical Specifications & Market Evidence Citation</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">Monthly</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">6-Mo (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>High-Compute API Server</strong></td>
+            <td>Dedicated vCPU instance (8 vCPU, 16GB RAM, NVMe) for high-concurrency Node.js API & search. Ref: Hetzner CPX41 (€32.90/mo) / DigitalOcean High-CPU Droplet ($48/mo).</td>
+            <td align="right">$40 / mo</td>
+            <td align="right"><strong>$240</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Managed PostgreSQL DB</strong></td>
+            <td>High-IOPS managed database with connection pooling, automated snapshots, and SSL encryption. Ref: Supabase Pro / Managed PostgreSQL cluster ($25/mo standard).</td>
+            <td align="right">$25 / mo</td>
+            <td align="right"><strong>$150</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>In-Memory Caching (Redis)</strong></td>
+            <td>Sub-5ms in-memory caching tier for live price comparisons and merchant ranking tables, preventing DB locks during traffic spikes. Ref: Upstash Redis cluster ($15/mo).</td>
+            <td align="right">$15 / mo</td>
+            <td align="right"><strong>$90</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Cloudflare R2 Object Storage</strong></td>
+            <td>High-throughput cloud storage for standardized catalog images with <strong>$0 egress bandwidth fees</strong>. Ref: Cloudflare R2 standard storage pricing ($10/mo).</td>
+            <td align="right">$10 / mo</td>
+            <td align="right"><strong>$60</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Cloudflare Pro & Edge CDN</strong></td>
+            <td>Web Application Firewall (WAF), DDoS protection, auto-WebP compression, and regional Middle East edge caching. Ref: Cloudflare Pro Plan ($20/mo standard).</td>
+            <td align="right">$20 / mo</td>
+            <td align="right"><strong>$120</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Cloudflare Registrar Domain</strong></td>
+            <td>Official brand domain (`cheapify.iq` / `.com`) purchased directly at wholesale cost with free WHOIS privacy and DNSSEC. Ref: Cloudflare Registrar wholesale rate ($9.77/yr).</td>
+            <td align="right">One-time</td>
+            <td align="right"><strong>$10</strong></td>
+        </tr>
+        <tr bgcolor="#E2E8F0" style="font-weight: bold;">
+            <td colspan="3"><strong>Subtotal Cloud & Edge Infrastructure (Requested from GIZ)</strong></td>
+            <td align="right"><strong>$670 (1,005,000 IQD)</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Pillar 2: Automated Order Routing & Communications ($110 USD / 165,000 IQD)</h3>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.2pt; margin-bottom: 6px;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="24%" align="left" style="color: #FFFFFF;">Item / Component</th>
+            <th width="50%" align="left" style="color: #FFFFFF;">Technical Specifications & Market Evidence Citation</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">Unit Rate</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">6-Mo (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>WhatsApp Cloud API</strong></td>
+            <td>~5,000 automated utility conversations (instant order confirmations, merchant 1-click dispatch alerts, rating pings). Cloud-to-cloud over HTTPS. Ref: Meta Business Cloud API Iraq utility rate (~$0.020/conversation).</td>
+            <td align="right">5,000 msgs</td>
+            <td align="right"><strong>$100</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Business SIM & Line Maintenance</strong></td>
+            <td>Dedicated business line eSIM registration in Duhok for Meta verification OTP + minimum balance recharge to keep line active. Ref: AsiaCell / Korek commercial SIM (3,000–5,000 IQD) + recharge.</td>
+            <td align="right">One-time</td>
+            <td align="right"><strong>$10</strong></td>
+        </tr>
+        <tr bgcolor="#E2E8F0" style="font-weight: bold;">
+            <td colspan="3"><strong>Subtotal Communications & Order Routing (Requested from GIZ)</strong></td>
+            <td align="right"><strong>$110 (165,000 IQD)</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Pillar 3: Hyper-Local Customer & Merchant Acquisition ($600 USD / 900,000 IQD)</h3>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.2pt;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="24%" align="left" style="color: #FFFFFF;">Item / Component</th>
+            <th width="50%" align="left" style="color: #FFFFFF;">Technical Specifications & Market Evidence Citation</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">Monthly</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">6-Mo (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Geo-Targeted Meta Ads</strong></td>
+            <td>Hyper-local ad campaigns geo-fenced strictly to Duhok city (18–35 age group, shopping interests). Yields ~350,000 local impressions at Iraq's average CPM of $1.70–$2.20.</td>
+            <td align="right">$100 / mo</td>
+            <td align="right"><strong>$600</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Product UX Teardowns & Demos</strong></td>
+            <td>High-converting screen recordings, Single-SKU comparisons, and 1-click order flow tutorials for Instagram Reels / TikTok. <strong>Produced 100% in-house by Founder Shakir Bashar</strong>.</td>
+            <td align="right">In-house</td>
+            <td align="right"><strong>$0</strong></td>
+        </tr>
+        <tr bgcolor="#E2E8F0" style="font-weight: bold;">
+            <td colspan="3"><strong>Subtotal Customer & Merchant Acquisition (Requested from GIZ)</strong></td>
+            <td align="right"><strong>$600 (900,000 IQD)</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ================= PAGE 3: PILLARS 4-5 & POST-PILOT STEADY STATE ================= -->
+<div class="page-break"></div>
+
+<h2 style="page-break-before: always;">3. Detailed Operational Breakdown & Real Market Evidences (Part 2)</h2>
+
+<h3>Pillar 4: Pilot Fulfillment & Direct Costs ($400 USD / 600,000 IQD)</h3>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.2pt; margin-bottom: 5px;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="24%" align="left" style="color: #FFFFFF;">Item / Component</th>
+            <th width="50%" align="left" style="color: #FFFFFF;">Technical Specifications & Market Evidence Citation</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">Volume</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">6-Mo (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Courier Pilot Deliveries</strong></td>
+            <td>90 subsidized test deliveries across Duhok to validate courier speed, packaging safety, and COD settlement. Ref: Local courier parcel rate in Duhok (ZMC Express @ 3,000 IQD / $2).</td>
+            <td align="right">90 orders</td>
+            <td align="right"><strong>$180</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>First-Order Buyer Credits</strong></td>
+            <td>90 introductory 2,000 IQD discount checkout vouchers to convert hesitant shoppers into active buyers during launch campaigns.</td>
+            <td align="right">90 vouchers</td>
+            <td align="right"><strong>$120</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Merchant Packaging Kits</strong></td>
+            <td>Branded Cheapify security tape rolls, document pouches, and fragile labels for pilot shops. Ref: Local Duhok packaging supplier.</td>
+            <td align="right">15 kits</td>
+            <td align="right"><strong>$100</strong></td>
+        </tr>
+        <tr bgcolor="#E2E8F0" style="font-weight: bold;">
+            <td colspan="3"><strong>Subtotal Pilot Fulfillment & Direct Costs (Requested from GIZ)</strong></td>
+            <td align="right"><strong>$400 (600,000 IQD)</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Pillar 5: Compliance, Field Operations & Contingency ($420 USD / 630,000 IQD)</h3>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.2pt; margin-bottom: 6px;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="24%" align="left" style="color: #FFFFFF;">Item / Component</th>
+            <th width="50%" align="left" style="color: #FFFFFF;">Technical Specifications & Market Evidence Citation</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">Term</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">6-Mo (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Trade Registration (DCCI)</strong></td>
+            <td>Trade name reservation filing, commercial registration, and membership fees with Duhok Chamber of Commerce & Industry (DCCI). Ref: Official KRI Chamber fee schedule.</td>
+            <td align="right">One-time</td>
+            <td align="right"><strong>$250</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Legal Contract Review</strong></td>
+            <td>Legal consultation with a local KRI attorney to review multi-seller vendor agreements, return policies, and consumer dispute terms. Ref: Standard local legal consultation fee in Duhok.</td>
+            <td align="right">One-time</td>
+            <td align="right"><strong>$100</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Field Merchant Onboarding Travel</strong></td>
+            <td>In-person shop visits across Duhok markets (Bazaar, Malta, KRO). <strong>Conducted directly by founder Shakir Bashar</strong>.</td>
+            <td align="right">In-house</td>
+            <td align="right"><strong>$0</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Fiber & Generator Power</strong></td>
+            <td>Existing residential and incubator facility infrastructure utilized by founder. Zero donor charge.</td>
+            <td align="right">In-house</td>
+            <td align="right"><strong>$0</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Operational Contingency Buffer</strong></td>
+            <td>Emergency liquidity reserve for foreign exchange rate fluctuations and unexpected API traffic surges. Standard donor practice.</td>
+            <td align="right">Reserve</td>
+            <td align="right"><strong>$70</strong></td>
+        </tr>
+        <tr bgcolor="#E2E8F0" style="font-weight: bold;">
+            <td colspan="3"><strong>Subtotal Compliance, Field Operations & Contingency (Requested from GIZ)</strong></td>
+            <td align="right"><strong>$420 (630,000 IQD)</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>4. Post-Pilot Steady-State Monthly Profit & Loss (Month 7 Onward)</h2>
+<p style="font-size: 7.8pt;">
+    Once the 6-month pilot completes, <strong>all one-time startup expenses (DCCI trade registration, legal drafting, test delivery subsidies) drop to zero</strong>. The platform transitions into a recurring high-margin operating model with a tiny monthly burn of just <strong>$156 / month (234,000 IQD)</strong>:
+</p>
+
+<!-- Steady State P&L Comparison Table -->
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.5pt; margin-bottom: 6px;">
+    <thead>
+        <tr bgcolor="#148C53" style="color: #FFFFFF;">
+            <th width="30%" align="left" style="color: #FFFFFF;">Monthly Line Item</th>
+            <th width="35%" align="left" style="color: #FFFFFF;">Stage 1: Initial Steady State (Month 7)<br><span style="font-weight: normal; font-size: 7pt;">~33 orders / day (1,000 orders/month)</span></th>
+            <th width="35%" align="left" style="color: #FFFFFF;">Stage 2: Target Scale State (Month 12)<br><span style="font-weight: normal; font-size: 7pt;">~67 orders / day (2,000 orders/month)</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>Gross Monthly Revenue</strong></td>
+            <td>1,000 orders @ 1,500 IQD + 2 sponsorships = <strong>$1,200 (1,800,000 IQD)</strong></td>
+            <td>2,000 orders @ 1,500 IQD + 4 sponsorships = <strong>$2,400 (3,600,000 IQD)</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Less: Direct Costs (COGS)</strong></td>
+            <td>Gateway fees & packaging (@ 150 IQD/ord): <strong>($100) (150,000 IQD)</strong></td>
+            <td>Gateway fees & packaging (@ 150 IQD/ord): <strong>($200) (300,000 IQD)</strong></td>
+        </tr>
+        <tr bgcolor="#FFFFFF" style="font-weight: bold;">
+            <td><strong>Gross Profit (Gross Margin)</strong></td>
+            <td style="color: #148C53;"><strong>$1,100 (1,650,000 IQD) — 91.7% Margin</strong></td>
+            <td style="color: #148C53;"><strong>$2,200 (3,300,000 IQD) — 91.7% Margin</strong></td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>Ongoing Operating Overhead</strong></td>
+            <td>Servers ($65), Redis/CDN ($35), WhatsApp ($20), Ads ($25), Storage/Domain ($11): <strong>($156) (234,000 IQD)</strong></td>
+            <td>Scaled Compute ($85), Redis/CDN ($40), WhatsApp ($40), Ads ($50), Domain/Storage ($15): <strong>($200) (300,000 IQD)</strong></td>
+        </tr>
+        <tr bgcolor="#DCFCE7" style="font-weight: bold; color: #14532D;">
+            <td><strong style="color: #14532D;">NET MONTHLY CASH PROFIT</strong></td>
+            <td style="color: #14532D;"><strong>+$944 / month (+1,416,000 IQD/mo)<br><span style="font-weight: normal; font-size: 7pt;">+78.7% Net Margin</span></strong></td>
+            <td style="color: #14532D;"><strong>+$2,000 / month (+3,000,000 IQD/mo)<br><span style="font-weight: normal; font-size: 7pt;">+83.3% Net Margin</span></strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Break Even Calculation Box -->
+<table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.5pt; background-color: #F8FAFC;">
+    <tr>
+        <td width="50%" valign="top">
+            <strong>Ongoing Monthly Cash Burn ($156 / mo):</strong><br>
+            • Scalable Cloud Compute & PostgreSQL DB: $65 / mo<br>
+            • Redis Caching Cluster & Cloudflare Pro: $35 / mo<br>
+            • WhatsApp Business Cloud API Messaging: $20 / mo<br>
+            • Ongoing Local Digital Ad Spend: $25 / mo<br>
+            • Cloudflare R2 Storage & Domain Amortization: $11 / mo
+        </td>
+        <td width="50%" valign="top">
+            <strong>Financial Break-Even Threshold:</strong><br>
+            With an average take-rate of 1,500 IQD ($1.00) and 150 IQD marginal COGS:
+            <div style="font-size: 9.5pt; font-weight: bold; color: #148C53; margin: 2px 0;">
+                173 Orders / Month (5–6 Orders / Day)
+            </div>
+            across all partner retail shops in Duhok covers 100% of all ongoing operating expenses!
+        </td>
+    </tr>
+</table>
+
+<!-- ================= PAGE 4: TIERED REVENUE & 12-MONTH TRAJECTORY ================= -->
+<div class="page-break"></div>
+
+<h2 style="page-break-before: always;">5. Tiered Revenue Model (Replacing Predatory Commissions)</h2>
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.5pt; margin-bottom: 6px;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="22%" align="left" style="color: #FFFFFF;">Price Tier (IQD)</th>
+            <th width="24%" align="left" style="color: #FFFFFF;">Take-Rate Model</th>
+            <th width="24%" align="left" style="color: #FFFFFF;">Example Commission</th>
+            <th width="30%" align="left" style="color: #FFFFFF;">Merchant Strategic Advantage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>&lt; 9,000 IQD</strong></td>
+            <td>5% variable fee</td>
+            <td>350 IQD on 7,000 IQD item</td>
+            <td>Encourages small tech accessory volume</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>10,000 – 99,000 IQD</strong></td>
+            <td>Flat 1,000 IQD fee</td>
+            <td>1,000 IQD on 45,000 IQD item</td>
+            <td>High-volume median product sweet spot</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td><strong>100,000 – 499,000 IQD</strong></td>
+            <td>2% variable fee</td>
+            <td>3,000 IQD on 150,000 IQD item</td>
+            <td>Protects electronics seller profit margins</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td><strong>&ge; 500,000 IQD</strong></td>
+            <td>1.5% capped fee</td>
+            <td>9,000 IQD on 600,000 IQD item</td>
+            <td>Fair scaling for flagship laptops & smartphones</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>6. 12-Month Financial Trajectory & Commercial Runway (Year 1 P&L)</h2>
+<p style="font-size: 7.8pt;">
+    This roadmap maps Cheapify's financial transition from the 6-month donor-supported pilot to commercial self-sustainability, matching <strong>Cheapify_Monthly_Profit_and_Loss.xlsx</strong>:
+</p>
+
+<table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.2pt; margin-bottom: 6px;">
+    <thead>
+        <tr bgcolor="#0E82C4" style="color: #FFFFFF;">
+            <th width="12%" align="left" style="color: #FFFFFF;">Month</th>
+            <th width="8%" align="center" style="color: #FFFFFF;">Orders</th>
+            <th width="14%" align="right" style="color: #FFFFFF;">Total Rev (IQD)</th>
+            <th width="12%" align="right" style="color: #FFFFFF;">COGS (IQD)</th>
+            <th width="14%" align="right" style="color: #FFFFFF;">Gross Profit</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">OPEX (IQD)</th>
+            <th width="14%" align="right" style="color: #FFFFFF;">Operating Profit</th>
+            <th width="13%" align="right" style="color: #FFFFFF;">Net Profit (IQD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr bgcolor="#FFFFFF">
+            <td>Month 1 (Nov 26)</td>
+            <td align="center">150</td>
+            <td align="right">225,000</td>
+            <td align="right">100,000</td>
+            <td align="right">125,000</td>
+            <td align="right">450,000</td>
+            <td align="right" style="color: #DC2626;">-325,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+225,000</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td>Month 2 (Dec 26)</td>
+            <td align="center">250</td>
+            <td align="right">525,000</td>
+            <td align="right">100,000</td>
+            <td align="right">425,000</td>
+            <td align="right">450,000</td>
+            <td align="right" style="color: #DC2626;">-25,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+525,000</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td>Month 3 (Jan 27)</td>
+            <td align="center">400</td>
+            <td align="right">750,000</td>
+            <td align="right">100,000</td>
+            <td align="right">650,000</td>
+            <td align="right">450,000</td>
+            <td align="right" style="color: #148C53;">+200,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+750,000</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td>Month 4 (Feb 27)</td>
+            <td align="center">600</td>
+            <td align="right">1,050,000</td>
+            <td align="right">100,000</td>
+            <td align="right">950,000</td>
+            <td align="right">450,000</td>
+            <td align="right" style="color: #148C53;">+500,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,050,000</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td>Month 5 (Mar 27)</td>
+            <td align="center">750</td>
+            <td align="right">1,275,000</td>
+            <td align="right">100,000</td>
+            <td align="right">1,175,000</td>
+            <td align="right">450,000</td>
+            <td align="right" style="color: #148C53;">+725,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,275,000</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td>Month 6 (Apr 27)</td>
+            <td align="center">850</td>
+            <td align="right">1,425,000</td>
+            <td align="right">100,000</td>
+            <td align="right">1,325,000</td>
+            <td align="right">450,000</td>
+            <td align="right" style="color: #148C53;">+875,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,425,000</td>
+        </tr>
+        <tr bgcolor="#E0F2FE" style="font-weight: bold;">
+            <td>Subtotal Pilot (1–6)</td>
+            <td align="center">3,000</td>
+            <td align="right">5,250,000 ($3,500)</td>
+            <td align="right">600,000 ($400)</td>
+            <td align="right">4,650,000 (88.6%)</td>
+            <td align="right">2,700,000 ($1,800)</td>
+            <td align="right" style="color: #0369A1;">+1,950,000 (+37.1%)</td>
+            <td align="right" style="color: #0369A1;">+5,250,000 (+100%)</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td>Month 7 (May 27)</td>
+            <td align="center">1,000</td>
+            <td align="right">1,800,000</td>
+            <td align="right">150,000</td>
+            <td align="right">1,650,000</td>
+            <td align="right">234,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,416,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,416,000 (78.7%)</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td>Month 8 (Jun 27)</td>
+            <td align="center">1,150</td>
+            <td align="right">2,025,000</td>
+            <td align="right">172,500</td>
+            <td align="right">1,852,500</td>
+            <td align="right">238,500</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,614,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,614,000 (79.7%)</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td>Month 9 (Jul 27)</td>
+            <td align="center">1,300</td>
+            <td align="right">2,400,000</td>
+            <td align="right">195,000</td>
+            <td align="right">2,205,000</td>
+            <td align="right">250,500</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,954,500</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+1,954,500 (81.4%)</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td>Month 10 (Aug 27)</td>
+            <td align="center">1,500</td>
+            <td align="right">2,700,000</td>
+            <td align="right">225,000</td>
+            <td align="right">2,475,000</td>
+            <td align="right">256,500</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+2,218,500</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+2,218,500 (82.2%)</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+            <td>Month 11 (Sep 27)</td>
+            <td align="center">1,750</td>
+            <td align="right">3,225,000</td>
+            <td align="right">262,500</td>
+            <td align="right">2,962,500</td>
+            <td align="right">292,500</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+2,670,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+2,670,000 (82.8%)</td>
+        </tr>
+        <tr bgcolor="#F8FAFC">
+            <td>Month 12 (Oct 27)</td>
+            <td align="center">2,000</td>
+            <td align="right">3,600,000</td>
+            <td align="right">300,000</td>
+            <td align="right">3,300,000</td>
+            <td align="right">300,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+3,000,000</td>
+            <td align="right" style="color: #148C53; font-weight: bold;">+3,000,000 (83.3%)</td>
+        </tr>
+        <tr bgcolor="#DCFCE7" style="font-weight: bold;">
+            <td>Subtotal Steady (7–12)</td>
+            <td align="center">8,700</td>
+            <td align="right">15,750,000 ($10.5k)</td>
+            <td align="right">1,305,000 ($870)</td>
+            <td align="right">14,445,000 (91.7%)</td>
+            <td align="right">1,572,000 ($1,048)</td>
+            <td align="right" style="color: #15803D;">+12,873,000</td>
+            <td align="right" style="color: #15803D;">+12,873,000 (+81.7%)</td>
+        </tr>
+        <tr bgcolor="#148C53" style="color: #FFFFFF; font-weight: bold; font-size: 7.5pt;">
+            <td style="color: #FFFFFF;">ANNUAL TOTAL (YEAR 1)</td>
+            <td align="center" style="color: #FFFFFF;">11,700</td>
+            <td align="right" style="color: #FFFFFF;">21,000,000 ($14.0k)</td>
+            <td align="right" style="color: #FFFFFF;">1,905,000 ($1,270)</td>
+            <td align="right" style="color: #FFFFFF;">19,095,000 (90.9%)</td>
+            <td align="right" style="color: #FFFFFF;">4,272,000 ($2,848)</td>
+            <td align="right" style="color: #FFFFFF;">+14,823,000</td>
+            <td align="right" style="color: #FFFFFF;">+18,123,000 (+86.3%)</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Annual Financial Highlights Box -->
+<table width="100%" border="1" cellpadding="4" cellspacing="0" bordercolor="#CBD5E1" style="border-collapse: collapse; font-size: 7.5pt; background-color: #F8FAFC;">
+    <tr>
+        <td width="50%" valign="top">
+            <strong style="color: #0E82C4;">Year 1 Financial Milestones:</strong><br>
+            • <strong>Annual Gross Margin:</strong> 90.9% (19,095,000 IQD)<br>
+            • <strong>Annual Operating Profit:</strong> +14,823,000 IQD (+$9,882 USD)<br>
+            • <strong>Total Year 1 Net Cash:</strong> +18,123,000 IQD (incl. seed grant)<br>
+            • <strong>Zero External Bridge Funding:</strong> 100% commercially self-financing
+        </td>
+        <td width="50%" valign="top">
+            <strong style="color: #148C53;">Why Donors & Juries Fund Cheapify:</strong><br>
+            • <strong>High Operating Leverage:</strong> Low fixed costs mean 80%+ of incremental revenue flows straight to net profit.<br>
+            • <strong>Proven Unit Economics:</strong> 1,500 IQD commission easily covers server hosting & notifications.<br>
+            • <strong>Commercial Self-Sufficiency:</strong> Complete sustainability from Month 7 onward without requiring further grants.
+        </td>
+    </tr>
+</table>
+
+<!-- ================= PAGE 5: PITCH DECK SLIDE & JURY CLOSER ================= -->
+<div class="page-break"></div>
+
+<h2 style="page-break-before: always;">7. Final Pitch Deck Presentation Slide & Jury Script</h2>
+<table width="100%" border="2" cellpadding="6" cellspacing="0" bordercolor="#0E82C4" style="border-collapse: collapse; font-size: 7.8pt; background-color: #F0F9FF; margin-bottom: 10px;">
+    <tr>
+        <td width="48%" valign="top" style="border-right: 1px solid #0E82C4;">
+            <div style="font-size: 9pt; font-weight: bold; color: #0E82C4; margin-bottom: 3px;">PART 4 · FINANCIAL ASK & SUSTAINABILITY</div>
+            <strong>Projected Pilot Revenue:</strong> $3,500 USD (5.25M IQD)<br>
+            <strong>Gross Operating Margin:</strong> 88.6% Gross Profit<br>
+            <strong>Software Development Cost:</strong> $0 (Built In-House by Founder)<br>
+            <strong>Content & Video Demos:</strong> $0 (Produced In-House by Founder)<br>
+            <strong>Post-Pilot Monthly Profit:</strong> <span style="color: #148C53; font-weight: bold;">+$1,400 to $3,000 / mo</span><br><br>
+            <div style="font-size: 10.5pt; font-weight: bold; color: #148C53; background-color: #DCFCE7; padding: 4px 6px; border: 1px solid #148C53; text-align: center;">
+                ★ GIZ SEED ASK: $2,200 USD (3.30M IQD)
+            </div>
+        </td>
+        <td width="52%" valign="top">
+            <strong>Seed Capital Allocation:</strong><br>
+            • <strong style="color: #0E82C4;">30% ($670):</strong> Scalable Cloud Compute, PostgreSQL & Cloudflare Edge<br>
+            • <strong style="color: #0E82C4;">27% ($600):</strong> Duhok Geo-Targeted Meta Ads (Hyper-Local)<br>
+            • <strong style="color: #0E82C4;">18% ($400):</strong> Courier Test Deliveries & Partner Packaging Supplies<br>
+            • <strong style="color: #0E82C4;">25% ($530):</strong> WhatsApp API, DCCI Registration & Legal Contracts<br><br>
+            <strong>Ongoing Cash Burn:</strong> Only <strong>$156 / month</strong> post-launch!
+        </td>
+    </tr>
+</table>
+
+<table width="100%" border="1" cellpadding="6" cellspacing="0" bordercolor="#148C53" style="border-collapse: collapse; font-size: 8pt; background-color: #F0FDF4; margin-bottom: 8px;">
+    <tr>
+        <td>
+            <strong style="color: #166534; font-size: 8.5pt;">Verbatim Jury Pitch Script (30-Second Closer):</strong><br>
+            <p style="margin-top: 3px; font-style: italic; line-height: 1.4;">
+                "Because I am a computer engineer building the entire platform and producing all marketing content myself, our cash development fee is $0—saving over $6,000 in agency costs and keeping our burn rate ultra-low. Cheapify operates on an 88.6% gross margin and generates a positive +37.1% net operating profit (+1,950,000 IQD) during the pilot.
+            </p>
+            <p style="font-style: italic; line-height: 1.4;">
+                We are requesting a lean seed grant of $2,200 (3,300,000 IQD) from GIZ strictly to fund third-party operational runway: 30% for high-concurrency cloud servers and Cloudflare edge security built for tens of thousands of users; 27% for hyper-local marketing in Duhok; 18% for courier delivery tests; and 25% for WhatsApp APIs, Chamber of Commerce registration, and legal contracts.
+            </p>
+            <p style="font-style: italic; line-height: 1.4; font-weight: bold; color: #14532D; margin-bottom: 0;">
+                Once the pilot concludes, our ongoing monthly operating cost drops to just $156 a month. At only 6 orders per day across partner shops in Duhok, Cheapify is fully self-sustaining, scaling to over +$1,400 to +$3,000 USD per month with an 80%+ net profit margin. Cheapify is viable, profitable, and self-sustaining from day one."
+            </p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheapify - 1 Month Content Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --boston-blue: #3B90CE;
+            --azure-blue: #007FFF;
+            --jade-green: #00A36C;
+            --cloud-bg: #F6F8FA;
+            --text-main: #333333;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--cloud-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--cloud-bg);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .brand-title {
+            margin: 0;
+            color: var(--text-main);
+            font-size: 28px;
+        }
+
+        .brand-subtitle {
+            color: var(--boston-blue);
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .controls button {
+            background-color: var(--jade-green);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .controls button:hover {
+            background-color: #008f5e;
+        }
+
+        .legend {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .bg-pillar1 { background-color: var(--azure-blue); } /* Transparent Value */
+        .bg-pillar2 { background-color: var(--jade-green); } /* Reliability */
+        .bg-pillar3 { background-color: var(--boston-blue); } /* Smart Discovery */
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+        .day-header {
+            text-align: center;
+            font-weight: 700;
+            padding: 10px;
+            background-color: var(--cloud-bg);
+            border-radius: 6px;
+        }
+
+        .day-cell {
+            min-height: 120px;
+            border: 2px solid var(--cloud-bg);
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background: white;
+        }
+
+        .day-number {
+            font-weight: 700;
+            color: #999;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .post-content {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-top: 8px;
+        }
+
+        .post-title {
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .empty-day {
+            background-color: #fcfcfc;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .controls {
+                display: none;
+            }
+            .day-cell {
+                min-height: 100px;
+                break-inside: avoid;
+            }
+            /* Force background colors to print */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="brand-title">Cheapify Content Plan</h1>
+                <div class="brand-subtitle">Month 1: MVP Launch & Web Catalog Testing</div>
+            </div>
+            <div class="controls">
+                <button onclick="window.print()">Print to PDF</button>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div><span class="badge bg-pillar1">Pillar 1</span> Transparent Value</div>
+            <div><span class="badge bg-pillar2">Pillar 2</span> Reliability & Trust</div>
+            <div><span class="badge bg-pillar3">Pillar 3</span> Smart Discovery</div>
+        </div>
+
+        <div class="calendar-grid">
+            <!-- Headers -->
+            <div class="day-header">Monday</div>
+            <div class="day-header">Tuesday</div>
+            <div class="day-header">Wednesday</div>
+            <div class="day-header">Thursday</div>
+            <div class="day-header">Friday</div>
+            <div class="day-header">Saturday</div>
+            <div class="day-header">Sunday</div>
+
+            <!-- WEEK 1 -->
+            <div class="day-cell">
+                <div class="day-number">Day 1</div>
+                <span class="badge bg-pillar1">Pillar 1</span>
+                <div class="post-content">
+                    <div class="post-title">Launch Teaser</div>
+                    The end of "DM for Price" is here. Introducing Cheapify: The bright side of choosing. Link in bio to browse the catalog.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 2</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 3</div>
+                <span class="badge bg-pillar2">Pillar 2</span>
+                <div class="post-content">
+                    <div class="post-title">Merchant Spotlight</div>
+                    Meet [Pilot Shop Name], one of our first verified local sellers. Quality guaranteed, prices upfront.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 4</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 5</div>
+                <span class="badge bg-pillar3">Pillar 3</span>
+                <div class="post-content">
+                    <div class="post-title">Feature Ed: Single SKU</div>
+                    Tired of duplicate listings? See how our smart app groups identical items so you instantly see the best deal.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 6</div></div>
+            <div class="day-cell empty-day"><div class="day-number">Day 7</div></div>
+
+            <!-- WEEK 2 -->
+            <div class="day-cell">
+                <div class="day-number">Day 8</div>
+                <span class="badge bg-pillar1">Pillar 1</span>
+                <div class="post-content">
+                    <div class="post-title">Side-by-Side Savings</div>
+                    Airpods Pro comparison. See the exact IQD savings when you choose the top-ranked seller on our Web Catalog.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 9</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 10</div>
+                <span class="badge bg-pillar2">Pillar 2</span>
+                <div class="post-content">
+                    <div class="post-title">Behind the Shield</div>
+                    How we vet our sellers. Only trusted merchants make it to the Cheapify catalog. No scams, just verified shops.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 11</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 12</div>
+                <span class="badge bg-pillar3">Pillar 3</span>
+                <div class="post-content">
+                    <div class="post-title">Order via WhatsApp</div>
+                    Found a deal? Ordering is easy. Click, confirm via WhatsApp, and get it delivered locally. Zero friction.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 13</div></div>
+            <div class="day-cell empty-day"><div class="day-number">Day 14</div></div>
+
+            <!-- WEEK 3 -->
+            <div class="day-cell">
+                <div class="day-number">Day 15</div>
+                <span class="badge bg-pillar1">Pillar 1</span>
+                <div class="post-content">
+                    <div class="post-title">Deal of the Day</div>
+                    Today's smartest choice: [Product Name]. Ranked #1 for value by our algorithm. Check the catalog link!
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 16</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 17</div>
+                <span class="badge bg-pillar2">Pillar 2</span>
+                <div class="post-content">
+                    <div class="post-title">Local Delivery Partner</div>
+                    We integrate with the best couriers in Duhok/KRI. Your item goes from a verified seller to your door securely.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 18</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 19</div>
+                <span class="badge bg-pillar3">Pillar 3</span>
+                <div class="post-content">
+                    <div class="post-title">Customer Proof</div>
+                    "Saved 15,000 IQD in 2 minutes." Real test orders are rolling in! Be the next smart shopper.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 20</div></div>
+            <div class="day-cell empty-day"><div class="day-number">Day 21</div></div>
+
+            <!-- WEEK 4 -->
+            <div class="day-cell">
+                <div class="day-number">Day 22</div>
+                <span class="badge bg-pillar1">Pillar 1</span>
+                <div class="post-content">
+                    <div class="post-title">Tech/Fashion Compare</div>
+                    Why pay more? Visual graphic showing an overpriced listing elsewhere vs. the Cheapify fair price.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 23</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 24</div>
+                <span class="badge bg-pillar2">Pillar 2</span>
+                <div class="post-content">
+                    <div class="post-title">Merchant Call-Out</div>
+                    Are you a local shop owner? Stop paying huge app fees. Join Cheapify's Web Catalog today. Flat & low rates.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 25</div></div>
+            <div class="day-cell">
+                <div class="day-number">Day 26</div>
+                <span class="badge bg-pillar3">Pillar 3</span>
+                <div class="post-content">
+                    <div class="post-title">Monthly Wrap-Up</div>
+                    The bright side of choosing is here to stay. Browse the top 5 deals of the month on our Web Catalog right now.
+                </div>
+            </div>
+            <div class="day-cell empty-day"><div class="day-number">Day 27</div></div>
+            <div class="day-cell empty-day"><div class="day-number">Day 28</div></div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

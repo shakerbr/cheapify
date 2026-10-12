@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "name": "Cheapify",
+    "slogan": "The bright side of choosing.",
+    "tagline": "Smart Deals. Verified Sellers. One App.",
+    "font": "Comfortaa"
+  },
+  "colors": {
+    "primary": {
+      "name": "PANTONE 7689 C",
+      "hex": "#298FC2",
+      "rgb": [41, 143, 194],
+      "cmyk": [79, 26, 0, 24],
+      "role": "Primary Brand Action, Shopping Bag, Links"
+    },
+    "accent": {
+      "name": "PANTONE 7731 C",
+      "hex": "#228848",
+      "rgb": [34, 136, 72],
+      "cmyk": [75, 0, 47, 47],
+      "role": "Trust, Growth Arrow, Discovery Magnifier, Best Value Tag"
+    },
+    "dark": {
+      "name": "PANTONE BLACK 6 C",
+      "hex": "#101820",
+      "rgb": [16, 24, 32],
+      "cmyk": [50, 25, 0, 87],
+      "role": "Dark Backgrounds, App Icon Squircle, Primary Typography"
+    },
+    "light": {
+      "name": "PANTONE 656 C",
+      "hex": "#DDE5ED",
+      "rgb": [221, 229, 237],
+      "cmyk": [7, 3, 0, 7],
+      "role": "Subtle Surface Tints, Input Borders, Card Backgrounds"
+    },
+    "surface": {
+      "name": "Pure White",
+      "hex": "#FFFFFF",
+      "rgb": [255, 255, 255],
+      "role": "Master Canvas, Product Cards"
+    }
+  },
+  "dimensions": {
+    "viewBox": "0 0 700 900",
+    "aspectRatio": "700:900",
+    "scales": [
+      { "width": 500, "height": "auto" },
+      { "width": 300, "height": "auto" },
+      { "width": 200, "height": "auto" },
+      { "width": 100, "height": "auto" }
+    ]
+  }
+}
