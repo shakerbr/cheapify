@@ -133,10 +133,10 @@ On Cheapify, each new merchant who joins the platform attaches their live invent
 ```
 
 ### 4.2 In-House Software Agility & Zero Agency Overhead ($0 Dev Fees)
-Unlike regional competitors that spend \$50,000–\$100,000+ on external software development agencies or software licensing, Cheapify's entire web catalog, API backend, merchant dashboard, and marketing video assets are engineered 100% in-house by the founder (Shakir Bashar, Computer Engineer). This allows Cheapify to:
-* Operate at near-zero fixed burn during the pilot phase (\$156/month operational hosting).
+Unlike regional competitors that spend large capital on external software development agencies or software licensing, Cheapify's entire web catalog, API backend, merchant dashboard, and marketing video assets are engineered 100% in-house by the founder (Shakir Bashar, Computer Engineer). This allows Cheapify to:
+* Operate at near-zero software development burn during the pilot phase.
 * Rapidly iterate on merchant dashboard features based on direct bazaar feedback.
-* Direct 100% of incubator grant capital (\$2,200 GIZ grant) to customer acquisition and verified merchant onboarding.
+* Direct available grant funding directly toward customer acquisition and verified merchant onboarding.
 
 ### 4.3 Hyperlocal Logistics Integration (Asset-Light 3PL)
 Cheapify avoids the capital-intensive trap of buying delivery fleets or leasing expensive central fulfillment warehouses. By integrating directly with established local 3PL courier networks (e.g., ZMC Express), Cheapify achieves:

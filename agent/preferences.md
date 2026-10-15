@@ -76,6 +76,9 @@ This file documents the specific ways, working habits, and styling preferences r
 16. **Clean Presentation of Survey & Research Artifacts:**
     - When documenting market surveys, research instruments, or questionnaires, present them in a clean, structured, and human-readable format (e.g. trilingual tables, sections, and logic diagrams). Do not include raw Google Apps Script or code-like syntax in core venture documentation.
 
+17. **No Unfinalized Financial or Budget Placeholders:**
+    - Do not hardcode or mention specific grant amounts (e.g. $2,200), arbitrary budget breakdowns, or unverified operational burn rates from past incubator assignments. Those legacy figures were temporary placeholders created only to pass earlier coursework. Real financial metrics, budgets, and unit economics will be constructed fresh from ground zero during Pillar 3 (Finance Management).
+
 
 
 

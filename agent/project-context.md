@@ -41,6 +41,6 @@ A fast, single-page reference of Cheapify's core identity, problem space, soluti
 ## 4. The 4 Program Pillars
 1. **Entrepreneurship (30h):** Problem-solution fit, TAM/SAM/SOM, dual personas, validation survey.
 2. **Marketing (30h):** Two-sided GTM funnels (shopper & merchant), brand identity, 30-day content calendar.
-3. **Finance Management (30h):** $2,200 GIZ seed grant ask, 88.6% gross margin, $0 cash dev fees, break-even at 6 orders/day.
+3. **Finance Management (30h):** Ground-up financial modeling, pilot unit economics, $0 software dev costs, operational budget, and break-even analysis.
 4. **Business Modeling (30h):** Business Model Canvas, 3 core SOPs (Onboarding, 3PL Order Flow, Returns).
 

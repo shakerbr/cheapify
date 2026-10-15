@@ -56,26 +56,26 @@ This document formalizes that alignment using two core frameworks:
 ## 3. Value Proposition Canvas: The Bazaar Merchant (Kak Kawa)
 
 ```
-┌──────────────────────────────────────────────┐       ┌──────────────────────────────────────────────┐
-│             THE CHEAPIFY VALUE MAP           │       │             THE MERCHANT PROFILE             │
-│                                              │       │                                              │
-│  [ PRODUCTS & SERVICES ]                     │       │  [ MERCHANT JOBS ]                           │
-│  • Turnkey Merchant Dashboard                │       │  • Sell physical bazaar stock online         │
-│  • 1-Tap inventory and variant sync          │       │  • Reach digital buyers in Duhok & KRI       │
-│  • Automated WhatsApp order dispatch         │       │  • Manage stock without overselling          │
-│  • Weekly COD cash reconciliation            │       │  • Coordinate delivery couriers              │
-│                                              │  ◄──► │                                              │
-│  [ PAIN RELIEVERS ]                          │       │  [ MERCHANT PAINS ]                          │
-│  • 0 Repetitive "Price?" chat interrogations │       │  • 3–5 hours daily wasted on casual tire-kickers│
-│  • Progressive Marginal Fees (1.5%–5%)       │       │  • 10%–15% commissions destroy 15% margins  │
-│  • Zero technical setup fees or custom apps  │       │  • Paper notebook inventory & data chaos     │
-│  • Live alerts when competitors cut prices   │       │  • Delivery returns due to messy chat notes  │
-│                                              │       │                                              │
-│  [ GAIN CREATORS ]                           │       │  [ MERCHANT GAINS ]                          │
-│  • 100% pre-qualified, packed-ready orders   │       │  • Healthy profit margins preserved          │
-│  • Win "Best Value" badge with fair pricing  │       │  • Organized fulfillment pipeline            │
-│  • Automated courier pickups at shop door    │       │  • Guaranteed weekly liquidity via COD sync  │
-└──────────────────────────────────────────────┘       └──────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────┐       ┌─────────────────────────────────────────────────┐
+│             THE CHEAPIFY VALUE MAP              │       │             THE MERCHANT PROFILE                │
+│                                                 │       │                                                 │
+│  [ PRODUCTS & SERVICES ]                        │       │  [ MERCHANT JOBS ]                              │
+│  • Turnkey Merchant Dashboard                   │       │  • Sell physical bazaar stock online            │
+│  • 1-Tap inventory and variant sync             │       │  • Reach digital buyers in Duhok & KRI          │
+│  • Automated WhatsApp order dispatch            │       │  • Manage stock without overselling             │
+│  • Weekly COD cash reconciliation               │       │  • Coordinate delivery couriers                 │
+│                                                 │  ◄──► │                                                 │
+│  [ PAIN RELIEVERS ]                             │       │  [ MERCHANT PAINS ]                             │
+│  • 0 Repetitive "Price?" chat interrogations    │       │  • 3–5 hours daily wasted on casual tire-kickers│
+│  • Progressive Marginal Fees (1.5%–5%)          │       │  • 10%–15% commissions destroy 15% margins      │
+│  • Zero technical setup fees or custom apps     │       │  • Paper notebook inventory & data chaos        │
+│  • Live alerts when competitors cut prices      │       │  • Delivery returns due to messy chat notes     │
+│                                                 │       │                                                 │
+│  [ GAIN CREATORS ]                              │       │  [ MERCHANT GAINS ]                             │
+│  • 100% pre-qualified, packed-ready orders      │       │  • Healthy profit margins preserved             │
+│  • Win "Best Value" badge with fair pricing     │       │  • Organized fulfillment pipeline               │
+│  • Automated courier pickups at shop door       │       │  • Guaranteed weekly liquidity via COD sync     │
+└─────────────────────────────────────────────────┘       └─────────────────────────────────────────────────┘
 ```
 
 ### Detailed Merchant Value Mapping:
@@ -121,13 +121,13 @@ Cheapify introduces 4 key innovations tailored to the specific constraints of th
 In incubator evaluations (GIZ / CAPA), venture success is fundamentally determined by the **Founder's execution capability and entrepreneurial competencies**.
 
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│ FOUNDER PROFILE: SHAKIR BASHAR                                         │
-│ • Education: Computer Engineer                                         │
-│ • Leadership: Former IT Manager & Chief Operating Officer (COO)        │
-│ • Hands-On Skills: Full-Stack Web Architecture, API Design, UI/UX Video│
-│ • Capital Efficiency: 100% In-House Software Engineering ($0 Agency Dev)│
-└────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────┐
+│ FOUNDER PROFILE: SHAKIR BASHAR                                            │
+│ • Education: Computer Engineer                                            │
+│ • Leadership: Former IT Manager & Chief Operating Officer (COO)           │
+│ • Hands-On Skills: Full-Stack Web Architecture, API Design, UI/UX Video   │
+│ • Capital Efficiency: 100% In-House Software Engineering ($0 Agency Dev)  │
+└───────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Core Entrepreneurial Competencies Demonstrated:
@@ -137,8 +137,8 @@ In incubator evaluations (GIZ / CAPA), venture success is fundamentally determin
 * **Direct Field Validation:** Instead of building in an ivory tower, the founder personally conducts merchant interviews in Duhok Bazaar Street and Malta commercial zones, turning real merchant objections into platform features.
 
 #### 2. Resourcefulness & Capital Discipline (Extreme Lean Efficiency)
-* **Maximizing Grant Impact:** By eliminating software development agency costs, **100% of the requested $2,200 GIZ seed grant** is deployed directly to high-impact external operations: server infrastructure (Cloudflare, Supabase), official Chamber of Commerce registration, WhatsApp Cloud API credits, and localized hyper-targeted customer acquisition ads.
-* **Asset-Light Architecture:** Leveraging existing 3PL courier fleets (ZMC Express) eliminates capital expenditures on motorbikes, warehouse leases, or full-time drivers, achieving operating break-even at just **6 orders per day**.
+* **Maximizing Seed Capital Efficiency:** By eliminating external software development agency costs ($0 software engineering overhead), 100% of available seed funding can be directed toward operational essentials: reliable cloud hosting, official Chamber of Commerce registration, messaging API credits, and targeted local customer acquisition.
+* **Asset-Light Architecture:** Leveraging existing 3PL courier fleets (e.g., ZMC Express) eliminates capital expenditures on motorbikes, physical fulfillment warehouse leases, or full-time drivers, maintaining an exceptionally lean and sustainable operational burn.
 
 #### 3. Resilience & Cultural Grounding (Navigating Local Friction)
 * **Overcoming Cash-on-Delivery (COD) Skepticism:** The founder designs automated weekly reconciliation workflows tailored specifically to Iraqi cash habits rather than forcing unviable Western credit card payment models.

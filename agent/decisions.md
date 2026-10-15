@@ -21,8 +21,8 @@ This file records key decisions, their context, rationale, and consequences for 
 ### ADR-003: In-House Software Engineering & Zero Agency Dev Fees
 * **Date:** 2026-10-12
 * **Status:** Accepted
-* **Context:** Seed capital from GIZ ($2,200 ask) is limited. Traditional software agencies charge $5,000+ to build a marketplace.
-* **Decision:** Founder Shakir Bashar (computer engineer) builds the entire web platform, APIs, database, and marketing demo videos in-house. 100% of donor funding goes directly to real third-party operational costs (servers, Cloudflare, WhatsApp Cloud API, Duhok ads, Chamber registration).
+* **Context:** Seed capital is limited, and traditional software development agencies charge substantial fees to build a marketplace.
+* **Decision:** Founder Shakir Bashar (computer engineer) builds the entire web platform, APIs, database, and marketing demo videos in-house. 100% of available seed funding goes directly to real third-party operational costs (servers, Cloudflare, WhatsApp Cloud API, Duhok marketing, Chamber registration).
 
 ### ADR-004: Asset-Light 3PL Logistics Model
 * **Date:** 2026-10-12
