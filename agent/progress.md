@@ -6,6 +6,14 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-15] — Trilingual Market Validation Survey Framework Authored (Milestone 1 Complete)
+* **Action:** Authored [`entrepreneurship/05_market_validation_survey.md`](../entrepreneurship/05_market_validation_survey.md) capturing the live empirical research framework currently collecting responses:
+  - **Clean Non-Code Presentation:** Documented the full survey instrument cleanly across Kurdish (Badînî), Arabic, and English without raw script code blocks, adhering to user direction.
+  - **Dynamic Dual-Cohort Logic:** Formulated the branching architecture: Language Selection $\rightarrow$ Role Branching (Shopper vs. Merchant) $\rightarrow$ Targeted Problem/Solution Validation $\rightarrow$ Pilot Beta & Merchant Store Lead Capture.
+  - **Hypothesis Testing Grounding:** Mapped each question directly to venture hypotheses (H1 Price Variation prevalence, H2 "Interrogation Tax" fatigue, H3 Single-SKU comparison demand, H4 Seller chat burnout, H5 Turnkey dashboard adoption).
+  - **Live Distribution & Pipeline Feeder:** Documented outreach channels (AUK/UoD student Telegram groups, in-person Duhok bazaar merchant visits with QR codes, in-app social media links with Google sign-in toggled off) and mapped how incoming responses feed Marketing (Pillar 2), Finance (Pillar 3), and Business Modeling (Pillar 4).
+* **Milestone 1 Achieved:** Pillar 1 (Entrepreneurship) is now **100% complete** across all 5 core foundation deliverables.
+
 ### [2026-10-15] — Competitive Landscape Matrix & Strategic Differentiation Authored
 * **Action:** Authored [`entrepreneurship/04_competitive_landscape_matrix.md`](../entrepreneurship/04_competitive_landscape_matrix.md) establishing Cheapify's market positioning and defensibility:
   - **Head-to-Head Profiling:** Analyzed 4 incumbent alternatives across Iraq/KRI: Social Commerce DMs (Instagram/TikTok), Miswag (10%–15% commission, slow inter-city delivery), Elryan (closed 1P retail, rigid MSRP), and iBazzar (open 3P, duplicate SKU clutter, intra-app 10k price gaps).

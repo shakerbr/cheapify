@@ -73,6 +73,9 @@ This file documents the specific ways, working habits, and styling preferences r
       - **Tier 3 (100,001+ IQD):** 1.5%
     - Detailed reference: [`platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md).
 
+16. **Clean Presentation of Survey & Research Artifacts:**
+    - When documenting market surveys, research instruments, or questionnaires, present them in a clean, structured, and human-readable format (e.g. trilingual tables, sections, and logic diagrams). Do not include raw Google Apps Script or code-like syntax in core venture documentation.
+
 
 
 
