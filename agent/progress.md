@@ -6,6 +6,13 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-15] — Competitive Landscape Matrix & Strategic Differentiation Authored
+* **Action:** Authored [`entrepreneurship/04_competitive_landscape_matrix.md`](../entrepreneurship/04_competitive_landscape_matrix.md) establishing Cheapify's market positioning and defensibility:
+  - **Head-to-Head Profiling:** Analyzed 4 incumbent alternatives across Iraq/KRI: Social Commerce DMs (Instagram/TikTok), Miswag (10%–15% commission, slow inter-city delivery), Elryan (closed 1P retail, rigid MSRP), and iBazzar (open 3P, duplicate SKU clutter, intra-app 10k price gaps).
+  - **Comprehensive 12-Dimension Matrix:** Contrasted catalog architecture (Single-SKU master page), price transparency, variant chip selectors, 1-click checkout (<30s), local payment integrations (COD + FIB/FastPay/Qi Card), hyperlocal 3PL intra-city delivery (ZMC Express 3,000 IQD), take-rate (1.5%–5% progressive vs. Miswag 12%), and merchant dashboard.
+  - **Core Moats Documented:** The Single-SKU flywheel (each new seller drives down price rather than adding visual clutter), in-house software agility ($0 dev fees by founder Shakir Bashar), asset-light 3PL courier integration, and merchant margin protection.
+  - **Strategic Positioning Map:** Formulated 2x2 matrix (Price Transparency vs. Automated Structured Commerce), placing Cheapify firmly in the top-right quadrant.
+
 ### [2026-10-15] — Platform Fee Architecture & Monetization Specification Created
 * **Action:** Created dedicated cross-cutting platform artifact [`platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md) in a new semi-general directory `platform/`:
   - **Progressive Marginal Tiering Model:** Formulated the 3-tier progressive take-rate to completely eliminate the cliff effect (where a higher price would otherwise pay a lower fee):
