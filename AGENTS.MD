@@ -9,37 +9,47 @@ We are building **Cheapify** from the ground up from zero.
 Every AI agent working on **Cheapify** MUST follow these rules strictly:
 
 1. **Pre-Action Context Verification (Always Read First):**
-   - You MUST inspect and review [AGENTS.MD](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/AGENTS.MD) and all files in [agent/](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/) before performing any work or executing any tasks in the workspace.
+   - You MUST inspect and review [AGENTS.MD](AGENTS.MD) and all files in [agent/](agent/) before performing any work or executing any tasks in the workspace.
 2. **Persistent User Rules:**
-   - Whenever the user defines or states a rule, you MUST record it in [agent/rules.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/rules.md) and [AGENTS.MD](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/AGENTS.MD) and enforce it strictly across all actions.
+   - Whenever the user defines or states a rule, you MUST record it in [agent/rules.md](agent/rules.md) and [AGENTS.MD](AGENTS.MD) and enforce it strictly across all actions.
 3. **Persistent User Preferences & Methods:**
-   - Whenever the user asks you to do something in a specific way, you MUST immediately record it in [agent/preferences.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/preferences.md) so the user never has to repeat instructions.
+   - Whenever the user asks you to do something in a specific way, you MUST immediately record it in [agent/preferences.md](agent/preferences.md) so the user never has to repeat instructions.
 4. **Single-Purpose File Breakdown:**
-   - Keep context, tracking, and management files broken down, simple, and specific for ONE thing only inside [agent/](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/).
+   - Keep context, tracking, and management files broken down, simple, and specific for ONE thing only inside [agent/](agent/).
 5. **Always Maintain an Updated Plan & Roadmap:**
-   - You MUST maintain a real-time, comprehensive plan and roadmap in [agent/roadmap.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/roadmap.md).
+   - You MUST maintain a real-time, comprehensive plan and roadmap in [agent/roadmap.md](agent/roadmap.md).
 6. **Always Maintain Immediate Task Focus:**
-   - You MUST maintain immediate actionable checklist and work items in [agent/active-tasks.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/active-tasks.md) so you always know what you are doing right now.
+   - You MUST maintain immediate actionable checklist and work items in [agent/active-tasks.md](agent/active-tasks.md) so you always know what you are doing right now.
 7. **Always Maintain an Updated Progress Log:**
-   - You MUST maintain a running chronological log of completed tasks, milestones, and architectural decisions in [agent/progress.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/progress.md).
+   - You MUST maintain a running chronological log of completed tasks, milestones, and architectural decisions in [agent/progress.md](agent/progress.md).
+8. **Build All 4 Pillars from Zero Before Pitch Deck:**
+   - Do NOT rely on or treat archived pitch decks as final. Build all 4 pillars from the ground up first (1. Entrepreneurship, 2. Marketing, 3. Finance Management, 4. Business Modeling). The final presentation will be assembled only once all 4 pillars are complete.
+9. **Strictly Relative Links in Repository Documents:**
+   - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `entrepreneurship/...`).
 
 ---
 
 ### Dedicated Management & Context Directory (`agent/`)
-- **Rules:** [agent/rules.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/rules.md) — Strict rules set by the user.
-- **Preferences:** [agent/preferences.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/preferences.md) — User working styles, methods, and habits.
-- **Project Context:** [agent/project-context.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/project-context.md) — Fast one-page executive overview.
-- **Strategic Roadmap:** [agent/roadmap.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/roadmap.md) — 4-pillar milestones and roadmap.
-- **Active Tasks:** [agent/active-tasks.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/active-tasks.md) — Current focus and task checklist.
-- **Progress Log:** [agent/progress.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/progress.md) — Chronological ledger of all completed work.
-- **Decisions Log:** [agent/decisions.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/agent/decisions.md) — Architecture and business decision records (ADR).
+- **Rules:** [agent/rules.md](agent/rules.md) — Strict rules set by the user.
+- **Preferences:** [agent/preferences.md](agent/preferences.md) — User working styles, methods, and habits.
+- **Project Context:** [agent/project-context.md](agent/project-context.md) — Fast one-page executive overview.
+- **Strategic Roadmap:** [agent/roadmap.md](agent/roadmap.md) — 4-pillar milestones and roadmap.
+- **Active Tasks:** [agent/active-tasks.md](agent/active-tasks.md) — Current focus and task checklist.
+- **Progress Log:** [agent/progress.md](agent/progress.md) — Chronological ledger of all completed work.
+- **Decisions Log:** [agent/decisions.md](agent/decisions.md) — Architecture and business decision records (ADR).
+
+---
+
+### Cross-Cutting Platform Specifications (`platform/`)
+Semi-general operational, economic, and technical specifications shared across pillars:
+- **Platform Fee Structure & Monetization:** [platform/fee_structure_and_monetization.md](platform/fee_structure_and_monetization.md) — Progressive Marginal Tiering (5% Tier 1, 3% Tier 2, 1.5% Tier 3), mathematical elimination of the cliff effect, multi-category simulations, and weekly COD reconciliation workflow.
 
 ---
 
 ### Active Development: 4 Program Pillars
-- **1. Entrepreneurship:** [01_problem_solution_value.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/entrepreneurship/01_problem_solution_value.md) — Problem breakdown (Price opacity & the "Interrogation Tax" of missing colors/measures), self-service catalog solution, and dual-sided value proposition.
+- **1. Entrepreneurship:** [01_problem_solution_value.md](entrepreneurship/01_problem_solution_value.md) (Problem, Solution, Value) | [02_market_opportunity_and_sizing.md](entrepreneurship/02_market_opportunity_and_sizing.md) (TAM · SAM · SOM Sizing) | [03_customer_and_merchant_personas.md](entrepreneurship/03_customer_and_merchant_personas.md) (Dual Personas: Ahmad & Kak Kawa) — Building venture foundations from ground zero.
 - **2. Marketing:** (Next)
-- **3. Finance Management:** [01_budget_plan_and_evidence.md](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/archive/finance-management/assignment/01_budget_plan_and_evidence.md) | [Cheapify_Budget_GIZ.xlsx](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/archive/finance-management/assignment/Cheapify_Budget_GIZ.xlsx) | [Cheapify_Monthly_Profit_and_Loss.xlsx](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/archive/finance-management/assignment/Cheapify_Monthly_Profit_and_Loss.xlsx) | [Cheapify_Budget_Plan_and_Evidence.pdf](file:///media/shakerbr/workland/workspace/git/my-private-repos/cheapify/archive/finance-management/assignment/Cheapify_Budget_Plan_and_Evidence.pdf) — Sustainable & profitable 6-month budget (+$700 USD / +1.05M IQD pilot profit, 88.6% gross margin, $0 cash dev fees built in-house, $2,200 GIZ grant ask) + Post-pilot steady state (+$1,000 to +$3,000 USD / month net profit, +77% to +83% margin, $156/mo burn, break-even at 6 orders/day), real market evidences/references, and final pitch deck slide.
+- **3. Finance Management:** [01_budget_plan_and_evidence.md](archive/finance-management/assignment/01_budget_plan_and_evidence.md) | [Cheapify_Budget_GIZ.xlsx](archive/finance-management/assignment/Cheapify_Budget_GIZ.xlsx) | [Cheapify_Monthly_Profit_and_Loss.xlsx](archive/finance-management/assignment/Cheapify_Monthly_Profit_and_Loss.xlsx) | [Cheapify_Budget_Plan_and_Evidence.pdf](archive/finance-management/assignment/Cheapify_Budget_Plan_and_Evidence.pdf) — Sustainable & profitable 6-month budget (+$700 USD / +1.05M IQD pilot profit, 88.6% gross margin, $0 cash dev fees built in-house, $2,200 GIZ grant ask) + Post-pilot steady state (+$1,000 to +$3,000 USD / month net profit, +77% to +83% margin, $156/mo burn, break-even at 6 orders/day), real market evidences/references, and final pitch deck slide.
 - **4. Business Modeling:** (Later)
 
 ### Archive & Reference Materials
@@ -47,4 +57,3 @@ All past incubator research, GIZ program notes, pitch decks, and previous refere
 - `archive/extracted-reference/`: Extracted blueprint documents (Product spec, Brand guidelines, Technical architecture, Operations playbook, Logo SVG) for future reference if needed.
 - `archive/program-giz-cheapify/`: Pitch decks, brand guideline presentations, assignments, and media screenshots.
 - `archive/chats/`: Raw chat logs and problem/opportunity discussions.
-

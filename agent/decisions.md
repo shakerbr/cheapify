@@ -30,16 +30,30 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Context:** Purchasing delivery motorbikes or hiring full-time drivers is capital-intensive and risky for an early pilot.
 * **Decision:** Partner directly with established third-party logistics couriers in Duhok (e.g. ZMC Express / local delivery couriers) at standard market parcel rates (3,000 IQD / order), handling automated waybills and COD reconciliation.
 
-### ADR-005: Tiered Value-Based Monetization
-* **Date:** 2026-10-12
+### ADR-005: Progressive Marginal Tiering Fee Architecture
+* **Date:** 2026-10-15
 * **Status:** Accepted
-* **Context:** Flat 10%–15% commission models alienate local retailers whose gross margins on electronics and accessories are narrow.
-* **Decision:** Use an accessible tiered take-rate: 5% for items under 9,000 IQD, flat 1,000 IQD for 10,000–99,000 IQD, 2% for 100,000–499,000 IQD, and 1.5% for ≥500,000 IQD.
+* **Context:** Traditional 10%–15% commissions destroy 15%–20% bazaar retail margins. Step-tiered brackets cause regressive cliff effects (e.g. 14,500 IQD at 5% producing 725 IQD vs. 16,000 IQD at 3% producing 480 IQD). Flat fees are ruled out by the founder.
+* **Decision:** Implement **Progressive Marginal Tiering** across 3 price tranches:
+  - **Tier 1 (1 to 10,000 IQD):** 5.0% marginal rate (max 500 IQD).
+  - **Tier 2 (10,001 to 100,000 IQD):** 3.0% marginal rate (max 2,700 IQD).
+  - **Tier 3 (100,001+ IQD):** 1.5% marginal rate.
+  Documented in detail in [`../platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md). Completely eliminates the cliff effect, ensuring strictly monotonic fee scaling.
 
 ### ADR-006: Ground-Up 4-Pillar Construction Before Final Pitch Deck
 * **Date:** 2026-10-14
 * **Status:** Accepted
 * **Context:** Archived pitch decks (`archive/program-giz-cheapify/Cheapify Pitch Deck.pdf`) were created as partial, non-final artifacts during early incubator assignments and do not represent the complete venture.
 * **Decision:** Treat the project as starting from ground zero. Build all 4 program pillars completely in sequence (1. Entrepreneurship, 2. Marketing, 3. Finance Management, 4. Business Modeling). Assemble and design the final pitch deck and showcase presentation strictly after all 4 pillars are fully built.
+
+### ADR-007: "Best Value" Ranking Algorithm Priority Hierarchy
+* **Date:** 2026-10-14
+* **Status:** Accepted
+* **Context:** When multiple verified merchants offer the exact same Single-SKU product, the system must algorithmically select the winning offer to award the signature Jade Green (`#148C53`) "Best Value" chip.
+* **Decision:** Enforce a strict 3-tier hierarchy:
+  1. **Priority 0 (Most Important / Primary):** Lowest price in IQD.
+  2. **Priority 1 (Secondary):** Fastest delivery time to the customer's location.
+  3. **Priority 2 (Tertiary):** Highest merchant rating and customer reviews.
+
 
 
