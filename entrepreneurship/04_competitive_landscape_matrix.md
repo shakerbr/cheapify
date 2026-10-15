@@ -87,7 +87,7 @@ Online retail in Iraq and the Kurdistan Region is polarized between two flawed m
   * **Arbitrary Price Disparities Inside the Same App:** Competitors exploit buyer confusion on identical items. As documented in verified repository evidence ([`assets/evidence/price-variation/Screenshot_20260920_130923.jpg`](assets/evidence/price-variation/Screenshot_20260920_130923.jpg)), one seller lists a Xiaomi 165W power bank for **60,000 IQD** while another lists it on an unlinked page for **70,000 IQD** on the exact same app.
   * **Zero Algorithmic Best-Value Guidance:** Shoppers must scroll through pages of duplicate cards without any automated indicator of who offers the best combination of price, delivery speed, and rating.
   * **Inconsistent Product Data:** Merchant uploads lack standardized specifications, dimensions, and live stock tracking.
-* **Cheapify Advantage:** Strict **Single-SKU architecture** (one master page per barcode/model) paired with the **Best Value Algorithm** (Jade Green chip highlighting the lowest price and fastest delivery), completely eliminating duplicate clutter.
+* **Cheapify Advantage:** Strict **Single-SKU architecture** (one master page per barcode/model) paired with the **Best Value Algorithm** (chip highlighting the lowest price and fastest delivery), completely eliminating duplicate clutter.
 
 ---
 

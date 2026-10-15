@@ -49,7 +49,7 @@ This file records key decisions, their context, rationale, and consequences for 
 ### ADR-007: "Best Value" Ranking Algorithm Priority Hierarchy
 * **Date:** 2026-10-14
 * **Status:** Accepted
-* **Context:** When multiple verified merchants offer the exact same Single-SKU product, the system must algorithmically select the winning offer to award the signature Jade Green (`#148C53`) "Best Value" chip.
+* **Context:** When multiple verified merchants offer the exact same Single-SKU product, the system must algorithmically select the winning offer to award the signature "Best Value" chip.
 * **Decision:** Enforce a strict 3-tier hierarchy:
   1. **Priority 0 (Most Important / Primary):** Lowest price in IQD.
   2. **Priority 1 (Secondary):** Fastest delivery time to the customer's location.

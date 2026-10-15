@@ -75,7 +75,7 @@ A running chronological log of completed actions, file creations, and achieved m
 * **Refinement Details:** While Cheapify also resolves the "Interrogation Tax", missing specs/variants, and merchant data chaos, eliminating wild price disparities remains the primary value anchor and founding catalyst.
 
 ### [2026-10-14] — Best-Value Ranking Priority Hierarchy Standardized
-* **Action:** Standardized the 3-tier algorithm hierarchy for awarding the Jade Green "Best Value" badge across [`entrepreneurship/01_problem_solution_value.md`](../entrepreneurship/01_problem_solution_value.md), [`agent/project-context.md`](project-context.md), [`agent/preferences.md`](preferences.md), and logged ADR-007 in [`agent/decisions.md`](decisions.md).
+* **Action:** Standardized the 3-tier algorithm hierarchy for awarding the "Best Value" badge across [`entrepreneurship/01_problem_solution_value.md`](../entrepreneurship/01_problem_solution_value.md), [`agent/project-context.md`](project-context.md), [`agent/preferences.md`](preferences.md), and logged ADR-007 in [`agent/decisions.md`](decisions.md).
 * **The Hierarchy:**
   - **Priority 0 (Most Important / Primary):** Price (lowest price in IQD).
   - **Priority 1 (Secondary):** Delivery Time (fastest local delivery window).
