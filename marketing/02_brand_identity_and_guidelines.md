@@ -303,6 +303,8 @@ To handle real-time e-commerce operational states (flash countdowns, out-of-stoc
 | **Error / Cancelled** | **PANTONE 1795 C**| `#D22730` | `210, 39, 48` | Out of stock, invalid phone number, order cancelled. |
 | **Pure White Surface** | Pure White | `#FFFFFF` | `255, 255, 255`| Elevated product card surfaces, clean modal dialogs. |
 
+* **Text on Flash/Warning:** Pure White (`#FFFFFF`) text is used on `#FFA300` and `#FF8200` fills. Both pairings reach ~2.0–2.5:1 contrast, so they are reserved for large, bold, short-lived UI (badges, countdowns) — never for body copy.
+
 ---
 
 ### 6.3 The 60-30-10 Color Balance Rule

@@ -418,12 +418,12 @@ p+p {
 
 .b-flash {
   background: var(--flash);
-  color: var(--ink)
+  color: #fff
 }
 
 .b-warn {
   background: var(--warn);
-  color: var(--ink)
+  color: #fff
 }
 
 .b-error {
@@ -4420,6 +4420,7 @@ footer.foot small {
 }
 
 .u105 {
+  color: #fff !important;
   font-weight: 800 !important;
   font-size: 11px !important;
   line-height: 1.1 !important;
@@ -4458,12 +4459,12 @@ footer.foot small {
 
 .u112 {
   background: #FFA300 !important;
-  color: #101820 !important
+  color: #fff !important
 }
 
 .u113 {
   background: #FF8200 !important;
-  color: #101820 !important
+  color: #fff !important
 }
 
 .u114 {

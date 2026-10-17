@@ -6,6 +6,10 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-17] — Brandbook Moved to Root + White-on-Orange Rule
+* **Structure:** `marketing/brandbook/` moved to [`brandbook/`](../brandbook/index.html) at repo root (a finished deliverable, not working docs). Made self-contained: referenced files copied to `brandbook/assets/` (logo SVGs, PDF, brand-tokens.json); all `../../` links replaced.
+* **Color rule change (founder decision):** text on Flash `#FFA300` and Warning `#FF8200` surfaces is now Pure White instead of Ink — applied to badges (`b-flash`, `b-warn`), semantic swatches, and the misuse sticker. Contrast table updated: "White on Flash 137 C" shown as 2.00:1, "Display Only". Rule documented in spec §6.2 — restricted to large bold short-lived UI, never body copy.
+
 ### [2026-10-17] — Brandbook CSS Externalized & Cover Slogan Fix
 * **Action:** Moved all 6 `<style>` blocks and all 541 inline `style` attributes out of [`brandbook/index.html`](../brandbook/index.html) into an external [`brandbook/brandbook.css`](../brandbook/brandbook.css) (design system + 322 extracted utility classes). Verified pixel-identical rendering across all 16 sections; 0 CSS diagnostics.
 * **Cover:** Kurdish and Arabic slogans now both translate the headline ("The bright side of choosing"); the English tagline moved to its own line. Removed the extra blue stripe from the mug illustration.
