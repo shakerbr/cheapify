@@ -6,6 +6,15 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-17] — Brand Identity & Visual Design Guidelines Authored (Pillar 2 Milestone)
+* **Action:** Authored [`marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md) locking in Cheapify's visual identity and design system built collaboratively with the founder:
+  - **Strict Pantone (PMS) Color System:** Standardized the 4 official PMS colors from `assets/Cheapify-LOGO.pdf`: Primary Blue (**PANTONE 7689 C** / `#298FC2`), Value Accent Green (**PANTONE 7731 C** / `#228848`), Dark Base Ink (**PANTONE BLACK 6 C** / `#101820`), and Light Surface Neutral (**PANTONE 656 C** / `#DDE5ED`).
+  - **Logo Mark Hierarchy:** Confirmed the **Outline / Stroke construction** as the primary official brand mark across all digital applications, web platform, and mobile app launcher icons (with the solid silhouette reserved strictly for specialized physical manufacturing), defining the master 700x900px grid and exclusion zone.
+  - **Tri-Font Typographic Architecture Deployed:** Deployed **Comfortaa** (Display & H1 headers), **Inter** (Latin UI, product specs, tabular numerals for pricing), and **IBM Plex Sans Arabic** (universal Kurdish Badînî/Sorani and Standard Arabic UI with complete native Unicode glyph support).
+
+  - **Dual-Tier Tagline Architecture:** Formalized the Brand Soul (*The bright side of choosing* / *«Rûyê geş yê helbijartinê»* / *«الجانب المشرق للاختيار»*) and the Functional Conversion Hooks (*Find your best deal* / *Smart Deals. Verified Sellers. One App.*).
+  - **UI Component & Ad Specs:** Defined the signature "Best Value" badge tokens, primary button states, comparison table styling, and co-branded merchant ad templates for Facebook, Instagram, and TikTok.
+
 ### [2026-10-16] — Two-Sided GTM Strategy & Execution Playbook Authored (Pillar 2 Milestone)
 * **Action:** Authored and refined [`marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md) establishing Cheapify's go-to-market operational playbook:
   - **Platform Architecture Clarified:** Formalized that Cheapify is engineered as both a **mobile application (iOS & Android)** and an accessible **web platform** ([Preference 20](preferences.md)).

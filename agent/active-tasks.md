@@ -5,8 +5,8 @@ This document tracks immediate actionable tasks, active work items, and current 
 ---
 
 ## Current Active Focus
-* **Active Pillar:** Pillar 2 (Marketing) — Setting up marketing strategy & brand architecture
-* **Lead File:** [`marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md)
+* **Active Pillar:** Pillar 2 (Marketing) — Brand identity & design tokens
+* **Lead File:** [`marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md) (Under Founder Review — Hold on 03 per directive)
 
 ---
 
@@ -29,7 +29,8 @@ This document tracks immediate actionable tasks, active work items, and current 
 ### Milestone 2: Execute Pillar 2 (Marketing) Deliverables
 - [x] Set up `marketing/` directory structure
 - [x] Synthesize two-sided GTM strategy (shopper acquisition vs. social merchant onboarding) ([01_two_sided_gtm_strategy.md](../marketing/01_two_sided_gtm_strategy.md))
-- [ ] Finalize brand guidelines, visual identity & design tokens from ground zero ([02_brand_identity_and_guidelines.md](../marketing/02_brand_identity_and_guidelines.md))
+- [x] Finalize brand guidelines, visual identity & design tokens from ground zero ([02_brand_identity_and_guidelines.md](../marketing/02_brand_identity_and_guidelines.md))
 - [ ] Synthesize 30-day trilingual content plan & calendar ([03_30_day_content_calendar.md](../marketing/03_30_day_content_calendar.md))
+
 
 
