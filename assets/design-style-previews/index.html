@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheapify — Design Style Samples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pms-blue:#298FC2;
+    --pms-green:#228848;
+    --pms-ink:#101820;
+    --pms-neutral:#DDE5ED;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#f4f6f8;color:var(--pms-ink);padding:32px}
+  h1{font-family:'Comfortaa',cursive;font-size:28px;margin-bottom:6px}
+  .sub{color:#5a6b7a;margin-bottom:32px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:32px}
+  .sample h2{font-family:'Comfortaa',cursive;font-size:16px;margin-bottom:4px}
+  .sample .desc{font-size:12.5px;color:#5a6b7a;margin-bottom:14px;line-height:1.45}
+  .stage{border-radius:20px;padding:24px;min-height:340px;display:flex;flex-direction:column;justify-content:center}
+
+  /* ============ STYLE A: CLEAN FLAT + SOFT DEPTH ============ */
+  .a-stage{background:var(--pms-neutral)}
+  .a-card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(16,24,32,.08);border:1px solid rgba(16,24,32,.04)}
+  .a-img{background:linear-gradient(135deg,#eef4f9,#dde5ed);border-radius:12px;height:110px;display:flex;align-items:center;justify-content:center;font-size:44px;margin-bottom:14px}
+  .a-title{font-weight:700;font-size:15px}
+  .a-sku{font-size:11px;color:#7a8a99;margin-bottom:12px;font-variant-numeric:tabular-nums}
+  .a-badge{display:inline-flex;align-items:center;gap:5px;background:var(--pms-green);color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+  .a-row{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-top:1px solid #eef1f4;font-variant-numeric:tabular-nums}
+  .a-row .shop{font-size:12.5px;color:#5a6b7a}
+  .a-row .price{font-weight:700;font-size:14px}
+  .a-row.best .price{color:var(--pms-green);font-size:16px}
+  .a-btn{margin-top:14px;width:100%;background:var(--pms-blue);color:#fff;border:none;border-radius:12px;padding:12px;font-family:'Inter';font-weight:600;font-size:13.5px;cursor:pointer}
+
+  /* ============ STYLE B: VIBRANT DOPAMINE ============ */
+  .b-stage{background:linear-gradient(135deg,#298FC2 0%,#35b06a 100%)}
+  .b-card{background:#fffde7;border-radius:24px;padding:22px;border:3px solid var(--pms-ink);box-shadow:8px 8px 0 var(--pms-ink);transform:rotate(-1deg)}
+  .b-img{background:repeating-linear-gradient(45deg,#ffe066,#ffe066 10px,#ffd23f 10px,#ffd23f 20px);border:3px solid var(--pms-ink);border-radius:16px;height:100px;display:flex;align-items:center;justify-content:center;font-size:44px;margin-bottom:14px}
+  .b-title{font-family:'Comfortaa';font-weight:700;font-size:17px}
+  .b-price{font-family:'Comfortaa';font-weight:700;font-size:38px;color:var(--pms-green);margin:6px 0}
+  .b-badge{display:inline-block;background:var(--pms-green);color:#fff;font-weight:800;font-size:12px;padding:6px 14px;border-radius:999px;border:3px solid var(--pms-ink);transform:rotate(2deg);box-shadow:3px 3px 0 var(--pms-ink);margin-bottom:8px}
+  .b-save{font-weight:800;font-size:14px;color:#e63946}
+  .b-btn{margin-top:14px;width:100%;background:var(--pms-ink);color:#ffe066;border:3px solid var(--pms-ink);border-radius:999px;padding:13px;font-family:'Comfortaa';font-weight:700;font-size:14px;cursor:pointer}
+
+  /* ============ STYLE C: NEUMORPHIC FINTECH ============ */
+  .c-stage{background:#e0e5ec}
+  .c-card{background:#e0e5ec;border-radius:20px;padding:22px;box-shadow:9px 9px 18px #b8bec7,-9px -9px 18px #ffffff}
+  .c-img{background:#e0e5ec;border-radius:14px;height:100px;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:inset 6px 6px 12px #b8bec7,inset -6px -6px 12px #ffffff;margin-bottom:16px}
+  .c-title{font-weight:600;font-size:15px}
+  .c-sku{font-size:11px;color:#7a8a99;margin:4px 0 14px;font-variant-numeric:tabular-nums}
+  .c-row{display:flex;justify-content:space-between;align-items:center;background:#e0e5ec;border-radius:12px;padding:10px 14px;margin-bottom:8px;box-shadow:5px 5px 10px #b8bec7,-5px -5px 10px #ffffff;font-variant-numeric:tabular-nums}
+  .c-row.best{box-shadow:inset 4px 4px 8px #b8bec7,inset -4px -4px 8px #ffffff}
+  .c-row .shop{font-size:12px;color:#5a6b7a}
+  .c-row .price{font-weight:700;font-size:14px}
+  .c-row.best .price{color:var(--pms-green)}
+  .c-badge{font-size:10px;background:var(--pms-green);color:#fff;padding:3px 9px;border-radius:999px;margin-left:6px}
+  .c-btn{margin-top:12px;width:100%;background:#e0e5ec;color:var(--pms-blue);border:none;border-radius:12px;padding:13px;font-weight:700;font-size:13.5px;box-shadow:6px 6px 12px #b8bec7,-6px -6px 12px #ffffff;cursor:pointer}
+
+  /* ============ STYLE D: GAMIFIED DEAL-HUNTING ============ */
+  .d-stage{background:var(--pms-ink)}
+  .d-card{background:#1a2530;border-radius:18px;padding:22px;border:1px solid #2a3a48}
+  .d-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .d-streak{display:flex;align-items:center;gap:6px;background:rgba(41,143,194,.15);color:var(--pms-blue);font-size:11px;font-weight:700;padding:5px 12px;border-radius:999px;border:1px solid rgba(41,143,194,.4)}
+  .d-pts{font-size:11px;color:#8fa3b3}
+  .d-pts b{color:#ffd23f}
+  .d-img{background:linear-gradient(135deg,#22303d,#1a2530);border-radius:12px;height:96px;display:flex;align-items:center;justify-content:center;font-size:42px;margin-bottom:14px;border:1px dashed #2a3a48}
+  .d-title{color:#fff;font-weight:700;font-size:15px}
+  .d-badge{display:inline-flex;align-items:center;gap:5px;background:var(--pms-green);color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:8px;margin:10px 0}
+  .d-meter-label{font-size:11px;color:#8fa3b3;margin-bottom:5px}
+  .d-meter{background:#22303d;border-radius:999px;height:10px;overflow:hidden;margin-bottom:6px}
+  .d-meter>div{height:100%;width:72%;background:linear-gradient(90deg,var(--pms-blue),var(--pms-green));border-radius:999px}
+  .d-meter-sub{font-size:11px;color:var(--pms-green);font-weight:600;margin-bottom:14px}
+  .d-btn{width:100%;background:linear-gradient(90deg,var(--pms-blue),var(--pms-green));color:#fff;border:none;border-radius:12px;padding:13px;font-weight:700;font-size:13.5px;cursor:pointer}
+
+  /* ============ STYLE E: BENTO GRID 2.0 ============ */
+  .e-stage{background:#f4f6f8}
+  .e-bento{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .e-tile{background:#fff;border-radius:18px;padding:14px;box-shadow:0 2px 10px rgba(16,24,32,.05)}
+  .e-tile.big{grid-column:1/3;display:flex;gap:14px;align-items:center}
+  .e-img{background:linear-gradient(135deg,#eef4f9,#dde5ed);border-radius:14px;width:90px;height:90px;display:flex;align-items:center;justify-content:center;font-size:40px;flex-shrink:0}
+  .e-title{font-weight:700;font-size:15px}
+  .e-sku{font-size:11px;color:#7a8a99;font-variant-numeric:tabular-nums;margin:3px 0 8px}
+  .e-badge{display:inline-block;background:var(--pms-green);color:#fff;font-size:10.5px;font-weight:700;padding:4px 10px;border-radius:999px}
+  .e-price{font-family:'Comfortaa';font-weight:700;font-size:22px;color:var(--pms-blue);margin-top:4px}
+  .e-tile .lbl{font-size:10.5px;color:#7a8a99;font-weight:600;margin-bottom:4px}
+  .e-tile .val{font-weight:700;font-size:17px;font-variant-numeric:tabular-nums}
+  .e-tile .val.g{color:var(--pms-green)}
+  .e-tile .val.b{color:var(--pms-blue)}
+  .e-btn{grid-column:1/3;background:var(--pms-blue);color:#fff;border:none;border-radius:14px;padding:13px;font-weight:700;font-size:13.5px;cursor:pointer}
+
+  /* ============ STYLE F: GLASSMORPHISM / LIQUID GLASS ============ */
+  .f-stage{background:linear-gradient(130deg,#298FC2 0%,#1a6d94 45%,#228848 100%)}
+  .f-card{background:rgba(255,255,255,.14);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:22px;padding:22px;border:1px solid rgba(255,255,255,.35);box-shadow:0 12px 32px rgba(0,0,0,.18)}
+  .f-img{background:rgba(255,255,255,.18);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);border-radius:16px;height:100px;display:flex;align-items:center;justify-content:center;font-size:42px;margin-bottom:14px}
+  .f-title{color:#fff;font-weight:700;font-size:15px}
+  .f-sku{font-size:11px;color:rgba(255,255,255,.75);margin:4px 0 14px;font-variant-numeric:tabular-nums}
+  .f-row{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:9px 13px;margin-bottom:7px;backdrop-filter:blur(6px);font-variant-numeric:tabular-nums}
+  .f-row.best{background:rgba(255,255,255,.28);border-color:rgba(255,255,255,.55)}
+  .f-row .shop{font-size:12px;color:rgba(255,255,255,.85)}
+  .f-row .price{font-weight:700;font-size:14px;color:#fff}
+  .f-badge{font-size:9.5px;background:#fff;color:var(--pms-green);font-weight:800;padding:2px 8px;border-radius:999px;margin-left:6px}
+  .f-btn{margin-top:10px;width:100%;background:rgba(255,255,255,.9);color:var(--pms-ink);border:none;border-radius:14px;padding:13px;font-weight:700;font-size:13.5px;cursor:pointer}
+
+  /* ============ STYLE G: CLAYMORPHISM ============ */
+  .g-stage{background:#fdeee0}
+  .g-card{background:#fff5ea;border-radius:28px;padding:22px;box-shadow:inset -6px -6px 14px rgba(210,180,150,.45),inset 6px 6px 14px #ffffff,10px 10px 24px rgba(200,170,140,.35)}
+  .g-img{background:linear-gradient(135deg,#cfe8f5,#b3d8ec);border-radius:22px;height:100px;display:flex;align-items:center;justify-content:center;font-size:44px;box-shadow:inset -4px -4px 10px rgba(41,143,194,.25),inset 4px 4px 10px #ffffff;margin-bottom:16px}
+  .g-title{font-family:'Comfortaa';font-weight:700;font-size:16px}
+  .g-sku{font-size:11px;color:#a08b74;margin:4px 0 14px;font-variant-numeric:tabular-nums}
+  .g-row{display:flex;justify-content:space-between;align-items:center;background:#fff5ea;border-radius:16px;padding:10px 14px;margin-bottom:9px;box-shadow:inset -3px -3px 8px rgba(210,180,150,.4),inset 3px 3px 8px #ffffff,4px 4px 10px rgba(200,170,140,.25);font-variant-numeric:tabular-nums}
+  .g-row .shop{font-size:12px;color:#7a6a58}
+  .g-row .price{font-weight:800;font-size:14px;color:var(--pms-ink)}
+  .g-row.best{background:#e4f4e9;box-shadow:inset -3px -3px 8px rgba(34,136,72,.18),inset 3px 3px 8px #ffffff,4px 4px 10px rgba(34,136,72,.12)}
+  .g-row.best .price{color:var(--pms-green)}
+  .g-btn{margin-top:12px;width:100%;background:var(--pms-blue);color:#fff;border:none;border-radius:20px;padding:14px;font-family:'Comfortaa';font-weight:700;font-size:14px;box-shadow:0 6px 0 #1a6d94,0 10px 18px rgba(41,143,194,.35);cursor:pointer}
+
+  /* ============ STYLE H: EDITORIAL MINIMAL / ZERO-UI ============ */
+  .h-stage{background:#fafaf7}
+  .h-card{background:transparent;padding:8px 4px}
+  .h-kicker{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--pms-green);font-weight:700;margin-bottom:10px}
+  .h-title{font-family:'Comfortaa';font-weight:400;font-size:24px;line-height:1.2;margin-bottom:4px}
+  .h-sku{font-size:11.5px;color:#8a8a80;margin-bottom:20px;font-variant-numeric:tabular-nums}
+  .h-row{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;border-bottom:1px solid #e4e4dc;font-variant-numeric:tabular-nums}
+  .h-row .shop{font-size:13px;color:#55554e}
+  .h-row .price{font-weight:600;font-size:14px}
+  .h-row.best .shop{font-weight:700;color:var(--pms-ink)}
+  .h-row.best .price{font-family:'Comfortaa';font-weight:700;font-size:19px;color:var(--pms-ink)}
+  .h-best-tag{font-size:10px;color:var(--pms-green);font-weight:700;letter-spacing:.08em;margin-left:8px}
+  .h-btn{margin-top:22px;width:100%;background:var(--pms-ink);color:#fff;border:none;border-radius:999px;padding:15px;font-family:'Inter';font-weight:600;font-size:13.5px;letter-spacing:.02em;cursor:pointer}
+</style>
+</head>
+<body>
+<h1>Cheapify — Design Style Samples</h1>
+<p class="sub">Same content (product card: AirPods Pro, Best Value comparison) rendered in 4 candidate styles using official PMS colors + Comfortaa/Inter. Pick the direction you like.</p>
+
+<div class="grid">
+
+  <!-- A -->
+  <div class="sample">
+    <h2>A — Clean Flat + Soft Depth</h2>
+    <p class="desc">Modern flat marketplace card, soft shadow, rounded corners, disciplined PMS accents. Maximum clarity &amp; accessibility — easiest for trilingual, low-literacy users.</p>
+    <div class="stage a-stage">
+      <div class="a-card">
+        <div class="a-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+        <div class="a-title">AirPods Pro (2nd Gen)</div>
+        <div class="a-sku">SKU 0843 · Verified · 3 stores in Duhok</div>
+        <div><span class="a-badge"><i data-lucide="star" width="12" height="12" style="vertical-align:-1px"></i> Best Value</span></div>
+        <div class="a-row best"><span class="shop">Kak Kawa Electronics</span><span class="price">112,000 IQD</span></div>
+        <div class="a-row"><span class="shop">Duhok Mobile Center</span><span class="price">119,500 IQD</span></div>
+        <div class="a-row"><span class="shop">TechPoint Store</span><span class="price">124,000 IQD</span></div>
+        <button class="a-btn">Buy at doorstep total · 115,000 IQD</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- B -->
+  <div class="sample">
+    <h2>B — Vibrant Dopamine</h2>
+    <p class="desc">High-energy saturated color, sticker-style badge, oversized price type, sticker drop-shadow. Huge social-ad punch; risk of visual fatigue in-app.</p>
+    <div class="stage b-stage">
+      <div class="b-card">
+        <div class="b-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+        <div><span class="b-badge"><i data-lucide="star" width="12" height="12" style="vertical-align:-1px"></i> BEST VALUE!</span></div>
+        <div class="b-title">AirPods Pro (2nd Gen)</div>
+        <div class="b-price">112,000 <span style="font-size:16px">IQD</span></div>
+        <div class="b-save">You save 12,000 IQD vs. highest price! <i data-lucide="flame" width="14" height="14" style="vertical-align:-2px"></i></div>
+        <button class="b-btn">GRAB THE DEAL →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- C -->
+  <div class="sample">
+    <h2>C — Neumorphic Fintech</h2>
+    <p class="desc">Soft extruded surfaces, inset "pressed" best-value row, tactile card. Premium trust feel like Stripe/Apple — but low contrast hurts readability.</p>
+    <div class="stage c-stage">
+      <div class="c-card">
+        <div class="c-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+        <div class="c-title">AirPods Pro (2nd Gen)</div>
+        <div class="c-sku">SKU 0843 · Verified · 3 stores in Duhok</div>
+        <div class="c-row best"><span class="shop">Kak Kawa Electronics <span class="c-badge"><i data-lucide="star" width="10" height="10" style="vertical-align:-1px"></i> Best</span></span><span class="price">112,000</span></div>
+        <div class="c-row"><span class="shop">Duhok Mobile Center</span><span class="price">119,500</span></div>
+        <div class="c-row"><span class="shop">TechPoint Store</span><span class="price">124,000</span></div>
+        <button class="c-btn">Checkout · 115,000 IQD</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- D -->
+  <div class="sample">
+    <h2>D — Gamified Deal-Hunting</h2>
+    <p class="desc">Dark-mode base with streaks, savings meter progress bar, points &amp; badges as core language. Turns shopping into a rewarding hunt.</p>
+    <div class="stage d-stage">
+      <div class="d-card">
+        <div class="d-head">
+          <span class="d-streak"><i data-lucide="zap" width="12" height="12"></i> 4-day deal streak</span>
+          <span class="d-pts">Points: <b>1,240</b></span>
+        </div>
+        <div class="d-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+        <div class="d-title">AirPods Pro (2nd Gen)</div>
+        <div><span class="d-badge"><i data-lucide="trophy" width="12" height="12"></i> Best Value Unlocked</span></div>
+        <div class="d-meter-label">Savings meter — vs. average market price</div>
+        <div class="d-meter"><div></div></div>
+        <div class="d-meter-sub">You beat 72% of shoppers this week <i data-lucide="target" width="13" height="13" style="vertical-align:-2px"></i></div>
+        <button class="d-btn">Claim deal · 115,000 IQD</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- E -->
+  <div class="sample">
+    <h2>E — Bento Grid 2.0</h2>
+    <p class="desc">Modular rounded tiles of varying sizes (Apple-style). Every data point gets its own compartment — scannable, organized, great for dense comparison info.</p>
+    <div class="stage e-stage">
+      <div class="e-bento">
+        <div class="e-tile big">
+          <div class="e-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+          <div>
+            <div class="e-title">AirPods Pro (2nd Gen)</div>
+            <div class="e-sku">SKU 0843 · Verified</div>
+            <span class="e-badge"><i data-lucide="star" width="12" height="12" style="vertical-align:-1px"></i> Best Value</span>
+            <div class="e-price">112,000 IQD</div>
+          </div>
+        </div>
+        <div class="e-tile"><div class="lbl">You save</div><div class="val g">12,000 IQD</div></div>
+        <div class="e-tile"><div class="lbl">Stores compared</div><div class="val b">3 in Duhok</div></div>
+        <div class="e-tile"><div class="lbl">Delivery</div><div class="val">Today · 3–6h</div></div>
+        <div class="e-tile"><div class="lbl">Doorstep total</div><div class="val">115,000 IQD</div></div>
+        <button class="e-btn">Checkout — pay cash on delivery</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- F -->
+  <div class="sample">
+    <h2>F — Glassmorphism / Liquid Glass</h2>
+    <p class="desc">Frosted-glass layers over a PMS blue→green gradient. Apple's "Liquid Glass" revival — modern, premium depth. Needs care for readability &amp; old phones.</p>
+    <div class="stage f-stage">
+      <div class="f-card">
+        <div class="f-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+        <div class="f-title">AirPods Pro (2nd Gen)</div>
+        <div class="f-sku">SKU 0843 · Verified · 3 stores in Duhok</div>
+        <div class="f-row best"><span class="shop">Kak Kawa Electronics<span class="f-badge"><i data-lucide="star" width="10" height="10" style="vertical-align:-1px"></i> BEST</span></span><span class="price">112,000</span></div>
+        <div class="f-row"><span class="shop">Duhok Mobile Center</span><span class="price">119,500</span></div>
+        <div class="f-row"><span class="shop">TechPoint Store</span><span class="price">124,000</span></div>
+        <button class="f-btn">Checkout · 115,000 IQD</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- G -->
+  <div class="sample">
+    <h2>G — Claymorphism</h2>
+    <p class="desc">Puffy, clay-like surfaces with inner shadows and squishy "physical" buttons. Friendly, tactile, playful — appeals to younger shoppers but less "precise."</p>
+    <div class="stage g-stage">
+      <div class="g-card">
+        <div class="g-img"><i data-lucide="headphones" width="44" height="44" color="#298FC2"></i></div>
+        <div class="g-title">AirPods Pro (2nd Gen)</div>
+        <div class="g-sku">SKU 0843 · Verified · 3 stores in Duhok</div>
+        <div class="g-row best"><span class="shop">Kak Kawa Electronics</span><span class="price">112,000</span></div>
+        <div class="g-row"><span class="shop">Duhok Mobile Center</span><span class="price">119,500</span></div>
+        <div class="g-row"><span class="shop">TechPoint Store</span><span class="price">124,000</span></div>
+        <button class="g-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- H -->
+  <div class="sample">
+    <h2>H — Editorial Minimal / "Zero-UI"</h2>
+    <p class="desc">Editorial restraint — generous whitespace, hairline rules, type-driven hierarchy, no boxes. Price data reads like a confident newspaper table. Ultra-clean, fastest to build.</p>
+    <div class="stage h-stage">
+      <div class="h-card">
+        <div class="h-kicker"><i data-lucide="star" width="12" height="12" style="vertical-align:-1px"></i> Best Value · Verified</div>
+        <div class="h-title">AirPods Pro (2nd Gen)</div>
+        <div class="h-sku">SKU 0843 — 3 stores in Duhok</div>
+        <div class="h-row best"><span class="shop">Kak Kawa Electronics<span class="h-best-tag">BEST VALUE</span></span><span class="price">112,000 IQD</span></div>
+        <div class="h-row"><span class="shop">Duhok Mobile Center</span><span class="price">119,500 IQD</span></div>
+        <div class="h-row"><span class="shop">TechPoint Store</span><span class="price">124,000 IQD</span></div>
+        <button class="h-btn">Checkout — 115,000 IQD at your door</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

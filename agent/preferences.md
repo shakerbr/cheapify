@@ -109,4 +109,16 @@ This file documents the specific ways, working habits, and styling preferences r
 24. **Broad Consumer Audience Scope (Beyond Campus/Students):**
     - While university students are a great viral launchpad cohort, Cheapify is a broad mass-market consumer platform for all Iraqi and Kurdish shoppers: young working professionals, civil servants, household shoppers, tech enthusiasts, and budget-conscious families seeking upfront price transparency and verified deals.
 
+25. **Official UI Design Language — "Clean Flat + Soft Depth":**
+    - Cheapify's user interface design style is **Clean Flat + Soft Depth**, selected by the founder after live visual evaluation of 8 candidate styles (Clean Flat + Soft Depth, Vibrant Dopamine, Neumorphic Fintech, Gamified Deal-Hunting, Bento Grid 2.0, Glassmorphism/Liquid Glass, Claymorphism, Editorial Minimal/Zero-UI) rendered in `assets/design-style-previews/index.html`.
+    - **Core traits:** Flat, pure-white surfaces on light neutral backgrounds; generous `12px–16px` corner radii; subtle single soft shadows (never hard, colored, or multiple stacked shadows); hairline `1px` borders in PANTONE 656 C; disciplined PMS blue/green accent usage only for CTAs and Best Value signals.
+    - **Rejected directions (do NOT use):** Sticker/offset-shadow neo-brutalism, saturated dopamine gradients, heavy glassmorphism/blur, puffy claymorphism, dense gamification HUDs (streaks/points/meters), and bare editorial zero-chrome layouts. Gamified *elements* (badge, savings copy) may appear as content, never as the visual language itself.
+    - **Rationale:** Maximizes clarity, price-table readability, and trilingual accessibility for a broad mass-market audience including low-digital-literacy users; aligns with the Radically Transparent and Operationally Precise personality attributes.
+
+26. **No Emojis — Icons Only:**
+    - Cheapify NEVER uses emojis in any UI, document, marketing material, social content, or communication — no exceptions.
+    - Instead, use proper iconography: custom-drawn icons matching Cheapify's icon construction spec (§9.1 of the brand guidelines), or icons sourced from free CDN icon libraries.
+    - Approved free sources: **Lucide** (lucide.dev — clean 2px-stroke open source set matching the icon spec), **Phosphor Icons**, **Heroicons**, or **Iconify** CDN as an aggregator.
+    - **Rationale:** Emojis render inconsistently across devices/locales, look unprofessional for a trust-driven marketplace, and break the disciplined PMS color system. Vector icons stay on-brand, recolorable, and consistent at any size.
+
 

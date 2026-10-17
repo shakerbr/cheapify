@@ -24,7 +24,13 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
    - You MUST maintain a running chronological log of completed tasks, milestones, and architectural decisions in [agent/progress.md](agent/progress.md).
 8. **Build All 4 Pillars from Zero Before Pitch Deck:**
    - Do NOT rely on or treat archived pitch decks as final. Build all 4 pillars from the ground up first (1. Entrepreneurship, 2. Marketing, 3. Finance Management, 4. Business Modeling). The final presentation will be assembled only once all 4 pillars are complete.
-9. **Strictly Relative Links in Repository Documents:**
+9. **No Emojis — Icons Only:**
+   - NEVER use emojis in any UI, document, marketing material, social content, or communication. Use proper iconography instead — custom-drawn icons per the brand icon spec, or icons from free CDN libraries (Lucide, Phosphor, Heroicons, Iconify).
+10. **Kurdish Always in Kurdish (Arabic-Based) Script:**
+   - All Kurdish text (Badînî and Sorani) MUST use the Kurdish Arabic-based alphabet (ا ب پ ت ج چ ح خ د ر ڕ ز ژ س ش ع غ ف ڤ ق ک گ ل ڵ م ن ه و ۆ ی ێ), right-to-left, in IBM Plex Sans Arabic. NEVER write Kurdish in Latin script.
+11. **No Internal Development Content in External Deliverables:**
+   - Brandbooks, presentations, and marketing assets must NOT include internal process content (pillar names/numbers, deliverable numbers, ADR/preference references, internal roadmaps, repository file paths, "source of truth" or version-control notes).
+12. **Strictly Relative Links in Repository Documents:**
    - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `entrepreneurship/...`).
 
 ---
@@ -49,7 +55,7 @@ Semi-general operational, economic, and technical specifications shared across p
 
 ### Active Development: 4 Program Pillars
 - **1. Entrepreneurship (Complete):** [01_problem_solution_value.md](entrepreneurship/01_problem_solution_value.md) | [02_market_opportunity_and_sizing.md](entrepreneurship/02_market_opportunity_and_sizing.md) | [03_customer_and_merchant_personas.md](entrepreneurship/03_customer_and_merchant_personas.md) | [04_competitive_landscape_matrix.md](entrepreneurship/04_competitive_landscape_matrix.md) | [05_market_validation_survey.md](entrepreneurship/05_market_validation_survey.md) | [06_value_proposition_and_founder_fit.md](entrepreneurship/06_value_proposition_and_founder_fit.md) — Built 100% from ground zero.
-- **2. Marketing (Active Focus):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete) | [02_brand_identity_and_guidelines.md](marketing/02_brand_identity_and_guidelines.md) (Complete — Strict PMS colors, outline logo mark, Comfortaa+Inter+IBM Plex typography, dual-tier taglines) | Setting up 30-day content calendar (03).
+- **2. Marketing (Active Focus):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete) | [02_brand_identity_and_guidelines.md](marketing/02_brand_identity_and_guidelines.md) (Complete — Strict PMS colors, outline logo mark, Comfortaa+Inter+IBM Plex typography, dual-tier taglines) | [brandbook/index.html](marketing/brandbook/index.html) (Complete — interactive HTML brandbook) | Setting up 30-day content calendar (03).
 - **3. Finance Management (Queued):** Will be built 100% fresh from ground zero (itemized operational budget, unit economics, cash flow, and break-even analysis). Past coursework files in `archive/finance-management/` are archived reference assignments only, not final budget figures.
 - **4. Business Modeling (Later):** 9-Block Business Model Canvas, core SOPs, and operational risk matrix.
 

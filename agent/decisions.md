@@ -70,3 +70,15 @@ This file records key decisions, their context, rationale, and consequences for 
   3. **Founding Merchant Ad Boost:** The first 20 verified stores receive 0% commission in Month 1 and get their products featured in Cheapify's paid ad campaigns (Facebook, Instagram, TikTok), providing them free advertising and commercial boosts.
   4. Platform access is delivered across **both Mobile App (iOS & Android) and Web**.
 
+### ADR-009: Official UI Design Language — "Clean Flat + Soft Depth"
+* **Date:** 2026-10-17
+* **Status:** Accepted
+* **Context:** With the PMS color system, tri-font typography, and logo hierarchy locked, Cheapify still lacked a formal UI design *style* — the surface treatment, depth model, and overall visual character governing every screen, card, and component across the mobile app and web platform. Eight candidate styles drawn from current design-trend research (Figma 2026 trends, industry e-commerce analyses) were rendered as live visual samples using the official PMS palette and brand fonts in [`../assets/design-style-previews/index.html`](../assets/design-style-previews/index.html) and evaluated by the founder.
+* **Decision:** Adopt **"Clean Flat + Soft Depth"** as the official Cheapify UI design language:
+  1. **Flat white surfaces** (`#FFFFFF`) floating on light neutral backgrounds (`#DDE5ED` / `#F4F6F8`).
+  2. **Soft depth model:** single diffuse shadow (`0 8px 24px rgba(16,24,32,.08)` max) + hairline `1px` borders; a strict 3-level elevation scale (base → card → modal). No hard offset shadows, no color-tinted shadows.
+  3. **Generous radii:** `12px–16px` cards, `10px–12px` buttons, pill-shaped badges — matching Comfortaa's rounded geometry.
+  4. **Disciplined accent usage:** PMS Blue reserved for primary CTAs/active states; PMS Green reserved exclusively for Best Value badges, savings, and verified signals.
+* **Rejected styles:** Vibrant Dopamine (visual fatigue, brand-color drift risk), Neumorphic Fintech (fails contrast/accessibility), Glassmorphism (readability + old-device performance), Claymorphism (undermines operational precision), Gamified Deal-Hunting (HUD clutter conflicts with Everyman accessibility), Bento Grid (adopted only as an *optional layout pattern* for stat tiles, not a surface style), Editorial Zero-UI (too austere for deal-hunting energy).
+* **Consequence:** All UI components, merchant dashboard screens, and marketing mockups must follow the tokens defined in Section 8.0 of [`../marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md). Recorded as Preference 25 in [`preferences.md`](preferences.md).
+

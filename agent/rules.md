@@ -31,4 +31,13 @@ These are the strict, mandatory rules set by the user. The AI agent must adhere 
 9. **Strictly Relative Links in Repository Documents:**
    - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `../entrepreneurship/...`).
 
+10. **No Emojis — Icons Only:**
+    - NEVER use emojis anywhere. Use vector icons (custom per brand spec, or free CDN libraries: Lucide, Phosphor, Heroicons, Iconify).
+
+11. **Kurdish Always in Kurdish (Arabic-Based) Script:**
+    - All Kurdish text (Badînî and Sorani) MUST be written in the Kurdish Arabic-based alphabet (ا ب پ ت ج چ ح خ د ر ڕ ز ژ س ش ع غ ف ڤ ق ک گ ل ڵ م ن ه و ۆ ی ێ), right-to-left, set in IBM Plex Sans Arabic. NEVER use Latin-script Kurdish (e.g. "Rûyê geş yê helbijartinê" is prohibited; use «ڕوویێ گەش یێ هەلبژارتنێ»).
+
+12. **No Internal Development Content in External Deliverables:**
+    - Public/external deliverables (brandbooks, presentations, marketing assets) must NOT contain internal project-process content: pillar names/numbers, deliverable numbers, ADR/preference references, roadmap of internal work, repository file paths, "source of truth" notes, or governance/version-control notes.
+
 

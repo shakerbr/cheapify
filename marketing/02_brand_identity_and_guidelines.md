@@ -92,10 +92,10 @@ Cheapify’s brand voice remains consistent across all languages (English, Badî
 
 | Context / State | English Tone & Example | Badînî Kurdish Tone & Example | Iraqi Arabic Tone & Example |
 | :--- | :--- | :--- | :--- |
-| **Discovery & Browsing** | **Energetic & Empowering:**<br>"Compare 4 verified stores in Duhok. Save 4,500 IQD instantly." | **Biaqil & Destxweş:**<br>«4 firoşgehên Duhokê berhev bike. 4,500 dînar xilas bike.» | **حماسي ومباشر:**<br>«قارن بين 4 متاجر موثوقة في بغداد ووفر 4,500 دينار فوراً.» |
-| **Checkout & Cart** | **Frictionless & Reassuring:**<br>"Doorstep total: 17,000 IQD. Pay cash upon arrival. No hidden fees." | **Bê-Xem & Zelal:**<br>«Serçemê gihiştinê: 17,000 IQD. Dema wergirtinê bi kaş bide. Bê çi heqên veşartî.» | **واضح ومطمئن:**<br>«المجموع عند الباب: 17,000 د.ع. الدفع نقداً عند الاستلام وبدون رسوم خفية.» |
-| **Delivery Delays / Issues** | **Accountable & Solution-First:**<br>"Rain delayed your courier. We’re tracking it live; arriving in 35 mins." | **Rastgo & Berpirsyar:**<br>«Baranê deryariya kuryê dereng kir. Em rasterast dişopînin; 35 deqeyên din li cem teye.» | **صريح وسريع الحل:**<br>«المطر أخّر المندوب قليلاً. نتابع شحنتك لحظة بلحظة، وستصلك خلال 35 دقيقة.» |
-| **Merchant Acquisition** | **Respectful & Value-Focused:**<br>"Keep your full profit. We bring real buyers directly to your stock." | **Rêzdar & Hevkar:**<br>«Qazanca xwe biparêze. Em kiriyarên rastîn tînin ser berhemên te.» | **مهني ومربح:**<br>«حافظ على أرباحك كاملة. نجلب لك زبائن جاهزين للشراء بدون عمولات مرهقة.» |
+| **Discovery & Browsing** | **Energetic & Empowering:**<br>"Compare 4 verified stores in Duhok. Save 4,500 IQD instantly." | **بئاقل و دەستخۆش:**<br>«4 فرۆشگەهێن دهۆکێ بەرهەڤ بکە. 4,500 دینار خلاس بکە.» | **حماسي ومباشر:**<br>«قارن بين 4 متاجر موثوقة في بغداد ووفر 4,500 دينار فوراً.» |
+| **Checkout & Cart** | **Frictionless & Reassuring:**<br>"Doorstep total: 17,000 IQD. Pay cash upon arrival. No hidden fees." | **بێ خەم و زەلال:**<br>«سەرجەمێ گەهشتنێ: 17,000 دینار. دەما وەرگرتنێ ب کاش بدە. بێ چ هەقێن ڤەشارتی.» | **واضح ومطمئن:**<br>«المجموع عند الباب: 17,000 د.ع. الدفع نقداً عند الاستلام وبدون رسوم خفية.» |
+| **Delivery Delays / Issues** | **Accountable & Solution-First:**<br>"Rain delayed your courier. We’re tracking it live; arriving in 35 mins." | **ڕاستگۆ و بەرپرسیار:**<br>«بارانێ گەهاندن دەرەنگ ئێخست. ئەم ڕاستەوخۆ دشۆپینین؛ 35 خولەکێن دی دگەهیتە تە.» | **صريح وسريع الحل:**<br>«المطر أخّر المندوب قليلاً. نتابع شحنتك لحظة بلحظة، وستصلك خلال 35 دقيقة.» |
+| **Merchant Acquisition** | **Respectful & Value-Focused:**<br>"Keep your full profit. We bring real buyers directly to your stock." | **ڕێزدار و هەڤکار:**<br>«قازانجا خۆ بپارێزە. ئەم کڕیارێن ڕاستین دئینینە سەر بەرهەمێن تە.» | **مهني ومربح:**<br>«حافظ على أرباحك كاملة. نجلب لك زبائن جاهزين للشراء بدون عمولات مرهقة.» |
 
 ---
 
@@ -114,12 +114,12 @@ To maintain brand authority across our mobile app, web platform, merchant dashbo
 
 | Approved Brand Term | Prohibited / Deprecated Term | Rationale |
 | :--- | :--- | :--- |
-| **Best Value / Herî Biha-Baş / أفضل قيمة** | "Cheapest", "Discount Bin", "Rock-bottom" | "Cheapest" implies low quality; "Best Value" celebrates optimal price-to-quality ratio. |
-| **Doorstep Total / Serçemê Gihiştinê / المجموع عند الباب** | "Price + Shipping", "Delivery Extra" | Eliminates checkout surprises by combining item price and local tariff upfront ($P_{\text{total}}$). |
-| **Verified Local Partner / Firoşkarê Piştrastkirî** | "Vendor", "Third-party Seller", "Merchant" | Elevates the store owner as a trusted local commerce partner. |
-| **Instant Checkout / Kirîna Yek-Klîk / شراء فوري** | "DM for Price", "Ask in Private", "Chat to Order" | Emphasizes the eradication of the exhausting "Interrogation Tax". |
-| **Price Variation / Cudahîya Bihayan / تفاوت الأسعار** | "Price Gouging", "Cheating" | Maintains professional neutrality while diagnosing arbitrary price gaps across stores. |
-| **Free Ad Showcase / Pêşandana Reklamê ya Belaş** | "Sponsored Push", "Paid Listing" | Accurately describes the free social ad boost granted to our 20 Founding Stores. |
+| **Best Value / هەری باش / أفضل قيمة** | "Cheapest", "Discount Bin", "Rock-bottom" | "Cheapest" implies low quality; "Best Value" celebrates optimal price-to-quality ratio. |
+| **Doorstep Total / سەرجەمێ گەهشتنێ / المجموع عند الباب** | "Price + Shipping", "Delivery Extra" | Eliminates checkout surprises by combining item price and local tariff upfront ($P_{\text{total}}$). |
+| **Verified Local Partner / فرۆشکارێ پشتڕاستکری** | "Vendor", "Third-party Seller", "Merchant" | Elevates the store owner as a trusted local commerce partner. |
+| **Instant Checkout / کڕینا ب ئێک کلیک / شراء فوري** | "DM for Price", "Ask in Private", "Chat to Order" | Emphasizes the eradication of the exhausting "Interrogation Tax". |
+| **Price Variation / جوداهیا بهایان / تفاوت الأسعار** | "Price Gouging", "Cheating" | Maintains professional neutrality while diagnosing arbitrary price gaps across stores. |
+| **Free Ad Showcase / پێشاندانا ڕێکلامێ یا بەلاش** | "Sponsored Push", "Paid Listing" | Accurately describes the free social ad boost granted to our 20 Founding Stores. |
 
 ---
 
@@ -133,7 +133,7 @@ Cheapify deploys a disciplined **Two-Tier Tagline Hierarchy** designed to serve 
 │ «The bright side of choosing»                                                          │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
 │ • English: The bright side of choosing                                                 │
-│ • Badînî Kurdish: «Rûyê geş yê helbijartinê»                                           │
+│ • Badînî Kurdish: «ڕوویێ گەش یێ هەلبژارتنێ»                                           │
 │ • Arabic: «الجانب المشرق للاختيار»                                                    │
 │ • Strategic Role: Emotional anchor used in corporate pitch decks, billboard campaigns, │
 │   app launch splash screens, and brand manifestos. Transforms shopping from an         │
@@ -146,11 +146,11 @@ Cheapify deploys a disciplined **Two-Tier Tagline Hierarchy** designed to serve 
 ├────────────────────────────────────────────────────────────────────────────────────────┤
 │ • Primary Hook (EN / KU / AR):                                                         │
 │   - EN: Find your best deal                                                            │
-│   - KU: «Baştirîn biha bibîne»                                                         │
+│   - KU: «باشترین بها ببینە»                                                         │
 │   - AR: «أفضل صفقة، بأسهل طريقة»                                                      │
 │ • App Store Subtitle & Bio Hook:                                                       │
 │   - EN: Smart Deals. Verified Sellers. One App.                                        │
-│   - KU: «Daxistinên biaqil. Firoşkarên piştrast. Yek App.»                             │
+│   - KU: «داشکاندنێن ب ئاقل. فرۆشکارێن پشتڕاست. ئێک ئەپ.»                             │
 │   - AR: «صفقات ذكية. متاجر موثوقة. تطبيق واحد.»                                        │
 │ • Strategic Role: Instant clarity in 3-second social video ads, Google Play / App Store│
 │   metadata, and Instagram/TikTok bio headers. Directly communicates platform utility.  │
@@ -336,8 +336,8 @@ flowchart TD
 * **Designer:** Johan Aakerlund | **License:** Open Font License (OFL)
 * **Design Traits:** Rounded geometric sans-serif based on circular proportions. Friendly, approachable, modern, and distinct.
 * **Role & Strict Usage Rules:**
-  * ✅ **Approved for:** Logo wordmark (`Cheapify`), Top-level Hero Headlines (H1), promotional landing page banners, splash screens, and signature marketing badges.
-  * ❌ **Prohibited for:** Body text, multi-line product descriptions, dense spec sheets, and price data tables (due to excessive horizontal tracking and reading fatigue).
+  * **Approved for:** Logo wordmark (`Cheapify`), Top-level Hero Headlines (H1), promotional landing page banners, splash screens, and signature marketing badges.
+  * **Prohibited for:** Body text, multi-line product descriptions, dense spec sheets, and price data tables (due to excessive horizontal tracking and reading fatigue).
 
 ---
 
@@ -345,7 +345,7 @@ flowchart TD
 * **Designer:** Rasmus Andersson | **License:** Open Font License (OFL)
 * **Design Traits:** Engineered specifically for computer screens and mobile operating systems. Tall x-height, distinct letterforms (`1`, `l`, `I` clarity), and mathematically perfect pixel alignment.
 * **Role & Strict Usage Rules:**
-  * ✅ **Approved for:** All English UI text, product specifications, store addresses, checkout forms, customer reviews, and **all numerical pricing**.
+  * **Approved for:** All English UI text, product specifications, store addresses, checkout forms, customer reviews, and **all numerical pricing**.
   * **Tabular Figures Feature:** Must always be configured with `font-variant-numeric: tabular-nums` in CSS. This ensures price columns align vertically across competing stores without character jitter:
     ```css
     .cheapify-price {
@@ -364,7 +364,7 @@ flowchart TD
   * Flawlessly renders all Central/Badînî Kurdish characters without broken kerning or missing diacritics:
     $$\text{Kurdish Glyphs: } \text{ڕ } (\text{U+0695}),\ \text{ڵ } (\text{U+06B5}),\ \text{ڤ } (\text{U+06A4}),\ \text{ێ } (\text{U+06CE}),\ \text{ۆ } (\text{U+06C6}),\ \text{ژ},\ \text{چ},\ \text{پ},\ \text{گ}$$
 * **Role & Strict Usage Rules:**
-  * ✅ **Approved for:** 100% of Kurdish (Badînî / Sorani) and Standard Arabic UI text, category names, merchant dashboard menus, and customer service messaging.
+  * **Approved for:** 100% of Kurdish (Badînî & Sorani, Kurdish Arabic-based script only) and Standard Arabic UI text, category names, merchant dashboard menus, and customer service messaging.
 
 ---
 
@@ -393,6 +393,57 @@ Because Iraqi commerce operates with large nominal amounts (e.g., thousands of I
 
 ## 8. UI Component System & Design Tokens
 
+### 8.0 Official Design Language — "Clean Flat + Soft Depth"
+
+Cheapify's user interface design style is formally defined as **Clean Flat + Soft Depth** ([ADR-009](../agent/decisions.md) · [Preference 25](../agent/preferences.md)). It was selected by the founder from a field of 8 candidate design styles rendered as live visual samples in the official PMS palette and brand fonts ([`../assets/design-style-previews/index.html`](../assets/design-style-previews/index.html)).
+
+**Why this style:** Cheapify's users range from digitally fluent students to bazaar merchants and family shoppers with low digital literacy, across three languages and two scripts. The interface must make dense price-comparison data feel effortless. Flat surfaces maximize readability; restrained depth signals interactivity without decoration; disciplined PMS accents keep the "Best Value" signal unmistakable. It is the visual embodiment of *Radically Transparent* and *Operationally Precise*.
+
+#### 8.0.1 Core Principles
+
+1. **Flat White Surfaces:** All cards, sheets, and content containers render as Pure White (`#FFFFFF`) over light neutral backgrounds (`#DDE5ED` / `#F4F6F8`). Content never sits on gradients, glass, or textured fills.
+2. **Soft Depth, Never Drama:** Elevation is communicated by a single, diffuse, neutral shadow plus a hairline border. Shadows are always `rgba(16,24,32,α)` tinted by PANTONE BLACK 6 C — never colored, never hard-offset, never stacked multiples.
+3. **Rounded & Friendly Geometry:** Generous corner radii echo Comfortaa's circular letterforms and the outline logo's organic strokes — `12px–16px` on cards, `10px–12px` on buttons, fully rounded `999px` pills on badges and chips.
+4. **Disciplined Accent Economy:** PANTONE 7689 C Blue appears only on primary actions, links, and active states. PANTONE 7731 C Green appears *exclusively* on Best Value badges, verified signals, and savings figures. Everything else stays neutral.
+5. **Breathing Room:** Minimum `16px` interior card padding and `12px+` vertical gaps between comparison rows — dense data must never feel cramped.
+
+#### 8.0.2 The 3-Level Elevation Scale
+
+| Level | Name | Surface | Border | Shadow | Usage |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `elev-0` | Base | `#F4F6F8` or `#DDE5ED` | None | None | Screen/app background |
+| `elev-1` | Card | `#FFFFFF` | `1px solid rgba(16,24,32,.04)` or `#DDE5ED` | `0 2px 8px rgba(16,24,32,.04)` | Product cards, comparison rows, form panels |
+| `elev-2` | Overlay | `#FFFFFF` | `1px solid rgba(16,24,32,.04)` | `0 8px 24px rgba(16,24,32,.08)` | Modals, bottom sheets, dropdowns, floating CTA bars |
+
+* **Strict rule:** `elev-2` is the maximum shadow intensity ever permitted. No component may exceed it.
+
+#### 8.0.3 Corner Radius Scale
+
+| Token | Radius | Application |
+| :--- | :--- | :--- |
+| `radius-sm` | `8px` | Chips, small tags, input fields |
+| `radius-md` | `10px–12px` | Buttons, comparison rows |
+| `radius-lg` | `16px` | Product cards, modals, bottom sheets |
+| `radius-pill` | `999px` | Best Value badge, status pills, toggles |
+
+#### 8.0.4 Explicitly Prohibited Visual Treatments
+
+The following styles were evaluated and **rejected**; they must never appear in Cheapify UI, merchant dashboards, or marketing mockups:
+
+- **Neo-brutalist / sticker treatment:** hard offset drop shadows, thick black borders, rotated elements.
+- **Dopamine gradients:** saturated multi-color gradient fills behind cards or CTAs (gradients may appear only in *marketing* hero art, never as functional UI surfaces).
+- **Glassmorphism / backdrop blur:** frosted translucent layers (readability and low-end Android performance risk).
+- **Neumorphism / Claymorphism:** extruded or puffy inner-shadow surfaces (fails WCAG contrast on data tables).
+- **Gamification HUD chrome:** streak counters, point meters, and progress bars as decorative interface framing. (Savings figures and the Best Value badge may *communicate* gamified wins — as content, not chrome.)
+- **Editorial Zero-UI:** unbounded text-only layouts without card containment for price data.
+
+#### 8.0.5 Approved Optional Patterns
+
+- **Bento stat tiles:** Modular `elev-1` white tiles of varying sizes are approved for dashboards and "deal summary" surfaces (e.g., a 2×2 cluster showing *You Save / Stores Compared / Delivery / Doorstep Total*). Tiles stay flat white — the bento pattern governs *layout*, not surface treatment.
+- **Dark mode (optional Phase 2):** When implemented, dark mode inverts to `elev-0 = #101820` (PMS BLACK 6 C) and `elev-1 = #1A2530` with identical radius/shadow rules. It is a theme variant, not a style change.
+
+---
+
 ### 8.1 The Signature "Best Value" Badge
 The Best Value badge is Cheapify's signature trust mark. It indicates that the algorithm has evaluated all active verified sellers and determined that this offer yields the **lowest total doorstep price** ($P_{\text{item}} + D_{\text{tariff}}$).
 
@@ -407,7 +458,7 @@ The Best Value badge is Cheapify's signature trust mark. It indicates that the a
 │ Font:        Inter SemiBold (Tabular) / IBM Plex Arabic │
 │ Size:        12px font-size • 4px padding • 6px radius  │
 │ Icon:        Checkmark or Star spark (Left aligned)     │
-│ Copy:        ★ BEST VALUE • HERÎ BIHA-BAŞ • أفضل قيمة   │
+│ Copy:        ★ BEST VALUE • هەری باش • أفضل قيمة   │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -440,7 +491,7 @@ All interactive button targets on mobile touch screens must maintain a **minimum
 │ Anker 20W USB-C Nano Fast Charger (Black)                              │
 │ Catalog SKU: EL-ANK-20W-BLK • 1 Year Warranty                          │
 ├────────────────────────────────────────────────────────────────────────┤
-│ ★ HERÎ BIHA-BAŞ (BEST VALUE OFFER)                                     │
+│ ★ هەری باش (BEST VALUE OFFER)                                     │
 │ Kawa Electronics (Duhok Bazaar) • 4.9 ★ (120 reviews)                  │
 │ Item: 14,000 IQD  •  Delivery: 3,000 IQD  •  Doorstep Total: 17,000 IQD│
 │ ⚡ Arrives in 2 Hours (Local)  [ ORDER CASH ON DELIVERY ] (Blue CTA)   │
@@ -475,6 +526,16 @@ All interactive button targets on mobile touch screens must maintain a **minimum
 ---
 
 ## 9. Iconography & Supporting Visual Elements
+
+### 9.0 The Zero-Emoji Rule
+
+Cheapify **never uses emojis** in any user interface, document, marketing material, social media content, merchant communication, or internal artifact — no exceptions ([Preference 26](../agent/preferences.md)). All expressive visuals are rendered as proper vector iconography:
+
+* **Approved sources:** Custom-drawn icons per §9.1, or free CDN icon libraries — **Lucide** (lucide.dev; its clean `2px` rounded-stroke geometry matches our spec exactly), **Phosphor Icons**, **Heroicons**, or the **Iconify** aggregator CDN.
+* **Why:** Emojis render inconsistently across devices, OS versions, and locales; they cannot be recolored to the PMS palette; and they undermine the operational precision a trust-driven price-comparison marketplace requires.
+* **Enforcement:** Product images, badges, savings callouts, notification copy, and social templates all use icons (e.g., `headphones`, `badge-check`, `tag`, `truck`) — never Unicode emoji characters.
+
+---
 
 ### 9.1 Icon Construction Geometry
 All platform icons (mobile app, web UI, merchant portal) must align with Cheapify's core graphic personality:
@@ -531,19 +592,19 @@ The unboxing experience represents the physical handshake between Cheapify, the 
 
 ### 11.1 Branded Courier Poly Mailers & Paper Bags
 * **Material:** Recyclable heavy-duty kraft paper bags or recycled matte polyethylene mailers.
-* **Exterior Print:** **PANTONE 7689 C** (Primary Blue) featuring the official **Outline Logo** and the slogan *«Rûyê geş yê helbijartinê»* / *«The bright side of choosing»*.
+* **Exterior Print:** **PANTONE 7689 C** (Primary Blue) featuring the official **Outline Logo** and the slogan *«ڕوویێ گەش یێ هەلبژارتنێ»* / *«The bright side of choosing»*.
 * **Co-Branding Area:** Dedicated printed badge: `"Fulfilled for [Merchant Name] via Cheapify Local Dispatch"`.
 
 ### 11.2 Tamper-Evident Delivery Security Tape
-* **Specification:** 50mm heavy-duty security tape in **PANTONE 7689 C** Blue with a continuous repeat of the **PANTONE 7731 C** Green magnifying glass checkmark and text:
-  `[✔ SECURE PACKAGE • AMANETÊ EWLE • طرد مؤمن]`
+* **Specification:** 50mm heavy-duty security tape in **PANTONE 7689 C** Blue with a continuous repeat of the white outline logo, white outlined check seals, and trilingual text:
+  `[✔ SECURE PACKAGE • پاکێتا پاراستی • طرد مؤمن]`
 * **Purpose:** Guarantees to the customer that the package was not opened, inspected, or swapped during 3PL courier transit.
 
 ### 11.3 Merchant Storefront Window Decal
 Physical retail partners and social sellers with brick-and-mortar showrooms receive an official acrylic storefront decal:
 * **Dimensions:** `200mm × 200mm` square with rounded corners.
 * **Visual Lockup:** Official Outline Logo centered above the trilingual trust seal:
-  * Badînî: **«Firoşkarê Piştrastkirî yê Cheapify»**
+  * Badînî: **«فرۆشکارێ پشتڕاستکری یێ چیپیفای»**
   * Arabic: **«شريك معتمد لدى جيبفاي»**
   * English: **«Verified Cheapify Partner»**
 * **Dynamic QR Code:** Scannable code linking directly to the store’s digital profile on the Cheapify App & Web platform.
@@ -552,7 +613,7 @@ Physical retail partners and social sellers with brick-and-mortar showrooms rece
 Every delivered order includes a standardized thermal waybill (`4" × 6"` receipt format) engineered for zero dispute ambiguity:
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ CHEAPIFY EXPRESS DISPATCH • HERÎ BIHA-BAŞ                    │
+│ CHEAPIFY EXPRESS DISPATCH • هەری باش                    │
 │ Order #CHP-2026-94821 • Duhok Central Hub                    │
 ├──────────────────────────────────────────────────────────────┤
 │ CUSTOMER: Ahmad Farhad • +964 750 XXX XXXX                   │
@@ -563,7 +624,7 @@ Every delivered order includes a standardized thermal waybill (`4" × 6"` receip
 │ LOCAL COURIER TARIFF: (2-Hour Fast Track)     3,000 IQD      │
 ├──────────────────────────────────────────────────────────────┤
 │ TOTAL CASH ON DELIVERY TO COLLECT:          17,000 IQD       │
-│ [✔ NO EXTRA COURIER FEES • BÊ HEQÊN VEŞARTÎ]                 │
+│ [✔ NO EXTRA COURIER FEES • بێ هەقێن ڤەشارتی]                 │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -577,7 +638,7 @@ When creating co-branded marketing assets with merchants (e.g., Kak Kawa's store
   ```
   ┌───────────────────────────────────────────────────────────────┐
   │  [ MERCHANT LOGO ]    │    [ CHEAPIFY OUTLINE MARK ]          │
-  │  (e.g., Kawa Tech)    │    Verified Partner • Firoşkarê Muvafaq│
+  │  (e.g., Kawa Tech)    │    Verified Partner • فرۆشکارێ پشتڕاستکری│
   └───────────────────────────────────────────────────────────────┘
   ```
 * **Visual Equality Rule:** The merchant’s logo and the Cheapify logo mark must have equal visual optical weight. Neither logo may dwarf or overshadow the other.
