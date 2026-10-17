@@ -94,6 +94,7 @@
     <div class="nav-foot">Official Brand Identity Guidelines<br>Version 1.0 · 2026</div>
   </nav>
 
+  <div id="stage">
   <main>
 
     <!-- =================== COVER =================== -->
@@ -3183,6 +3184,7 @@
     </footer>
 
   </main>
+  </div>
 
   <div class="toast" id="toast"><i data-lucide="check"></i><span>Copied</span></div>
 
@@ -3222,6 +3224,30 @@
     const targets = links.map(a => document.querySelector(a.getAttribute('href')));
     const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)) } }) }, { rootMargin: '-40% 0px -55% 0px' });
     targets.forEach(t => t && io.observe(t));
+
+    /* Fixed 1414px design width: scale down below the breakpoint instead of reflowing */
+    const DESIGN_W = 1414;
+    const stageEl = document.getElementById('stage');
+    const navEl = document.getElementById('nav');
+    const mainEl = stageEl.querySelector('main');
+    function fitScale() {
+      const s = window.innerWidth / DESIGN_W;
+      if (s >= 1) {
+        mainEl.style.cssText = ''; navEl.style.cssText = ''; stageEl.style.height = '';
+        return;
+      }
+      const navW = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-w')) || 272;
+      mainEl.style.width = (DESIGN_W - navW) + 'px';
+      mainEl.style.marginLeft = (navW * s) + 'px';
+      mainEl.style.transform = `scale(${s})`;
+      mainEl.style.transformOrigin = '0 0';
+      stageEl.style.height = (mainEl.scrollHeight * s) + 'px';
+      navEl.style.transform = `scale(${s})`;
+      navEl.style.transformOrigin = '0 0';
+      navEl.style.height = (window.innerHeight / s) + 'px';
+    }
+    window.addEventListener('resize', fitScale);
+    fitScale();
   </script>
 </body>
 

@@ -10,6 +10,7 @@ A running chronological log of completed actions, file creations, and achieved m
 * **Action:** Moved all 6 `<style>` blocks and all 541 inline `style` attributes out of [`marketing/brandbook/index.html`](../marketing/brandbook/index.html) into an external [`marketing/brandbook/brandbook.css`](../marketing/brandbook/brandbook.css) (design system + 322 extracted utility classes). Verified pixel-identical rendering across all 16 sections; 0 CSS diagnostics.
 * **Cover:** Kurdish and Arabic slogans now both translate the headline ("The bright side of choosing"); the English tagline moved to its own line. Removed the extra blue stripe from the mug illustration.
 * **Founder correction applied:** Kurdish term for Best Value changed to «هەری باش».
+* **Scaling behavior:** responsive reflow replaced by proportional scaling — the page is laid out at a fixed 1414px design width and, below that viewport width, the whole layout (sidebar + content) scales down uniformly via `transform: scale()`. The 1280px/960px media-query blocks were removed from `brandbook.css`. Verified at 1600/1200/900px widths.
 
 ### [2026-10-17] — Brandbook Revision per Founder Review (11 Notes)
 * **New rules recorded** (Rules 11–12 in [`rules.md`](rules.md), Rules 10–11 in [`AGENTS.MD`](../AGENTS.MD)): Kurdish always in Kurdish Arabic-based script; no internal development content in external deliverables.

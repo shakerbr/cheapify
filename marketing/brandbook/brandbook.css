@@ -225,6 +225,11 @@ a:hover {
   display: none
 }
 
+/* =================== SCALED LAYOUT (fixed 1414px design width) =================== */
+#stage {
+  overflow: visible
+}
+
 /* =================== MAIN LAYOUT =================== */
 main {
   margin-left: var(--nav-w)
@@ -1145,162 +1150,6 @@ pre.code .v {
 
 .tier.t2 .big {
   min-height: 2.3em
-}
-
-/* =================== RESPONSIVE =================== */
-@media (max-width:1280px) {
-  .sec {
-    padding: 80px 48px
-  }
-
-  .cover {
-    padding: 48px
-  }
-
-  .g4,
-  .sw-grid,
-  .variations,
-  .misuse,
-  .sem-grid,
-  .contrast-grid {
-    grid-template-columns: repeat(2, 1fr)
-  }
-
-  .principles {
-    grid-template-columns: repeat(3, 1fr)
-  }
-
-  .reject {
-    grid-template-columns: repeat(3, 1fr)
-  }
-
-  .ext-icons {
-    grid-template-columns: repeat(4, 1fr)
-  }
-
-  .ads {
-    grid-template-columns: 1fr 1fr
-  }
-}
-
-@media (max-width:960px) {
-  :root {
-    --nav-w: 0px
-  }
-
-  .nav {
-    transform: translateX(-100%);
-    width: 272px;
-    transition: transform .25s;
-    box-shadow: var(--elev-2)
-  }
-
-  .nav.open {
-    transform: none
-  }
-
-  .nav-toggle {
-    display: flex;
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 60;
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: #fff;
-    border: 1px solid var(--line);
-    box-shadow: var(--elev-2);
-    align-items: center;
-    justify-content: center;
-    cursor: pointer
-  }
-
-  .sec {
-    padding: 64px 24px
-  }
-
-  .cover {
-    padding: 32px 24px
-  }
-
-  .cover h1 {
-    font-size: 48px
-  }
-
-  .cover-lockup .wm {
-    font-size: 44px
-  }
-
-  .sec-head {
-    grid-template-columns: 1fr;
-    gap: 8px
-  }
-
-  .sec-num {
-    font-size: 44px
-  }
-
-  .g2,
-  .g3,
-  .toc,
-  .logo-hero,
-  .anatomy,
-  .lockups,
-  .clear,
-  .font-spec,
-  .bridge,
-  .num-compare,
-  .fmt-grid,
-  .icon-spec,
-  .decal-stage,
-  .road,
-  .cover-bottom {
-    grid-template-columns: 1fr
-  }
-
-  .road .col.multi {
-    grid-column: auto;
-    grid-template-columns: 1fr
-  }
-
-  .bridge .arrow,
-  .road .arrow {
-    transform: rotate(90deg);
-    height: 40px
-  }
-
-  .font-spec .l {
-    border-right: none;
-    border-bottom: 1px solid var(--line);
-    min-height: auto
-  }
-
-  .exploded,
-  .persp,
-  .bg-tiers,
-  .solid-apps,
-  .merch,
-  .src-grid,
-  .icon-lib,
-  .upload-rules,
-  .radius-demo,
-  .elev-demo {
-    grid-template-columns: repeat(2, 1fr)
-  }
-
-  .tier .langs {
-    grid-template-columns: 1fr
-  }
-
-  .ads {
-    grid-template-columns: 1fr
-  }
-
-  .tbl {
-    display: block;
-    overflow-x: auto
-  }
 }
 
 
