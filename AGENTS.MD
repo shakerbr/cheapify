@@ -43,12 +43,13 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
 ### Cross-Cutting Platform Specifications (`platform/`)
 Semi-general operational, economic, and technical specifications shared across pillars:
 - **Platform Fee Structure & Monetization:** [platform/fee_structure_and_monetization.md](platform/fee_structure_and_monetization.md) — Progressive Marginal Tiering (5% Tier 1, 3% Tier 2, 1.5% Tier 3), mathematical elimination of the cliff effect, multi-category simulations, and weekly COD reconciliation workflow.
+- **Hybrid "Best Value" Algorithm Strategy:** [platform/best_value_algorithm_strategy.md](platform/best_value_algorithm_strategy.md) — Total Landed Cost ($P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}$), proximity advantage protecting local bazaar shops, 3-tier deterministic hierarchy, diagnostic merchant dashboard, and TypeScript engine.
 
 ---
 
 ### Active Development: 4 Program Pillars
 - **1. Entrepreneurship (Complete):** [01_problem_solution_value.md](entrepreneurship/01_problem_solution_value.md) | [02_market_opportunity_and_sizing.md](entrepreneurship/02_market_opportunity_and_sizing.md) | [03_customer_and_merchant_personas.md](entrepreneurship/03_customer_and_merchant_personas.md) | [04_competitive_landscape_matrix.md](entrepreneurship/04_competitive_landscape_matrix.md) | [05_market_validation_survey.md](entrepreneurship/05_market_validation_survey.md) | [06_value_proposition_and_founder_fit.md](entrepreneurship/06_value_proposition_and_founder_fit.md) — Built 100% from ground zero.
-- **2. Marketing (Active Focus):** Setting up two-sided GTM strategy, brand guidelines, and 30-day content calendar.
+- **2. Marketing (Active Focus):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete — Supply-first social merchant acquisition & shopper referral loop) | Setting up brand identity guidelines (02) and 30-day content calendar (03).
 - **3. Finance Management (Queued):** Will be built 100% fresh from ground zero (itemized operational budget, unit economics, cash flow, and break-even analysis). Past coursework files in `archive/finance-management/` are archived reference assignments only, not final budget figures.
 - **4. Business Modeling (Later):** 9-Block Business Model Canvas, core SOPs, and operational risk matrix.
 

@@ -46,14 +46,27 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Context:** Archived pitch decks (`archive/program-giz-cheapify/Cheapify Pitch Deck.pdf`) were created as partial, non-final artifacts during early incubator assignments and do not represent the complete venture.
 * **Decision:** Treat the project as starting from ground zero. Build all 4 program pillars completely in sequence (1. Entrepreneurship, 2. Marketing, 3. Finance Management, 4. Business Modeling). Assemble and design the final pitch deck and showcase presentation strictly after all 4 pillars are fully built.
 
-### ADR-007: "Best Value" Ranking Algorithm Priority Hierarchy
-* **Date:** 2026-10-14
+### ADR-007: Hybrid "Best Value" Ranking Algorithm Architecture (Total Landed Cost + Proximity Advantage)
+* **Date:** 2026-10-15 (Updated)
 * **Status:** Accepted
-* **Context:** When multiple verified merchants offer the exact same Single-SKU product, the system must algorithmically select the winning offer to award the signature "Best Value" chip.
-* **Decision:** Enforce a strict 3-tier hierarchy:
-  1. **Priority 0 (Most Important / Primary):** Lowest price in IQD.
-  2. **Priority 1 (Secondary):** Fastest delivery time to the customer's location.
-  3. **Priority 2 (Tertiary):** Highest merchant rating and customer reviews.
+* **Context:** When multiple verified merchants offer the exact same Single-SKU product, the system must algorithmically select the winning offer to award the signature "Best Value" chip. A pure sticker-price model creates checkout friction if a distant seller has high shipping fees. Conversely, a pure landed-cost model without geographical explanation confuses local merchants.
+* **Decision:** Implement the **Hybrid Total Landed Cost + Proximity Advantage** model governed by a deterministic 3-tier hierarchy:
+  1. **Priority 0 (Primary / Hard Cut — Total Doorstep Price):** Lowest Total Landed Price ($P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}$).
+     - **Intra-City (Same Zone, e.g. Duhok to Duhok):** Courier shipping is flat (3,000 IQD), making Total Landed Price ranking 100% identical to sticker price ranking. Local bazaar merchants compete directly on retail sticker price.
+     - **Inter-City (Cross-Zone, e.g. Erbil vs Duhok):** Protects local merchants against out-of-city dumping. An out-of-town merchant must offer a discount large enough to overcome higher inter-city delivery tariffs (e.g. 5,000 IQD vs 3,000 IQD) to genuinely save the buyer total money at the door.
+  2. **Priority 1 (Secondary / Tie-Breaker — Delivery Speed by Proximity):**
+     - Hyperlocal (1–3h) beats Intra-City Standard (3–6h) beats Inter-City (24–48h).
+  3. **Priority 2 (Tertiary / Tie-Breaker — Merchant Quality & Reviews):**
+     - Highest verified merchant review rating (stars) and fulfillment fulfillment rate.
+  - **Dual Transparency:** Shopper sees full item + shipping breakdown; Merchant Dashboard provides diagnostic clarity showing exactly why an offer won or lost. Full platform specification: [`../platform/best_value_algorithm_strategy.md`](../platform/best_value_algorithm_strategy.md).
 
-
+### ADR-008: Stage 1 Merchant Onboarding — Social Commerce Native Sellers First (Self-Serve with Rules)
+* **Date:** 2026-10-16 (Updated)
+* **Status:** Accepted
+* **Context:** Traditional physical bazaar stores lack digital product photography, pre-written specifications, and digital inventory workflows. Furthermore, manual catalog extraction by platform staff does not scale.
+* **Decision:** 
+  1. Focus initial merchant acquisition exclusively on **online social media merchants (Instagram, Facebook, and TikTok shops)**. Telegram is excluded from current focus.
+  2. Enforce a **Self-Serve with Rules Onboarding Model**: Cheapify defines clear quality standards, catalog rules, and onboarding instructions; merchants build their stores and upload their own product media and data.
+  3. **Founding Merchant Ad Boost:** The first 20 verified stores receive 0% commission in Month 1 and get their products featured in Cheapify's paid ad campaigns (Facebook, Instagram, TikTok), providing them free advertising and commercial boosts.
+  4. Platform access is delivered across **both Mobile App (iOS & Android) and Web**.
 

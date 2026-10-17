@@ -104,7 +104,7 @@ Cheapify introduces 4 key innovations tailored to the specific constraints of th
   * **Priority 0 (Most Important):** Price (lowest price in IQD).
   * **Priority 1:** Delivery Time (fastest intra-city fulfillment).
   * **Priority 2:** Rating and Reviews (verified post-delivery merchant score).
-  The winner receives the prominent (`#148C53`) **"Best Value"** chip, driving organic price discipline across the marketplace.
+  The winner receives the highlighted **"Best Value"** badge, driving organic price discipline across the marketplace.
 
 ### 4.3 Innovation 3: WhatsApp Cloud API Headless Waybill Generation
 * **The Traditional Flaw:** Merchants must download complex enterprise seller apps or manually write delivery addresses on paper labels for taxi drivers.

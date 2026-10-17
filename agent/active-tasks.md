@@ -6,7 +6,7 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ## Current Active Focus
 * **Active Pillar:** Pillar 2 (Marketing) — Setting up marketing strategy & brand architecture
-* **Lead File:** [`marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md)
+* **Lead File:** [`marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md)
 
 ---
 
@@ -14,6 +14,7 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ### Cross-Cutting Platform Specifications (`platform/`)
 - [x] Formulate Progressive Marginal Tiering Fee Structure & Cliff-Effect elimination ([fee_structure_and_monetization.md](../platform/fee_structure_and_monetization.md))
+- [x] Formulate Hybrid "Best Value" Algorithm Strategy (Total Landed Cost + Proximity Advantage) ([best_value_algorithm_strategy.md](../platform/best_value_algorithm_strategy.md))
 
 ### Milestone 1: Complete Pillar 1 (Entrepreneurship) — 100% Complete
 - [x] Define Problem ("Interrogation Tax", missing colors/measures, information vacuum) ([01_problem_solution_value.md](../entrepreneurship/01_problem_solution_value.md))
@@ -25,9 +26,10 @@ This document tracks immediate actionable tasks, active work items, and current 
 - [x] Add Trilingual Market Validation Survey Framework (Kurdish Badini, Arabic, English) ([05_market_validation_survey.md](../entrepreneurship/05_market_validation_survey.md))
 - [x] Synthesize Value Proposition Canvas (VPC), Innovation & Founder-Market Fit ([06_value_proposition_and_founder_fit.md](../entrepreneurship/06_value_proposition_and_founder_fit.md))
 
-### Milestone 2: Prepare Pillar 2 (Marketing) Directory
-- [ ] Set up `marketing/` directory structure
-- [ ] Synthesize two-sided GTM strategy (shopper acquisition vs. merchant onboarding)
-- [ ] Finalize brand guidelines & design tokens
-- [ ] Synthesize 30-day trilingual content plan & calendar
+### Milestone 2: Execute Pillar 2 (Marketing) Deliverables
+- [x] Set up `marketing/` directory structure
+- [x] Synthesize two-sided GTM strategy (shopper acquisition vs. social merchant onboarding) ([01_two_sided_gtm_strategy.md](../marketing/01_two_sided_gtm_strategy.md))
+- [ ] Finalize brand guidelines, visual identity & design tokens from ground zero ([02_brand_identity_and_guidelines.md](../marketing/02_brand_identity_and_guidelines.md))
+- [ ] Synthesize 30-day trilingual content plan & calendar ([03_30_day_content_calendar.md](../marketing/03_30_day_content_calendar.md))
+
 

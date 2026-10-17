@@ -73,8 +73,9 @@ Cheapify is a dual-sided marketplace. To succeed in the Iraqi retail environment
 ```
 
 ### 3.1 Background & Profile
-* **Demographics:** 34 years old, married with two children. Runs a physical electronics and phone accessories retail shop on Bazaar Street in central Duhok.
-* **Business Operation:** Operates a brick-and-mortar storefront while maintaining an Instagram page (~8,500 followers) to capture delivery orders across Duhok and nearby towns (Semel, Zakho).
+* **Demographics:** 34 years old, married with two children. Runs a tech and accessories business in Duhok, operating primarily through an active Instagram page (~8,500 followers) and WhatsApp Business, supported by a physical storefront in the central bazaar.
+* **Stage 1 Strategic Priority (Social Media Native Sellers):** Kak Kawa represents Cheapify's **exact Stage 1 target cohort**. Cheapify intentionally prioritizes **online social media merchants** (Instagram, Facebook, and TikTok sellers) for initial platform onboarding rather than offline physical retail stores. These sellers already have high-resolution product photography, video reels, digital price lists, and established delivery courier habits. Onboarding them into Cheapify requires zero asset creation overhead and offers them instant salvation from DM overload.
+
 * **Tech Comfort:** Uses WhatsApp Business, Instagram app, and basic mobile spreadsheets. Does not know how to code, does not own an e-commerce website, and has no interest in maintaining complex software.
 * **Margins & Economics:** Operates on slim retail markups (15% – 25% gross margins on accessories). Cannot afford 10%–15% platform commissions without raising prices and losing customers.
 

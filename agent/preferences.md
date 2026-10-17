@@ -79,7 +79,34 @@ This file documents the specific ways, working habits, and styling preferences r
 17. **No Unfinalized Financial or Budget Placeholders:**
     - Do not hardcode or mention specific grant amounts (e.g. $2,200), arbitrary budget breakdowns, or unverified operational burn rates from past incubator assignments. Those legacy figures were temporary placeholders created only to pass earlier coursework. Real financial metrics, budgets, and unit economics will be constructed fresh from ground zero during Pillar 3 (Finance Management).
 
+18. **Retirement of Legacy Brand Colors & Ground-Up Identity Rebuild:**
+    - Jade Green, `#148C53`, Boston Blue, and any previous color tokens from past incubator exercises, old pitch decks, or archives are strictly retired and are no longer part of the Cheapify brand.
+    - Brand visual identity, design language, color palette, and UI tokens will be built 100% fresh from ground zero in Pillar 2 (Marketing).
+    - In the interim, UI badges, buttons, and visual highlights must be referred to neutrally (e.g., "highlighted 'Best Value' chip / badge", "prominent deal card") without referencing or hardcoding obsolete color names.
 
+19. **Merchant Acquisition Staging — Online Social Media Stores First:**
+    - The first stage of merchant onboarding targets **online social media stores** (Instagram, Facebook, and TikTok sellers; currently not Telegram), NOT offline physical bazaar retail stores.
+    - **Strategic Rationale:**
+      1. **Asset Readiness:** Social sellers already possess digital photos, showcase video reels, written specs, and product lists. Catalog ingestion is fast with zero photography friction.
+      2. **Operational E-Commerce Familiarity:** They are already accustomed to remote selling, 3PL courier coordination (ZMC Express, local courier fleets), and COD reconciliation.
+      3. **Acute DM Exhaustion ("Interrogation Tax"):** They experience the most severe pain from answering hundreds of repetitive DMs ("Bihayê wê çende?", "Parve bike", "What colors?"), with 80%+ drop-off. Cheapify acts as an instant relief tool, converting DMs into 1-click structured checkouts.
+      4. **Built-in Audience & Organic Shopper Acquisition:** Social sellers will put their Cheapify store/product links in their social media bios and stories, funnelling their existing followers directly into Cheapify as free, organic buyer traffic.
+    - Traditional physical bazaar shops will be integrated in subsequent phases once platform liquidity, catalog depth, and simplified barcode-scanning tools are established.
 
+20. **Platform Form Factor — Web Platform + Mobile App:**
+    - Cheapify is engineered as both a **mobile app (iOS & Android)** and an accessible **web platform**. Never describe Cheapify as website-only.
+
+21. **Primary Social Media Marketing Channels:**
+    - Marketing campaigns, social commerce funnels, and merchant recruitment prioritize **Facebook, Instagram, and TikTok**. Telegram is excluded from active marketing focus for the current phase.
+
+22. **Self-Serve Merchant Onboarding with Strict Guidelines:**
+    - The Cheapify team does **NOT** manually scrape, extract media assets, or build product pages for merchants.
+    - Instead, Cheapify provides clear rules, standards, quality guidelines, and an intuitive self-serve merchant portal/workflow where sellers upload their own media and configure their own store listings.
+
+23. **Founding Merchants Incentive — Free Paid Ad Boosts:**
+    - The first 20 verified founding stores in Duhok receive not only 0% commission for month 1, but their products are directly **featured in Cheapify's paid advertising campaigns** (Facebook, Instagram, and TikTok sponsored ads). This gives them free commercial visibility, traffic boosts, and guaranteed sales exposure.
+
+24. **Broad Consumer Audience Scope (Beyond Campus/Students):**
+    - While university students are a great viral launchpad cohort, Cheapify is a broad mass-market consumer platform for all Iraqi and Kurdish shoppers: young working professionals, civil servants, household shoppers, tech enthusiasts, and budget-conscious families seeking upfront price transparency and verified deals.
 
 

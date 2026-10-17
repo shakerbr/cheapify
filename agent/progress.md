@@ -6,6 +6,36 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-16] — Two-Sided GTM Strategy & Execution Playbook Authored (Pillar 2 Milestone)
+* **Action:** Authored and refined [`marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md) establishing Cheapify's go-to-market operational playbook:
+  - **Platform Architecture Clarified:** Formalized that Cheapify is engineered as both a **mobile application (iOS & Android)** and an accessible **web platform** ([Preference 20](preferences.md)).
+  - **Core Channels Refined:** Focused marketing and social commerce funnels on **Facebook, Instagram, and TikTok**, excluding Telegram from active focus ([Preference 21](preferences.md)).
+  - **Self-Serve with Rules Onboarding:** Established that Cheapify sets strict quality standards, rules, and instructions, while merchants build and upload their own product listings and media via the self-serve merchant portal ([Preference 22](preferences.md)).
+  - **Free Paid Ad Boosts for Founding Stores:** The first 20 verified stores receive 0% commission in Month 1 and get their products featured in Cheapify's paid ad campaigns across Facebook, Instagram, and TikTok ([Preference 23](preferences.md)).
+  - **Broad Mass-Market Consumer Scope:** Expanded demand engine beyond university students to encompass young working professionals, household shoppers, civil servants, and deal-conscious families ([Preference 24](preferences.md)).
+  - **Phased Geographic Horizon:** Structured the 3-phase rollout (Phase 1 Duhok Launchpad, Phase 2 Regional KRI/Nineveh Hubs, Phase 3 Nationwide All-Iraq Scale).
+
+
+### [2026-10-16] — Stage 1 Merchant Onboarding Staged: Social Media Native Stores First
+* **Action:** Recorded strategic operational milestone following founder guidance:
+  - **Social Media Stores as Stage 1 Launchpad:** Prioritized Instagram, TikTok, and Telegram merchants over offline physical shops for the initial pilot phase.
+  - **Key Advantages Formalized:** Zero catalog creation friction (ready photos, reels, specs), e-commerce native operational habits (courier booking, COD), acute DM exhaustion ("Interrogation Tax"), and organic two-sided traffic generation (merchants putting Cheapify links in bios).
+  - **Governance Synchronized:** Added Preference 19 to [`agent/preferences.md`](preferences.md) and accepted ADR-008 in [`agent/decisions.md`](decisions.md).
+
+### [2026-10-15] — Hybrid "Best Value" Algorithm Strategy Specification Authored
+* **Action:** Authored [`platform/best_value_algorithm_strategy.md`](../platform/best_value_algorithm_strategy.md) establishing Cheapify's core product ranking architecture:
+  - **Hybrid "Total Landed Cost + Proximity Advantage" Model:** Solved the trade-off between consumer doorstep affordability ($P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}$) and merchant transparency.
+  - **Intra-City Bazaar Competition:** Documented that within the same metropolitan zone (e.g. Duhok to Duhok), flat courier tariffs (3,000 IQD) make Total Landed Cost ranking 100% identical to sticker price ranking, allowing local merchants to compete directly and transparently on retail prices.
+  - **Inter-City Defense for Local Shops:** Demonstrated how distance tariffs create an organic economic defense for local neighborhood shops against out-of-city dumping, requiring distant vendors to provide authentic discounts that exceed the freight differential.
+  - **Deterministic 3-Tier Multi-Attribute Priority Cascade:** Priority 0 (Lowest Total Landed Doorstep Price) $\rightarrow$ Priority 1 (Fastest Delivery Speed by Proximity Zone) $\rightarrow$ Priority 2 (Verified Merchant Operational Reliability & Quality Score).
+  - **Logistics Distance Matrix:** Mapped 4 delivery zones (Hyperlocal 1–3h / 3k IQD, Intra-City 3–6h / 3k–3.5k IQD, Regional Inter-City 24–48h / 5k IQD, Nationwide 48–72h / 6k–7k IQD).
+  - **Merchant Dashboard Diagnostics ("Why Didn't I Win?"):** Designed the wireframe and trilingual guidance (Badînî Kurdish, Arabic, English) giving merchants clear explanations and actionable pricing suggestions.
+  - **Production TypeScript Engine:** Implemented pure, fully typed sorting function (`evaluateBestValueOffers`) with comprehensive unit interfaces.
+* **Governance & Brand Identity Directives Updated:**
+  - Formally updated ADR-007 in [`agent/decisions.md`](decisions.md) with the Hybrid Model.
+  - Formally recorded Preference 18 in [`agent/preferences.md`](preferences.md) retiring all legacy brand colors ("Jade Green", `#148C53`, "Boston Blue") and mandating brand visual identity be built 100% fresh from ground zero in Pillar 2 (Marketing).
+  - Synchronized [`AGENTS.MD`](../AGENTS.MD) and [`agent/active-tasks.md`](active-tasks.md).
+
 ### [2026-10-15] — Value Proposition Canvas, Innovation & Founder-Market Fit Authored
 * **Action:** Authored [`entrepreneurship/06_value_proposition_and_founder_fit.md`](../entrepreneurship/06_value_proposition_and_founder_fit.md) providing the formal academic and incubator bridge between personas and solution architecture:
   - **Osterwalder Value Proposition Canvas (VPC):** Systematically mapped Customer Jobs, Pains, and Gains against Cheapify's Products, Pain Relievers, and Gain Creators for both the Deal-Seeking Shopper (Ahmad) and the Bazaar Merchant (Kak Kawa).
