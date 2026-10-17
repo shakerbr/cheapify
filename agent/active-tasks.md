@@ -35,7 +35,7 @@ This document tracks immediate actionable tasks, active work items, and current 
 * [x] Synthesize two-sided GTM strategy (shopper acquisition vs. social merchant onboarding) ([01_two_sided_gtm_strategy.md](../marketing/01_two_sided_gtm_strategy.md))
 * [x] Finalize brand guidelines, visual identity & design tokens from ground zero ([02_brand_identity_and_guidelines.md](../marketing/02_brand_identity_and_guidelines.md))
 * [x] Select official UI design language via live visual style evaluation — "Clean Flat + Soft Depth" chosen (ADR-009, Preference 25, §8.0)
-* [x] Publish complete interactive HTML brandbook ([brandbook/index.html](../marketing/brandbook/index.html))
+* [x] Publish complete interactive HTML brandbook ([brandbook/index.html](../brandbook/index.html))
 * [x] Revise brandbook per founder review (Kurdish script, remove internal content, visual fixes)
 * [ ] Native-speaker proofread of Kurdish-script copy (brandbook + brand spec)
 * [ ] Founder decision: correct PMS 7731 C / 7689 C contrast values in the Markdown spec (§6) to computed 4.48:1 / 3.62:1
