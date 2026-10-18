@@ -6,6 +6,11 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-17] — Official Platform Domain Secured (`getcheapify.com`)
+* **Milestone:** Secured **`getcheapify.com`** via Cloudflare Registrar as Cheapify's official root web domain, API host, and app download portal.
+* **Strategic Selection:** Overcomes the unavailability of `cheapify.com` and `cheapify.app` while leveraging maximum `.com` subconscious trust across everyday Iraqi/Kurdish consumers, eliminating typo leakage risks, and establishing an action-oriented product verb (*"Get Cheapify"*).
+* **Governance Sync:** Documented in [`agent/preferences.md`](preferences.md) (Preference 27) and [`agent/decisions.md`](decisions.md) (ADR-010).
+
 ### [2026-10-17] — Brandbook Moved to Root + White-on-Orange Rule
 * **Structure:** `marketing/brandbook/` moved to [`brandbook/`](../brandbook/index.html) at repo root (a finished deliverable, not working docs). Made self-contained: referenced files copied to `brandbook/assets/` (logo SVGs, PDF, brand-tokens.json); all `../../` links replaced.
 * **Color rule change (founder decision):** text on Flash `#FFA300` and Warning `#FF8200` surfaces is now Pure White instead of Ink — applied to badges (`b-flash`, `b-warn`), semantic swatches, and the misuse sticker. Contrast table updated: "White on Flash 137 C" shown as 2.00:1, "Display Only". Rule documented in spec §6.2 — restricted to large bold short-lived UI, never body copy.

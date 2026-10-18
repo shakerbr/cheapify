@@ -6,8 +6,8 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ## Current Active Focus
 
-* **Active Pillar:** Pillar 2 (Marketing) — Brand identity & design tokens
-* **Lead File:** [`marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md) (Under Founder Review — Hold on 03 per directive)
+* **Active Pillar:** Pillar 2 (Marketing) — 30-Day Trilingual Launch Content Calendar
+* **Lead File:** [`marketing/03_30_day_content_calendar.md`](../marketing/03_30_day_content_calendar.md)
 
 ---
 
@@ -37,6 +37,6 @@ This document tracks immediate actionable tasks, active work items, and current 
 * [x] Select official UI design language via live visual style evaluation — "Clean Flat + Soft Depth" chosen (ADR-009, Preference 25, §8.0)
 * [x] Publish complete interactive HTML brandbook ([brandbook/index.html](../brandbook/index.html))
 * [x] Revise brandbook per founder review (Kurdish script, remove internal content, visual fixes)
+* [x] Sync PMS 7731 C / 7689 C computed contrast values (4.48:1 / 3.62:1) in Markdown spec (§6)
 * [ ] Native-speaker proofread of Kurdish-script copy (brandbook + brand spec)
-* [ ] Founder decision: correct PMS 7731 C / 7689 C contrast values in the Markdown spec (§6) to computed 4.48:1 / 3.62:1
-* [ ] Synthesize 30-day trilingual content plan & calendar ([03_30_day_content_calendar.md](../marketing/03_30_day_content_calendar.md))
+* [x] Synthesize 30-day trilingual content plan & calendar ([03_30_day_content_calendar.md](../marketing/03_30_day_content_calendar.md))

@@ -82,3 +82,15 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Rejected styles:** Vibrant Dopamine (visual fatigue, brand-color drift risk), Neumorphic Fintech (fails contrast/accessibility), Glassmorphism (readability + old-device performance), Claymorphism (undermines operational precision), Gamified Deal-Hunting (HUD clutter conflicts with Everyman accessibility), Bento Grid (adopted only as an *optional layout pattern* for stat tiles, not a surface style), Editorial Zero-UI (too austere for deal-hunting energy).
 * **Consequence:** All UI components, merchant dashboard screens, and marketing mockups must follow the tokens defined in Section 8.0 of [`../marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md). Recorded as Preference 25 in [`preferences.md`](preferences.md).
 
+### ADR-010: Official Platform Domain Selection — `getcheapify.com`
+* **Date:** 2026-10-17
+* **Status:** Accepted (Purchased on Cloudflare Registrar)
+* **Context:** With `cheapify.com` and `cheapify.app` already taken by third parties, Cheapify required a permanent, authoritative primary web domain and digital hub to serve its dual-sided marketplace (iOS/Android mobile app and web platform). The domain needed to convey instant trust to everyday consumers in Iraq and the Kurdistan Region, prevent typo-leakage, and integrate seamlessly with Cloudflare's zero-markup DNS and security infrastructure.
+* **Decision:** Acquire and standardize on **`getcheapify.com`** as the official primary root domain:
+  1. **`.com` Subconscious Authority:** Everyday shoppers across Iraq instinctively trust `.com` over newer or less familiar TLDs.
+  2. **Active Conversion Verb:** The `"Get"` prefix functions as an active invitation to download the app and unlock savings (*"Get Cheapify on App & Web"*), following the proven path of top consumer platforms like Dropbox (`getdropbox.com`) and Pocket (`getpocket.com`).
+  3. **Zero Typo-Leakage:** Protects brand traffic from accidental typos that occur with `.co` (where users instinctively type `.com` and land on squatted pages).
+  4. **Cloudflare Infrastructure:** Managed directly on Cloudflare Registrar at wholesale cost with free DNSSEC, SSL, and DDoS mitigation.
+* **Consequence:** All production endpoints (`api.getcheapify.com`), merchant web portals (`merchant.getcheapify.com`), customer links, packaging print collateral, and marketing CTAs will standardize on `getcheapify.com`. Recorded as Preference 27 in [`preferences.md`](preferences.md).
+
+

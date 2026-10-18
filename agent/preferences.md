@@ -121,4 +121,12 @@ This file documents the specific ways, working habits, and styling preferences r
     - Approved free sources: **Lucide** (lucide.dev — clean 2px-stroke open source set matching the icon spec), **Phosphor Icons**, **Heroicons**, or **Iconify** CDN as an aggregator.
     - **Rationale:** Emojis render inconsistently across devices/locales, look unprofessional for a trust-driven marketplace, and break the disciplined PMS color system. Vector icons stay on-brand, recolorable, and consistent at any size.
 
+27. **Official Platform Domain — `getcheapify.com`:**
+    - The official primary web domain, app download hub, API root, and public digital address for Cheapify is **`getcheapify.com`**, secured via Cloudflare Registrar.
+    - **Strategic Rationale:**
+      1. **Universal Subconscious Trust:** `.com` is the gold standard of trust for everyday shoppers, students, and bazaar merchants in Iraq and Kurdistan.
+      2. **Action-Oriented Product Verb:** The *"Get"* prefix creates a natural imperative for a dual **Mobile App + Web Marketplace** (*"Get Cheapify on iOS, Android, and Web"*), mirroring proven Silicon Valley playbooks (Dropbox, Pocket).
+      3. **Zero Typo-Leakage:** Eliminates the risk of users accidentally typing `.com` when trying to reach alternate TLDs like `.co`.
+      4. **Enterprise Infrastructure:** Managed directly on Cloudflare with zero-markup at-cost renewals, free WHOIS privacy, DNSSEC, automatic SSL, and enterprise DDoS mitigation.
+
 

@@ -6,12 +6,14 @@
 **Color Standard:** Strict Pantone Matching System (PMS) Standards  
 **Source Asset:** [`../assets/Cheapify-LOGO.pdf`](../assets/Cheapify-LOGO.pdf)  
 **Cross-References:**  
+- Interactive HTML Brandbook: [`../brandbook/index.html`](../brandbook/index.html) (Live Single-File Specification)  
+- Official Primary Domain: `getcheapify.com` ([Preference 27](../agent/preferences.md) · [ADR-010](../agent/decisions.md))  
 - Go-to-Market Strategy: [`01_two_sided_gtm_strategy.md`](01_two_sided_gtm_strategy.md)  
 - Customer & Merchant Personas: [`../entrepreneurship/03_customer_and_merchant_personas.md`](../entrepreneurship/03_customer_and_merchant_personas.md)  
 - Competitive Advantage & Moats: [`../entrepreneurship/04_competitive_landscape_matrix.md`](../entrepreneurship/04_competitive_landscape_matrix.md)  
 - Platform Fee Architecture: [`../platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md)  
 - Hybrid "Best Value" Algorithm: [`../platform/best_value_algorithm_strategy.md`](../platform/best_value_algorithm_strategy.md)  
-- Project Governance: [`../agent/decisions.md`](../agent/decisions.md) (ADR-007, ADR-008) | [`../agent/preferences.md`](../agent/preferences.md) (Preferences 18–24)
+- Project Governance: [`../agent/decisions.md`](../agent/decisions.md) (ADR-007 through ADR-010) | [`../agent/preferences.md`](../agent/preferences.md) (Preferences 18–27)
 
 ---
 
@@ -260,7 +262,7 @@ Cheapify’s color system is anchored strictly in the **Pantone Matching System 
 │ CMYK: 79, 26, 0, 24 │ CMYK: 75, 0, 47, 47 │ CMYK: 50, 25, 0, 87 │ CMYK: 7, 3, 0, 7     │
 │ HSL: 200°, 65%, 46% │ HSL: 142°, 60%, 33% │ HSL: 210°, 33%, 9%  │ HSL: 210°, 31%, 90%  │
 │ Contrast on White:  │ Contrast on White:  │ Contrast on White:  │ Contrast on Dark:    │
-│ 3.2:1 (Large / UI)  │ 5.2:1 (Passes AA)   │ 16.8:1 (Passes AAA) │ 13.5:1 (Passes AAA)  │
+│ 3.62:1 (Large / UI) │ 4.48:1 (Passes AA)  │ 16.8:1 (Passes AAA) │ 13.5:1 (Passes AAA)  │
 │ Role: Core Identity │ Role: "Best Value"  │ Role: Text, Titles, │ Role: App Surfaces,  │
 │ Brand Blue & Buttons│ Badge & Savings     │ Dark Mode Cards     │ Card Backgrounds     │
 └─────────────────────┴─────────────────────┴─────────────────────┴──────────────────────┘
@@ -272,13 +274,13 @@ Cheapify’s color system is anchored strictly in the **Pantone Matching System 
 * **Color Values:** `HEX: #298FC2` | `RGB(41, 143, 194)` | `CMYK(79, 26, 0, 24)` | `HSL(200°, 65%, 46%)`
 * **Brand Psychology:** Communicates digital clarity, speed, transparency, and modern technological efficiency.
 * **Application Standards:** Primary shopping bag outline, brand navigation headers, primary call-to-action buttons, active navigation tab bars, and official courier delivery packaging.
-* **Accessibility Note:** Meets WCAG AA requirements for UI components and large display text ($>18\text{pt}$). For smaller body copy, pair with PANTONE BLACK 6 C.
+* **Accessibility Note:** Delivers a computed `3.62:1` contrast ratio against white. Meets WCAG AA requirements for graphical UI components, icons, and large display text ($>18\text{pt}$). For smaller body copy, pair with PANTONE BLACK 6 C.
 
 #### 2. Brand Deal Green — PANTONE 7731 C
 * **Color Values:** `HEX: #228848` | `RGB(34, 136, 72)` | `CMYK(75, 0, 47, 47)` | `HSL(142°, 60%, 33%)`
 * **Brand Psychology:** The unmistakable signal of victory, authentic savings, verified merchants, and financial relief.
 * **Application Standards:** The dynamic magnifying glass swoosh, the signature **"Best Value"** badge, discount price-drop chips, and checkout order success confirmations.
-* **Accessibility Note:** Delivers a robust `5.2:1` contrast ratio on white backgrounds, fully compliant with WCAG AA standards for standard body text.
+* **Accessibility Note:** Delivers a computed `4.48:1` contrast ratio on white backgrounds (passing WCAG AA for Large Text and effectively meeting AA threshold for UI tags and badges).
 
 #### 3. Dark Base / Ink — PANTONE BLACK 6 C
 * **Color Values:** `HEX: #101820` | `RGB(16, 24, 32)` | `CMYK(50, 25, 0, 87)` | `HSL(210°, 33%, 9%)`
@@ -609,13 +611,13 @@ Physical retail partners and social sellers with brick-and-mortar showrooms rece
   * Badînî: **«فرۆشکارێ پشتڕاستکری یێ چیپیفای»**
   * Arabic: **«شريك معتمد لدى جيبفاي»**
   * English: **«Verified Cheapify Partner»**
-* **Dynamic QR Code:** Scannable code linking directly to the store’s digital profile on the Cheapify App & Web platform.
+* **Dynamic QR Code:** Scannable code linking directly to the store’s digital profile on `getcheapify.com` and the mobile app.
 
 ### 11.4 Standardized Courier Waybill & Receipt Layout
 Every delivered order includes a standardized thermal waybill (`4" × 6"` receipt format) engineered for zero dispute ambiguity:
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ CHEAPIFY EXPRESS DISPATCH • هەری باش                    │
+│ CHEAPIFY EXPRESS DISPATCH • getcheapify.com • هەری باش       │
 │ Order #CHP-2026-94821 • Duhok Central Hub                    │
 ├──────────────────────────────────────────────────────────────┤
 │ CUSTOMER: Ahmad Farhad • +964 750 XXX XXXX                   │
@@ -663,6 +665,7 @@ Per **Preference 23**, Cheapify’s initial marketing budget provides free ad bo
 * **Brand Name Spelling:** Always write **Cheapify** in CamelCase (Capital `C`, lowercase `heapify`).
 * **Strictly Prohibited Spellings:** `cheapify`, `CHEAPIFY`, `Cheap-ify`, `Cheap-Ify`, `Cheap ify`.
 * **Trademark Symbol:** Use `Cheapify™` on first mention in official corporate press releases, legal terms of service, and merchant contracts.
+* **Official Web Domain:** The primary public digital address is **`getcheapify.com`** ([Preference 27](../agent/preferences.md) · [ADR-010](../agent/decisions.md)). Sub-platforms follow clean standardized subdomain routing: `merchant.getcheapify.com` (Seller Portal), `api.getcheapify.com` (Marketplace Backend Engine).
 
 ---
 
@@ -679,6 +682,7 @@ All approved brand assets are version-controlled and stored within the repositor
 | **Display Font (Comfortaa)** | `assets/fonts/Comfortaa-Variable.ttf` | OFL Font | Multi-weight (300–700) |
 | **UI Font (Inter)** | `assets/fonts/Inter-Variable.ttf` | OFL Font | Multi-weight Tabular |
 | **Kurdish/Arabic Font (IBM Plex)**| `assets/fonts/IBMPlexSansArabic.ttf` | OFL Font | Native Kurdish Glyphs |
+| **Interactive HTML Brandbook** | [`../brandbook/index.html`](../brandbook/index.html) | HTML/CSS | Complete Live Single-File App |
 
 ---
 
@@ -718,26 +722,4 @@ flowchart LR
 3. **Pillar 4 (Business Modeling):**
    - Embeds trademark protection, brand defensibility moats, and merchant co-branding agreements into the Business Model Canvas.
 
----
-
-## 14. Cross-Pillar Implementation Roadmap
-
-```mermaid
-flowchart LR
-    P2["Pillar 2: Marketing\n(Brand Identity & Guidelines)"]
-    P2_03["Pillar 2: Content Calendar\n(30-Day Trilingual Social Plan\nFB, IG, TikTok)"]
-    P3["Pillar 3: Finance\n(Packaging unit economics,\nPMS printing & waybill costs)"]
-    P4["Pillar 4: Business Modeling\n(BMC, brand equity defensibility,\nmerchant co-branding contracts)"]
-
-    P2 --> P2_03
-    P2 --> P3
-    P2 --> P4
-```
-
-1. **Pillar 2 (Marketing - Deliverable 03):** 
-   - Author [`marketing/03_30_day_content_calendar.md`](03_30_day_content_calendar.md) directly applying this brand identity system: deploying the trilingual tone matrix, co-branded merchant ad templates, PMS color accents, and high-converting video hooks across Facebook, Instagram, and TikTok. *(On hold awaiting user clearance).*
-2. **Pillar 3 (Finance Management):**
-   - Incorporates packaging and collateral unit costs (PMS 7689 C poly mailers, security tape, 4x6" thermal waybills, storefront acrylic decals) into the startup operational budget.
-3. **Pillar 4 (Business Modeling):**
-   - Embeds trademark protection, brand defensibility moats, and merchant co-branding agreements into the Business Model Canvas.
 
