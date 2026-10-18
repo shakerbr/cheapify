@@ -10,6 +10,7 @@
 ## 1. Executive Market Thesis
 
 E-commerce in Iraq is experiencing rapid consumer adoption, but it is fundamentally different from Western or mature Asian markets:
+
 * **Dominated by Social Commerce:** Over 80% of digital consumer shopping occurs informally across Instagram, Facebook, and TikTok direct messages.
 * **Informal & Unstructured:** Sellers do not build custom Shopify websites or manage complex web stores; they post photos to social media and negotiate orders manually inside chat.
 * **Young & Mobile-First:** Over 60% of Iraq’s 44+ million population is under the age of 30, possessing high mobile internet penetration (75%+) and active daily social media consumption.
@@ -19,7 +20,7 @@ E-commerce in Iraq is experiencing rapid consumer adoption, but it is fundamenta
 
 ## 2. Market Sizing: TAM · SAM · SOM
 
-```
+```text
 ┌────────────────────────────────────────────────────────────────────────┐
 │ TOTAL ADDRESSABLE MARKET (TAM) — ALL IRAQ                              │
 │ Total Iraqi Retail E-Commerce Market Across All Consumer Categories    │
@@ -49,21 +50,24 @@ E-commerce in Iraq is experiencing rapid consumer adoption, but it is fundamenta
 ---
 
 ### 2.1 Total Addressable Market (TAM) — Iraq Nationwide
+
 * **Total Population:** ~44.5 Million across all 18 governorates.
 * **Internet Penetration:** ~75.3% (33.5+ Million active mobile internet users).
 * **Active Social Media Shoppers:** ~31.2 Million across Instagram, Facebook, and TikTok.
 * **Market Sizing Calculation:**
-  - Annual e-commerce and social commerce retail spending per active online buyer in Iraq ranges between **$180 and $250 USD / year (270,000 – 375,000 IQD)**.
-  - Across all retail consumer goods (electronics, home & living, fashion accessories, personal care, study, tools, gifts):
+  * Annual e-commerce and social commerce retail spending per active online buyer in Iraq ranges between **$180 and $250 USD / year (270,000 – 375,000 IQD)**.
+  * Across all retail consumer goods (electronics, home & living, fashion accessories, personal care, study, tools, gifts):
     $$\text{TAM} \approx \mathbf{\$2.5 \text{ Billion to } \$3.5 \text{ Billion+ USD / year (~3.75 to 5.25 Trillion IQD)}}$$
-  - The sector is compounding at **15% – 18% CAGR**, stimulated by nationwide 4G/5G mobile penetration and rapid digital banking adoption (FIB, FastPay, Qi Card).
+  * The sector is compounding at **15% – 18% CAGR**, stimulated by nationwide 4G/5G mobile penetration and rapid digital banking adoption (FIB, FastPay, Qi Card).
 
 ---
 
 ### 2.2 Serviceable Available Market (SAM) — Multi-Category Retail in Expansion Zones
+
 Cheapify is engineered as a **broad, multi-category marketplace**, not a single-niche platform. It standardizes any retail product that has clear manufacturer specs, barcodes, or model numbers:
 
-#### Broad Multi-Category Scope (Examples — Not Limited To):
+#### Broad Multi-Category Scope (Examples — Not Limited To)
+
 1. **Electronics & Tech:** Smartphones, tablets, audio gear, cables, chargers, power banks, computer peripherals, smart watches.
 2. **Home, Kitchen & Garden:** Small kitchen appliances, blenders, air fryers, culinary gadgets, home organizers, smart lighting, garden tools.
 3. **Luggage & Lifestyle:** Watches, travel bags, backpacks, branded perfumes, wallets, sunglasses.
@@ -76,7 +80,8 @@ Cheapify is engineered as a **broad, multi-category marketplace**, not a single-
 10. **Musical Equipment:** Tuners, guitar cables, studio microphones, audio interfaces, portable electronic keyboards, instrument accessories.
 *...And all other standardized retail categories with defined models and market-wide price disparities!*
 
-#### Target Regional SAM Calculation:
+#### Target Regional SAM Calculation
+
 * Covering our primary expansion territories (Kurdistan Region ~6.2M population + Nineveh/Mosul ~4.2M population + early Baghdad high-density hubs):
 * Standardized goods across these 10+ retail categories represent over **35% – 40% of non-grocery digital retail**:
   $$\text{SAM} \approx \mathbf{\$600 \text{ Million to } \$800 \text{ Million USD / year (~900 Billion to 1.2 Trillion IQD)}}$$
@@ -95,27 +100,30 @@ flowchart LR
 ```
 
 #### Phase 1: Pilot Launchpad (Duhok Metropolitan Area)
+
 * **Geography:** Duhok City, Semel, and Zakho trade hub (~1.45M population).
 * **Strategic Rationale:** Compact commercial center (Bazaar St, Malta, KRO district) allows fast, in-person merchant onboarding. High concentration of university students (UoD, AUK, DPU) who are vocal, price-sensitive deal-seekers.
 * **Pilot Targets (Months 1–6):**
-  - **Verified Pilot Merchants:** 5 to 10 local stores spanning tech accessories, student study gear, and small lifestyle goods.
-  - **Total Orders Fulfilled:** **3,000 orders** (~16 to 17 orders per day).
-  - **Gross Merchandise Value (GMV):** ~$100,000 USD (150,000,000 IQD).
-  - **Cheapify Net Platform Revenue:** **$3,500 USD (5,250,000 IQD)** derived from tiered transaction take-rates (avg. 1,500 IQD/order) plus initial store category sponsorships.
+  * **Verified Pilot Merchants:** 5 to 10 local stores spanning tech accessories, student study gear, and small lifestyle goods.
+  * **Total Orders Fulfilled:** **3,000 orders** (~16 to 17 orders per day).
+  * **Gross Merchandise Value (GMV):** ~$100,000 USD (150,000,000 IQD).
+  * **Cheapify Net Platform Revenue:** **$3,500 USD (5,250,000 IQD)** derived from tiered transaction take-rates (avg. 1,500 IQD/order) plus initial store category sponsorships.
 
 #### Phase 2: Northern Regional Hubs (Erbil · Mosul · Sulaymaniyah)
+
 * **Geography:** Expanding into the Kurdistan Region capitals (Erbil, Sulaymaniyah) and the major commercial center of **Mosul (Nineveh Governorate)**.
 * **Strategic Rationale:**
-  - **Mosul:** Iraq’s second-largest city (~2M urban population), undergoing rapid reconstruction and economic revitalization. High retail demand with established logistics corridors directly connected to Duhok.
-  - **Erbil:** High-density corporate and commercial consumer market with hundreds of electronics, home, and beauty wholesalers.
-  - **Sulaymaniyah:** Mature university market and active retail bazaar ecosystem.
+  * **Mosul:** Iraq’s second-largest city (~2M urban population), undergoing rapid reconstruction and economic revitalization. High retail demand with established logistics corridors directly connected to Duhok.
+  * **Erbil:** High-density corporate and commercial consumer market with hundreds of electronics, home, and beauty wholesalers.
+  * **Sulaymaniyah:** Mature university market and active retail bazaar ecosystem.
 * **Year 1 Target (Duhok + Erbil + Mosul):**
-  - **Total Orders:** **12,000+ orders**.
-  - **Gross Merchandise Value (GMV):** ~$400,000 – $450,000 USD (600,000,000+ IQD).
-  - **Cheapify Platform Revenue:** **$15,000+ USD (22,500,000+ IQD)**.
-  - **Merchant Network:** 40 to 60 verified multi-category merchants.
+  * **Total Orders:** **12,000+ orders**.
+  * **Gross Merchandise Value (GMV):** ~$400,000 – $450,000 USD (600,000,000+ IQD).
+  * **Cheapify Platform Revenue:** **$15,000+ USD (22,500,000+ IQD)**.
+  * **Merchant Network:** 40 to 60 verified multi-category merchants.
 
 #### Phase 3: Complete Nationwide Coverage (All of Iraq)
+
 * **Geography:** **Baghdad** (8M+ population, the commercial heart of Iraq), **Basra** (the southern trade gateway), Kirkuk, Najaf, Karbala, and all remaining governorates.
 * **Vision:** Achieving full nationwide coverage is simply a matter of time and operational scaling. Because Cheapify utilizes an asset-light 3PL courier model (ZMC Express and national courier partnerships), physical warehouse construction is never required. As courier delivery networks connect Iraqi cities, Cheapify's Single-SKU marketplace scales seamlessly to serve consumers and merchants across every corner of Iraq.
 
@@ -124,15 +132,19 @@ flowchart LR
 ## 3. Market Dynamics & Key Growth Drivers
 
 ### 3.1 Driver 1: Nationwide Buyer Resistance to "DM for Price"
+
 Shoppers across Iraq—from Duhok to Mosul to Baghdad—are exhausted by hidden prices and arbitrary markups. A growing majority of younger buyers actively abandon social media pages that refuse to state prices upfront, creating strong organic pull for a multi-category comparison platform.
 
 ### 3.2 Driver 2: Transition from Cash to Digital Wallets
+
 While Cash on Delivery (COD) remains the default payment method (handling ~85%+ of orders initially), local digital payments (First Iraqi Bank - FIB, FastPay, Qi Card) are expanding rapidly across Iraq, backed by Central Bank of Iraq financial inclusion mandates.
 
 ### 3.3 Driver 3: Courier Infrastructure Maturity
+
 National and regional courier networks (e.g., ZMC Express, local courier fleets) now connect Duhok, Erbil, Mosul, Baghdad, and Basra with dependable door-to-door tracking and COD cash collection at affordable rates (3,000 IQD intra-city; 5,000–6,000 IQD inter-city). Cheapify plugs directly into this infrastructure.
 
 ### 3.4 Driver 4: Merchant Margin Alignment Across Diverse Sectors
+
 Whether selling kitchen appliances, luggage, or phone chargers, local merchants reject platforms charging predatory 10%–15% commissions. Cheapify is engineered to preserve merchant profit margins with an accessible fee model and a free Merchant Dashboard, providing an attractive value proposition to retailers across all sectors.
 
 ---
@@ -166,9 +178,9 @@ Every metric, market assumption, and demographic statistic in this document is s
 | Statistic | Figure Used | Primary Institutional Source | Evidence & Report Details |
 | :--- | :---: | :--- | :--- |
 | **Iraq Total Population** | **~44.5 Million** | [World Bank Iraq Data](https://data.worldbank.org/country/iraq) / [Iraq Ministry of Planning](https://mop.gov.iq/) | Official 2024–2025 census estimates; median age ~21 years with >60% under 30. |
-| **KRI Regional Population**| **~6.2 Million** | [Kurdistan Region Statistics Office (KRSO)](https://krso.gov.krd/) | Official demographic bulletin for Kurdistan Region governorates (Erbil, Sulaymaniyah, Duhok). |
+| **KRI Regional Population** | **~6.2 Million** | [Kurdistan Region Statistics Office (KRSO)](https://krso.gov.krd/) | Official demographic bulletin for Kurdistan Region governorates (Erbil, Sulaymaniyah, Duhok). |
 | **Duhok Pilot Population** | **~1.45 Million** | [KRSO Duhok Governorate Census](https://krso.gov.krd/) | Population across Duhok city, Semel, and Zakho metropolitan commercial zones. |
-| **Internet & Mobile Penetration**| **75.3% (33.5M users)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) (in partnership with We Are Social & Kepios) | 42.1 Million cellular mobile connections (94.6% of population); 33.5 Million internet users. |
+| **Internet & Mobile Penetration** | **75.3% (33.5M users)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) (in partnership with We Are Social & Kepios) | 42.1 Million cellular mobile connections (94.6% of population); 33.5 Million internet users. |
 | **Active Social Media Users** | **31.2 Million (70.1%)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) | Primary channels for online discovery: Facebook (19.5M), Instagram (17.8M), TikTok (21.4M). |
 
 ---
@@ -198,14 +210,11 @@ Every metric, market assumption, and demographic statistic in this document is s
 All price variation claims are backed by physical evidence and verified real-world screenshots stored directly in the project repository at [`assets/evidence/price-variation/`](assets/evidence/price-variation/):
 
 1. **ASUS VA24EHF 24" 100Hz Gaming Monitor (Exact Same Model):**
-   - **Marketplace Listing (Miswag):** **163,350 IQD** — Verified via [`Screenshot_20260920_132358_Miswag.jpg`](assets/evidence/price-variation/Screenshot_20260920_132358_Miswag.jpg).
-   - **Competing Retail Store A:** **135,000 IQD** — Verified via [`Screenshot_20260920_132436_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132436_Gallery.jpg).
-   - **Competing Retail Store B (Lowest Market Offer):** **116,721 IQD** — Verified via [`Screenshot_20260920_132423_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132423_Gallery.jpg).
-   - **Documented Price Gap:** **46,629 IQD (~$31 USD / ~40% markup)** for the exact same identical manufacturer SKU.
+   * **Marketplace Listing (Miswag):** **163,350 IQD** — Verified via [`Screenshot_20260920_132358_Miswag.jpg`](assets/evidence/price-variation/Screenshot_20260920_132358_Miswag.jpg).
+   * **Competing Retail Store A:** **135,000 IQD** — Verified via [`Screenshot_20260920_132436_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132436_Gallery.jpg).
+   * **Competing Retail Store B (Lowest Market Offer):** **116,721 IQD** — Verified via [`Screenshot_20260920_132423_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132423_Gallery.jpg).
+   * **Documented Price Gap:** **46,629 IQD (~$31 USD / ~40% markup)** for the exact same identical manufacturer SKU.
 2. **Xiaomi 165W Power Bank (Intra-App Duplication on iBazzar):**
-   - **Seller 1 Listing:** **60,000 IQD** — Verified via [`Screenshot_20260920_130923.jpg`](assets/evidence/price-variation/Screenshot_20260920_130923.jpg).
-   - **Seller 2 Listing:** **70,000 IQD** on the exact same app on an unlinked duplicate page.
-   - **Documented Price Gap:** **10,000 IQD (16.7% markup)** within the same platform due to lack of a Single-SKU grouping system.
-
-
-
+   * **Seller 1 Listing:** **60,000 IQD** — Verified via [`Screenshot_20260920_130923.jpg`](assets/evidence/price-variation/Screenshot_20260920_130923.jpg).
+   * **Seller 2 Listing:** **70,000 IQD** on the exact same app on an unlinked duplicate page.
+   * **Documented Price Gap:** **10,000 IQD (16.7% markup)** within the same platform due to lack of a Single-SKU grouping system.

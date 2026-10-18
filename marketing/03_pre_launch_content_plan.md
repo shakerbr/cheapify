@@ -1,4 +1,5 @@
 # Cheapify — Pre-Launch Content Plan (Phase A)
+
 ## Audience Building & Founding Merchant Recruitment — Now → MVP Launch
 
 **Pillar:** Marketing (Pillar 2 — File 03)
@@ -6,6 +7,7 @@
 **Duration:** Until MVP launch date is confirmed (estimated 1–3 months)
 **Platforms:** Facebook, Instagram, and TikTok — **one content set published to all three**
 **Cross-References:**
+
 - GTM Strategy & Personas: [`01_two_sided_gtm_strategy.md`](01_two_sided_gtm_strategy.md)
 - Brand Voice, Terminology & Visual Identity: [`02_brand_identity_and_guidelines.md`](02_brand_identity_and_guidelines.md)
 - Interactive Brandbook: [`../brandbook/index.html`](../brandbook/index.html)
@@ -80,6 +82,7 @@ Rationale: shoppers grow the waitlist and create the viral mechanics; merchants 
 Phase A runs on five named, repeatable series. Every post belongs to exactly one series — this keeps production systematic and lets us measure which pillar performs.
 
 ### Series 1 — **Price Detective** (shoppers) · flagship
+
 Real, verifiable price-variation evidence from Duhok shops and social sellers.
 
 - **Format:** Screenshot/photo comparison or 20–40s screen-record video. Same product, two sellers, two prices.
@@ -89,6 +92,7 @@ Real, verifiable price-variation evidence from Duhok shops and social sellers.
 - **CTA (soft):** "Cheapify is being built to end this. Join the waitlist — link in bio."
 
 ### Series 2 — **DM Hell** (shoppers) · viral/comedy
+
 Relatable skits dramatizing the "Interrogation Tax": DM for price → "check DM" → ghosting → repeat.
 
 - **Format:** 15–30s acted or screen-recorded skit, POV style. The GTM playbook's "DM Interrogation" concept (§3.3, Play 2) is the template — minus any in-app footage.
@@ -96,6 +100,7 @@ Relatable skits dramatizing the "Interrogation Tax": DM for price → "check DM"
 - **CTA:** "Tag someone who waits 4 hours for a price reply." / Waitlist mention in caption only.
 
 ### Series 3 — **Build in Public** (both) · trust
+
 The founder engineering journey — Shakir building the marketplace in-house.
 
 - **Format:** Screen recordings of real UI progress, design decisions, code snippets, or talking-head clips explaining *why* a choice was made (e.g. "why one product = one page").
@@ -104,6 +109,7 @@ The founder engineering journey — Shakir building the marketplace in-house.
 - **Value:** Costs $0 (founder skill), differentiates us from anonymous page-commerce, and recruits merchants who trust the engineer.
 
 ### Series 4 — **Founder's Circle** (merchants) · recruitment
+
 Direct value proposition to Duhok social sellers, aligned with the outreach scripts in the GTM playbook (§2.3).
 
 - **Format:** Talking-head or motion-card videos addressing seller pain: *"How many hours did you spend in DMs today?"* → 0% Month-1 commission → free ad boosts → Verified Founding Merchant badge.
@@ -111,6 +117,7 @@ Direct value proposition to Duhok social sellers, aligned with the outreach scri
 - **Cross-sell:** Every Price Detective post quietly doubles as merchant recruitment — a seller who sees shoppers demanding price transparency sees their future storefront.
 
 ### Series 5 — **Bazaar Wisdom** (shoppers) · community/interactive
+
 Light, shareable local commerce content — polls, price-guessing games, "what does X cost in Duhok today?" quizzes.
 
 - **Format:** Polls in stories, static quiz cards, comment-bait questions.
@@ -140,6 +147,7 @@ Light, shareable local commerce content — polls, price-guessing games, "what d
 The template repeats until launch. These four weeks seed each series with concrete topics; weeks 5+ rotate themes (electronics → beauty → home & kitchen → fashion → grocery) so no category dominates.
 
 ### Week 1 — "The Problem Exists"
+
 | Day | Post |
 | :--- | :--- |
 | Sat | **Price Detective:** Phone charger, two Duhok sellers, ~5,000+ IQD gap. Static carousel: photo, price A, price B, gap math. |
@@ -149,6 +157,7 @@ The template repeats until launch. These four weeks seed each series with concre
 | Thu | **Bazaar Wisdom:** Poll — "Have you ever paid more because you were too tired to compare? Yes / Always". |
 
 ### Week 2 — "The Cost of the Problem"
+
 | Day | Post |
 | :--- | :--- |
 | Sat | **Price Detective:** Beauty or personal-care item variation. Video format this week — show the two listings on-screen. |
@@ -158,6 +167,7 @@ The template repeats until launch. These four weeks seed each series with concre
 | Thu | **Bazaar Wisdom:** Guess-the-gap quiz — photo of a product, comments guess the price spread, answer revealed in next story. |
 
 ### Week 3 — "Merchants Are Heroes, Not the Enemy"
+
 | Day | Post |
 | :--- | :--- |
 | Sat | **Price Detective:** Home/kitchen item. Add caption nuance: "The seller isn't cheating — the system just hides prices." |
@@ -167,6 +177,7 @@ The template repeats until launch. These four weeks seed each series with concre
 | Thu | **Bazaar Wisdom:** Community question — "What's the last thing you bought on Instagram? Did you check the price anywhere else first?" |
 
 ### Week 4 — "The Alternative Is Coming"
+
 | Day | Post |
 | :--- | :--- |
 | Sat | **Price Detective:** Best gap of the month — recap format showing 3–4 submissions from followers. Community validation. |

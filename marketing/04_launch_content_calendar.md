@@ -1,4 +1,5 @@
 # Cheapify — Launch & Post-Launch Content Calendar (Phase B)
+
 ## Countdown → Launch Week → Weeks 2–8 Growth Engine
 
 **Pillar:** Marketing (Pillar 2 — File 04)
@@ -6,6 +7,7 @@
 **Duration:** T-7 countdown through launch + 8 weeks post-launch
 **Platforms:** Facebook, Instagram, and TikTok — **one content set published to all three**
 **Cross-References:**
+
 - GTM Strategy & Personas: [`01_two_sided_gtm_strategy.md`](01_two_sided_gtm_strategy.md)
 - Brand Voice, Terminology & Visual Identity: [`02_brand_identity_and_guidelines.md`](02_brand_identity_and_guidelines.md)
 - Pre-launch phase plan: [`03_pre_launch_content_plan.md`](03_pre_launch_content_plan.md)
@@ -17,7 +19,7 @@
 
 Phase A built an audience that believes the problem is real. Phase B converts that belief into **installs and first orders** — then into habit. Every content decision here serves one funnel:
 
-```
+```text
 Aware (Phase A audience) ──► Install / first visit ──► First order ──► Repeat + refer
 ```
 

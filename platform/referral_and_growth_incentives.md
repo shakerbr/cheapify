@@ -4,6 +4,7 @@
 **Status:** Approved Working Standard (ADR-012)
 **Target Market:** Duhok Pilot ──► Regional Hubs ──► All Iraq
 **Cross-References:**
+
 - Fee architecture (credit source): [`fee_structure_and_monetization.md`](fee_structure_and_monetization.md)
 - Merchant onboarding (Self-Serve with Rules): [`../marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md) §2.4, ADR-008
 - Content plans (referral campaign hooks): [`../marketing/03_pre_launch_content_plan.md`](../marketing/03_pre_launch_content_plan.md), [`../marketing/04_launch_content_calendar.md`](../marketing/04_launch_content_calendar.md)
@@ -27,7 +28,7 @@ All rewards are **platform credit** — never cash, non-transferable, one reward
 
 Cheapify's referral system runs in all four directions — shoppers and merchants can each refer both shoppers and merchants. This turns the entire user base into a distributed acquisition team.
 
-```
+```text
                         REFEREE
                    ┌───────────┬────────────┐
                    │  SHOPPER  │  MERCHANT  │
@@ -48,21 +49,25 @@ Cheapify's referral system runs in all four directions — shoppers and merchant
 ```
 
 ### 2.1 Shopper → Shopper
+
 - **Referee gets:** free first delivery (3,000 IQD shipping credit applied automatically at checkout).
 - **Referrer gets:** 3,000 IQD shipping credit, unlocked the moment the referee's first order is marked delivered.
 - **Why it survives fraud:** the referrer earns nothing until real money moves. A family member who signs up but never shops produces zero rewards.
 
 ### 2.2 Shopper → Merchant ("Nominate a Shop")
+
 - **Mechanics:** any shopper can submit a social seller's @handle/link from the app ("this shop should be on Cheapify").
 - **Shopper gets:** 3 free deliveries (~9,000 IQD credit) once the nominated merchant is verified **and completes 10 real orders**.
 - **Strategic value:** converts the customer base into a merchant-scouting network and naturally extends the "Report a Price Variation" bounty — the crowd already finds stores; now it gets paid when they perform.
 
 ### 2.3 Merchant → Shopper
+
 - **Mechanics:** the merchant's storefront link (`getcheapify.com/@store`) and in-parcel QR code double as referral links — no extra work, the bio-link play (GTM Play 1) already drives this traffic.
 - **Shopper gets:** the standard free first delivery.
 - **Merchant gets:** growth points per activated shopper, redeemable for **ad boosts** (see §5). When redeeming, their **Best Value-winning products are the default recommended creative** — the ad can truthfully say "this offer won on price, speed, and rating."
 
 ### 2.4 Merchant → Merchant
+
 - **Mechanics:** merchants share a referral link/code with other social sellers.
 - **Recruiter gets:** commission rebate — **1% take-rate reduction for 60 days** — or an equivalent ad-boost credit, once the recruited shop is verified and completes 10 orders.
 - **Recruited merchant gets:** priority onboarding assistance (faster QA queue).
@@ -84,6 +89,7 @@ Layered controls, cheapest first; escalation is automatic:
 | 7. Manual review | Outlier accounts held for review before payout | Edge cases |
 
 **Rules of engagement:**
+
 - A referral chain that fails delivery verification rewards nobody — both sides lose pending credit.
 - Self-referral (same phone, device, or verified address) credits nothing.
 - Referral credits may not be combined with other promotional credits on the same order.

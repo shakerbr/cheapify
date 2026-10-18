@@ -39,5 +39,3 @@ These are the strict, mandatory rules set by the user. The AI agent must adhere 
 
 12. **No Internal Development Content in External Deliverables:**
     - Public/external deliverables (brandbooks, presentations, marketing assets) must NOT contain internal project-process content: pillar names/numbers, deliverable numbers, ADR/preference references, roadmap of internal work, repository file paths, "source of truth" notes, or governance/version-control notes.
-
-

@@ -11,7 +11,8 @@
 
 To ground Cheapify's business model in empirical market facts rather than theoretical assumptions, we deployed a **live, trilingual market validation survey**. The survey is actively distributed across the Duhok pilot ecosystem and the Kurdistan Region.
 
-### Core Validation Goals:
+### Core Validation Goals
+
 1. **Empirically Validate the Problem:** Measure the real-world prevalence of **arbitrary price variation** and quantify consumer frustration with the **"Interrogation Tax"** ("DM for price").
 2. **Empirically Validate the Merchant Pain:** Quantify merchant hours wasted on repetitive chat inquiries and assess their willingness to adopt a structured catalog dashboard.
 3. **Test Solution-Market Fit:** Measure consumer intent to use a Single-SKU side-by-side comparison marketplace.
@@ -49,7 +50,8 @@ flowchart TD
     SellerTrack --> Submit
 ```
 
-### Frictionless Distribution Setup:
+### Frictionless Distribution Setup
+
 * **No Forced Sign-In:** Google account login requirements are toggled **OFF**, allowing respondents to complete the survey seamlessly inside in-app browsers (Instagram, Facebook, WhatsApp, Telegram) without encountering drop-off login screens.
 * **Compact Execution:** Under 2 minutes to complete (5 questions for buyers; 4 questions for merchants).
 
@@ -60,6 +62,7 @@ flowchart TD
 ### 4.1 Section 1: Language Selection & Role Branching
 
 #### Language Selection
+
 * **English:** Choose your language
 * **Kurdish (Badînî):** زمانێ خۆ هەلبژێرە
 * **Arabic:** اختر لغتك
@@ -71,6 +74,7 @@ flowchart TD
 ---
 
 #### Role Identification (Routing Trigger)
+
 * **English:** I mainly use social media/apps to:
   * Option A: Shop & buy products *(Routes to Buyer Track)*
   * Option B: Sell products / Manage a shop *(Routes to Merchant Track)*
@@ -86,6 +90,7 @@ flowchart TD
 ### 4.2 Track A: Consumer / Buyer Questionnaire
 
 #### Question 1: Online Shopping Frequency (Behavioral Baseline)
+
 * **Purpose:** Gauges market activity and transaction frequency.
 * **Trilingual Formulation:**
   * **EN:** How often do you shop online from Facebook, Instagram, or local apps?
@@ -100,6 +105,7 @@ flowchart TD
 ---
 
 #### Question 2: Price Variation Detection (Foundational Problem Validation)
+
 * **Purpose:** Directly validates Cheapify's primary spark—arbitrary price disparities across competing sellers.
 * **Trilingual Formulation:**
   * **EN:** When searching for a product, do you notice big price differences for the exact same item across pages?
@@ -114,6 +120,7 @@ flowchart TD
 ---
 
 #### Question 3: Shopping Headaches & The "Interrogation Tax" (Pain Point Ranking)
+
 * **Purpose:** Identifies the emotional drivers of buyer fatigue in social commerce.
 * **Trilingual Formulation:**
   * **EN:** What annoys you the most when shopping online locally? *(Select top 2)*
@@ -136,6 +143,7 @@ flowchart TD
 ---
 
 #### Question 4: Solution-Market Fit (Single-SKU Side-by-Side Comparison)
+
 * **Purpose:** Tests willingness to switch from direct-messaging to Cheapify's structured comparison marketplace.
 * **Trilingual Formulation:**
   * **EN:** If an app showed you the exact product with every local verified seller’s price side-by-side to get the cheapest deal, would you use it?
@@ -150,6 +158,7 @@ flowchart TD
 ---
 
 #### Question 5: Early Beta Access Lead Capture (Demand Pipeline)
+
 * **Purpose:** Builds Cheapify's day-one user waitlist.
 * **Trilingual Formulation:**
   * **EN:** Would you like early beta access? *(Leave your WhatsApp number or Instagram handle)*
@@ -162,6 +171,7 @@ flowchart TD
 ### 4.3 Track B: Merchant & Shop Owner Questionnaire
 
 #### Question 1: Current Sales Channels (Merchant Profile)
+
 * **Purpose:** Identifies where local retailers currently reach digital shoppers.
 * **Trilingual Formulation:**
   * **EN:** Where do you currently sell your products?
@@ -176,6 +186,7 @@ flowchart TD
 ---
 
 #### Question 2: Merchant Operational Headaches (Supply Pain Points)
+
 * **Purpose:** Validates merchant demand for Cheapify's turnkey dashboard and pre-qualified order dispatch.
 * **Trilingual Formulation:**
   * **EN:** What is your biggest operational headache when selling online? *(Select top 2)*
@@ -198,6 +209,7 @@ flowchart TD
 ---
 
 #### Question 3: Platform Value Proposition Fit (Willingness to Join)
+
 * **Purpose:** Tests merchant willingness to list on a structured catalog with transparent price alerts and low fees.
 * **Trilingual Formulation:**
   * **EN:** If a platform listed your products under unified master catalogs with zero upfront technical costs and alerted you to stay competitive, would you test it?
@@ -211,6 +223,7 @@ flowchart TD
 ---
 
 #### Question 4: Pilot Partnership Recruitment (Supply Pipeline)
+
 * **Purpose:** Directly acquires candidate stores for Cheapify's initial 5–10 launchpad merchant network.
 * **Trilingual Formulation:**
   * **EN:** Interested in having your store featured among our 5–10 launchpad pilot shops in Duhok? *(Provide Store Name & WhatsApp Number)*
@@ -224,7 +237,7 @@ flowchart TD
 
 The survey is currently active and being distributed across high-conversion community channels in Duhok:
 
-```
+```text
 ┌────────────────────────────────────────────────────────────────────────┐
 │ CHANNEL 1: UNIVERSITY YOUTH HUBS (DEMAND COHORT)                       │
 │ • American University of Kurdistan (AUK) student Telegram groups       │

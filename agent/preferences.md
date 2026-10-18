@@ -129,8 +129,6 @@ This file documents the specific ways, working habits, and styling preferences r
       3. **Zero Typo-Leakage:** Eliminates the risk of users accidentally typing `.com` when trying to reach alternate TLDs like `.co`.
       4. **Enterprise Infrastructure:** Managed directly on Cloudflare with zero-markup at-cost renewals, free WHOIS privacy, DNSSEC, automatic SSL, and enterprise DDoS mitigation.
 
-
-
 28. **Unified Cross-Platform Content — One Set for Facebook, Instagram, and TikTok:**
     - Cheapify publishes the **same content to all three platforms** — no platform-exclusive content. One concept is produced as a single vertical 9:16 master file (or 1:1 for static cards) and uploaded natively to each platform; captions are adapted per platform norms, and watermarked cross-posts are prohibited.
     - **Rationale:** A founder-led team cannot sustain three separate content pipelines, and the Duhok launch audience is active on all three platforms anyway.

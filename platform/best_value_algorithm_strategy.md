@@ -1,4 +1,5 @@
 # Cheapify Platform Architecture — Hybrid "Best Value" Algorithm Strategy
+
 ## Balancing Total Landed Doorstep Price, Proximity Advantage, and Merchant Transparency
 
 ---
@@ -6,11 +7,14 @@
 ## 1. Executive Summary & Strategic Rationale
 
 On traditional Iraqi and regional e-commerce marketplaces, buyers and sellers are plagued by two opposing failure modes in product pricing:
+
 1. **The "Bait-and-Switch" Sticker Price Trap (Pure Sticker Price Model):** Platforms rank offers solely by the product's headline price. A distant seller in another city lists an item for 25,000 IQD with a hidden 5,000 IQD shipping fee, beating a local bazaar merchant listing the same item for 26,000 IQD with a 3,000 IQD local courier fee. The buyer only discovers at final checkout that the distant seller actually costs **30,000 IQD total** versus the local seller's **29,000 IQD total**, resulting in checkout abandonment, delivery delays (2–3 days vs 2 hours), and buyer frustration.
 2. **The "Black Box" Distance Penalty (Opaque Landed Cost Model):** Platforms hide delivery calculations behind an opaque proprietary algorithm. Local merchants see their offers de-ranked without understanding why, breeding distrust, accusations of platform favoritism, and merchant churn.
 
 ### The Solution: The Hybrid "Best Value" Model
+
 Cheapify implements a **Hybrid "Total Landed Cost + Proximity Advantage" Model** built on four unyielding principles:
+
 1. **Total Landed Doorstep Affordability ($P_{\text{total}}$):** The winning offer must genuinely save the consumer money at the door when the delivery driver hands over the parcel. No surprise courier tariffs at checkout.
 2. **Natural Proximity Advantage for Local Merchants:** Intra-city delivery (e.g., within Duhok) carries a flat, standardized 3PL courier rate (3,000 IQD). Because shipping is identical across local sellers, **Total Landed Cost ranking is 100% equivalent to sticker price ranking**. Local bazaar merchants compete directly and fairly on retail price, while out-of-city merchants must offer deep, authentic discounts to overcome higher inter-city shipping tariffs.
 3. **Radical Dual Transparency:**
@@ -24,7 +28,7 @@ Cheapify implements a **Hybrid "Total Landed Cost + Proximity Advantage" Model**
 
 When multiple verified merchants list offers under the exact same Single-SKU product page, Cheapify's ranking engine evaluates and sorts all active offers using a strict sequential priority cascade:
 
-```
+```text
 [ Incoming SKU Offers for Buyer Location ]
                    │
                    ▼
@@ -58,11 +62,13 @@ When multiple verified merchants list offers under the exact same Single-SKU pro
 ```
 
 ### Priority 0: Lowest Total Landed Doorstep Price ($P_{\text{total}}$) — *Primary / Hard Cut*
+
 The absolute primary ranking attribute is the **Total Landed Price** delivered to the buyer's doorstep:
 
 $$P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}(\text{origin}, \text{destination})$$
 
 Where:
+
 - $P_{\text{item}}$ is the merchant's active listed price in Iraqi Dinar (IQD) for the verified SKU.
 - $D_{\text{tariff}}$ is the standardized, system-calculated third-party courier tariff between the merchant's physical fulfillment hub (shop/warehouse) and the buyer's delivery district.
 
@@ -74,6 +80,7 @@ $$P_{\text{total}, A} - P_{\text{total}, B} = (P_{\text{item}, A} + 3,000) - (P_
 In intra-city trade, the delivery variable completely cancels out. **Local merchants compete 100% on their retail sticker price**, preserving full bazaar competition simplicity.
 
 **Inter-City Dynamics (e.g. Erbil Merchant vs. Duhok Merchant delivering to a Duhok Buyer):**
+
 - Duhok Merchant: $D_{\text{tariff}} = 3,000\text{ IQD}$.
 - Erbil Merchant: $D_{\text{tariff}} = 5,000\text{ IQD}$.
 - Shipping Differential: $\Delta D = +2,000\text{ IQD}$.
@@ -87,6 +94,7 @@ This creates an inherent, organic economic defense for local neighborhood mercha
 ---
 
 ### Priority 1: Delivery Speed by Geographic Distance — *Secondary / First Tie-Breaker*
+
 If two or more merchants offer the **exact same Total Landed Price** ($P_{\text{total}, A} = P_{\text{total}, B}$), the ranking engine breaks the tie in favor of the **fastest fulfillment time** based on physical proximity:
 
 $$\text{Speed Rank: } \text{Zone 1 (Hyperlocal 1–3h)} > \text{Zone 2 (Intra-City 3–6h)} > \text{Zone 3 (Inter-City 24–48h)} > \text{Zone 4 (Nationwide 48–72h)}$$
@@ -96,11 +104,13 @@ $$\text{Speed Rank: } \text{Zone 1 (Hyperlocal 1–3h)} > \text{Zone 2 (Intra-Ci
 ---
 
 ### Priority 2: Verified Merchant Quality & Reliability Score — *Tertiary / Final Tie-Breaker*
+
 If multiple merchants offer the exact same Total Landed Price AND belong to the same delivery speed zone, the tie is broken by **Merchant Quality & Operational Reliability**:
 
 $$Q_{\text{merchant}} = w_1 \cdot R_{\text{rating}} + w_2 \cdot F_{\text{fulfillment}} + w_3 \cdot (1 - D_{\text{defect}})$$
 
 Where:
+
 - $R_{\text{rating}}$: Verified buyer customer review rating (normalized 0.0 to 1.0, minimum threshold of 5 completed orders to qualify).
 - $F_{\text{fulfillment}}$: Order acceptance and dispatch rate (percentage of orders successfully fulfilled without merchant-side cancellation).
 - $D_{\text{defect}}$: Return/defect rate due to wrong item, damaged packaging, or customer dispute.
@@ -130,6 +140,7 @@ The platform maintains a deterministic distance and zone routing matrix:
 The following scenarios illustrate how the Hybrid Best-Value Algorithm performs across everyday bazaar situations in Kurdistan and Iraq:
 
 ### Scenario A: Pure Intra-City Bazaar Competition (Duhok to Duhok)
+
 - **Product:** Anker 20W USB-C Fast Charger (Single-SKU)
 - **Buyer Location:** Duhok Malta District
 - **Merchant Offers:**
@@ -146,6 +157,7 @@ The following scenarios illustrate how the Hybrid Best-Value Algorithm performs 
 ---
 
 ### Scenario B: Local Bazaar Merchant vs. Out-of-City Wholesaler (Proximity Advantage in Action)
+
 - **Product:** Xiaomi 20,000mAh Power Bank (Single-SKU)
 - **Buyer Location:** Duhok University Campus (AUK)
 - **Merchant Offers:**
@@ -160,6 +172,7 @@ The following scenarios illustrate how the Hybrid Best-Value Algorithm performs 
 ---
 
 ### Scenario C: Legitimate Deep Out-of-City Discount (Consumer Savings Protected)
+
 - **Product:** Samsung 24-inch IPS Monitor (Single-SKU)
 - **Buyer Location:** Duhok
 - **Merchant Offers:**
@@ -174,6 +187,7 @@ The following scenarios illustrate how the Hybrid Best-Value Algorithm performs 
 ---
 
 ### Scenario D: Price Tie Broken by Distance & Speed
+
 - **Product:** Baseus 65W GaN Fast Charger (Single-SKU)
 - **Buyer Location:** Duhok Malta District
 - **Merchant Offers:**
@@ -190,6 +204,7 @@ The following scenarios illustrate how the Hybrid Best-Value Algorithm performs 
 ---
 
 ### Scenario E: Price & Proximity Tied Broken by Merchant Quality
+
 - **Product:** Kingston 64GB USB 3.2 Flash Drive (Single-SKU)
 - **Buyer Location:** Duhok Center
 - **Merchant Offers:**
@@ -207,10 +222,13 @@ The following scenarios illustrate how the Hybrid Best-Value Algorithm performs 
 ## 5. Dual-Sided Radical Transparency Architecture
 
 ### 5.1 Consumer UX & Product Page Representation
+
 On the Single-SKU product view, the winning offer is featured prominently in the hero section:
+
 - **Highlighted "Best Value" Chip:** Clearly displayed above the merchant name and price, indicating that this offer represents the lowest total doorstep cost.
 - **Transparent Price Breakdown:**
-  ```
+
+  ```text
   ┌──────────────────────────────────────────────────────────┐
   │  ★ BEST VALUE                                            │
   │  28,000 IQD                                              │
@@ -220,8 +238,10 @@ On the Single-SKU product view, the winning offer is featured prominently in the
   │  [ ADD TO CART / BUY NOW ]                               │
   └──────────────────────────────────────────────────────────┘
   ```
+
 - **"Other Verified Sellers" Comparison Drawer:** Below the primary buy box, an expandable list displays all alternative verified merchants selling the exact same barcode:
-  ```
+
+  ```text
   ┌──────────────────────────────────────────────────────────┐
   │ Other Verified Sellers for this Item (2)                 │
   ├──────────────────────────────────────────────────────────┤
@@ -236,17 +256,20 @@ On the Single-SKU product view, the winning offer is featured prominently in the
   │ [ Choose This Seller ]                                   │
   └──────────────────────────────────────────────────────────┘
   ```
+
 - Buyers retain full autonomy: if a buyer prefers their cousin's shop or a seller with 4.9 stars for 1,000 IQD more, they can select any verified seller with one tap.
 
 ---
 
 ### 5.2 Merchant Dashboard & Commercial Communication
+
 Traditional algorithms alienate local shopkeepers like Kak Kawa because they feel like opaque computer games. Cheapify translates algorithmic math into **actionable commercial intelligence** rendered in clear Kurdish (Badînî) and Arabic:
 
 #### The "Competitive Position" Diagnostic Card (Merchant Portal Wireframe)
+
 When Kak Kawa logs into his dashboard or opens his WhatsApp vendor summary:
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────────────┐
 │ SKU: Anker 20W USB-C Charger (White)                                    │
 │ Your Current Price: 16,000 IQD                                          │
@@ -267,6 +290,7 @@ When Kak Kawa logs into his dashboard or opens his WhatsApp vendor summary:
 ```
 
 #### Trilingual Explanations for Common Questions
+
 1. **"Why did an Erbil shop lose even though their sticker price was 1,000 IQD cheaper than mine?"**
    - **Badînî Kurdish:** *«Firoşgeha Hewlêrê bihayê kelûpelî 1,000 D.Î kêmtir danabû, lê belê heqê gehandina wê 5,000 D.Î bû. Bihayê te yê gehandinê li Dihokê tenê 3,000 D.Î ye. Ji ber hindê, bihayê te yê dawî li ber dergehê muşterî erzantir bû!»*
    - **Arabic:** *«المتجر في أربيل عرض سعر السلعة أقل بـ 1,000 دينار، ولكن كلفة التوصيل من أربيل 5,000 دينار بينما كلفة توصيلك داخل دهوك 3,000 دينار فقط. لذلك كان سعرك الإجمالي عند باب الزبون أرخص وفزت بالعرض الأفضل!»*
@@ -281,14 +305,17 @@ When Kak Kawa logs into his dashboard or opens his WhatsApp vendor summary:
 To maintain platform trust and prevent deceptive commercial practices, the algorithm enforces strict governance guardrails:
 
 ### 6.1 Phantom Stock & Cancellation Penalties
+
 - **Vulnerability:** A merchant lists an unrealistically low price to capture the "Best Value" badge and hoard order volume, then cancels orders or delays dispatch when stock is unavailable.
 - **Enforcement:** If a merchant cancels an order due to "out of stock" after winning the badge, they incur an immediate **Reliability Score Deduction** ($F_{\text{fulfillment}} - 15\%$). If cancellation rate exceeds 5% in a rolling 14-day window, their store is temporarily disqualified from winning the Best Value badge for 7 days.
 
 ### 6.2 Strict Single-SKU Verification (No Sub-Tier Dilution)
+
 - **Vulnerability:** A rogue seller lists a refurbished, open-box, or knock-off variant under a brand-new master SKU to show an artificially cheap price.
 - **Enforcement:** Every seller offer mapped to a Single-SKU must match the exact barcode, manufacturer model number, and condition grade ("Brand New / Sealed"). Open-box or refurbished items are segregated into separate condition listings and cannot compete directly with brand-new retail SKUs.
 
 ### 6.3 Multi-Item Cart Shipping Consolidation
+
 - **Mechanism:** When a buyer adds multiple items to their cart:
   - If multiple items are fulfilled by the **same merchant**, the buyer pays only **one** delivery tariff (3,000 IQD total).
   - If items are fulfilled by **different merchants**, each merchant requires an independent 3PL dispatch pickup, generating separate delivery tariffs clearly itemized at checkout.

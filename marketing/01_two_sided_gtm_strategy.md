@@ -1,4 +1,5 @@
 # Cheapify — Two-Sided Go-To-Market (GTM) Strategy & Execution Playbook
+
 ## Launchpad: Duhok Metropolitan Area | Expansion: Kurdistan Region & All Iraq
 
 **Pillar:** Marketing (Pillar 2 — File 01)  
@@ -7,6 +8,7 @@
 **Target Market:** Duhok Pilot Launchpad (Phase 1) ──► KRI & Northern Hubs (Phase 2) ──► Nationwide All-Iraq (Phase 3)  
 **Core Marketing Channels:** Facebook, Instagram, and TikTok  
 **Cross-References:**  
+
 - Personas & User Journeys: [`../entrepreneurship/03_customer_and_merchant_personas.md`](../entrepreneurship/03_customer_and_merchant_personas.md)  
 - Market Opportunity & Sizing: [`../entrepreneurship/02_market_opportunity_and_sizing.md`](../entrepreneurship/02_market_opportunity_and_sizing.md)  
 - Competitive Advantage & Moats: [`../entrepreneurship/04_competitive_landscape_matrix.md`](../entrepreneurship/04_competitive_landscape_matrix.md)  
@@ -45,14 +47,18 @@ flowchart TD
 ```
 
 ### 1.1 The Strategic Leap: Online Social Media Stores First (Stage 1)
+
 As formulated in **ADR-008** and **Preference 19**, Cheapify does not begin by trying to digitize offline brick-and-mortar bazaar stalls. Instead, **Stage 1 focuses exclusively on existing online social media stores** (Instagram, Facebook, and TikTok shops):
+
 1. **Zero Photography & Asset Overhead:** Social media sellers already have high-resolution photos, lifestyle unboxing reels, Kurdish/Arabic captions, and pre-compiled spec sheets stored on their smartphones. Catalog onboarding is rapid.
 2. **Pre-Built E-Commerce Muscle:** Social sellers already pack parcels, coordinate daily with 3PL couriers (e.g. ZMC Express, local courier fleets), and collect Cash on Delivery (COD). They require zero logistics education.
 3. **Acute DM Exhaustion ("Interrogation Tax"):** Social sellers are drowning in 50–100 repetitive DMs a day (*"Bihayê wê çende?", "What colors?", "Where are you located?"*) with an **85%+ ghost rate**. Cheapify is an immediate painkiller that automates their sales pipeline.
 4. **Built-in Organic Traffic:** When an Instagram shop with 15,000 followers joins Cheapify and puts their Cheapify link in their bio, **they bring their entire existing customer base directly into Cheapify for free**, driving our customer acquisition cost (CAC) toward zero.
 
 ### 1.2 Dual Platform Delivery: Mobile App + Web
+
 Cheapify is engineered as both a **native/PWA mobile app (iOS & Android)** and an accessible **web platform** ([Preference 20](../agent/preferences.md)):
+
 - **Mobile App:** For recurring shoppers, push notifications, 1-tap reorders, live driver tracking, and instant merchant management.
 - **Web Platform:** For instant, zero-friction discovery when shoppers tap a merchant's bio link or social ad on Facebook/Instagram without requiring a forced app download first. Once on the web landing page, smart banners prompt app installation.
 
@@ -61,6 +67,7 @@ Cheapify is engineered as both a **native/PWA mobile app (iOS & Android)** and a
 ## 2. Supply-Side Playbook: Social Media Merchant Acquisition & Onboarding
 
 ### 2.1 Target Merchant Profile (Stage 1 Cohort)
+
 - **Primary Channels:** Active business accounts on **Facebook, Instagram, and TikTok** ([Preference 21](../agent/preferences.md)). Telegram is intentionally excluded from active focus.
 - **Geographic Base:** Duhok metropolitan area (Duhok center, Malta, KRO, Semel, Zakho corridor).
 - **Audience Size:** 1,500 to 50,000 followers.
@@ -83,42 +90,47 @@ Cheapify is engineered as both a **native/PWA mobile app (iOS & Android)** and a
 ### 2.3 Acquisition Channels & Direct Outreach Scripts
 
 #### Channel A: Direct Instagram & Facebook Outreach
+
 We initiate direct, personalized outreach to active Duhok and KRI social media sellers across Facebook and Instagram. Rather than sending a generic sales pitch, outreach targets their exact daily pain: **wasted time in DMs** and the offer of **free paid advertising**.
 
-##### Outreach Script (Badînî Kurdish):
+##### Outreach Script (Badînî Kurdish)
+>
 > *«Silav Kak [Navê Xwediyê Firoşgehê], karê we yê serkeftî be.*  
 > *Me dît ku firoşgeha we [@Navê_Rûpelî] berhemên pir baş û taybet pêşkêş dike, lê em dizanin rojane çend seet ji dema we di bersivdana DM-yan de diçe bo pirsên mîna "Bihayê wê çende?" an "Ev reng heye?".*  
->  
+>
 > *Em li **Cheapify** alîkariya firoşkarên serhêl yên Dihokê dikin ku firotina xwe 100% otomatîk bikin. Bi rêya App û Web-a me:*  
 > *1. Hûn bi rênimayiyên hêsan berhemên xwe bi xwe bar dikin nav panela xwe ya taybet.*  
 > *2. Mişterî bihayê zelal û rengan dibîne û bi 25 saniyan fermana xwe bi gehandina Duhokê temam dike.*  
 > *3. Fermana amade rasterast digehe ser WhatsApp-a we bêyî tu axaftinên zêde.*  
->  
+>
 > *🎁 **Taybet bo 20 firoşgehên pêşîn yên Dihokê:**  
 > • Meha yekem **0% Komîsyon** e.  
 > • **Em ê berhemên we di nav reklamên Cheapify yên bi sponsorî de li ser Facebook, Instagram û TikTok belav bikin (Reklama belaş bo firoşgeha we!)**.*  
->  
+>
 > *Ma dest dide we vîdyoyeka 45-saniyeyî ya ceribandinê ji we re bişînim ku bibînin ka çawa dixebite?»*
 
-##### Outreach Script (Arabic):
+##### Outreach Script (Arabic)
+>
 > *«مرحباً أخي [اسم صاحب المتجر]، عاشت إيدك على المتجر الرائع [@اسم_الصفحة].*  
 > *نحن نعلم كمية الوقت والجهد الضائع يومياً في الرد على رسائل الخاص (الدايركت والماسنجر) لأسئلة مكررة مثل "السعر كم؟"، "اللون متوفر؟"، وتفاصيل التوصيل.*  
->  
+>
 > *تطبيق ومنصة **Cheapify** صُممت خصيصاً لمتاجر الإنستغرام، فيسبوك، وتيك توك لتنظيم وأتمتة الطلبات:*  
 > *1. من خلال إرشادات واضحة وبسيطة، تقوم بإضافة منتجاتك بنفسك وتتحكم بأسعارك ومخزونك بكل سهولة.*  
 > *2. رابط واحد تضعه في البايو؛ الزبون يرى السعر النهائي ويطلب بضغطة زر خلال 25 ثانية فقط.*  
 > *3. الطلب يصلك مؤكداً مع رقم الهاتف والعنوان الدقيق عبر الواتساب ولوحة التحكم.*  
->  
+>
 > *🎁 **عرض حصري لأول 20 متجر في دهوك:**  
 > • **عمولة 0%** للشهر الأول كاملاً.  
 > • **سنقوم بعرض منتجات متجرك ضمن حملاتنا الإعلانية الممولة والممتازة على فيسبوك وإنستغرام وتيك توك (إعلانات مجانية ودعم مباشر لمبيعاتك!).**  
->  
+>
 > *هل يناسبك أن أرسل لك فيديو تجريبي لمدة 45 ثانية يوضح كيف يعمل النظام؟»*
 
 ---
 
 #### Channel B: The Founder WhatsApp "Video Proof" Strategy
+
 Because founder **Shakir Bashar** is a software engineer who builds UX prototypes in-house ($0 agency cost), we leverage high-impact visual proof:
+
 1. Shakir records a crisp, 45-second screen capture on an iPhone showing:
    - Clicking an Instagram/Facebook Bio link or opening the Cheapify mobile app.
    - Selecting a white Anker charger from the Single-SKU page.
@@ -132,7 +144,7 @@ Because founder **Shakir Bashar** is a software engineer who builds UX prototype
 
 In strict adherence to **Preference 22**, the Cheapify team does **NOT** manually scrape, extract media assets, or build product pages for merchants. Instead, Cheapify operates a **Self-Serve with Rules** onboarding model:
 
-```
+```text
 [ Step 1: Merchant Access ] ──► [ Step 2: Quality Guidelines ] ──► [ Step 3: Self-Serve Catalog Setup ]
   Merchant receives invite        Merchant reviews clear rules:       Merchant either:
   and opens Merchant Portal       • Clean lighting / clear media      a) Matches existing Single-SKU (1-tap)
@@ -144,7 +156,8 @@ In strict adherence to **Preference 22**, the Cheapify team does **NOT** manuall
   in Cheapify's paid FB/IG ads    in bio & stories; orders open        listing against catalog rules (<2 hrs)
 ```
 
-#### The Cheapify Merchant Standards & Rulebook:
+#### The Cheapify Merchant Standards & Rulebook
+
 1. **Rule 1 — Absolute Price Integrity:** The price listed on Cheapify must match or beat the merchant's social media price. Artificial markups are prohibited.
 2. **Rule 2 — Standardized Media Quality:** Photos must clearly display the actual product, manufacturer packaging, and available color variations without misleading watermarks.
 3. **Rule 3 — Live Stock Guarantee:** Merchants agree to update stock status promptly. Order cancellations due to unrecorded out-of-stock items trigger reliability score deductions.
@@ -155,6 +168,7 @@ In strict adherence to **Preference 22**, the Cheapify team does **NOT** manuall
 ### 2.5 The "Founder's Circle" Launch Program (First 20 Duhok Stores)
 
 To secure the first 20 high-quality social sellers in Duhok, Cheapify provides an irresistible commercial bundle ([Preference 23](../agent/preferences.md)):
+
 1. **0% Platform Commission (First 30 Days):** Merchants retain 100% of their product sales revenue, paying zero platform take-rate.
 2. **Free Paid Advertising & Social Media Boost:** Cheapify finances and launches sponsored video ads across Facebook, Instagram, and TikTok explicitly showcasing the products and profiles of these 20 founding stores. Merchants gain hundreds of thousands of local video views and new buyers at **$0 cost to them**.
 3. **Permanent "Verified Founding Merchant" Badge:** Gives them lasting algorithmic credibility and consumer trust across the app and web platform.
@@ -167,7 +181,7 @@ To secure the first 20 high-quality social sellers in Duhok, Cheapify provides a
 
 In compliance with **Preference 24**, Cheapify is a **broad mass-market consumer platform**, not a niche student-only app. While university students represent an energetic launchpad, Cheapify acquires and serves three distinct high-value consumer segments:
 
-```
+```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ CHEAPIFY CORE CONSUMER AUDIENCE SEGMENTS                                                         │
 ├──────────────────────────────────┬────────────────────────────────┬──────────────────────────────┤
@@ -201,6 +215,7 @@ flowchart TD
 ### 3.3 Consumer Acquisition Tactical Plays
 
 #### Play 1: The Merchant Bio-Link Traffic Hijack (Zero-CAC Organic Engine)
+
 - **The Mechanism:** Every onboarded merchant actively directs their existing follower base into Cheapify by placing their customized store link in their Instagram, TikTok, and Facebook bios: `cheapify.iq/@storename`.
 - **The Story Trigger:** When a customer comments *"Price?"* on a merchant's Facebook or Instagram post, the merchant's automated reply sends:  
   *«Silav! Bo dîtina hemû rengan, bihayê dawî, û fermankirina bilez bi riya App/Web, lînka me ya di Bio-yê de bitikîne 👆»*
@@ -209,9 +224,10 @@ flowchart TD
 ---
 
 #### Play 2: Viral Short-Form Video Ads ("The Old Way vs. The Cheapify Way")
+
 We produce high-contrast, relatable video ads running across **TikTok, Instagram Reels, and Facebook Video Feed**:
 
-* **Creative Concept: "The DM Interrogation" (30-second Video)**
+- **Creative Concept: "The DM Interrogation" (30-second Video)**
   - *Scene 1 (0–12s):* A young professional or student sends a DM on Instagram asking *"How much for this power bank?"*. 4 hours later, the page replies: *"Check DMs"*. He opens DMs, seller says: *"Send phone number first"*. Complete frustration.
   - *Scene 2 (13–25s):* Same shopper opens Cheapify. Searches "Anker 20,000mAh". Instantly sees 3 verified stores in Duhok side-by-side with transparent prices (28,000 IQD vs 33,000 IQD). Selects "Best Value" offer, chooses COD, and finishes in 25 seconds.
   - *Tagline:*  
@@ -221,6 +237,7 @@ We produce high-contrast, relatable video ads running across **TikTok, Instagram
 ---
 
 #### Play 3: Targeted Paid Social Media Ad Boosts (Featuring Founding Stores)
+
 - **Platforms:** Facebook Ads Manager & TikTok Ads Manager targeting Duhok metropolitan area (and expanding to Erbil/Mosul in Phase 2).
 - **Format:** Carousel and dynamic product collection ads featuring the actual products of our 20 Founding Stores.
 - **Copy Angle:** *"Found in Duhok: Anker Fast Charger for only 14,000 IQD. Verified Seller. 2-Hour Delivery. Cash on Delivery."*
@@ -229,6 +246,7 @@ We produce high-contrast, relatable video ads running across **TikTok, Instagram
 ---
 
 #### Play 4: Campus & Community Hub Partnerships (Launchpad Boost)
+
 - **Campuses:** University of Duhok (UoD), American University of Kurdistan (AUK), Nawroz University.
 - **Workplaces & Professional Hubs:** Outreach to local clinic staff, corporate office complexes, and public institutions where workers seek convenient lunchtime and evening shopping without roaming bazaar alleys.
 - **Campus & Office Deal of the Week:** Exclusive weekly spotlight deals (e.g. 65W GaN laptop chargers, ergonomic desk accessories, car phone mounts) with free shipping vouchers on first orders.
@@ -236,6 +254,7 @@ We produce high-contrast, relatable video ads running across **TikTok, Instagram
 ---
 
 #### Play 5: "Report a Price Variation" Community Bounty
+
 - **The Concept:** Tap into the local consumer habit of taking screenshots when noticing outrageous price gaps between different shops on Facebook, Instagram, or street stores.
 - **Mechanics:** Shoppers submit screenshots of identical items being sold with a $\ge 5,000\text{ IQD}$ price gap.
 - **Reward:** Approved submissions receive a **3,000 IQD shipping credit** on their next Cheapify app order.
@@ -249,7 +268,7 @@ We produce high-contrast, relatable video ads running across **TikTok, Instagram
 
 In strict compliance with **Preference 12**, Cheapify expands geographically in three disciplined, phased stages:
 
-```
+```text
 ┌────────────────────────────────┐     ┌────────────────────────────────┐     ┌────────────────────────────────┐
 │ PHASE 1: DUHOK LAUNCHPAD       │     │ PHASE 2: REGIONAL HUBS         │     │ PHASE 3: ALL-IRAQ SCALE        │
 │ Months 1 – 6                   │ ──► │ Months 7 – 15                  │ ──► │ Months 16 – 24+                │
@@ -261,6 +280,7 @@ In strict compliance with **Preference 12**, Cheapify expands geographically in 
 ```
 
 ### Phase 1: Duhok Pilot Launchpad (Months 1–6)
+
 - **Operational Focus:** Prove the two-sided model in Duhok where physical merchant density and community trust are high.
 - **Milestones:**
   - 20 active online social media merchants onboarded (self-serve with quality verification).
@@ -269,6 +289,7 @@ In strict compliance with **Preference 12**, Cheapify expands geographically in 
   - Target customer satisfaction: $\ge 95\%$ on-time delivery; $< 3\%$ order return rate.
 
 ### Phase 2: Northern Regional Hubs — Erbil, Mosul, Sulaymaniyah (Months 7–15)
+
 - **Operational Focus:** Activate inter-city logistics routes. Leverage the [Hybrid Best-Value Algorithm](../platform/best_value_algorithm_strategy.md) to enable Erbil wholesalers and Duhok retailers to compete dynamically without price dumping.
 - **Milestones:**
   - 75 verified merchants across Duhok, Erbil, and Mosul.
@@ -276,6 +297,7 @@ In strict compliance with **Preference 12**, Cheapify expands geographically in 
   - Establish regional hub linehaul integrations (ZMC Express 24–48h courier).
 
 ### Phase 3: Nationwide All-Iraq Scaling (Months 16–24+)
+
 - **Operational Focus:** Expand platform infrastructure to Baghdad (Karrada, Mansour, Shorja), Basra, Kirkuk, and Southern governorates.
 - **Milestones:**
   - Nationwide marketing campaigns in Iraqi Arabic across Facebook, Instagram, and TikTok.
@@ -314,8 +336,8 @@ Cheapify executes this GTM strategy with extreme capital efficiency, fully lever
 
 ## 7. Cross-Pillar Integration & Next Steps
 
-* **Pillar 1 (Entrepreneurship):** Aligned with the Single-SKU architecture ([01_problem_solution_value.md](../entrepreneurship/01_problem_solution_value.md)) and dual personas ([03_customer_and_merchant_personas.md](../entrepreneurship/03_customer_and_merchant_personas.md)).
-* **Platform Architecture:** Integrated with Progressive Marginal Tiering ([fee_structure_and_monetization.md](../platform/fee_structure_and_monetization.md)) and the Hybrid Best-Value Algorithm ([best_value_algorithm_strategy.md](../platform/best_value_algorithm_strategy.md)).
-* **Growth Incentives:** The four-direction referral grid and catalog first-mover bounty are specified in [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md) (ADR-012).
-* **Next Deliverable in Pillar 2 (Marketing):**
+- **Pillar 1 (Entrepreneurship):** Aligned with the Single-SKU architecture ([01_problem_solution_value.md](../entrepreneurship/01_problem_solution_value.md)) and dual personas ([03_customer_and_merchant_personas.md](../entrepreneurship/03_customer_and_merchant_personas.md)).
+- **Platform Architecture:** Integrated with Progressive Marginal Tiering ([fee_structure_and_monetization.md](../platform/fee_structure_and_monetization.md)) and the Hybrid Best-Value Algorithm ([best_value_algorithm_strategy.md](../platform/best_value_algorithm_strategy.md)).
+- **Growth Incentives:** The four-direction referral grid and catalog first-mover bounty are specified in [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md) (ADR-012).
+- **Next Deliverable in Pillar 2 (Marketing):**
   - **`marketing/02_brand_identity_and_guidelines.md`**: Ground-up visual identity, brand voice, design language, and **brand-new color palette from zero** (retiring all legacy colors per Preference 18).

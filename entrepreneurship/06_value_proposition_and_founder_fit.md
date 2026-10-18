@@ -11,6 +11,7 @@
 In entrepreneurship theory and incubator methodology (GIZ / CAPA at AUK), identifying problems and describing personas is only the first step. To ensure a venture achieves true **Problem-Solution Fit**, it must demonstrate an explicit, structural alignment between what the customer needs and what the platform offers.
 
 This document formalizes that alignment using two core frameworks:
+
 1. **The Osterwalder Value Proposition Canvas (VPC):** Systematically mapping Customer Jobs, Pains, and Gains against Cheapify's Products, Pain Relievers, and Gain Creators for both sides of the marketplace.
 2. **Technological Innovation & Founder-Market Fit:** Articulating Cheapify's core innovations and how founder execution capability (Shakir Bashar, Computer Engineer) drives defensibility, capital discipline, and operational success.
 
@@ -18,7 +19,7 @@ This document formalizes that alignment using two core frameworks:
 
 ## 2. Value Proposition Canvas: The Deal-Seeking Shopper (Ahmad)
 
-```
+```text
 ┌──────────────────────────────────────────────┐       ┌──────────────────────────────────────────────┐
 │             THE CHEAPIFY VALUE MAP           │       │             THE SHOPPER PROFILE              │
 │                                              │       │                                              │
@@ -41,7 +42,7 @@ This document formalizes that alignment using two core frameworks:
 └──────────────────────────────────────────────┘       └──────────────────────────────────────────────┘
 ```
 
-### Detailed Shopper Value Mapping:
+### Detailed Shopper Value Mapping
 
 | Customer Profile Dimension | Ahmad’s Daily Reality | Cheapify Value Map Solution | Fit Verification |
 | :--- | :--- | :--- | :--- |
@@ -55,7 +56,7 @@ This document formalizes that alignment using two core frameworks:
 
 ## 3. Value Proposition Canvas: The Bazaar Merchant (Kak Kawa)
 
-```
+```text
 ┌─────────────────────────────────────────────────┐       ┌─────────────────────────────────────────────────┐
 │             THE CHEAPIFY VALUE MAP              │       │             THE MERCHANT PROFILE                │
 │                                                 │       │                                                 │
@@ -78,7 +79,7 @@ This document formalizes that alignment using two core frameworks:
 └─────────────────────────────────────────────────┘       └─────────────────────────────────────────────────┘
 ```
 
-### Detailed Merchant Value Mapping:
+### Detailed Merchant Value Mapping
 
 | Merchant Profile Dimension | Kak Kawa’s Daily Reality | Cheapify Value Map Solution | Fit Verification |
 | :--- | :--- | :--- | :--- |
@@ -95,10 +96,12 @@ This document formalizes that alignment using two core frameworks:
 Cheapify introduces 4 key innovations tailored to the specific constraints of the Iraqi digital retail landscape:
 
 ### 4.1 Innovation 1: Single-SKU Aggregation vs. Multi-Listing Clutter
+
 * **The Traditional Flaw (iBazzar / Social Commerce):** Every seller posts an independent listing. Searching for a product returns 20 fragmented, duplicate cards, creating search fatigue and masking price variation.
 * **Cheapify's Innovation:** Standardized **Single-SKU Master Catalog**. Exactly one page exists per unique manufacturer barcode/model. Competing verified merchants are clustered underneath in a live competitive table.
 
 ### 4.2 Innovation 2: The Multi-Variable "Best Value" Algorithm
+
 * **The Traditional Flaw:** Platforms either rank by paid sponsor bids (distorting fairness) or force buyers to manually calculate shipping and seller reliability.
 * **Cheapify's Innovation:** An objective, algorithmic hierarchy awarded in real time:
   * **Priority 0 (Most Important):** Price (lowest price in IQD).
@@ -107,10 +110,12 @@ Cheapify introduces 4 key innovations tailored to the specific constraints of th
   The winner receives the highlighted **"Best Value"** badge, driving organic price discipline across the marketplace.
 
 ### 4.3 Innovation 3: WhatsApp Cloud API Headless Waybill Generation
+
 * **The Traditional Flaw:** Merchants must download complex enterprise seller apps or manually write delivery addresses on paper labels for taxi drivers.
 * **Cheapify's Innovation:** When an order is placed, Cheapify generates an automated JSON payload directly integrated with WhatsApp Cloud API and 3PL couriers (ZMC Express). The merchant receives a pre-formatted packing slip on WhatsApp, and the courier receives automated GPS coordinates.
 
 ### 4.4 Innovation 4: Progressive Marginal Fee Calculation (Cliff-Free Monetization)
+
 * **The Traditional Flaw:** Naive percentage brackets create regressive notches (e.g. 14,500 IQD at 5% = 725 IQD vs. 16,000 IQD at 3% = 480 IQD).
 * **Cheapify's Innovation:** Piecewise continuous marginal tiering (5% Tier 1, 3% Tier 2, 1.5% Tier 3) ensuring strictly monotonic fee scaling ($P_2 > P_1 \implies \text{Fee}(P_2) > \text{Fee}(P_1)$) while saving merchants up to 86% in commissions.
 
@@ -120,7 +125,7 @@ Cheapify introduces 4 key innovations tailored to the specific constraints of th
 
 In incubator evaluations (GIZ / CAPA), venture success is fundamentally determined by the **Founder's execution capability and entrepreneurial competencies**.
 
-```
+```text
 ┌───────────────────────────────────────────────────────────────────────────┐
 │ FOUNDER PROFILE: SHAKIR BASHAR                                            │
 │ • Education: Computer Engineer                                            │
@@ -130,17 +135,20 @@ In incubator evaluations (GIZ / CAPA), venture success is fundamentally determin
 └───────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Core Entrepreneurial Competencies Demonstrated:
+### Core Entrepreneurial Competencies Demonstrated
 
 #### 1. Initiative & Proactive Execution (The Primary Driver)
+
 * **Self-Directed Build:** Rather than waiting for seed funding to hire an expensive software agency (\$5,000–\$10,000+), the founder designs, programs, and deploys the entire web MVP, merchant dashboard, and marketing video assets in-house.
 * **Direct Field Validation:** Instead of building in an ivory tower, the founder personally conducts merchant interviews in Duhok Bazaar Street and Malta commercial zones, turning real merchant objections into platform features.
 
 #### 2. Resourcefulness & Capital Discipline (Extreme Lean Efficiency)
+
 * **Maximizing Seed Capital Efficiency:** By eliminating external software development agency costs ($0 software engineering overhead), 100% of available seed funding can be directed toward operational essentials: reliable cloud hosting, official Chamber of Commerce registration, messaging API credits, and targeted local customer acquisition.
 * **Asset-Light Architecture:** Leveraging existing 3PL courier fleets (e.g., ZMC Express) eliminates capital expenditures on motorbikes, physical fulfillment warehouse leases, or full-time drivers, maintaining an exceptionally lean and sustainable operational burn.
 
 #### 3. Resilience & Cultural Grounding (Navigating Local Friction)
+
 * **Overcoming Cash-on-Delivery (COD) Skepticism:** The founder designs automated weekly reconciliation workflows tailored specifically to Iraqi cash habits rather than forcing unviable Western credit card payment models.
 * **Bilingual / Trilingual Communication:** Engineering the platform and validation research natively across **Kurdish (Badînî)**, **Arabic**, and **English** ensures direct rapport with local bazaar merchants and university students alike.
 
@@ -155,7 +163,7 @@ The table below verifies that every core dimension required by the GIZ Youth Ent
 | **1. Problem Statement & Catalyst** | [`01_problem_solution_value.md`](01_problem_solution_value.md) | **100% Complete** | Identifies Price Variation as primary genesis, "Interrogation Tax", and seller data chaos. |
 | **2. Solution & Platform Architecture** | [`01_problem_solution_value.md`](01_problem_solution_value.md) | **100% Complete** | Establishes Single-SKU catalog, 3-tier "Best Value" ranking, and Merchant Dashboard. |
 | **3. Market Sizing & Scaling Roadmap** | [`02_market_opportunity_and_sizing.md`](02_market_opportunity_and_sizing.md) | **100% Complete** | Sizes TAM (\$2.5B–\$3.5B), SAM (\$600M–\$800M), SOM (3k pilot orders); 10 retail categories; Duhok $\rightarrow$ KRI $\rightarrow$ All Iraq roadmap. |
-| **4. Institutional References & Evidence**| [`02_market_opportunity_and_sizing.md`](02_market_opportunity_and_sizing.md) | **100% Complete** | Verified citations (World Bank, KRSO, DataReportal, KAPITA) + 4 real screenshot proofs. |
+| **4. Institutional References & Evidence** | [`02_market_opportunity_and_sizing.md`](02_market_opportunity_and_sizing.md) | **100% Complete** | Verified citations (World Bank, KRSO, DataReportal, KAPITA) + 4 real screenshot proofs. |
 | **5. Dual-Sided Personas & Journey Maps** | [`03_customer_and_merchant_personas.md`](03_customer_and_merchant_personas.md) | **100% Complete** | Comprehensive profiles of Ahmad (23, student) and Kak Kawa (34, merchant); before vs after journeys. |
 | **6. Cross-Persona Alignment Matrix** | [`03_customer_and_merchant_personas.md`](03_customer_and_merchant_personas.md) | **100% Complete** | Harmonizes pricing, information, ordering, and trust incentives between buyers and sellers. |
 | **7. Platform Monetization Architecture** | [`../platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md) | **100% Complete** | Progressive Marginal Tiering (5%/3%/1.5%); cliff effect eliminated; 12-tier simulations; COD net settlement. |
@@ -174,4 +182,3 @@ The table below verifies that every core dimension required by the GIZ Youth Ent
 * **Competitive Landscape Matrix:** [`04_competitive_landscape_matrix.md`](04_competitive_landscape_matrix.md)
 * **Market Validation Survey Framework:** [`05_market_validation_survey.md`](05_market_validation_survey.md)
 * **Platform Fee Structure & Monetization:** [`../platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md)
-
