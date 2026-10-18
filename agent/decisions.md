@@ -94,3 +94,24 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Consequence:** All production endpoints (`api.getcheapify.com`), merchant web portals (`merchant.getcheapify.com`), customer links, packaging print collateral, and marketing CTAs will standardize on `getcheapify.com`. Recorded as Preference 27 in [`preferences.md`](preferences.md).
 
 
+
+### ADR-011: Content Marketing Strategy — Pre-Launch Audience Building & Two-Phase Plan
+* **Date:** 2026-10-18
+* **Status:** Accepted
+* **Context:** With the brand identity complete and the MVP 1–3 months away, Cheapify needed a publishing strategy for Facebook, Instagram, and TikTok covering both the empty period before launch and the launch itself.
+* **Decision:**
+  1. **Start posting before the MVP exists** — framed strictly as audience-building (documenting the price-variation problem, recruiting founding merchants, building the waitlist). Never as a product launch; no hard feature promises or dates until the MVP date is locked.
+  2. **Two-phase structure:** Phase A ([`../marketing/03_pre_launch_content_plan.md`](../marketing/03_pre_launch_content_plan.md)) is a repeatable weekly template cycled until MVP; Phase B ([`../marketing/04_launch_content_calendar.md`](../marketing/04_launch_content_calendar.md)) is a fixed T-7 countdown → launch week → 8-week post-launch calendar, activated when the launch date is confirmed and ≥10 founding merchants are committed.
+  3. **Unified cross-platform model (Preference 28):** one concept → one 9:16 master file → three native uploads. No platform-exclusive content; captions adapted per platform norms; no cross-platform watermarks.
+  4. **Language policy (Preference 29):** Kurdish (Badînî) audio + a single burned-in Kurdish subtitle track + Kurdish-first/Arabic caption on one post. No separate-language posts, no dual subtitle tracks, no English in launch content.
+  5. **Verification & brand guardrails (Preference 30):** real verifiable prices only; store identities blurred; zero emojis; PMS palette and trilingual font system enforced via a pre-publish checklist.
+* **Consequence:** All social content produced for Cheapify follows the series system (Price Detective, DM Hell, Founder's Circle, Build in Public, Bazaar Wisdom), the weekly template, and the language/subtitle rules defined in the two plan documents.
+
+### ADR-012: Referral System & Catalog First-Mover Incentive Architecture
+* **Date:** 2026-10-18
+* **Status:** Accepted
+* **Context:** Two growth-design problems needed solving before launch: (1) referral rewards are trivially farmed if they pay on signup, and the program must work in all four directions (shopper↔merchant); (2) in the Single-SKU catalog, the first merchant to create a listing does all the work while later merchants claim it in one tap — an asymmetry that discourages anyone from going first.
+* **Decision:**
+  1. **Transaction-gated referrals (Preference 31):** every reward in every direction unlocks only on a completed, courier-confirmed order — never on signup. All rewards are non-transferable platform credit (60-day expiry, one per order). Four-direction grid: Shopper→Shopper (free first delivery + 3k credit), Shopper→Merchant (nominate a shop → 3 free deliveries after the shop completes 10 orders), Merchant→Shopper (free first delivery + growth points → ad boosts, Best Value winners as default creative), Merchant→Merchant (1% take-rate rebate for 60 days). Anti-fraud stack: OTP identity, velocity caps, device/address heuristics, courier delivery signals, manual review.
+  2. **Catalog first-mover incentive (Preference 32):** barcode-first listing creation (auto-fill from product databases, template fallback for unbranded goods); 1,000 IQD creation bounty per approved master listing (commission-offset credit); 250 IQD micro-bounty for approved improvements to existing listings; creator attribution is permanent but the master page is shared infrastructure — improvements are QA-approved proposals, never direct edits. No platform-side catalog seeding (founder decision — catalog is 100% merchant-driven).
+* **Consequence:** Full specification in [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md). Reward values are founder-tunable (§8 of the spec); incentive spend is a capped marketing budget line in the operational budget.

@@ -316,5 +316,6 @@ Cheapify executes this GTM strategy with extreme capital efficiency, fully lever
 
 * **Pillar 1 (Entrepreneurship):** Aligned with the Single-SKU architecture ([01_problem_solution_value.md](../entrepreneurship/01_problem_solution_value.md)) and dual personas ([03_customer_and_merchant_personas.md](../entrepreneurship/03_customer_and_merchant_personas.md)).
 * **Platform Architecture:** Integrated with Progressive Marginal Tiering ([fee_structure_and_monetization.md](../platform/fee_structure_and_monetization.md)) and the Hybrid Best-Value Algorithm ([best_value_algorithm_strategy.md](../platform/best_value_algorithm_strategy.md)).
+* **Growth Incentives:** The four-direction referral grid and catalog first-mover bounty are specified in [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md) (ADR-012).
 * **Next Deliverable in Pillar 2 (Marketing):**
   - **`marketing/02_brand_identity_and_guidelines.md`**: Ground-up visual identity, brand voice, design language, and **brand-new color palette from zero** (retiring all legacy colors per Preference 18).

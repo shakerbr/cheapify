@@ -130,3 +130,28 @@ This file documents the specific ways, working habits, and styling preferences r
       4. **Enterprise Infrastructure:** Managed directly on Cloudflare with zero-markup at-cost renewals, free WHOIS privacy, DNSSEC, automatic SSL, and enterprise DDoS mitigation.
 
 
+
+28. **Unified Cross-Platform Content — One Set for Facebook, Instagram, and TikTok:**
+    - Cheapify publishes the **same content to all three platforms** — no platform-exclusive content. One concept is produced as a single vertical 9:16 master file (or 1:1 for static cards) and uploaded natively to each platform; captions are adapted per platform norms, and watermarked cross-posts are prohibited.
+    - **Rationale:** A founder-led team cannot sustain three separate content pipelines, and the Duhok launch audience is active on all three platforms anyway.
+
+29. **Content Language Policy — Kurdish-First, One Post Multilingual:**
+    - Video audio is **Badînî Kurdish** (Duhok launch market). Videos carry **one burned-in subtitle track in Kurdish script** (for muted autoplay) — two stacked subtitle tracks are prohibited (they consume ~25% of a 9:16 frame).
+    - Captions are **Kurdish first, Arabic second within the same post** — separate posts per language are prohibited (they split engagement and triple feed noise).
+    - **English is excluded** from consumer-facing launch content; it is reserved for later investor/B2B material. For Phase 3 expansion audiences (Baghdad/Basra), the same footage is re-exported with Arabic subtitles.
+
+30. **Two-Phase Content Plan — Template Before Launch, Calendar After:**
+    - **Phase A (pre-launch):** a repeatable weekly posting template ([`../marketing/03_pre_launch_content_plan.md`](../marketing/03_pre_launch_content_plan.md)) cycled until MVP, since its duration is unknown (1–3 months).
+    - **Phase B (launch):** a fixed T-7 countdown → launch week → 8-week calendar ([`../marketing/04_launch_content_calendar.md`](../marketing/04_launch_content_calendar.md)) activated when the MVP date is confirmed and ≥10 founding merchants are committed.
+    - Pre-launch content must never announce features on a hard date, promise unshipped functionality, or name/shame specific shops — price-variation posts blur store identities and use real verifiable prices only.
+
+31. **Referral Rewards — Transaction-Gated, Four-Direction:**
+    - Referral rewards fire ONLY on completed, courier-confirmed transactions — never on account signup. Rewards are non-transferable platform credit, never cash (60-day expiry).
+    - All four referral directions are supported: Shopper→Shopper, Shopper→Merchant ("nominate a shop"), Merchant→Shopper, Merchant→Merchant. A recruited merchant "activates" only after 10 completed orders.
+    - **Rationale:** signup-gated rewards are farmed by fake accounts; a delivered COD order can't be faked cheaply. Full spec: [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md).
+
+32. **Catalog First-Mover Incentive — Paid, Shared, Improvable:**
+    - First merchant to create an approved master listing earns a **1,000 IQD commission-offset credit** plus permanent attribution; later merchants claiming the same SKU only add price/stock/variants.
+    - Approved improvements to existing listings earn a **250 IQD micro-bounty** — master pages are shared infrastructure, and edits are QA-approved proposals, never direct edits.
+    - Listing creation is **barcode-first** (scan → auto-fill name/specs from product databases; guided template for unbranded goods).
+    - **No platform-seeded catalog** (founder decision): Cheapify staff never pre-create product pages; the catalog spine is 100% merchant-built.

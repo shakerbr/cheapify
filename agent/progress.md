@@ -6,6 +6,17 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-18] — Referral & Catalog Incentive Architecture (ADR-012)
+* **Designed the four-direction referral system** ([`platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md)): all rewards gated on completed courier-confirmed orders — never signups — paid in non-transferable platform credit. Directions: Shopper→Shopper (free 1st delivery + 3k credit), Shopper→Merchant (nominate a shop → 3 free deliveries after 10 orders), Merchant→Shopper (free delivery + growth points → ad boosts on Best Value winners), Merchant→Merchant (1% rebate 60d). Anti-fraud stack: OTP, velocity caps, device/address heuristics, courier failure signals.
+* **Solved catalog first-mover asymmetry:** barcode-first creation (auto-fill from product DBs, template fallback for unbranded), 1,000 IQD creation bounty (commission-offset credit, founder-set), 250 IQD improvement micro-bounty, permanent creator attribution with shared editable-via-proposal master pages. Platform catalog seeding rejected by founder — catalog is 100% merchant-built.
+* Cross-linked from the launch calendar (Week 6 referral push) and GTM playbook.
+
+### [2026-10-18] — Two-Phase Social Content Strategy Complete (Pillar 2)
+* **Decisions (founder):** post on social media *before* the MVP exists (audience-building only, no launch promises); same content published to Facebook + Instagram + TikTok; one multilingual post per drop (never separate-language posts); Duhok launch videos in Kurdish audio with a single Kurdish burned-subtitle track and Arabic in the caption; no English; two stacked subtitle tracks rejected. Recorded as ADR-011 and Preferences 28–30.
+* **Created** [`marketing/03_pre_launch_content_plan.md`](../marketing/03_pre_launch_content_plan.md) — Phase A: repeatable weekly template (5 posts/wk) across five series (Price Detective, DM Hell, Founder's Circle, Build in Public, Bazaar Wisdom), 4-week starter cycle, unified cross-platform publishing model, language/subtitle policy, pre-publish brand checklist, Phase A KPIs, and the infrastructure needed before post 1 (waitlist page, profiles, templates).
+* **Created** [`marketing/04_launch_content_calendar.md`](../marketing/04_launch_content_calendar.md) — Phase B: T-7 daily countdown, launch-week day-by-day plan, weeks 2–8 growth themes, merchant launch coordination, Phase B KPIs, and contingency rules.
+* **New open tasks:** waitlist landing page, social profile setup, reusable series templates, start Phase A cadence.
+
 ### [2026-10-17] — Official Platform Domain Secured (`getcheapify.com`)
 * **Milestone:** Secured **`getcheapify.com`** via Cloudflare Registrar as Cheapify's official root web domain, API host, and app download portal.
 * **Strategic Selection:** Overcomes the unavailability of `cheapify.com` and `cheapify.app` while leveraging maximum `.com` subconscious trust across everyday Iraqi/Kurdish consumers, eliminating typo leakage risks, and establishing an action-oriented product verb (*"Get Cheapify"*).
