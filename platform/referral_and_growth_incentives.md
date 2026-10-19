@@ -33,14 +33,14 @@ Cheapify's referral system runs in all four directions — shoppers and merchant
                    ┌───────────┬────────────┐
                    │  SHOPPER  │  MERCHANT  │
         ┌──────────┼───────────┼────────────┤
-        │ SHOPPER  │  Free 1st │  3 free    │
- R      │          │  delivery │ deliveries │
- E ┌───►│          │  + 3k cr. │ (≈9k IQD)  │
- F │    ├──────────┼───────────┼────────────┤
- E │    │ MERCHANT │  Free 1st │ Commission │
- R │    │          │  delivery │ rebate or  │
- R │    │          │  + growth │ ad-boost   │
- E │    │          │  points   │ credit     │
+        │ SHOPPER  │ Referrer: │ Referrer:  │
+ R      │          │ 3k credit │ 3 free     │
+ E ┌───►│          │ Referee:  │ deliveries │
+ F │    │          │    —      │ (≈9k IQD)  │
+ E │    ├──────────┼───────────┼────────────┤
+ R │    │ MERCHANT │ Referrer: │ Referrer:  │
+ R │    │          │ growth pts│ 10k credit │
+ E │    │          │ → boosts  │ + ad pts   │
  R │    └──────────┴───────────┴────────────┘
  E │
  R │   Activation gates (reward fires ONLY when):
@@ -50,9 +50,10 @@ Cheapify's referral system runs in all four directions — shoppers and merchant
 
 ### 2.1 Shopper → Shopper
 
-- **Referee gets:** free first delivery (3,000 IQD shipping credit applied automatically at checkout).
+- **Referee gets:** no material reward — the platform itself is the reward (transparent prices, real savings on the first order). Attribution is frictionless: the shared link auto-associates, and a code can also be applied after signup so the referrer never loses credit to a bypassed link.
 - **Referrer gets:** 3,000 IQD shipping credit, unlocked the moment the referee's first order is marked delivered.
 - **Why it survives fraud:** the referrer earns nothing until real money moves. A family member who signs up but never shops produces zero rewards.
+- **Cost efficiency:** paying only the referrer halves the per-acquisition incentive cost — ~3,000 IQD (~$2.30) per *activated* shopper.
 
 ### 2.2 Shopper → Merchant ("Nominate a Shop")
 
@@ -63,13 +64,14 @@ Cheapify's referral system runs in all four directions — shoppers and merchant
 ### 2.3 Merchant → Shopper
 
 - **Mechanics:** the merchant's storefront link (`getcheapify.com/@store`) and in-parcel QR code double as referral links — no extra work, the bio-link play (GTM Play 1) already drives this traffic.
-- **Shopper gets:** the standard free first delivery.
+- **Shopper gets:** no material reward — same referrer-only model as §2.1.
 - **Merchant gets:** growth points per activated shopper, redeemable for **ad boosts** (see §5). When redeeming, their **Best Value-winning products are the default recommended creative** — the ad can truthfully say "this offer won on price, speed, and rating."
 
 ### 2.4 Merchant → Merchant
 
 - **Mechanics:** merchants share a referral link/code with other social sellers.
-- **Recruiter gets:** commission rebate — **1% take-rate reduction for 60 days** — or an equivalent ad-boost credit, once the recruited shop is verified and completes 10 orders.
+- **Recruiter gets:** a flat **10,000 IQD commission-offset credit + ad-boost points**, once the recruited shop is verified and completes 10 orders.
+- **Why flat, not percentage:** a take-rate rebate scales with the *recruiter's* sales volume (45k–360k+ IQD over 60 days) — unbounded cost paying for the wrong thing. A flat bounty reflects the value of the *recruited shop* and stays inside the merchant-CAC target (<$10/store).
 - **Recruited merchant gets:** priority onboarding assistance (faster QA queue).
 
 ---
@@ -96,22 +98,9 @@ Layered controls, cheapest first; escalation is automatic:
 
 ---
 
-## 4. Catalog-First-Mover Incentive ("First to List")
+## 4. Catalog Creation & Improvement Bounties ("First to List")
 
-### 4.1 The Problem Being Solved
-
-In a Single-SKU catalog, the first merchant to list a product does the heavy work — photos, name, description, specs — while every later merchant claims the existing page in one tap and only adds price, stock, and variants. Without compensation, rational merchants wait for others to do the work, and the catalog never fills.
-
-### 4.2 Layer 1 — Shrink the Work: Barcode-First Creation
-
-The primary fix is making creation nearly free, not merely paying for it:
-
-- Merchant scans the product's **manufacturer barcode (EAN/UPC)** → the master page auto-fills name, specs, and reference imagery from aggregated product databases.
-- **Coverage is strong for branded goods** (chargers, cables, perfumes, branded accessories) — precisely the SKUs duplicated across merchants where the first-mover asymmetry hurts most.
-- **Local/unbranded goods** fall back to a guided creation template — barcode handles the high-duplication core; templates handle the tail.
-- The merchant then only adds their own data: price, stock, color/measurement variants, and optional shop-specific photos.
-
-### 4.3 Layer 2 — Pay the Creator: The Catalog Bounty
+**The incentive problem:** in a Single-SKU catalog, the first merchant to list a product does all the work while later merchants claim it in one tap. The bounty below compensates that asymmetry; the *mechanics* — barcode-first creation, QA gate, shared-ownership/edit-proposal model — live in [`catalog_governance.md`](catalog_governance.md) §1 & §3.
 
 | Action | Reward | Gate |
 | :--- | :--- | :--- |
@@ -123,17 +112,6 @@ The primary fix is making creation nearly free, not merely paying for it:
 - Cap: **10 new master listings per merchant per day** (prevents junk-listing farming).
 - Only **verified merchants** may create master listings.
 
-### 4.4 Layer 3 — Shared Ownership, Not a Land-Grab
-
-The master page is platform infrastructure, not the creator's property:
-
-- The creator keeps permanent **"listed this product" attribution** on the page and their credit — never revoked.
-- **Any verified merchant selling that product may propose improvements** (better photo, missing spec, corrected description, additional variants). Proposals queue for QA — nobody edits the page directly.
-- **Approved improvements earn the 250 IQD micro-bounty**, so a weak first listing doesn't stay weak, and a merchant who finds a poor page profits by fixing it instead of duplicating it.
-- **Full change history** on every master page — every edit attributed, reversible.
-
-**Result:** being first is rewarded (credit + attribution + anchor visibility), but quality is communal — the catalog improves monotonically instead of rewarding first-come-low-effort listings.
-
 ---
 
 ## 5. Reward Economics
@@ -142,13 +120,13 @@ All incentive credits draw from a single **Growth Incentives pool**, funded as a
 
 | Reward | Cost (IQD) | Cost basis |
 | :--- | :--- | :--- |
-| Shopper referral (both sides) | 6,000 total | ≈ 2 delivery fees per acquired active buyer |
+| Shopper referral (referrer only) | 3,000 | ≈ 1 delivery fee per activated buyer |
 | Shopper → Merchant nomination | 9,000 | ≈ 3 delivery fees per performing merchant |
-| Merchant → Merchant recruitment | ~1% take-rate for 60 days | Foregone commission, capped by cap |
+| Merchant → Merchant recruitment | 10,000 flat | Inside the <$10 merchant-CAC target |
 | Catalog creation | 1,000 per SKU | One-time per SKU forever — every later merchant's claim is free |
 | Catalog improvement | 250 per edit | Marginal quality spend |
 
-**Sanity check vs. CAC targets:** the GTM shopper CAC target is <$0.50. A 6,000 IQD (~$4.60) full-cycle referral cost exceeds that on paper — but it buys an *activated* buyer (one who already completed a real order), not an install. It is therefore booked as **activation + retention spend**, not acquisition spend, and is reviewed against blended CAC at the Month-2 report. If it outperforms paid CAC on a cost-per-ordering-customer basis, the pool grows; if not, the per-reward values are tuned down.
+**Sanity check vs. CAC targets:** the GTM shopper CAC target is <$0.50. A 3,000 IQD (~$2.30) referral cost exceeds that on paper — but it buys an *activated* buyer (one who already completed a real order), not an install. It is therefore booked as **activation + retention spend**, not acquisition spend, and is reviewed against blended CAC at the Month-2 report. If it outperforms paid CAC on a cost-per-ordering-customer basis, the pool grows; if not, the per-reward values are tuned down.
 
 **Monthly guardrail:** total incentive payout is capped at a fixed budget line in the operational budget; if the cap is hit, referral rewards queue to the next month rather than unbounded spend. (Exact cap set in [`../finance/01_operational_budget.md`](../finance/01_operational_budget.md).)
 
@@ -180,9 +158,9 @@ All incentive credits draw from a single **Growth Incentives pool**, funded as a
 
 | Parameter | Current value | Notes |
 | :--- | :--- | :--- |
-| Shopper referral credit | 3,000 IQD each side | = one delivery fee |
+| Shopper referral credit | 3,000 IQD (referrer only) | = one delivery fee |
 | Merchant nomination reward | 3 free deliveries | ≈ 9,000 IQD |
-| Merchant→Merchant rebate | 1% take-rate, 60 days | Alternative: ad-boost credit |
+| Merchant→Merchant bounty | 10,000 IQD + ad points | Flat; bounded by CAC target |
 | Catalog creation bounty | 1,000 IQD | Founder-set |
 | Improvement micro-bounty | 250 IQD | Founder-set |
 | Monthly referral cap / account | 5 rewards | Anti-fraud |

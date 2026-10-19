@@ -43,6 +43,7 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
 - **Active Tasks:** [agent/active-tasks.md](agent/active-tasks.md) — Current focus and task checklist.
 - **Progress Log:** [agent/progress.md](agent/progress.md) — Chronological ledger of all completed work.
 - **Decisions Log:** [agent/decisions.md](agent/decisions.md) — Architecture and business decision records (ADR).
+- **Parking Lot:** [agent/to-consider.md](agent/to-consider.md) — Open questions and undecided topics awaiting graduation into tasks/ADRs.
 
 ---
 

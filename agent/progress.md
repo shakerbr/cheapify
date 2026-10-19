@@ -6,6 +6,13 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-19] — Operational Policies Drafted (ADR-013)
+
+* **Created** [`platform/operational_policies.md`](../platform/operational_policies.md) covering all items in the founder's `to-consider.md`: two-class returns (fault→merchant pays, remorse→customer pays, 48h window), flat 3,000 IQD Duhok shipping inside Doorstep Total, mandatory sealed packaging + security tape ≥50k IQD, COD-primary payments with weekly settlement + Phase-3 e-wallets, then split into a sibling doc [`platform/catalog_governance.md`](../platform/catalog_governance.md) holding listing process, the 8-rule listing policy, and the 4-layer duplicate-prevention strategy.
+* Every section marked **[Policy]** vs **[Assumption]**; §5 lists the real-world data needed (courier quotes, remittance terms, return-rate baseline) — all feed Pillar 3 finance work.
+* **Referral spec finalized:** referrer-only rewards (3k shopper / 3-free-deliveries merchant-nomination / growth points / flat 10k merchant-recruit credit); percentage rebate rejected as unbounded.
+* **Doc boundary cleanup:** catalog mechanism details (first-mover problem, barcode-first flow, shared-ownership/edit-proposal model) moved from `referral_and_growth_incentives.md` §4 into `catalog_governance.md` §1 & §3; the incentives doc retains only the bounty economics.
+
 ### [2026-10-18] — Referral & Catalog Incentive Architecture (ADR-012)
 
 * **Designed the four-direction referral system** ([`platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md)): all rewards gated on completed courier-confirmed orders — never signups — paid in non-transferable platform credit. Directions: Shopper→Shopper (free 1st delivery + 3k credit), Shopper→Merchant (nominate a shop → 3 free deliveries after 10 orders), Merchant→Shopper (free delivery + growth points → ad boosts on Best Value winners), Merchant→Merchant (1% rebate 60d). Anti-fraud stack: OTP, velocity caps, device/address heuristics, courier failure signals.
