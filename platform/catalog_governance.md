@@ -68,8 +68,29 @@ Single-SKU integrity is what makes Best Value possible — duplicates are the sy
 **Layer 1 — Barcode exact match [Policy]:**
 EAN/UPC scan returns the existing master page instantly. A barcode already in the catalog **cannot** spawn a second page — the create flow routes to claim. Hard block, no review needed.
 
-**Layer 2 — Fuzzy match at creation [Policy]:**
-For items without barcodes, creation requires searching first. Matching on: normalized name (Kurdish/Arabic/Latin aliases), brand, category, key specs. Candidate matches shown — "Is this your product?" Claiming beats creating every time.
+**Layer 2 — Intelligent multi-signal match at creation [Policy]:**
+For items without barcodes, creation requires searching first. An intelligent matching system scores the candidate against the catalog across **multiple signals**, not just the name:
+
+| Signal | What it compares |
+| :--- | :--- |
+| **Text** | Normalized name + description across Kurdish/Arabic/Latin aliases; brand, model numbers, key specs |
+| **Visual** | Image similarity — perceptual hashing + embeddings catch the same product photo'd differently |
+| **Taxonomy** | Category, tags, and variant structure (e.g. two "20,000mAh power banks" in Electronics) |
+| **Attributes** | Capacity, color set, size range, condition — spec-level overlap |
+
+The engine combines these into a **confidence score**:
+
+- **High confidence** → strong candidate list shown with *"Is this your product?"* — merchant must explicitly confirm "no match" before creating, and claiming is one tap. Creation without a claimed match is allowed but logged.
+- **Medium confidence** → candidates shown + flagged for QA review alongside the listing approval.
+- **Low confidence** → create proceeds normally.
+
+The score thresholds and signal weights are tunable as real duplicate data accumulates during the pilot — start strict (favor false "possible match" prompts over missed duplicates), then relax.
+
+**Phased intelligence [Policy]:**
+- **Launch version:** barcode + normalized trilingual text + category/spec filters — deterministic, no ML dependency.
+- **Post-pilot evolution:** add multilingual text embeddings (cross-lingual semantic match), vision embeddings (same product, different photos), and ML-extracted attributes from free-text descriptions — using off-the-shelf models, no custom training.
+- **Learned thresholds:** every merchant claim/rejection during the pilot is labeled training data; the matcher's weights and thresholds are learned from real decisions, not guessed.
+- **Why staged:** the simple version catches most duplication (barcode + search handles the high-duplication core) and never blocks launch; ML versions arrive when pilot data exists to tune them.
 
 **Layer 3 — Community + QA detection [Policy]:**
 

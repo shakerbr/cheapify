@@ -201,3 +201,15 @@ sequenceDiagram
 * **Market Opportunity & Sizing:** [`../entrepreneurship/02_market_opportunity_and_sizing.md`](../entrepreneurship/02_market_opportunity_and_sizing.md)
 * **Customer & Merchant Personas:** [`../entrepreneurship/03_customer_and_merchant_personas.md`](../entrepreneurship/03_customer_and_merchant_personas.md)
 * **Architectural Decisions Log:** [`../agent/decisions.md`](../agent/decisions.md) (ADR-005)
+
+
+---
+
+## Appendix — Open Items Requiring Real-World Data
+
+| Figure used in this doc | Source status | Needs |
+| :--- | :--- | :--- |
+| Incumbent commissions 10–15% (Miswag, Elryan) | Unverified benchmark | Confirm via their merchant terms/outreach |
+| Merchant gross margins 15–25% | Generic estimate | Real margins from onboarded Duhok sellers |
+| 85%+ COD share of e-commerce volume | Regional estimate | Validate vs. FIB/FastPay/Qi adoption data |
+| Net-settlement mechanics via 3PL | Proposed | Courier contract remittance terms |

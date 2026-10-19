@@ -563,3 +563,14 @@ export function evaluateBestValueOffers(
 - **Pillar 2 (Marketing):** Provides the core commercial narrative for merchant onboarding ("Cheapify protects local Duhok shops from out-of-city dumping") and consumer acquisition campaigns ("Never pay a surprise shipping markup again").
 - **Pillar 3 (Finance Management):** Directly drives unit economics by standardizing 3PL parcel tariffs (3,000 IQD) and anchoring COD weekly settlement calculations.
 - **Pillar 4 (Business Modeling):** Forms the core defensible technology asset within the Value Proposition and Key Activities blocks of the Business Model Canvas.
+
+
+---
+
+## Appendix — Open Items Requiring Real-World Data
+
+| Figure used in this doc | Source status | Needs |
+| :--- | :--- | :--- |
+| Default weights w1=0.50 / w2=0.35 / w3=0.15 | Design judgment | Validate against pilot conversion + complaint data |
+| Min-5-orders rating threshold | Chosen cutoff | Recalibrate with real merchant order velocity |
+| Proximity scoring buckets (1–3h / 3–6h / 24–48h) | Assumed courier performance bands | Real courier SLA data from pilot |

@@ -166,3 +166,15 @@ All incentive credits draw from a single **Growth Incentives pool**, funded as a
 | Monthly referral cap / account | 5 rewards | Anti-fraud |
 | Credit expiry | 60 days | Forces re-engagement |
 | Merchant activation gate | 10 completed orders | Proves real seller, not shell |
+
+
+---
+
+## 9. Open Items Requiring Real-World Data
+
+| Figure used in this doc | Source status | Needs |
+| :--- | :--- | :--- |
+| 3,000 IQD referral credit sufficiency | Untested incentive level | Post-launch referral uptake data; tune §8 |
+| 10-order merchant activation gate | Chosen threshold | Recalibrate after observing real seller ramp-up |
+| Monthly incentives pool cap | Unset | Set in [`../finance/01_operational_budget.md`](../finance/01_operational_budget.md) |
+| Referral fraud rate | Unknown locally | First 90 days of flagged-account data |

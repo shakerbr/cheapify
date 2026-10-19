@@ -239,3 +239,14 @@ Phase A ends and [`04_launch_content_calendar.md`](04_launch_content_calendar.md
 2. ≥ 10 founding merchants are committed or onboarded.
 
 At the trigger, the countdown sequence in the launch calendar begins (T-7). Phase A series don't die — Price Detective, Build in Public, and Bazaar Wisdom continue into Phase B with updated CTAs ("download the app" replaces "join the waitlist").
+
+
+---
+
+## Appendix — Open Items Requiring Real-World Data
+
+| Figure used in this doc | Source status | Needs |
+| :--- | :--- | :--- |
+| Posting window 18:00–21:00 Duhok | Common-sense estimate | Platform analytics once posting begins |
+| KPI targets (followers, signups, views) | Uncalibrated goals | First 30 days of real metrics → recalibrate |
+| ~70–80% muted-autoplay share | Industry benchmark | Acceptable proxy; verify per-platform analytics |

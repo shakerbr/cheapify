@@ -341,3 +341,16 @@ Cheapify executes this GTM strategy with extreme capital efficiency, fully lever
 - **Growth Incentives:** The four-direction referral grid and catalog first-mover bounty are specified in [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md) (ADR-012).
 - **Next Deliverable in Pillar 2 (Marketing):**
   - **`marketing/02_brand_identity_and_guidelines.md`**: Ground-up visual identity, brand voice, design language, and **brand-new color palette from zero** (retiring all legacy colors per Preference 18).
+
+
+---
+
+## 8. Open Items Requiring Real-World Data
+
+| Figure used in this doc | Source status | Needs |
+| :--- | :--- | :--- |
+| 85%+ DM ghost rate; 50–100 DMs/day per seller | Estimate from seller anecdotes | 5–10 interviews with Duhok social sellers |
+| Competitor commissions (Miswag/Elryan 10–15%) | Industry benchmark, unverified locally | Public fee pages / merchant interviews |
+| Merchant gross margins 15–25% | Generic retail estimate | Merchant conversations during onboarding |
+| Paid-ad CPM/CPC for Duhok targeting | Unpriced | Meta/TikTok Ads Manager test budget (~$20) |
+| CAC targets (<$0.50 / <$0.80) | Aspirational goals | Recalibrate after first paid campaign data |

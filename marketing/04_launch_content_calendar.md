@@ -123,3 +123,14 @@ If installs convert but first orders stall, shift content weight to objection ha
 - **If MVP slips during T-7 countdown:** stop the countdown honestly — one transparent post ("we're taking two more weeks to get this right") costs less than a broken launch. Reliability is the brand.
 - **If a post draws merchant backlash** (a seller feels attacked by a comparison): respond once, politely, with the verification policy — never argue in comments. Offer them a merchant conversation in DM.
 - **If delivery problems occur during launch week:** apply the spec's accountable-delivery tone (§2.2) publicly — own it, state the fix, no deflection. A handled failure is better marketing than silence.
+
+
+---
+
+## Appendix — Open Items Requiring Real-World Data
+
+| Figure used in this doc | Source status | Needs |
+| :--- | :--- | :--- |
+| Posting window 18:00–21:00 Duhok | Common-sense estimate | Platform analytics once posting begins |
+| KPI targets (followers, signups, views) | Uncalibrated goals | First 30 days of real metrics → recalibrate |
+| ~70–80% muted-autoplay share | Industry benchmark | Acceptable proxy; verify per-platform analytics |
