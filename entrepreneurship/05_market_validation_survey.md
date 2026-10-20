@@ -283,3 +283,35 @@ The incoming data stream is structured to directly substantiate the remaining 3 
 * **Dual Buyer & Merchant Personas:** [`03_customer_and_merchant_personas.md`](03_customer_and_merchant_personas.md)
 * **Competitive Landscape Matrix:** [`04_competitive_landscape_matrix.md`](04_competitive_landscape_matrix.md)
 * **Platform Fee Structure & Monetization:** [`../platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md)
+
+---
+
+## 7. Survey Results — n=199 (Sep–Oct 2026)
+
+**Dataset:** [`../assets/evidence/market-validation-survey-oct2026.csv`](../assets/evidence/market-validation-survey-oct2026.csv)
+**Sample:** 179 shoppers + 20 merchants. Language split: 168 Arabic / 21 English / 10 Kurdish — *Kurdish (Badînî) respondents underrepresented relative to Duhok's population; treat Kurdish-specific figures as directional only.*
+
+### 7.1 Shopper Findings (n=179)
+
+| Signal | Result | Reads as |
+| :--- | :--- | :--- |
+| Notice price differences on the same item | **97%** (39% "always, large gaps" + 58% "sometimes") | Core problem confirmed — variation is visible to nearly everyone |
+| Would use a side-by-side price comparison app | **88% yes** (50% "definitely" + 38% "probably"), 10% maybe, **2% prefer DMs** | Demand intent is overwhelming; the DM habit is the minority |
+| Left contact for beta access | **74 shoppers (41%)** | Instant waitlist seed — real acquisition asset, zero CAC |
+| Top annoyances (top-2 picks) | Unverified sellers & duplicate clutter ~52% · "found it cheaper after buying" ~47% · "DM just to ask Price?" ~46% · delivery delays ~27% | Validates all four problem pillars — trust, regret, interrogation tax, friction |
+
+### 7.2 Merchant Findings (n=20)
+
+| Signal | Result | Reads as |
+| :--- | :--- | :--- |
+| Sell via Instagram/Facebook | **85%** | Stage-1 targeting (social sellers first) confirmed correct |
+| Would test unified-listing platform | **75% yes**, 15% maybe, 10% no | Strong merchant pull, not just push |
+| Signed up for the 5–10 pilot shops | **13 (65%)** | The founding cohort *already exists* — exceeds the 10-store target |
+| Top headaches | "Price?" DM replies ~55% · random competition & price conflicts ~45% · cost of own app/site ~35% · manual delivery coordination ~35% | Merchant pain mirrors the product design — DM relief, price intelligence, free tooling, dispatch automation |
+
+### 7.3 What This Changes
+
+- **Replaces the "85% DM ghost" assumption** with measured intent: 88% app-positive, 2% DM-loyal.
+- **Waitlist is not hypothetical** — 74 shopper contacts + 13 merchant contacts are real, dated, in the dataset.
+- **Merchant recruitment is partially done** — the pilot cohort target (5–10) is met on paper with 3 spares.
+- **Caveat kept honest:** intent ≠ behavior. Survey "yes" becomes truth only when converted — which is what the concierge pilot and Phase-A content measure next.

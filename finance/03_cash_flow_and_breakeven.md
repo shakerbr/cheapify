@@ -187,7 +187,7 @@ Documents can't reduce traction risk — only real-world tests can. Three cheap 
 | Item | Needed input | Moves |
 | :--- | :--- | :--- |
 | ~~Courier cost (A1)~~ — done (Fast Delivery) | Contract signature | Contribution/order, break-even |
-| Order ramp | Waitlist conversion + launch data | Whole cash curve |
+| Order ramp | Waitlist seeded: 74 shopper + 13 merchant contacts (survey n=199, Oct 2026) — conversion rate still unproven until launch | Whole cash curve |
 | AOV | Seller price survey | Contribution/order |
 | Return/failed-delivery rates | Pilot data | Variable-cost line |
 | Merchant velocity (A9) | n=1 interview: ~30/mo total | Orders ramp realism — more interviews |

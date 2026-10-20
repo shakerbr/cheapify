@@ -6,8 +6,8 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ## Current Active Focus
 
-* **Active Pillar:** Pillar 2 (Marketing) — 30-Day Trilingual Launch Content Calendar
-* **Lead File:** [`marketing/03_pre_launch_content_plan.md`](../marketing/03_pre_launch_content_plan.md) + [`marketing/04_launch_content_calendar.md`](../marketing/04_launch_content_calendar.md)
+* **Active Pillar:** All 4 pillars complete — next deliverable is the **final pitch deck** (`presentation/`, 6-min limit, ~7–9 slides)
+* **Lead File:** `business-modeling/` docs finalized; deck assembly per `agent/roadmap.md` sequence
 
 ---
 
@@ -27,6 +27,10 @@ This document tracks immediate actionable tasks, active work items, and current 
 * [x] Add Dual-Persona Deep-Dive: Consumer (Ahmad) & Merchant (Kak Kawa) ([03_customer_and_merchant_personas.md](../entrepreneurship/03_customer_and_merchant_personas.md))
 * [x] Add Competitive Landscape Matrix: Direct/indirect competitors (Miswag, Elryan, iBazzar, Instagram commerce) vs Cheapify ([04_competitive_landscape_matrix.md](../entrepreneurship/04_competitive_landscape_matrix.md))
 * [x] Add Trilingual Market Validation Survey Framework (Kurdish Badini, Arabic, English) ([05_market_validation_survey.md](../entrepreneurship/05_market_validation_survey.md))
+* [x] Deploy survey + analyze results — **n=199 (179 shoppers / 20 merchants)**: 97% notice price gaps, 88% app intent, 74 beta contacts, 13 pilot-merchant signups (05 §7; CSV in `assets/evidence/`)
+* [ ] Extract & contact the 13 pilot-merchant candidates + 74 shopper beta contacts from survey responses → founding-cohort outreach list *(deferred by founder — will do later)*
+* [ ] Restore missing `assets/evidence/price-variation/` screenshots referenced by entrepreneurship/01–02 (folder absent from repo — pull from source device; target 5–6 total comparisons across categories)
+* [ ] Second survey wave (deferred — later): Kurdish-boosted via Meta ads; ask AOV, COD preference, delivery-fee tolerance (gaps survey 1 left)
 * [x] Synthesize Value Proposition Canvas (VPC), Innovation & Founder-Market Fit ([06_value_proposition_and_founder_fit.md](../entrepreneurship/06_value_proposition_and_founder_fit.md))
 
 ### Milestone 2: Execute Pillar 2 (Marketing) Deliverables
@@ -48,10 +52,16 @@ This document tracks immediate actionable tasks, active work items, and current 
 ### Milestone 3: Execute Pillar 3 (Finance) Deliverables
 
 * [x] Draft operational budget v1 — assumption-driven model ([01_operational_budget.md](../finance/01_operational_budget.md))
-* [~] Collect real quotes: ~~Duhok courier~~ **A1 DONE — Fast Delivery: zones 2,500/3,500/4,500 contracted** (confirm Zakho tier + 2nd quote for leverage); remaining: print (A12), legal registration, ad CPM test
+* [~] Collect real quotes: ~~Duhok courier~~ **A1 DONE — Fast Delivery: zones 2,500/3,500/4,500 contracted** (contract signing deferred — open anytime; confirm Zakho tier + 2nd quote for leverage); remaining: print (A12), legal registration, ad CPM test
 * [x] Build unit economics doc (per-order & per-merchant LTV/CAC) — `finance/02_unit_economics.md`
 * [x] Build cash-flow projection + break-even — `finance/03_cash_flow_and_breakeven.md`
 * [x] Draft GIZ funding request — tiered ask mapped to ranked awards ([04_funding_request.md](../finance/04_funding_request.md))
+
+### Milestone 4: Complete Pillar 4 (Business Modeling) — Complete
+
+* [x] 9-Block Business Model Canvas — evidence-backed, survey + courier-quote integrated ([01_business_model_canvas.md](../business-modeling/01_business_model_canvas.md))
+* [x] 3 Core SOPs — merchant onboarding, 3PL order flow→settlement, returns/refunds ([02_core_sops.md](../business-modeling/02_core_sops.md))
+* [x] Operational risk matrix — 17 risks scored L×I, top risks R4 bypass/R1 traction/R2+R11 contract chain ([03_operational_risk_matrix.md](../business-modeling/03_operational_risk_matrix.md))
 
 ### Program Constraints (from GIZ updates)
 

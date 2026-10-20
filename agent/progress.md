@@ -6,6 +6,23 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-20] — Pillar 4 Complete: Business Modeling (All 4 Pillars Built)
+
+* **Created `business-modeling/` — three documents:**
+  * [`01_business_model_canvas.md`](../business-modeling/01_business_model_canvas.md): 9-block canvas, evidence-backed — survey stats (97%/88%/41%/13-merchant pilot), verified courier quote, waitlist as key resource. Records the moat = single-SKU catalog, and the one critical path: registration → courier contract → delivery margin.
+  * [`02_core_sops.md`](../business-modeling/02_core_sops.md): SOP-1 merchant onboarding (self-serve 8-step, QA <2h, 10-order activation gate), SOP-2 order→3PL→delivery→weekly-settlement (failed-delivery branch, COD custody flag), SOP-3 returns (48h window, fault/remorse split, serial-returner flagging). Every step tagged [auto]/[manual]/[courier].
+  * [`03_operational_risk_matrix.md`](../business-modeling/03_operational_risk_matrix.md): 17 risks scored Likelihood×Impact — top: R4 bypass (16), R1 traction (15), R2/R11 contract chain (12 each), R7 failed deliveries (12). Weekly/monthly/gate review cadence defined.
+* **Milestone:** all 4 program pillars now built from ground zero — next deliverable per roadmap: the 6-minute pitch deck.
+* **Founder deferrals noted in `active-tasks.md`:** pilot-merchant outreach, courier contract signing ("open anytime"), second Kurdish-boosted survey wave — all deferred to later; no blockers on deck work.
+
+### [2026-10-20] — Market Validation Survey Analyzed (n=199) — First Large-Scale Evidence
+
+* **Dataset:** [`assets/evidence/market-validation-survey-oct2026.csv`](../assets/evidence/market-validation-survey-oct2026.csv) — 199 responses (168 AR / 21 EN / 10 KU): **179 shoppers + 20 merchants**. Results written into `entrepreneurship/05` §7.
+* **Shopper findings:** **97% notice price differences** (39% always see large gaps); **88% would use a comparison app** (2% prefer DMs); **74 left beta contacts (41%)** — real waitlist seed, zero CAC. Top annoyances: unverified/duplicate pages ~52%, cheaper-after-buying ~47%, DM price interrogation ~46%, delivery delays ~27%.
+* **Merchant findings:** **75% platform-interested**; **13 signed up for the pilot (65%)** — founding cohort target (5–10) already met with spares; 85% sell via IG/FB. Top headaches: price-DM replies ~55%, random price competition ~45%, own-app cost ~35%, manual delivery coordination ~35%.
+* **Syncs:** `marketing/01` §8 DM-ghost row → survey-verified; `finance/04` viability + KPI baselines now cite measured waitlist; `finance/03` order-ramp open item notes the seeded waitlist. The 13 merchant contacts = founding-cohort candidate list (extract for outreach).
+* **Limitations recorded:** Kurdish sample thin (10/199) — Badînî underrepresented vs Duhok population; survey intent ≠ conversion — concierge pilot still decides.
+
 ### [2026-10-20] — Desk Research + First Merchant Interview (More Real Data)
 * **OTP/messaging costs desk-verified:** OTPIQ (Iraqi-local provider) — WhatsApp OTP **40 IQD/msg**, SMS OTP **80–100 IQD (Korek/Asiacell), 250 (Zain)**; Meta moved to per-message pricing Jul 2025 (utility ~$0.01–0.02). SMS is 3× the assumed cost → OTP routing changed to WhatsApp-first with SMS fallback (blended ~50 IQD). A6/A7 marked `[DESK-VERIFIED]`.
 * **Merchant interview n=1 (A9):** ~30 orders/mo total DM volume — 2× the planning assumption per store, but Cheapify capture is still a slice of it. Failed deliveries confirmed real ("buyer not home"); returns honesty-dependent.

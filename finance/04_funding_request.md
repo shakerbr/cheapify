@@ -73,7 +73,7 @@ With criteria unpublished, the request addresses every standard grant dimension:
 
 | Criterion | Cheapify's answer |
 | :--- | :--- |
-| **Viability** | Positive unit economics (~+1,015 IQD/order), break-even ~642 orders/mo, modeled base + conservative scenarios — not optimism, a bounded plan |
+| **Viability** | Positive unit economics (~+1,015 IQD/order), break-even ~642 orders/mo, modeled base + conservative scenarios — not optimism, a bounded plan. Demand already measured: n=199 survey — 97% of shoppers notice price gaps, 88% would use a comparison app, 41% joined the beta waitlist, 13 merchants signed up for the pilot |
 | **Founder readiness** | Full-stack build already underway; complete venture documentation (GTM, brand system, platform policies, financial model); co-investment ~$9,500 |
 | **Social/economic impact** | Price transparency for consumers; formalizes informal social sellers into registered merchants with tools, records, and delivery infrastructure; jobs via courier partnerships |
 | **Innovation** | Shared master-SKU catalog (first for the market), Best Value ranking, barcode-first listing, anti-fraud incentive design |
@@ -86,10 +86,11 @@ With criteria unpublished, the request addresses every standard grant dimension:
 
 Most grant applications promise; this one *tests first*:
 
-1. **$100 buys certainty on the biggest unknowns** — concierge pilot + courier quote happen *before* any growth spend. If the model's core assumptions fail, remaining funds aren't burned — the pivot happens cheap.
-2. **Bounded incentives, anti-fraud by design** — every reward gated on delivered orders, capped monthly, non-cash credits (documented in `platform/referral_and_growth_incentives.md`).
-3. **Two scenarios modeled** — the request doesn't hide the downside; it shows the venture survives at half the projected volume.
-4. **No founder salary** — the ask can't be quietly consumed as personal income.
+1. **Validation already underway** — n=199 market survey (Oct 2026) and a verified courier quote were completed *before* asking for money; the waitlist (74 shoppers, 13 merchants) exists today.
+2. **$100 buys certainty on the biggest unknowns** — concierge pilot + courier contract happen *before* any growth spend. If the model's core assumptions fail, remaining funds aren't burned — the pivot happens cheap.
+3. **Bounded incentives, anti-fraud by design** — every reward gated on delivered orders, capped monthly, non-cash credits (documented in `platform/referral_and_growth_incentives.md`).
+4. **Two scenarios modeled** — the request doesn't hide the downside; it shows the venture survives at half the projected volume.
+5. **No founder salary** — the ask can't be quietly consumed as personal income.
 
 ---
 
@@ -101,8 +102,8 @@ What we'll report monthly (all already instrumented in the model):
 | :--- | :--- | :--- |
 | Delivered orders/mo | 0 | 3,000 |
 | GMV/mo | 0 | ~75M IQD |
-| Active verified merchants | 0 | 20–30 |
-| Registered shoppers | 0 | 2,000+ |
+| Active verified merchants | 0 signed · 13 expressed (survey waitlist) | 20–30 |
+| Registered shoppers | 0 registered · 74 on beta waitlist | 2,000+ |
 | CAC / LTV ratio | — | ≥3:1 (model ~7:1) |
 | Repeat-order rate | — | ≥30% |
 | Delivery time (Duhok) | — | ≤3h median |
