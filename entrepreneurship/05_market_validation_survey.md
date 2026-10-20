@@ -263,12 +263,15 @@ The survey is currently active and being distributed across high-conversion comm
 The incoming data stream is structured to directly substantiate the remaining 3 program pillars:
 
 1. **Feeding Pillar 2 (Marketing):**
+
    * Identified buyer pain points (e.g., waiting hours for "DM for price" replies) will form the exact advertising hooks, social video scripts, and tagline copy for the launch campaign.
    * Captured WhatsApp numbers form our initial closed beta testing group for the interactive web catalog MVP.
 2. **Feeding Pillar 3 (Finance Management):**
+
    * Confirms merchant commission sensitivity (validating our [Progressive Marginal Tiering](../platform/fee_structure_and_monetization.md) take rate against competitor rates).
    * Validates average monthly order frequency to fine-tune unit economics and break-even projections.
 3. **Feeding Pillar 4 (Business Modeling):**
+
    * Onboards the first 5 to 10 verified pilot merchants, establishing real operating partnerships and fulfillment SLAs before public launch.
 
 ---

@@ -58,6 +58,7 @@ E-commerce in Iraq is experiencing rapid consumer adoption, but it is fundamenta
   * Annual e-commerce and social commerce retail spending per active online buyer in Iraq ranges between **$180 and $250 USD / year (270,000 – 375,000 IQD)**.
   * Across all retail consumer goods (electronics, home & living, fashion accessories, personal care, study, tools, gifts):
     $$\text{TAM} \approx \mathbf{\$2.5 \text{ Billion to } \$3.5 \text{ Billion+ USD / year (~3.75 to 5.25 Trillion IQD)}}$$
+
   * The sector is compounding at **15% – 18% CAGR**, stimulated by nationwide 4G/5G mobile penetration and rapid digital banking adoption (FIB, FastPay, Qi Card).
 
 ---
@@ -78,7 +79,7 @@ Cheapify is engineered as a **broad, multi-category marketplace**, not a single-
 8. **Study & Educational:** Scientific calculators, graphic drawing tablets, desk organizers, reading lights, student tech accessories.
 9. **Gifts & Novelties:** Branded luxury gift sets, personalized gadgets, festive items.
 10. **Musical Equipment:** Tuners, guitar cables, studio microphones, audio interfaces, portable electronic keyboards, instrument accessories.
-*...And all other standardized retail categories with defined models and market-wide price disparities!*
+......And all other standardized retail categories with defined models and market-wide price disparities!
 
 #### Target Regional SAM Calculation
 
@@ -210,11 +211,13 @@ Every metric, market assumption, and demographic statistic in this document is s
 All price variation claims are backed by physical evidence and verified real-world screenshots stored directly in the project repository at [`assets/evidence/price-variation/`](assets/evidence/price-variation/):
 
 1. **ASUS VA24EHF 24" 100Hz Gaming Monitor (Exact Same Model):**
+
    * **Marketplace Listing (Miswag):** **163,350 IQD** — Verified via [`Screenshot_20260920_132358_Miswag.jpg`](assets/evidence/price-variation/Screenshot_20260920_132358_Miswag.jpg).
    * **Competing Retail Store A:** **135,000 IQD** — Verified via [`Screenshot_20260920_132436_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132436_Gallery.jpg).
    * **Competing Retail Store B (Lowest Market Offer):** **116,721 IQD** — Verified via [`Screenshot_20260920_132423_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132423_Gallery.jpg).
    * **Documented Price Gap:** **46,629 IQD (~$31 USD / ~40% markup)** for the exact same identical manufacturer SKU.
 2. **Xiaomi 165W Power Bank (Intra-App Duplication on iBazzar):**
+
    * **Seller 1 Listing:** **60,000 IQD** — Verified via [`Screenshot_20260920_130923.jpg`](assets/evidence/price-variation/Screenshot_20260920_130923.jpg).
    * **Seller 2 Listing:** **70,000 IQD** on the exact same app on an unlinked duplicate page.
    * **Documented Price Gap:** **10,000 IQD (16.7% markup)** within the same platform due to lack of a Single-SKU grouping system.

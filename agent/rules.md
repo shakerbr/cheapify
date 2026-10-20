@@ -39,3 +39,7 @@ These are the strict, mandatory rules set by the user. The AI agent must adhere 
 
 12. **No Internal Development Content in External Deliverables:**
     - Public/external deliverables (brandbooks, presentations, marketing assets) must NOT contain internal project-process content: pillar names/numbers, deliverable numbers, ADR/preference references, roadmap of internal work, repository file paths, "source of truth" notes, or governance/version-control notes.
+
+13. **GIZ Program Constraints — Ranked Awards & 6-Minute Pitch:**
+    - Program awards are **ranked** (1st > 2nd > 3rd prize amounts); funding asks must be structured to degrade gracefully across ranks.
+    - The final pitch presentation has a **hard 6-minute limit** — all presentation deliverables must be designed to fit that runtime (~7–9 slides max, no exceptions).

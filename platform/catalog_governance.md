@@ -1,9 +1,10 @@
 # Cheapify — Catalog Governance
+
 ## Listing Process · Listing Rules & Policies · Duplicate-Matching Strategy
 
 **Category:** Cross-Cutting Platform Specification
 **Status:** Draft Working Standard (ADR-013) — *split from [`operational_policies.md`](operational_policies.md)*
-**Cross-References:**
+Cross-References:
 - Catalog incentives & first-mover bounty: [`referral_and_growth_incentives.md`](referral_and_growth_incentives.md) §4
 - Merchant Rulebook (GTM §2.4): [`../marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md)
 - Best Value ranking (depends on Single-SKU integrity): [`best_value_algorithm_strategy.md`](best_value_algorithm_strategy.md)
@@ -33,7 +34,7 @@ Approved creation = **1,000 IQD commission-offset credit** + permanent attributi
 
 ## 2. Listing Rules & Policies
 
-**[Policy] Extends the Merchant Rulebook (GTM §2.4) — the full listing rule set:**
+[Policy] Extends the Merchant Rulebook (GTM §2.4) — the full listing rule set:
 
 | # | Rule | Enforcement |
 | :--- | :--- | :--- |
@@ -65,10 +66,10 @@ Approved creation = **1,000 IQD commission-offset credit** + permanent attributi
 
 Single-SKU integrity is what makes Best Value possible — duplicates are the system's enemy #1. Four layers of defense:
 
-**Layer 1 — Barcode exact match [Policy]:**
+Layer 1 — Barcode exact match [Policy]:
 EAN/UPC scan returns the existing master page instantly. A barcode already in the catalog **cannot** spawn a second page — the create flow routes to claim. Hard block, no review needed.
 
-**Layer 2 — Intelligent multi-signal match at creation [Policy]:**
+Layer 2 — Intelligent multi-signal match at creation [Policy]:
 For items without barcodes, creation requires searching first. An intelligent matching system scores the candidate against the catalog across **multiple signals**, not just the name:
 
 | Signal | What it compares |
@@ -86,18 +87,18 @@ The engine combines these into a **confidence score**:
 
 The score thresholds and signal weights are tunable as real duplicate data accumulates during the pilot — start strict (favor false "possible match" prompts over missed duplicates), then relax.
 
-**Phased intelligence [Policy]:**
+Phased intelligence [Policy]:
 - **Launch version:** barcode + normalized trilingual text + category/spec filters — deterministic, no ML dependency.
 - **Post-pilot evolution:** add multilingual text embeddings (cross-lingual semantic match), vision embeddings (same product, different photos), and ML-extracted attributes from free-text descriptions — using off-the-shelf models, no custom training.
 - **Learned thresholds:** every merchant claim/rejection during the pilot is labeled training data; the matcher's weights and thresholds are learned from real decisions, not guessed.
 - **Why staged:** the simple version catches most duplication (barcode + search handles the high-duplication core) and never blocks launch; ML versions arrive when pilot data exists to tune them.
 
-**Layer 3 — Community + QA detection [Policy]:**
+Layer 3 — Community + QA detection [Policy]:
 
 - Merchants and shoppers can flag "this listing is a duplicate" → QA compares photos/specs/prices → merge if confirmed.
 - The flag that found a true duplicate earns the reporter's goodwill (log as contribution; no cash reward — prevents flag-spam).
 
-**Layer 4 — Merge process [Policy]:**
+Layer 4 — Merge process [Policy]:
 
 - Duplicates are merged onto the better master page (media/spec quality wins); offers migrate intact.
 - The merged-away listing's creator loses the creation credit **only if the duplicate was created after the canonical page existed** (prevents farming credits via near-duplicates).

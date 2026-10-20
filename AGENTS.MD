@@ -32,10 +32,13 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
    - Brandbooks, presentations, and marketing assets must NOT include internal process content (pillar names/numbers, deliverable numbers, ADR/preference references, internal roadmaps, repository file paths, "source of truth" or version-control notes).
 12. **Strictly Relative Links in Repository Documents:**
    - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `entrepreneurship/...`).
+13. **GIZ Program Constraints — Ranked Awards & 6-Minute Pitch:**
+   - Awards are ranked (1st > 2nd > 3rd); funding plans must scale across ranks. The final pitch is hard-capped at 6 minutes — presentation deliverables must fit that runtime.
 
 ---
 
 ### Dedicated Management & Context Directory (`agent/`)
+
 - **Rules:** [agent/rules.md](agent/rules.md) — Strict rules set by the user.
 - **Preferences:** [agent/preferences.md](agent/preferences.md) — User working styles, methods, and habits.
 - **Project Context:** [agent/project-context.md](agent/project-context.md) — Fast one-page executive overview.
@@ -48,6 +51,7 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
 ---
 
 ### Cross-Cutting Platform Specifications (`platform/`)
+
 Semi-general operational, economic, and technical specifications shared across pillars:
 - **Platform Fee Structure & Monetization:** [platform/fee_structure_and_monetization.md](platform/fee_structure_and_monetization.md) — Progressive Marginal Tiering (5% Tier 1, 3% Tier 2, 1.5% Tier 3), mathematical elimination of the cliff effect, multi-category simulations, and weekly COD reconciliation workflow.
 - **Hybrid "Best Value" Algorithm Strategy:** [platform/best_value_algorithm_strategy.md](platform/best_value_algorithm_strategy.md) — Total Landed Cost ($P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}$), proximity advantage protecting local bazaar shops, 3-tier deterministic hierarchy, diagnostic merchant dashboard, and TypeScript engine.
@@ -55,12 +59,14 @@ Semi-general operational, economic, and technical specifications shared across p
 ---
 
 ### Active Development: 4 Program Pillars
+
 - **1. Entrepreneurship (Complete):** [01_problem_solution_value.md](entrepreneurship/01_problem_solution_value.md) | [02_market_opportunity_and_sizing.md](entrepreneurship/02_market_opportunity_and_sizing.md) | [03_customer_and_merchant_personas.md](entrepreneurship/03_customer_and_merchant_personas.md) | [04_competitive_landscape_matrix.md](entrepreneurship/04_competitive_landscape_matrix.md) | [05_market_validation_survey.md](entrepreneurship/05_market_validation_survey.md) | [06_value_proposition_and_founder_fit.md](entrepreneurship/06_value_proposition_and_founder_fit.md) — Built 100% from ground zero.
-- **2. Marketing (Active Focus):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete) | [02_brand_identity_and_guidelines.md](marketing/02_brand_identity_and_guidelines.md) (Complete — Strict PMS colors, outline logo mark, Comfortaa+Inter+IBM Plex typography, dual-tier taglines) | [brandbook/index.html](brandbook/index.html) (Complete — interactive HTML brandbook) | [03_30_day_content_calendar.md](marketing/03_30_day_content_calendar.md) (Complete — 30-day trilingual launch calendar).
-- **3. Finance Management (Queued):** Will be built 100% fresh from ground zero (itemized operational budget, unit economics, cash flow, and break-even analysis). Past coursework files in `archive/finance-management/` are archived reference assignments only, not final budget figures.
+- **2. Marketing (Active Focus):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete) | [02_brand_identity_and_guidelines.md](marketing/02_brand_identity_and_guidelines.md) (Complete — Strict PMS colors, outline logo mark, Comfortaa+Inter+IBM Plex typography, dual-tier taglines) | [brandbook/index.html](brandbook/index.html) (Complete — interactive HTML brandbook) | [03_pre_launch_content_plan.md](marketing/03_pre_launch_content_plan.md) + [04_launch_content_calendar.md](marketing/04_launch_content_calendar.md) (Complete — two-phase trilingual social content strategy).
+- **3. Finance Management (In Progress):** [01_operational_budget.md](finance/01_operational_budget.md) + [02_unit_economics.md](finance/02_unit_economics.md) + [03_cash_flow_and_breakeven.md](finance/03_cash_flow_and_breakeven.md) (Complete — assumption-driven models v1; awaiting real quotes) + [04_funding_request.md](finance/04_funding_request.md) (GIZ grant ask — tiered $7,500/$4,500/$2,500). Past coursework files in `archive/finance-management/` are archived reference assignments only, not final budget figures.
 - **4. Business Modeling (Later):** 9-Block Business Model Canvas, core SOPs, and operational risk matrix.
 
 ### Archive & Reference Materials
+
 All past incubator research, GIZ program notes, pitch decks, and previous reference extractions are archived under `archive/`:
 - `archive/extracted-reference/`: Extracted blueprint documents (Product spec, Brand guidelines, Technical architecture, Operations playbook, Logo SVG) for future reference if needed.
 - `archive/program-giz-cheapify/`: Pitch decks, brand guideline presentations, assignments, and media screenshots.

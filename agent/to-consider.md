@@ -8,7 +8,7 @@
 
 ## Open Topics
 
-*(none currently — add items as they come up)*
+(none currently — add items as they come up)
 
 ---
 
@@ -26,4 +26,4 @@
 | Referral system design | Transaction-gated, four directions, referrer-only rewards | [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md) (ADR-012) |
 | Catalog first-mover incentive | 1,000 IQD creation bounty + 250 IQD improvement bounty | Same doc, §4 (ADR-012) |
 
-*Items marked `[Assumption]` inside those documents still need real-world quotes or founder confirmation — see operational_policies.md §5 and catalog_governance.md §4.*
+Items marked `[Assumption]` inside those documents still need real-world quotes or founder confirmation — see operational_policies.md §5 and catalog_governance.md §4.

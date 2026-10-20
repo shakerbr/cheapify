@@ -24,6 +24,7 @@ In a naive step-bracket fee system, a single percentage rate is applied to the *
 
 * An item priced at **14,500 IQD** incurs a fee of:
   $$14,500 \times 5\% = \mathbf{725\text{ IQD}}$$
+
 * An item priced at **16,000 IQD** incurs a fee of:
   $$16,000 \times 3\% = \mathbf{480\text{ IQD}}$$
 
@@ -49,6 +50,7 @@ Under this formula:
 
 * For **14,500 IQD**:
   $$\text{Fee} = (10,000 \times 5\%) + (4,500 \times 3\%) = 500 + 135 = \mathbf{635\text{ IQD}}$$
+
 * For **16,000 IQD**:
   $$\text{Fee} = (10,000 \times 5\%) + (6,000 \times 3\%) = 500 + 180 = \mathbf{680\text{ IQD}}$$
 

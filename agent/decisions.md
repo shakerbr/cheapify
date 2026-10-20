@@ -59,11 +59,14 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Context:** When multiple verified merchants offer the exact same Single-SKU product, the system must algorithmically select the winning offer to award the signature "Best Value" chip. A pure sticker-price model creates checkout friction if a distant seller has high shipping fees. Conversely, a pure landed-cost model without geographical explanation confuses local merchants.
 * **Decision:** Implement the **Hybrid Total Landed Cost + Proximity Advantage** model governed by a deterministic 3-tier hierarchy:
   1. **Priority 0 (Primary / Hard Cut — Total Doorstep Price):** Lowest Total Landed Price ($P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}$).
+
      * **Intra-City (Same Zone, e.g. Duhok to Duhok):** Courier shipping is flat (3,000 IQD), making Total Landed Price ranking 100% identical to sticker price ranking. Local bazaar merchants compete directly on retail sticker price.
      * **Inter-City (Cross-Zone, e.g. Erbil vs Duhok):** Protects local merchants against out-of-city dumping. An out-of-town merchant must offer a discount large enough to overcome higher inter-city delivery tariffs (e.g. 5,000 IQD vs 3,000 IQD) to genuinely save the buyer total money at the door.
   2. **Priority 1 (Secondary / Tie-Breaker — Delivery Speed by Proximity):**
+
      * Hyperlocal (1–3h) beats Intra-City Standard (3–6h) beats Inter-City (24–48h).
   3. **Priority 2 (Tertiary / Tie-Breaker — Merchant Quality & Reviews):**
+
      * Highest verified merchant review rating (stars) and fulfillment fulfillment rate.
   * **Dual Transparency:** Shopper sees full item + shipping breakdown; Merchant Dashboard provides diagnostic clarity showing exactly why an offer won or lost. Full platform specification: [`../platform/best_value_algorithm_strategy.md`](../platform/best_value_algorithm_strategy.md).
 
@@ -88,6 +91,7 @@ This file records key decisions, their context, rationale, and consequences for 
   2. **Soft depth model:** single diffuse shadow (`0 8px 24px rgba(16,24,32,.08)` max) + hairline `1px` borders; a strict 3-level elevation scale (base → card → modal). No hard offset shadows, no color-tinted shadows.
   3. **Generous radii:** `12px–16px` cards, `10px–12px` buttons, pill-shaped badges — matching Comfortaa's rounded geometry.
   4. **Disciplined accent usage:** PMS Blue reserved for primary CTAs/active states; PMS Green reserved exclusively for Best Value badges, savings, and verified signals.
+
 * **Rejected styles:** Vibrant Dopamine (visual fatigue, brand-color drift risk), Neumorphic Fintech (fails contrast/accessibility), Glassmorphism (readability + old-device performance), Claymorphism (undermines operational precision), Gamified Deal-Hunting (HUD clutter conflicts with Everyman accessibility), Bento Grid (adopted only as an *optional layout pattern* for stat tiles, not a surface style), Editorial Zero-UI (too austere for deal-hunting energy).
 * **Consequence:** All UI components, merchant dashboard screens, and marketing mockups must follow the tokens defined in Section 8.0 of [`../marketing/02_brand_identity_and_guidelines.md`](../marketing/02_brand_identity_and_guidelines.md). Recorded as Preference 25 in [`preferences.md`](preferences.md).
 
@@ -101,6 +105,7 @@ This file records key decisions, their context, rationale, and consequences for 
   2. **Active Conversion Verb:** The `"Get"` prefix functions as an active invitation to download the app and unlock savings (*"Get Cheapify on App & Web"*), following the proven path of top consumer platforms like Dropbox (`getdropbox.com`) and Pocket (`getpocket.com`).
   3. **Zero Typo-Leakage:** Protects brand traffic from accidental typos that occur with `.co` (where users instinctively type `.com` and land on squatted pages).
   4. **Cloudflare Infrastructure:** Managed directly on Cloudflare Registrar at wholesale cost with free DNSSEC, SSL, and DDoS mitigation.
+
 * **Consequence:** All production endpoints (`api.getcheapify.com`), merchant web portals (`merchant.getcheapify.com`), customer links, packaging print collateral, and marketing CTAs will standardize on `getcheapify.com`. Recorded as Preference 27 in [`preferences.md`](preferences.md).
 
 ### ADR-011: Content Marketing Strategy — Pre-Launch Audience Building & Two-Phase Plan
@@ -114,6 +119,7 @@ This file records key decisions, their context, rationale, and consequences for 
   3. **Unified cross-platform model (Preference 28):** one concept → one 9:16 master file → three native uploads. No platform-exclusive content; captions adapted per platform norms; no cross-platform watermarks.
   4. **Language policy (Preference 29):** Kurdish (Badînî) audio + a single burned-in Kurdish subtitle track + Kurdish-first/Arabic caption on one post. No separate-language posts, no dual subtitle tracks, no English in launch content.
   5. **Verification & brand guardrails (Preference 30):** real verifiable prices only; store identities blurred; zero emojis; PMS palette and trilingual font system enforced via a pre-publish checklist.
+
 * **Consequence:** All social content produced for Cheapify follows the series system (Price Detective, DM Hell, Founder's Circle, Build in Public, Bazaar Wisdom), the weekly template, and the language/subtitle rules defined in the two plan documents.
 
 ### ADR-012: Referral System & Catalog First-Mover Incentive Architecture
@@ -124,9 +130,11 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Decision:**
   1. **Transaction-gated referrals (Preference 31):** every reward in every direction unlocks only on a completed, courier-confirmed order — never on signup. All rewards are non-transferable platform credit (60-day expiry, one per order). Four-direction grid: Shopper→Shopper (3k credit to referrer only), Shopper→Merchant (nominate a shop → 3 free deliveries after the shop completes 10 orders), Merchant→Shopper (growth points → ad boosts, Best Value winners as default creative), Merchant→Merchant (flat 10,000 IQD credit + ad-boost points). Anti-fraud stack: OTP identity, velocity caps, device/address heuristics, courier delivery signals, manual review.
   2. **Catalog first-mover incentive (Preference 32):** barcode-first listing creation (auto-fill from product databases, template fallback for unbranded goods); 1,000 IQD creation bounty per approved master listing (commission-offset credit); 250 IQD micro-bounty for approved improvements to existing listings; creator attribution is permanent but the master page is shared infrastructure — improvements are QA-approved proposals, never direct edits. No platform-side catalog seeding (founder decision — catalog is 100% merchant-driven).
+
 * **Consequence:** Full specification in [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md). Reward values are founder-tunable (§8 of the spec); incentive spend is a capped marketing budget line in the operational budget.
 
 ### ADR-013: Operational Policies — Returns, Shipping, Packaging, Payments, Listing Rules & Dedup
+
 * **Date:** 2026-10-19
 * **Status:** Accepted (assumptions flagged for real-world verification)
 * **Context:** The platform needed consolidated operational policies before finance work could proceed — returns, shipping economics, packaging standards, and payment rails feed unit economics; listing/dedup rules govern catalog integrity.

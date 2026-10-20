@@ -6,7 +6,7 @@
 **Status:** Official Corporate Brand Specification (Built 100% from Ground Zero)  
 **Color Standard:** Strict Pantone Matching System (PMS) Standards  
 **Source Asset:** [`../assets/Cheapify-LOGO.pdf`](../assets/Cheapify-LOGO.pdf)  
-**Cross-References:**  
+Cross-References:  
 
 - Interactive HTML Brandbook: [`../brandbook/index.html`](../brandbook/index.html) (Live Single-File Specification)  
 - Official Primary Domain: `getcheapify.com` ([Preference 27](../agent/preferences.md) · [ADR-010](../agent/decisions.md))  
@@ -221,7 +221,7 @@ $$500\text{px} \times \frac{9}{7} = 642.857\dots\text{px} \quad\Big|\quad 300\te
 
 In graphic design software (e.g., Adobe Illustrator exports or PDF viewers), these fractions are automatically truncated to whole integers (`642px`, `385px`, etc.), which can introduce slight sub-pixel rounding errors if height is forced manually.
 
-**Strict Implementation Rule:**
+Strict Implementation Rule:
 
 - **Width Benchmark Only:** In all UI code, web implementations, mobile views, and asset exports, **always set target width with proportional automatic height** (`width: {W}px; height: auto;` or rely on SVG `viewBox="0 0 700 900"`).
 - **Do not specify or force a fixed pixel height.** This preserves the exact $7:9$ vector geometry across all screen resolutions without sub-pixel truncation or aspect-ratio distortion.

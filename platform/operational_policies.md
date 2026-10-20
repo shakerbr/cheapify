@@ -1,9 +1,10 @@
 # Cheapify — Operational Policies
+
 ## Returns · Shipping · Packaging · Payments — Order-Lifecycle Rules
 
 **Category:** Cross-Cutting Platform Specification
 **Status:** Draft Working Standard (ADR-013) — *policy defaults proposed; assumptions flagged for founder verification*
-**Cross-References:**
+Cross-References:
 
 - Merchant Rulebook (GTM §2.4): [`../marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md)
 - Catalog incentives: [`referral_and_growth_incentives.md`](referral_and_growth_incentives.md)
@@ -17,14 +18,14 @@ Each policy is marked **[Policy]** (decided rule) or **[Assumption]** (proposed 
 
 ## 1. Return Policy
 
-**[Policy] Two return classes, one rule each:**
+[Policy] Two return classes, one rule each:
 
 | Class | Trigger | Who pays return leg | Merchant consequence |
 | :--- | :--- | :--- | :--- |
 | **Fault return** | Wrong item, defective, or not-as-described | **Merchant** (courier cost deducted from settlement) | Reliability-score deduction |
 | **Remorse return** | Customer changed mind, item unused | **Customer** (3,000 IQD Duhok courier fee) | None — neutral event |
 
-**Rules:**
+Rules:
 
 - **Window:** 48 hours from delivery confirmation. Items must be unused, in original packaging.
 - **Process:** customer taps "Report issue" → photo evidence for fault claims → Cheapify dispatches return courier → merchant inspects on receipt → refund released.
@@ -37,7 +38,7 @@ Each policy is marked **[Policy]** (decided rule) or **[Assumption]** (proposed 
 
 ## 2. Shipping Policy
 
-**[Policy] Duhok pilot:**
+[Policy] Duhok pilot:
 
 - **Flat 3,000 IQD** per order, citywide — shown inside the Doorstep Total, never added later.
 - **SLA:** same-day dispatch for orders before 17:00; next-day otherwise. Hyperlocal target 1–3h where courier availability allows.
@@ -45,7 +46,7 @@ Each policy is marked **[Policy]** (decided rule) or **[Assumption]** (proposed 
 
 **[Assumption] Cost basis:** 3,000 IQD assumed to cover courier cost or be near-cost. *Needs real ZMC/local courier quotes — flagged for Pillar 3 budget.* If actual cost is 2,500 IQD, the 500 margin absorbs failed-delivery re-attempts; if it's 3,500+, the flat fee needs review before scale.
 
-**Failed deliveries [Policy]:**
+Failed deliveries [Policy]:
 
 - One free re-attempt next day; second failure → parcel returns to merchant, customer account flagged.
 - Customers with ≥3 failed COD deliveries lose COD privilege (prepaid-only or account suspension).
@@ -56,7 +57,7 @@ Each policy is marked **[Policy]** (decided rule) or **[Assumption]** (proposed 
 
 ## 3. Packaging Policy
 
-**[Policy] Minimum standard (all orders):**
+[Policy] Minimum standard (all orders):
 
 - Opaque, sealed mailer or box sized to the item — no loose or bag-visible items.
 - Cheapify waybill (thermal label from merchant dashboard) attached flat on the largest face.
@@ -70,7 +71,7 @@ Each policy is marked **[Policy]** (decided rule) or **[Assumption]** (proposed 
 
 ## 4. Payment Methods
 
-**[Policy] Phase 1–2 (Duhok + regional):**
+[Policy] Phase 1–2 (Duhok + regional):
 
 - **COD is the primary and default method** — cash collected by the courier at handover.
 - **Platform credit** (referral/catalog rewards) auto-applies at checkout before the COD amount is computed.

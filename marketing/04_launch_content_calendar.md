@@ -6,7 +6,7 @@
 **Status:** Planned — activates when the MVP launch date is confirmed (see §6 trigger)
 **Duration:** T-7 countdown through launch + 8 weeks post-launch
 **Platforms:** Facebook, Instagram, and TikTok — **one content set published to all three**
-**Cross-References:**
+Cross-References:
 
 - GTM Strategy & Personas: [`01_two_sided_gtm_strategy.md`](01_two_sided_gtm_strategy.md)
 - Brand Voice, Terminology & Visual Identity: [`02_brand_identity_and_guidelines.md`](02_brand_identity_and_guidelines.md)

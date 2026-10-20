@@ -8,7 +8,7 @@ A fast, single-page reference of Cheapify's core identity, problem space, soluti
 
 * **Brand Name:** Cheapify
 * **Founder:** Shakir Bashar (Computer Engineer)
-* **Target Program:** GIZ Youth Entrepreneurship Program (CAPA / American University of Kurdistan - AUK)
+* **Target Program:** GIZ Youth Entrepreneurship Program (CAPA / American University of Kurdistan - AUK) — top 3 of 20 ventures funded with **ranked awards** (1st > 2nd > 3rd); final pitch hard-capped at **6 minutes**.
 * **Pilot Market & Scaling Horizon:** Launchpad: Duhok Metropolitan Area ──► Regional Hubs: Erbil, Mosul, Sulaymaniyah ──► Nationwide: All Iraq (Baghdad, Basra, all governorates)
 * **Market Scope:** Broad Multi-Category Retail Marketplace (Electronics; Home, Kitchen, Garden; Luggage, Bags, Watches, Perfumes; Beauty & Self-Care; Health; Cleaning; Business & Industrial; Study; Gifts; Musical; etc.)
 * **Slogan:** *The bright side of choosing.*

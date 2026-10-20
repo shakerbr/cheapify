@@ -7,7 +7,7 @@
 **Platform Architecture:** Native Mobile Application (iOS & Android) + Accessible Web Platform  
 **Target Market:** Duhok Pilot Launchpad (Phase 1) ──► KRI & Northern Hubs (Phase 2) ──► Nationwide All-Iraq (Phase 3)  
 **Core Marketing Channels:** Facebook, Instagram, and TikTok  
-**Cross-References:**  
+Cross-References:  
 
 - Personas & User Journeys: [`../entrepreneurship/03_customer_and_merchant_personas.md`](../entrepreneurship/03_customer_and_merchant_personas.md)  
 - Market Opportunity & Sizing: [`../entrepreneurship/02_market_opportunity_and_sizing.md`](../entrepreneurship/02_market_opportunity_and_sizing.md)  
@@ -94,6 +94,7 @@ Cheapify is engineered as both a **native/PWA mobile app (iOS & Android)** and a
 We initiate direct, personalized outreach to active Duhok and KRI social media sellers across Facebook and Instagram. Rather than sending a generic sales pitch, outreach targets their exact daily pain: **wasted time in DMs** and the offer of **free paid advertising**.
 
 ##### Outreach Script (Badînî Kurdish)
+
 >
 > *«Silav Kak [Navê Xwediyê Firoşgehê], karê we yê serkeftî be.*  
 > *Me dît ku firoşgeha we [@Navê_Rûpelî] berhemên pir baş û taybet pêşkêş dike, lê em dizanin rojane çend seet ji dema we di bersivdana DM-yan de diçe bo pirsên mîna "Bihayê wê çende?" an "Ev reng heye?".*  
@@ -110,6 +111,7 @@ We initiate direct, personalized outreach to active Duhok and KRI social media s
 > *Ma dest dide we vîdyoyeka 45-saniyeyî ya ceribandinê ji we re bişînim ku bibînin ka çawa dixebite?»*
 
 ##### Outreach Script (Arabic)
+
 >
 > *«مرحباً أخي [اسم صاحب المتجر]، عاشت إيدك على المتجر الرائع [@اسم_الصفحة].*  
 > *نحن نعلم كمية الوقت والجهد الضائع يومياً في الرد على رسائل الخاص (الدايركت والماسنجر) لأسئلة مكررة مثل "السعر كم؟"، "اللون متوفر؟"، وتفاصيل التوصيل.*  
@@ -218,7 +220,7 @@ flowchart TD
 
 - **The Mechanism:** Every onboarded merchant actively directs their existing follower base into Cheapify by placing their customized store link in their Instagram, TikTok, and Facebook bios: `cheapify.iq/@storename`.
 - **The Story Trigger:** When a customer comments *"Price?"* on a merchant's Facebook or Instagram post, the merchant's automated reply sends:  
-  *«Silav! Bo dîtina hemû rengan, bihayê dawî, û fermankirina bilez bi riya App/Web, lînka me ya di Bio-yê de bitikîne 👆»*
+«Silav! Bo dîtina hemû rengan, bihayê dawî, û fermankirina bilez bi riya App/Web, lînka me ya di Bio-yê de bitikîne»
 - **The Capture:** The shopper lands on Cheapify to buy from Kak Kawa, but immediately experiences Cheapify's clean interface, discovers other verified stores across 10 retail categories, and downloads the mobile app.
 
 ---
@@ -231,8 +233,8 @@ We produce high-contrast, relatable video ads running across **TikTok, Instagram
   - *Scene 1 (0–12s):* A young professional or student sends a DM on Instagram asking *"How much for this power bank?"*. 4 hours later, the page replies: *"Check DMs"*. He opens DMs, seller says: *"Send phone number first"*. Complete frustration.
   - *Scene 2 (13–25s):* Same shopper opens Cheapify. Searches "Anker 20,000mAh". Instantly sees 3 verified stores in Duhok side-by-side with transparent prices (28,000 IQD vs 33,000 IQD). Selects "Best Value" offer, chooses COD, and finishes in 25 seconds.
   - *Tagline:*  
-    **«Bese westiyan di DM-yan de! Bi Cheapify re, biha zelal e û fermankirin bi 25 saniyan e.»**  
-    *(Stop exhausting yourself in DMs! With Cheapify, prices are transparent and ordering takes 25 seconds).*
+«Bese westiyan di DM-yan de! Bi Cheapify re, biha zelal e û fermankirin bi 25 saniyan e.»
+(Stop exhausting yourself in DMs! With Cheapify, prices are transparent and ordering takes 25 seconds).
 
 ---
 

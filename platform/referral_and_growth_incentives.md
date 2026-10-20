@@ -3,7 +3,7 @@
 **Category:** Cross-Cutting Platform Specification
 **Status:** Approved Working Standard (ADR-012)
 **Target Market:** Duhok Pilot ──► Regional Hubs ──► All Iraq
-**Cross-References:**
+Cross-References:
 
 - Fee architecture (credit source): [`fee_structure_and_monetization.md`](fee_structure_and_monetization.md)
 - Merchant onboarding (Self-Serve with Rules): [`../marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md) §2.4, ADR-008
@@ -90,7 +90,7 @@ Layered controls, cheapest first; escalation is automatic:
 | 6. Courier signal | Undelivered/fake orders burn real 3,000 IQD attempts and flag both parties | Fake COD orders |
 | 7. Manual review | Outlier accounts held for review before payout | Edge cases |
 
-**Rules of engagement:**
+Rules of engagement:
 
 - A referral chain that fails delivery verification rewards nobody — both sides lose pending credit.
 - Self-referral (same phone, device, or verified address) credits nothing.

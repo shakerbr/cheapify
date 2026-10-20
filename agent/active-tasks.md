@@ -7,7 +7,7 @@ This document tracks immediate actionable tasks, active work items, and current 
 ## Current Active Focus
 
 * **Active Pillar:** Pillar 2 (Marketing) — 30-Day Trilingual Launch Content Calendar
-* **Lead File:** [`marketing/03_30_day_content_calendar.md`](../marketing/03_30_day_content_calendar.md)
+* **Lead File:** [`marketing/03_pre_launch_content_plan.md`](../marketing/03_pre_launch_content_plan.md) + [`marketing/04_launch_content_calendar.md`](../marketing/04_launch_content_calendar.md)
 
 ---
 
@@ -44,3 +44,16 @@ This document tracks immediate actionable tasks, active work items, and current 
 * [ ] Create Cheapify profiles on Facebook, Instagram, TikTok (brand-compliant bios/avatars)
 * [ ] Produce reusable content templates per series (Price Detective card, Founder's Circle motion card)
 * [ ] Begin Phase A posting cadence (5 posts/week per weekly template)
+
+### Milestone 3: Execute Pillar 3 (Finance) Deliverables
+
+* [x] Draft operational budget v1 — assumption-driven model ([01_operational_budget.md](../finance/01_operational_budget.md))
+* [ ] Collect real quotes: Duhok courier cost (A1), print costs (A12), legal registration, ad CPM test
+* [x] Build unit economics doc (per-order & per-merchant LTV/CAC) — `finance/02_unit_economics.md`
+* [x] Build cash-flow projection + break-even — `finance/03_cash_flow_and_breakeven.md`
+* [x] Draft GIZ funding request — tiered ask mapped to ranked awards ([04_funding_request.md](../finance/04_funding_request.md))
+
+### Program Constraints (from GIZ updates)
+
+* Ranked awards: 1st > 2nd > 3rd prize amounts (envelope unknown) — tiered ask in `finance/04` maps to any rank outcome.
+* **Pitch deck hard limit: 6 minutes** — final deliverable must be designed to ~7–9 slides / 6-min runtime.

@@ -6,7 +6,7 @@
 **Status:** Active Execution Playbook
 **Duration:** Until MVP launch date is confirmed (estimated 1–3 months)
 **Platforms:** Facebook, Instagram, and TikTok — **one content set published to all three**
-**Cross-References:**
+Cross-References:
 
 - GTM Strategy & Personas: [`01_two_sided_gtm_strategy.md`](01_two_sided_gtm_strategy.md)
 - Brand Voice, Terminology & Visual Identity: [`02_brand_identity_and_guidelines.md`](02_brand_identity_and_guidelines.md)
@@ -18,7 +18,7 @@
 
 ## 1. Phase A Mission & Strategic Rationale
 
-**We post before the product exists — as audience-building, never as a product launch.**
+We post before the product exists — as audience-building, never as a product launch.
 
 Every two-sided marketplace dies from an empty room on day one. Phase A exists so that on launch day, Cheapify already has (a) an audience that understands the problem, (b) a waitlist of shoppers ready to try it, and (c) a pipeline of founding merchants mid-conversation. We are not "announcing an app"; we are **documenting a problem the whole city already feels** and letting people watch the solution being built.
 
@@ -138,7 +138,7 @@ Light, shareable local commerce content — polls, price-guessing games, "what d
 | **Wednesday** | Build in Public | Screen record / talking head | Both | Follow the build / waitlist |
 | **Thursday** | Bazaar Wisdom | Poll, quiz, or static card | Shoppers | Comment / share |
 
-*Tuesday and Friday are rest/buffer days — used for community replies, DM responses, and rescheduling if a post slips. Stories (behind-the-scenes, poll stickers, reshares of best posts) run ad-hoc on any day and don't count toward the 5.*
+Tuesday and Friday are rest/buffer days — used for community replies, DM responses, and rescheduling if a post slips. Stories (behind-the-scenes, poll stickers, reshares of best posts) run ad-hoc on any day and don't count toward the 5.
 
 ---
 

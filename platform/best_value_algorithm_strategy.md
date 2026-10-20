@@ -72,14 +72,14 @@ Where:
 - $P_{\text{item}}$ is the merchant's active listed price in Iraqi Dinar (IQD) for the verified SKU.
 - $D_{\text{tariff}}$ is the standardized, system-calculated third-party courier tariff between the merchant's physical fulfillment hub (shop/warehouse) and the buyer's delivery district.
 
-**Intra-City Dynamics (e.g. Duhok to Duhok):**
+Intra-City Dynamics (e.g. Duhok to Duhok):
 When the buyer and merchants are located in the same metropolitan zone, the delivery tariff is identical ($D_{\text{tariff}} = 3,000\text{ IQD}$). Therefore:
 
 $$P_{\text{total}, A} - P_{\text{total}, B} = (P_{\text{item}, A} + 3,000) - (P_{\text{item}, B} + 3,000) = P_{\text{item}, A} - P_{\text{item}, B}$$
 
 In intra-city trade, the delivery variable completely cancels out. **Local merchants compete 100% on their retail sticker price**, preserving full bazaar competition simplicity.
 
-**Inter-City Dynamics (e.g. Erbil Merchant vs. Duhok Merchant delivering to a Duhok Buyer):**
+Inter-City Dynamics (e.g. Erbil Merchant vs. Duhok Merchant delivering to a Duhok Buyer):
 
 - Duhok Merchant: $D_{\text{tariff}} = 3,000\text{ IQD}$.
 - Erbil Merchant: $D_{\text{tariff}} = 5,000\text{ IQD}$.
@@ -131,7 +131,7 @@ The platform maintains a deterministic distance and zone routing matrix:
 | **Zone 3: Regional Inter-City** | Cross-governorate within KRI & Nineveh | Inter-city hub linehauls (ZMC Express) | **24 – 48 Hours** (Next-Day) | **5,000 IQD** | Erbil $\leftrightarrow$ Duhok, Mosul $\leftrightarrow$ Duhok, Sulaymaniyah |
 | **Zone 4: Nationwide All-Iraq** | Central & Southern Iraq linehaul | National courier network | **48 – 72 Hours** (2–3 Days) | **6,000 – 7,000 IQD** | Baghdad, Basra, Najaf, Karbala, Kirkuk |
 
-*Note: In the Phase 1 Duhok pilot, 100% of orders are routed within Zone 1 and Zone 2, where courier tariffs are standardized at 3,000 IQD.*
+Note: In the Phase 1 Duhok pilot, 100% of orders are routed within Zone 1 and Zone 2, where courier tariffs are standardized at 3,000 IQD.
 
 ---
 
