@@ -50,7 +50,7 @@ This document formalizes that alignment using two core frameworks:
 | **Customer Job (Emotional)** | Avoid feeling foolish or overcharged for an item a friend bought cheaper. | **"Best Value" Algorithm (Priority 0: Price):** Algorithmically highlights the lowest verified market price. | Gives the buyer peace of mind and complete pricing confidence. |
 | **Customer Pain** | Exchanging 6 repetitive DMs (*"Price?", "Color?", "Delivery?"*) across 3 hours. | **Structured Variant Selectors:** Explicit buttons for color, size, capacity, and live stock status. | Reduces ordering time from 3 hours to under 30 seconds. |
 | **Customer Pain** | Overpaying 47,000 IQD for a monitor due to price opacity in local shops. | **Side-by-Side Competitive Transparency:** Every merchant's price is visible in plain IQD. | Direct price competition protects student and youth budgets. |
-| **Customer Gain** | Fast, reliable doorstep delivery with zero negotiation. | **Asset-Light 3PL (ZMC Express):** Standardized 3,000 IQD intra-city same-day/next-day delivery. | Predictable, tracked delivery without haggling with taxi drivers. |
+| **Customer Gain** | Fast, reliable doorstep delivery with zero negotiation. | **Asset-Light 3PL (local courier partner):** Standardized 3,000 IQD intra-city same-day/next-day delivery. | Predictable, tracked delivery without haggling with taxi drivers. |
 
 ---
 
@@ -112,7 +112,7 @@ Cheapify introduces 4 key innovations tailored to the specific constraints of th
 ### 4.3 Innovation 3: WhatsApp Cloud API Headless Waybill Generation
 
 * **The Traditional Flaw:** Merchants must download complex enterprise seller apps or manually write delivery addresses on paper labels for taxi drivers.
-* **Cheapify's Innovation:** When an order is placed, Cheapify generates an automated JSON payload directly integrated with WhatsApp Cloud API and 3PL couriers (ZMC Express). The merchant receives a pre-formatted packing slip on WhatsApp, and the courier receives automated GPS coordinates.
+* **Cheapify's Innovation:** When an order is placed, Cheapify generates an automated JSON payload directly integrated with WhatsApp Cloud API and 3PL couriers (local partner e.g. Fast Delivery). The merchant receives a pre-formatted packing slip on WhatsApp, and the courier receives automated GPS coordinates.
 
 ### 4.4 Innovation 4: Progressive Marginal Fee Calculation (Cliff-Free Monetization)
 
@@ -145,7 +145,7 @@ In incubator evaluations (GIZ / CAPA), venture success is fundamentally determin
 #### 2. Resourcefulness & Capital Discipline (Extreme Lean Efficiency)
 
 * **Maximizing Seed Capital Efficiency:** By eliminating external software development agency costs ($0 software engineering overhead), 100% of available seed funding can be directed toward operational essentials: reliable cloud hosting, official Chamber of Commerce registration, messaging API credits, and targeted local customer acquisition.
-* **Asset-Light Architecture:** Leveraging existing 3PL courier fleets (e.g., ZMC Express) eliminates capital expenditures on motorbikes, physical fulfillment warehouse leases, or full-time drivers, maintaining an exceptionally lean and sustainable operational burn.
+* **Asset-Light Architecture:** Leveraging existing 3PL courier fleets (e.g., Fast Delivery locally; ZMC Express inter-city) eliminates capital expenditures on motorbikes, physical fulfillment warehouse leases, or full-time drivers, maintaining an exceptionally lean and sustainable operational burn.
 
 #### 3. Resilience & Cultural Grounding (Navigating Local Friction)
 

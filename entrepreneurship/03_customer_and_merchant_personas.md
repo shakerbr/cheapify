@@ -98,7 +98,7 @@ Cheapify is a dual-sided marketplace. To succeed in the Iraqi retail environment
 | **Customer Inquiries** | Answers 40 DMs asking *"Price?"* and *"Color?"* while attending walk-in bazaar shoppers. | **Zero repetitive DMs.** The catalog displays specs, colors, and prices automatically 24/7. |
 | **Order Intake** | Reads messy chat messages, deciphers handwriting, copies phone numbers into WhatsApp. | Receives a clean, pre-qualified order alert on WhatsApp and his **Merchant Dashboard**. |
 | **Inventory Sync** | Discovers an item is out of stock after promising it to a buyer; deals with angry customer. | 1-tap stock update on his dashboard disables out-of-stock items immediately. |
-| **Courier Dispatch** | Calls local taxi/courier, negotiates delivery fee, explains customer landmark directions. | System generates a standardized waybill payload directly to 3PL courier (ZMC Express). |
+| **Courier Dispatch** | Calls local taxi/courier, negotiates delivery fee, explains customer landmark directions. | System generates a standardized waybill payload directly to 3PL courier (local partner e.g. Fast Delivery). |
 | **Outcome** | Burnout, administrative chaos, lost orders, and inconsistent profits. | **Time saved, organized operations, pre-qualified sales, and fair margins.** |
 
 ---

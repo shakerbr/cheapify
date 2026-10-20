@@ -26,15 +26,15 @@ All external figures live here. Replace values (not formulas) when real quotes a
 
 | ID | Assumption | Working value | Range sanity check | Source status |
 | :--- | :--- | :--- | :--- | :--- |
-| A1 | Intra-Duhok courier cost per delivered parcel | **2,500 IQD** `[ASSUMPTION]` | 2,000–3,500 | Needs ZMC/local courier quote |
+| A1 | Courier cost per delivered parcel (contract rate) | **2,500 city / 3,500 near / 4,500 far IQD** `[QUOTE-VERIFIED]` | list +500 | Fast Delivery (Duhok) — zones in operational_policies §2 |
 | A2 | Customer delivery fee (charged) | **3,000 IQD** | Policy-fixed | Set (operational_policies §2) |
 | A3 | Failed-delivery re-attempts per 100 orders | **8** `[ASSUMPTION]` | 5–15 | Pilot data |
 | A4 | Return rate (all classes) | **4%** `[ASSUMPTION]` | 3–8% | Pilot data |
 | A5 | Avg order value (AOV) | **25,000 IQD** `[ASSUMPTION]` | 15,000–40,000 | Social-seller price survey |
-| A6 | WhatsApp Cloud API cost/conversation | **$0.03 (~45 IQD)** `[ASSUMPTION]` | service+utility tier | Meta pricing page |
-| A7 | SMS OTP cost per message | **$0.02 (~30 IQD)** `[ASSUMPTION]` | 0.01–0.05 | Gateway quote needed |
+| A6 | WhatsApp Cloud API cost/message | **~$0.01–0.02 (~15–30 IQD)** `[DESK-VERIFIED]` | Meta per-message since Jul 2025 | OTPIQ WhatsApp OTP = 40 IQD/msg (local benchmark) |
+| A7 | SMS OTP cost per message | **80–100 IQD (Korek/Asiacell), 250 (Zain)** `[DESK-VERIFIED]` | OTPIQ Iraq pricing | Route OTP via WhatsApp first (40 IQD) → blended ~50 IQD |
 | A8 | Meta/TikTok effective CPM (Duhok) | **$2.00** `[ASSUMPTION]` | $1–4 | First test campaign |
-| A9 | Orders per merchant per month (mature store) | **15** `[ASSUMPTION]` | 8–30 | Pilot data |
+| A9 | Orders per merchant per month (mature store) | **~30 reported** `[INTERVIEW n=1]` | total DM volume | Cheapify capture = slice of this; first merchant interview |
 | A10 | Referral/incentive payout rate (per 100 orders) | **20 credits** `[ASSUMPTION]` | 10–30 | Post-launch data |
 | A11 | Effective take-rate on AOV 25,000 | **3.8%** | computed | 500 + 3%×15,000 = 950 IQD → 3.8% |
 | A12 | Founding-merchant packaging kit subsidy | **~40,000 IQD per store** `[ASSUMPTION]` | 25k–60k | Print quotes |
@@ -137,9 +137,9 @@ What each delivered order actually costs vs. earns. **This table is the core of 
 | :--- | :--- | :--- |
 | Courier delivery (A1) | −2,500 IQD | Passthrough-ish |
 | Customer delivery fee (A2) | +3,000 IQD | Revenue, not cost |
-| → **Delivery margin per order** | **+500 IQD** | If A1 is right |
+| → **Delivery margin per order** | **+500 IQD** | Verified at contract rate, uniform across all 3 zones — zero margin if unsigned |
 | WhatsApp notifications ×2 (A6) | −90 IQD | Confirm + delivered |
-| SMS OTP amortized (A7) | −15 IQD | ~1 per 2 orders |
+| OTP amortized (A7 blended ~50) | −25 IQD | ~1 per 2 orders, WhatsApp-first routing |
 | Return absorption (A4 × ~500) | −20 IQD | Merchant-pays model limits exposure |
 | Failed-delivery absorption (A3/100 × A1) | −200 IQD | Re-attempts we eat |
 | Incentive accrual (A10/100 × ~3,000) | −600 IQD | Referral/bounty credits |
@@ -152,29 +152,30 @@ Platform fee (A5)        +950 IQD
 Delivery margin          +500 IQD
 Variable costs            −425 IQD
 ────────────────────────────────
-Contribution / order   +1,025 IQD  (~$0.68)
+Contribution / order   ~+1,015 IQD  (~$0.68)
 ```
 
 Two sensitivities dominate:
-1. If A1 (courier) is really **3,500 IQD**, delivery margin goes −500 → contribution drops to **−75 IQD/order** — loss-making at the stated flat fee. *This is the single most important quote to get.*
+1. A1 is quote-verified (Fast Delivery): contract rates 2,500/3,500/4,500 by zone vs. fees 3,000/4,000/5,000 → **+500 margin uniform everywhere — but only once signed.** Unsigned, city cost = 3,000 = fee → margin 0 → contribution ~525 (break-even ~1,240/mo). *The contract — which requires registration — is now a revenue-critical milestone, not paperwork.*
 2. If incentive payout runs hotter than A10, the −600 credit line grows directly.
 
 ---
 
 ## 6. Monthly Burn Scenarios
 
-*Authoritative timeline: [`03_cash_flow_and_breakeven.md`](03_cash_flow_and_breakeven.md) §3–4 — the table below mirrors its base ramp; `03` also carries the 50%-ramp conservative scenario.*
+*Authoritative timeline: [`03_cash_flow_and_breakeven.md`](03_cash_flow_and_breakeven.md) §3–4 — the table below mirrors its **planning (conservative) ramp**; `03` also carries the 2× upside scenario.*
 
 | Scenario | Orders/mo | Merchants | Contribution | Burn | **Net** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Phase A dev months | 0 | 0 live | 0 | −210,000 | **−210,000 IQD (~$140)** |
-| Month 1 post-launch | 200 | 10 | +205,000 | −652,000 | **−447,000 IQD (~$298)** |
-| Month 3 | 800 | 18 | +820,000 | −652,000 | **+168,000 IQD (~$112)** |
-| Month 6 | 2,700 | 25 | +2,767,500 | −790,000 | **+1,977,500 IQD (~$1,318)** |
+| Month 1 post-launch | 100 | 10 | +102,500 | −652,000 | **−549,500 IQD (~$366)** |
+| Month 3 | 400 | 14 | +410,000 | −652,000 | **−242,000 IQD (−$161)** |
+| Month 5 | 1,000 | 18 | +1,025,000 | −652,000 | **+373,000 IQD (~$249)** |
+| Month 6 | 1,350 | 20 | +1,383,750 | −790,000 | **+593,750 IQD (~$396)** |
 
 Burn phases: ~210k/mo during dev (AI tooling + SaaS + modest audience ads) → 652k/mo operating at launch (ads, incentives, OTP, WhatsApp, Supabase Pro activate) → 790k/mo from M6 (scale).
 
-**Break-even point:** ~**636 orders/month** at current assumptions (~21 orders/day). At the stated AOV and delivery margin the model turns contribution-positive surprisingly early; the risk is not the math but the A1/A4/A10 assumptions inside it.
+**Break-even point:** ~**642 orders/month** at current assumptions (~21 orders/day). At the stated AOV and delivery margin the model turns contribution-positive surprisingly early; the risk is not the math but the A1/A4/A10 assumptions inside it.
 
 ---
 
@@ -184,10 +185,11 @@ The number that matters is the **deepest cumulative cash hole**, computed month-
 
 | Scenario | Peak cumulative deficit | ~USD | When |
 | :--- | :--- | :--- | :--- |
-| Base ramp | −2.76M IQD | ~$1,840 | M2 |
-| Conservative (50% ramp) | −3.37M IQD | ~$2,250 | M4 |
+| Planning ramp (default) | −3.37M IQD | ~$2,250 | M4 |
+| Upside (2× ramp) | −2.76M IQD | ~$1,840 | M2 |
+| Slow-adoption floor (~25% ramp) | −4.28M IQD | ~$2,850 | M6 |
 
-**Plan for ~$2,250–2,500 of founder-covered funds** before any grant — keeps the venture alive even at half the projected order ramp. Anything beyond that (the `04` grant ask) buys speed: growth budget, registration, merchant materials, contingency — not survival.
+**Plan for ~$2,500–2,850 of founder-covered funds** before any grant — keeps the venture alive even at the slow-adoption floor. Anything beyond that (the `04` grant ask) buys speed: growth budget, registration, merchant materials, contingency — not survival.
 
 Deliberately small either way — the founder-built stack keeps this in "savings + small grant" territory rather than raise-dependent.
 
@@ -197,7 +199,7 @@ Deliberately small either way — the founder-built stack keeps this in "savings
 
 | Item | Needed input | Impact if wrong |
 | :--- | :--- | :--- |
-| **A1 courier cost** | ZMC/local Duhok courier quote | Break-even swings ±80% |
+| ~~A1 courier cost~~ — **DONE** (Fast Delivery) | Contract signature + Zakho-tier confirm + 2nd quote | Contract worth ~500 IQD/order |
 | A4 return rate | Pilot data | Variable-cost line doubles if ~8% |
 | A8 ad CPM | $20 test campaign | Paid-CAC accuracy |
 | A5 AOV | Social-seller price survey | All contribution math |

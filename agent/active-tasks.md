@@ -48,7 +48,7 @@ This document tracks immediate actionable tasks, active work items, and current 
 ### Milestone 3: Execute Pillar 3 (Finance) Deliverables
 
 * [x] Draft operational budget v1 — assumption-driven model ([01_operational_budget.md](../finance/01_operational_budget.md))
-* [ ] Collect real quotes: Duhok courier cost (A1), print costs (A12), legal registration, ad CPM test
+* [~] Collect real quotes: ~~Duhok courier~~ **A1 DONE — Fast Delivery: zones 2,500/3,500/4,500 contracted** (confirm Zakho tier + 2nd quote for leverage); remaining: print (A12), legal registration, ad CPM test
 * [x] Build unit economics doc (per-order & per-merchant LTV/CAC) — `finance/02_unit_economics.md`
 * [x] Build cash-flow projection + break-even — `finance/03_cash_flow_and_breakeven.md`
 * [x] Draft GIZ funding request — tiered ask mapped to ranked awards ([04_funding_request.md](../finance/04_funding_request.md))

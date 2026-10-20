@@ -135,7 +135,7 @@ This file records key decisions, their context, rationale, and consequences for 
 
 ### ADR-013: Operational Policies — Returns, Shipping, Packaging, Payments, Listing Rules & Dedup
 
-* **Date:** 2026-10-19
+* **Date:** 2026-10-20
 * **Status:** Accepted (assumptions flagged for real-world verification)
 * **Context:** The platform needed consolidated operational policies before finance work could proceed — returns, shipping economics, packaging standards, and payment rails feed unit economics; listing/dedup rules govern catalog integrity.
 * **Decision:** Adopt [`../platform/operational_policies.md`](../platform/operational_policies.md): two-class return policy (fault → merchant pays; remorse → customer pays 3k leg; 48h window); flat 3,000 IQD Duhok shipping inside Doorstep Total with one free re-attempt; mandatory opaque sealed packaging + security tape on orders ≥50k IQD; COD primary with weekly merchant settlement and Phase-3 e-wallets (FIB/FastPay/Qi) optional-prepaid; with listing/catalog governance split into a sibling doc [`../platform/catalog_governance.md`](../platform/catalog_governance.md): consolidated 8-rule listing policy and four-layer duplicate defense (barcode hard-block → fuzzy match → community/QA flags → merge process).

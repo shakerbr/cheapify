@@ -67,7 +67,7 @@ Online retail in Iraq and the Kurdistan Region is polarized between two flawed m
   * **Predatory Merchant Commissions (10%–15%):** For bazaar retailers with 15%–25% gross margins, Miswag's commission eliminates their operating profit, forcing sellers to inflate platform prices.
   * **No Single-SKU Comparison:** Miswag either controls the price as a 1P seller or displays isolated merchant listings, preventing consumers from comparing competing local shops side by side on identical items.
   * **Delivery Latency to Northern Hubs:** Deliveries to Duhok, Erbil, and Mosul typically take 2 to 4 business days from southern fulfillment centers, with inter-city shipping tariffs of 5,000–6,000 IQD.
-* **Cheapify Advantage:** Hyperlocal intra-city same-day delivery (3,000 IQD via ZMC Express), accessible [Progressive Marginal Fees](../platform/fee_structure_and_monetization.md) (saving merchants 58%–86% in commissions), and true side-by-side merchant price transparency.
+* **Cheapify Advantage:** Hyperlocal intra-city same-day delivery (3,000 IQD via local courier partner), accessible [Progressive Marginal Fees](../platform/fee_structure_and_monetization.md) (saving merchants 58%–86% in commissions), and true side-by-side merchant price transparency.
 
 ---
 
@@ -109,7 +109,7 @@ The table below contrasts Cheapify directly against the 4 alternatives across cr
 | **Variant & Spec Selectors** | Omitted (Requires asking in chat) | Standard | Standard | Inconsistent / Free text | **Structured Variant Chips (Color, Size, Dimensions)** |
 | **Checkout Experience** | 6-part chat interrogation (3h lag) | Web / App checkout | Web checkout | App checkout | **1-Click Self-Service Checkout (<30 seconds)** |
 | **Supported Local Payments** | Cash on Delivery (COD) only | COD, FIB, ZainCash | COD, FIB, Visa/Mastercard | COD, FastPay | **COD + Local E-Wallets (FIB, FastPay, Qi Card)** |
-| **Delivery Speed (Duhok/Pilot)** | 1–2 days (Unscheduled taxi) | 2–4 days (Baghdad hub) | 2–3 days (Erbil warehouse) | 1–2 days (Local courier) | **Same-Day / Next-Day Intra-City (ZMC Express)** |
+| **Delivery Speed (Duhok/Pilot)** | 1–2 days (Unscheduled taxi) | 2–4 days (Baghdad hub) | 2–3 days (Erbil warehouse) | 1–2 days (Local courier) | **Same-Day / Next-Day Intra-City (local courier partner)** |
 | **Delivery Tariff (Intra-City)** | 3,000 – 5,000 IQD (Unregulated) | 5,000 – 6,000 IQD (Inter-city) | 5,000 IQD | 3,000 – 4,000 IQD | **Flat 3,000 IQD (~$2 USD) Standard Tariff** |
 | **Merchant Take-Rate / Fee** | 0% direct (High time/labor cost) | High (10% – 15% commission) | N/A (Closed 1P retail) | Variable listing/commission fee | **[Progressive Marginal Tiering](../platform/fee_structure_and_monetization.md) (5% / 3% / 1.5%)** |
 | **Merchant Data Dashboard** | Paper notebooks / WhatsApp history | Enterprise portal | Internal corporate ERP | Basic merchant app | **Turnkey Merchant Dashboard (Live stock, orders, P&L)** |
@@ -148,7 +148,7 @@ Unlike regional competitors that spend large capital on external software develo
 
 ### 4.3 Hyperlocal Logistics Integration (Asset-Light 3PL)
 
-Cheapify avoids the capital-intensive trap of buying delivery fleets or leasing expensive central fulfillment warehouses. By integrating directly with established local 3PL courier networks (e.g., ZMC Express), Cheapify achieves:
+Cheapify avoids the capital-intensive trap of buying delivery fleets or leasing expensive central fulfillment warehouses. By integrating directly with established local 3PL courier networks (e.g., Fast Delivery locally; ZMC Express inter-city), Cheapify achieves:
 
 * **Immediate Intra-City Scalability:** Standard 3,000 IQD door-to-door delivery inside Duhok with zero vehicle maintenance liability.
 * **Seamless COD Net Settlement:** Automated weekly cash remittance and platform fee withholding at source, eliminating merchant payment defaults.
@@ -169,7 +169,7 @@ By rejecting predatory 10%–15% commissions and adopting **Progressive Marginal
 | **Social Commerce (Instagram Sellers)** | Sellers continue posting reels and discounting in DMs to maintain followers. | **Onboard them as partners, not enemies:** Show them the Merchant Dashboard saves them 4 hours of DM typing daily while giving them guaranteed, prepaid/COD-confirmed orders. |
 | **Miswag** | Miswag launches regional ad campaigns or discounts shipping to Kurdistan. | **Hyperlocal speed & community trust:** Miswag cannot deliver intra-city within 2–4 hours from Baghdad. Cheapify delivers from local bazaar shops within hours at 3,000 IQD. |
 | **iBazzar** | iBazzar attempts to group duplicate listings or build comparison tools. | **Catalog data integrity & Best Value algorithm:** Grouping unstandardized duplicate listings retrospectively is technically complex and alienates existing pay-per-listing sellers. Cheapify enforces barcode standardization from day one. |
-| **New Market Entrants** | A clone attempts to copy the comparison model. | **Exclusive merchant relationships & Single-SKU density:** Once local bazaar retailers are accustomed to the Cheapify dashboard and automated ZMC courier pickups, merchant switching costs become high. |
+| **New Market Entrants** | A clone attempts to copy the comparison model. | **Exclusive merchant relationships & Single-SKU density:** Once local bazaar retailers are accustomed to the Cheapify dashboard and automated courier pickups, merchant switching costs become high. |
 
 ---
 

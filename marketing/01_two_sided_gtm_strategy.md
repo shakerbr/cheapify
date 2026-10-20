@@ -51,7 +51,7 @@ flowchart TD
 As formulated in **ADR-008** and **Preference 19**, Cheapify does not begin by trying to digitize offline brick-and-mortar bazaar stalls. Instead, **Stage 1 focuses exclusively on existing online social media stores** (Instagram, Facebook, and TikTok shops):
 
 1. **Zero Photography & Asset Overhead:** Social media sellers already have high-resolution photos, lifestyle unboxing reels, Kurdish/Arabic captions, and pre-compiled spec sheets stored on their smartphones. Catalog onboarding is rapid.
-2. **Pre-Built E-Commerce Muscle:** Social sellers already pack parcels, coordinate daily with 3PL couriers (e.g. ZMC Express, local courier fleets), and collect Cash on Delivery (COD). They require zero logistics education.
+2. **Pre-Built E-Commerce Muscle:** Social sellers already pack parcels, coordinate daily with 3PL couriers (local fleets e.g. Fast Delivery; ZMC Express for inter-city), and collect Cash on Delivery (COD). They require zero logistics education.
 3. **Acute DM Exhaustion ("Interrogation Tax"):** Social sellers are drowning in 50–100 repetitive DMs a day (*"Bihayê wê çende?", "What colors?", "Where are you located?"*) with an **85%+ ghost rate**. Cheapify is an immediate painkiller that automates their sales pipeline.
 4. **Built-in Organic Traffic:** When an Instagram shop with 15,000 followers joins Cheapify and puts their Cheapify link in their bio, **they bring their entire existing customer base directly into Cheapify for free**, driving our customer acquisition cost (CAC) toward zero.
 
@@ -137,7 +137,7 @@ Because founder **Shakir Bashar** is a software engineer who builds UX prototype
    - Clicking an Instagram/Facebook Bio link or opening the Cheapify mobile app.
    - Selecting a white Anker charger from the Single-SKU page.
    - 1-tap checkout with COD to Duhok Malta District.
-   - Immediate WhatsApp order notification buzzing on the merchant's phone with customer name, phone number, and pre-formatted ZMC delivery waybill.
+   - Immediate WhatsApp order notification buzzing on the merchant's phone with customer name, phone number, and pre-formatted courier waybill.
 2. Conversion rate on this specific video demo is extraordinarily high because merchants immediately see the elimination of their administrative nightmare.
 
 ---

@@ -26,12 +26,12 @@ Both must hold *simultaneously* — Cheapify's design makes them unusually favor
 
 ### 2.1 Revenue per shopper
 
-From `01` §5.3: contribution per delivered order = **+1,025 IQD** (fee 950 + delivery margin 500 − variable 425, at AOV 25,000).
+From `01` §5.3: contribution per delivered order = **~+1,015 IQD** (fee 950 + delivery margin 500 − variable 425, at AOV 25,000).
 
 | Parameter | Working value | Source |
 | :--- | :--- | :--- |
 | Orders per active shopper / month | **1.5** `[ASSUMPTION]` | Iraqi social-commerce cadence |
-| Monthly contribution / active shopper | **1,540 IQD** | 1,025 × 1.5 |
+| Monthly contribution / active shopper | **~1,520 IQD** | ~1,015 × 1.5 |
 | Expected active lifespan | **12 months** `[ASSUMPTION]` | Conservative for pilot |
 | Retention haircut | **×0.6** `[ASSUMPTION]` | Churn-adjusted active months |
 | **Shopper LTV (12-mo)** | **≈ 11,100 IQD (~$7.40)** | 1,540 × 12 × 0.6 |

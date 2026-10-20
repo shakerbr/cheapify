@@ -178,7 +178,7 @@ In Iraq, where **85%+ of e-commerce volume relies on Cash on Delivery (COD)**, p
 sequenceDiagram
     autonumber
     actor Customer
-    participant Courier as 3PL Courier (e.g., ZMC Express)
+    participant Courier as 3PL Courier (e.g., Fast Delivery / local 3PL courier)
     participant Cheapify as Cheapify Core Ledger
     participant Merchant as Bazaar Merchant (Kak Kawa)
 

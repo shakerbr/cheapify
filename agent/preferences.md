@@ -88,7 +88,7 @@ This file documents the specific ways, working habits, and styling preferences r
     - The first stage of merchant onboarding targets **online social media stores** (Instagram, Facebook, and TikTok sellers; currently not Telegram), NOT offline physical bazaar retail stores.
     - **Strategic Rationale:**
       1. **Asset Readiness:** Social sellers already possess digital photos, showcase video reels, written specs, and product lists. Catalog ingestion is fast with zero photography friction.
-      2. **Operational E-Commerce Familiarity:** They are already accustomed to remote selling, 3PL courier coordination (ZMC Express, local courier fleets), and COD reconciliation.
+      2. **Operational E-Commerce Familiarity:** They are already accustomed to remote selling, 3PL courier coordination (local fleets e.g. Fast Delivery; inter-city networks e.g. ZMC Express), and COD reconciliation.
       3. **Acute DM Exhaustion ("Interrogation Tax"):** They experience the most severe pain from answering hundreds of repetitive DMs ("Bihayê wê çende?", "Parve bike", "What colors?"), with 80%+ drop-off. Cheapify acts as an instant relief tool, converting DMs into 1-click structured checkouts.
       4. **Built-in Audience & Organic Shopper Acquisition:** Social sellers will put their Cheapify store/product links in their social media bios and stories, funnelling their existing followers directly into Cheapify as free, organic buyer traffic.
     - Traditional physical bazaar shops will be integrated in subsequent phases once platform liquidity, catalog depth, and simplified barcode-scanning tools are established.

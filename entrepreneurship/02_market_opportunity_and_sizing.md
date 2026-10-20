@@ -126,7 +126,7 @@ flowchart LR
 #### Phase 3: Complete Nationwide Coverage (All of Iraq)
 
 * **Geography:** **Baghdad** (8M+ population, the commercial heart of Iraq), **Basra** (the southern trade gateway), Kirkuk, Najaf, Karbala, and all remaining governorates.
-* **Vision:** Achieving full nationwide coverage is simply a matter of time and operational scaling. Because Cheapify utilizes an asset-light 3PL courier model (ZMC Express and national courier partnerships), physical warehouse construction is never required. As courier delivery networks connect Iraqi cities, Cheapify's Single-SKU marketplace scales seamlessly to serve consumers and merchants across every corner of Iraq.
+* **Vision:** Achieving full nationwide coverage is simply a matter of time and operational scaling. Because Cheapify utilizes an asset-light 3PL courier model (local courier partners such as Fast Delivery in Duhok — verified quote — and national linehaul networks such as ZMC Express), physical warehouse construction is never required. As courier delivery networks connect Iraqi cities, Cheapify's Single-SKU marketplace scales seamlessly to serve consumers and merchants across every corner of Iraq.
 
 ---
 
@@ -142,7 +142,7 @@ While Cash on Delivery (COD) remains the default payment method (handling ~85%+ 
 
 ### 3.3 Driver 3: Courier Infrastructure Maturity
 
-National and regional courier networks (e.g., ZMC Express, local courier fleets) now connect Duhok, Erbil, Mosul, Baghdad, and Basra with dependable door-to-door tracking and COD cash collection at affordable rates (3,000 IQD intra-city; 5,000–6,000 IQD inter-city). Cheapify plugs directly into this infrastructure.
+National and regional courier networks (e.g., ZMC Express and local courier fleets such as Fast Delivery in Duhok) now connect Duhok, Erbil, Mosul, Baghdad, and Basra with dependable door-to-door tracking and COD cash collection at affordable rates (3,000 IQD intra-city; 5,000–6,000 IQD inter-city). Cheapify plugs directly into this infrastructure.
 
 ### 3.4 Driver 4: Merchant Margin Alignment Across Diverse Sectors
 
@@ -201,7 +201,7 @@ Every metric, market assumption, and demographic statistic in this document is s
 
 | Operational Variable | Verified Rate | Primary Source / Provider | Operational Verification |
 | :--- | :---: | :--- | :--- |
-| **Intra-City 3PL Delivery Fee** | **3,000 IQD (~$2.00 USD)** | [ZMC Express Iraq](https://zmcexpress.com/) / Local Duhok Courier Networks | Standard public tariff for same-day parcel pickup and door delivery inside Duhok city limits. |
+| **Intra-City 3PL Delivery Fee** | **3,000 IQD (~$2.00 USD)** | Fast Delivery (Duhok) — direct quote, Oct 2026 | Public tariff for same-day parcel pickup and delivery inside Duhok; contract discount −500/order. Surroundings 4,000–5,000 by zone. |
 | **Merchant Gross Margin on Tech Accessories** | **15% – 25%** | Direct field interviews with central Duhok Bazaar merchants (Bazaar St & Malta) | Standard retail markup on high-turnover phone cables, screen guards, power banks, and chargers. |
 
 ---

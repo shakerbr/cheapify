@@ -120,7 +120,7 @@ Where:
 
 ## 3. Delivery Logistics Distance & Tariff Matrix
 
-To eliminate shipping fraud and hidden fees, **merchants never set custom delivery fees**. Delivery tariffs are fixed, standardized contract rates negotiated directly by Cheapify with local 3PL courier partners (e.g. ZMC Express and certified local courier fleets).
+To eliminate shipping fraud and hidden fees, **merchants never set custom delivery fees**. Delivery tariffs are fixed, standardized contract rates negotiated directly by Cheapify with local 3PL courier partners (e.g. Fast Delivery in Duhok and certified local courier fleets; ZMC Express for inter-city).
 
 The platform maintains a deterministic distance and zone routing matrix:
 

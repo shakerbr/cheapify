@@ -40,11 +40,15 @@ Rules:
 
 [Policy] Duhok pilot:
 
-- **Flat 3,000 IQD** per order, citywide — shown inside the Doorstep Total, never added later.
+- **Zone A — Duhok city: flat 3,000 IQD** per order.
+- **Zone B — Near surroundings (Sharya, Semel, Domiz, Khanke): flat 4,000 IQD** `[DECISION PROPOSED]`.
+- **Zone C — Far Duhok metro (Zakho & similar): flat 5,000 IQD** `[DECISION PROPOSED]` — courier rate ~4,500 contracted.
+- **Uniform margin rule:** every zone fee = courier contract rate +500 IQD — same delivery margin everywhere; fee always shown inside the Doorstep Total, never added later.
 - **SLA:** same-day dispatch for orders before 17:00; next-day otherwise. Hyperlocal target 1–3h where courier availability allows.
 - **Merchant rule (GTM Rule 4):** merchants may not add packaging or delivery surcharges — the Doorstep Total is the whole price.
+- **Geographic scope:** Duhok pilot covers Zones A–C; inter-city shipping (Erbil, Baghdad, etc.) is a Phase 2 tariff question, not a launch feature.
 
-**[Assumption] Cost basis:** 3,000 IQD assumed to cover courier cost or be near-cost. *Needs real ZMC/local courier quotes — flagged for Pillar 3 budget.* If actual cost is 2,500 IQD, the 500 margin absorbs failed-delivery re-attempts; if it's 3,500+, the flat fee needs review before scale.
+**Cost basis [QUOTE-VERIFIED — Fast Delivery, Duhok]:** list 3,000 city / 4,000 surroundings → **contract discount −500/order → 2,500 city / 3,500 near / ~4,500 far (Zakho).** Zone fees hold the +500 margin *only under contract* — unsigned, delivery is a zero-margin passthrough. Contract requires business registration → now a critical-path dependency, not paperwork. *Zakho tier rate to confirm; second courier quote still wanted for negotiating leverage.*
 
 Failed deliveries [Policy]:
 
@@ -87,7 +91,7 @@ Failed deliveries [Policy]:
 
 | Item | Needed input | Blocks |
 | :--- | :--- | :--- |
-| True Duhok courier cost | ZMC/local courier quote | Shipping margin, Pillar 3 unit economics |
+| ~~True Duhok courier cost~~ — **done** (Fast Delivery) | Contract signature | Shipping margin — verified |
 | Refund rail for COD | Courier remittance terms | Return policy mechanics |
 | Inter-city tariff | ZMC inter-city quote | Phase 2 Doorstep Total |
 | Return-rate baseline | Pilot data (est. 3–5%) | Pillar 3 cash flow |

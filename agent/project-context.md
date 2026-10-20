@@ -36,7 +36,7 @@ A fast, single-page reference of Cheapify's core identity, problem space, soluti
   * **Priority 1:** Delivery Time
   * **Priority 2:** Rating and Reviews
 * **Frictionless Checkout:** 1-click checkout supporting Cash on Delivery (COD) and local e-wallets (FastPay, FIB, Qi Card).
-* **Automated Dispatch:** Instant WhatsApp Cloud API order routing to merchants and local 3PL couriers (e.g. ZMC Express).
+* **Automated Dispatch:** Instant WhatsApp Cloud API order routing to merchants and local 3PL couriers (e.g. Fast Delivery — quoted partner) and national linehaul networks (e.g. ZMC Express).
 * **Price Drop Intelligence:** Automated notifications to merchants when competitors lower prices on shared SKUs.
 
 ---

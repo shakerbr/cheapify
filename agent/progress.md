@@ -6,35 +6,52 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
-### [2026-10-19] — Program Constraints Update: Ranked Awards + 6-Minute Pitch
+### [2026-10-20] — Desk Research + First Merchant Interview (More Real Data)
+* **OTP/messaging costs desk-verified:** OTPIQ (Iraqi-local provider) — WhatsApp OTP **40 IQD/msg**, SMS OTP **80–100 IQD (Korek/Asiacell), 250 (Zain)**; Meta moved to per-message pricing Jul 2025 (utility ~$0.01–0.02). SMS is 3× the assumed cost → OTP routing changed to WhatsApp-first with SMS fallback (blended ~50 IQD). A6/A7 marked `[DESK-VERIFIED]`.
+* **Merchant interview n=1 (A9):** ~30 orders/mo total DM volume — 2× the planning assumption per store, but Cheapify capture is still a slice of it. Failed deliveries confirmed real ("buyer not home"); returns honesty-dependent.
+* **Strategic finding:** merchant already runs a **competitor's affiliate bio link** — proves the bio-link acquisition channel exists AND is contested (bio slot is scarce real estate). No platform-commission baseline → our 3.8% has nothing to defend against. Positive reaction to the Cheapify concept.
+* **ZMC Express verified via search:** Dubai-HQ international freight company **but Iraqi-founded with a real Duhok branch + COD services + 11 Iraq branches** → repositioned: Fast Delivery = pilot/intra-city partner, ZMC = inter-city/Phase-2 linehaul. ~20 doc references updated accordingly; entrepreneurship/02 evidence table now cites the real Fast Delivery quote.
+
+### [2026-10-20] — A1 Courier Cost Verified: First Real Quote (Fast Delivery)
+* **Fast Delivery (Duhok) quote:** list 3,000 city / 4,000 surroundings → **contract −500/order** → rates 2,500 / 3,500, far zones (Zakho) ~4,500. Three-zone fee structure proposed in `operational_policies` §2: **Zone A 3,000 / Zone B 4,000 / Zone C 5,000 — uniform +500 margin per zone** (customer pays cost+500).
+* **Consequences:** A1 validated exactly; unsigned = zero margin in-city (contribution ~525, break-even ~1,240/mo) → **registration → contract is now critical-path**. Zakho tier confirmation + second courier quote still open for leverage.
+
+### [2026-10-20] — Slow-Adoption Floor Scenario Added (03 §4.2)
+* Founder pushed further: even the planning ramp felt optimistic → added **~25%-ramp floor case**: trough −4.28M IQD (~$2,850) at M6, first green M7 (M6 burn bump raises break-even ~642→771), recovery ~M20+. Key insight recorded: **loss ceiling is burn (~$435/mo), not order volume** — slow adoption degrades to a grind, not a cliff. `01` §7 and `04` synced ($2,250–2,850 range).
+
+### [2026-10-20] — Cash-Flow Scenarios Flipped: Planning = Conservative Ramp
+* Founder flagged order projections as too optimistic → **the 50% ramp became the planning scenario**, the former base became the upside stretch case in `03` (§4.1). Planning milestones: cash-positive M5 (~1,000 orders/mo), peak loss −3.37M IQD (~$2,250) at M4, recovery ~M9.
+* `01` §6–7 mirror updated; `04` wording aligned ("planning-ramp trough") — the $7.5k ask was already derived from the conservative hole, so no tier changes needed. Per-store load note added: ~10–80 orders/merchant/mo, honest about Cheapify capturing a slice of DM-era volume.
+
+### [2026-10-20] — Program Constraints Update: Ranked Awards + 6-Minute Pitch
 
 * **New program facts recorded:** GIZ awards are ranked (1st > 2nd > 3rd prize amounts); final pitch has a hard 6-minute limit. Recorded as Rule 13 in `rules.md` + `AGENTS.MD`, added to `project-context.md`, `roadmap.md` (pitch-deck row: ~7–9 slides max, must win on merit), and `active-tasks.md`.
 * `finance/04` tiers mapped to rank outcomes: Full ($7,500) = 1st place, Core ($4,500) = 2nd, Minimum ($2,500) = 3rd — any rank yields a complete plan.
-* **Finance docs synced:** `01` §6–7 updated to match `03`'s current model — dev burn 210k/mo, M3 +168k, M6 +1.98M, break-even ~636 orders/mo, capital need restated as peak cumulative deficit (2.76M base / 3.37M conservative) with `03` marked as the authoritative timeline. (Earlier figures in this log reflect the pre-sync model.)
+* **Finance docs synced:** `01` §6–7 updated to match `03`'s current model — dev burn 210k/mo, M3 +168k, M6 +1.98M, break-even ~642 orders/mo, capital need restated as peak cumulative deficit (2.76M base / 3.37M conservative) with `03` marked as the authoritative timeline. (Earlier figures in this log reflect the pre-sync model.)
 
-### [2026-10-19] — GIZ Funding Request (Pillar 3, File 04)
+### [2026-10-20] — GIZ Funding Request (Pillar 3, File 04)
 
 * **Created** [`finance/04_funding_request.md`](../finance/04_funding_request.md): competitive grant ask — top 3 of 20, envelope and criteria unknown → tiered ask ($7,500 full / $4,500 core / $2,500 minimum) derived bottom-up from the model (peak need $2,250 + validation $100 + growth $2,500 + registration $1,000 + onboarding $900 + 15% contingency).
 * **Founder co-investment ~$9,500** (equipment, domain, sweat equity, dev burn) — grant ≈ 44% of total investment, the leverage frame.
 * Use-of-funds tied to milestones (validation gate → launch → cash-positive → expansion); universal grant criteria covered; §6.1 experiments positioned as the de-risking differentiator; KPI table for funder reporting.
 
-### [2026-10-19] — Cash Flow & Break-Even Model (Pillar 3 Complete, v1)
+### [2026-10-20] — Cash Flow & Break-Even Model (Pillar 3 Complete, v1)
 
-* **Created** [`finance/03_cash_flow_and_breakeven.md`](../finance/03_cash_flow_and_breakeven.md): 12-month projection — Phase A (2mo, ~210k/mo dev burn incl. modest audience ads) → launch (652k/mo operating burn) → pilot ramp. Milestones: first cash-positive month M3 (~800 orders), peak cumulative loss ~2.76M IQD (~$1,840) at M2, full recovery M6 (~2,700 orders/mo). Break-even = ~636 orders/mo (~21/day) at +1,025 IQD contribution; levers to lower it documented as options-not-adopted (commission kept at 3.8%).
+* **Created** [`finance/03_cash_flow_and_breakeven.md`](../finance/03_cash_flow_and_breakeven.md): 12-month projection — Phase A (2mo, ~210k/mo dev burn incl. modest audience ads) → launch (652k/mo operating burn) → pilot ramp. Milestones: first cash-positive month M3 (~800 orders), peak cumulative loss ~2.76M IQD (~$1,840) at M2, full recovery M6 (~2,700 orders/mo). Break-even = ~642 orders/mo (~21/day) at +1,025 IQD contribution; levers to lower it documented as options-not-adopted (commission kept at 3.8%).
 * **Honest caveats recorded:** pilot target of 150 orders/store/mo is aggressive; model collapses if courier A1 > ~3,425 IQD. **Conservative scenario (50% ramp) added:** peak loss ~3.37M IQD (~$2,250), recovery ~M9 — bounded downside. **Validation experiments specified** (courier quote, 10–20-order concierge pilot, merchant audience audit) as the real de-risking lever, since modeling alone can't reduce traction risk.
 * **Pillar 3 status:** all three finance docs complete at assumption-driven v1 — blocked only by real-world quotes, not modeling.
 
-### [2026-10-19] — Unit Economics Model v1 (Pillar 3)
+### [2026-10-20] — Unit Economics Model v1 (Pillar 3)
 
 * **Created** [`finance/02_unit_economics.md`](../finance/02_unit_economics.md): shopper LTV ~11,100 IQD vs blended CAC ~1,500 (≈7.4:1, payback 1–2 orders); merchant LTV ~103,000 IQD vs CAC 5–10k (10–20:1); founding-store package (~65k IQD) justified as joint merchant+audience acquisition. Sensitivity table: A1 courier cost and AOV are the make-or-break inputs.
 
-### [2026-10-19] — Pillar 3 Started: Operational Budget v1
+### [2026-10-20] — Pillar 3 Started: Operational Budget v1
 
 * **Created** [`finance/01_operational_budget.md`](../finance/01_operational_budget.md) — assumption-driven model with a 12-item Assumptions Register (A1–A12), one-time startup costs (~1.5–1.9M IQD), monthly baseline burn (~562k IQD), per-order contribution math (+1,025 IQD/order at AOV 25k), break-even ~550 orders/mo, and 6-month capital need ~4.6M IQD (~$3,060).
 * **Key sensitivity flagged:** if the real Duhok courier cost exceeds ~3,500 IQD/parcel, the 3,000 IQD flat delivery fee turns per-order contribution negative — the #1 quote to collect.
 * **Added §3.1 Founder-Contributed Resources:** domain (paid), PC, smartphone, internet, electricity/workspace, founder labor — valued as in-kind contributions, $0 cash impact; they graduate to cash budget if they lapse.
 
-### [2026-10-19] — Operational Policies Drafted (ADR-013)
+### [2026-10-20] — Operational Policies Drafted (ADR-013)
 
 * **Created** [`platform/operational_policies.md`](../platform/operational_policies.md) covering all items in the founder's `to-consider.md`: two-class returns (fault→merchant pays, remorse→customer pays, 48h window), flat 3,000 IQD Duhok shipping inside Doorstep Total, mandatory sealed packaging + security tape ≥50k IQD, COD-primary payments with weekly settlement + Phase-3 e-wallets, then split into a sibling doc [`platform/catalog_governance.md`](../platform/catalog_governance.md) holding listing process, the 8-rule listing policy, and the 4-layer duplicate-prevention strategy.
 * Every section marked **[Policy]** vs **[Assumption]**; §5 lists the real-world data needed (courier quotes, remittance terms, return-rate baseline) — all feed Pillar 3 finance work.

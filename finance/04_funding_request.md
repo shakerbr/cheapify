@@ -18,7 +18,7 @@ Because awards are **ranked** (1st > 2nd > 3rd), the ask is tiered so each rank 
 | :--- | :--- | :--- | :--- |
 | **Full** | **1st place** | **$7,500** | Everything below — peak funding + growth acceleration + validation + contingency + registration |
 | **Core** | 2nd place | $4,500 | Peak funding need + validation + registration + modest contingency |
-| **Minimum** | 3rd place | $2,500 | Peak funding need only — keeps the pilot alive, growth stays organic |
+| **Minimum** | 3rd place | $2,500 | Peak funding need only — covers the planning trough and most of the floor case; growth stays organic |
 
 If actual rank amounts differ, the components table (§2) is the priority order — fund top-down.
 
@@ -30,7 +30,7 @@ Bottom-up from the model, not a round guess:
 
 | Component | USD | ~IQD | Basis |
 | :--- | :--- | :--- | :--- |
-| Peak funding need (50%-ramp worst case) | $2,250 | 3.37M | `03` §4.1 trough — the actual hole to fill |
+| Peak funding need (planning→floor trough, `03` §4–4.2) | $2,250–2,850 | 3.37–4.28M | `03` §4.1 trough — the actual hole to fill |
 | Validation experiments (concierge pilot, courier quotes, audience audit) | $100 | 150k | `03` §6.1 — run *before* large spend |
 | Growth acceleration (real ad budget above test level, M3–M6) | $2,500 | 3.75M | Scales the bio-link + referral channels that drive CAC down |
 | Business registration + legal formalization | $1,000 | 1.5M | Needed for courier contracts, e-wallet agreements, payment rails |
@@ -60,7 +60,7 @@ Money is spent against model milestones, not on a schedule:
 | :--- | :--- | :--- | :--- |
 | **Validation gate** | Award received | ~$100 + ops budget | Run §6.1 experiments — courier quote, 10–20-order concierge pilot |
 | **Launch** | Experiments validate per-order economics | ~$1,000 + monthly ops | Registration, founding-circle onboarding, launch content push |
-| **Cash-positive (M3–M5)** | ≥640–800 orders/mo | Growth tranche | Scale what worked in pilot — ads, referral pool, 2nd merchant cohort |
+| **Cash-positive (~M5)** | ~1,000 orders/mo | Growth tranche | Scale what worked in pilot — ads, referral pool, 2nd merchant cohort |
 | **Expansion readiness** | Pilot target hit (3,000 orders/mo) | Remainder + contingency | Phase 2 prep — next city, e-wallet integration groundwork |
 
 No funds flow to salaries/founder draw — every dollar goes to order volume, which is what the model says matters.
@@ -73,7 +73,7 @@ With criteria unpublished, the request addresses every standard grant dimension:
 
 | Criterion | Cheapify's answer |
 | :--- | :--- |
-| **Viability** | Positive unit economics (+1,025 IQD/order), break-even ~636 orders/mo, modeled base + conservative scenarios — not optimism, a bounded plan |
+| **Viability** | Positive unit economics (~+1,015 IQD/order), break-even ~642 orders/mo, modeled base + conservative scenarios — not optimism, a bounded plan |
 | **Founder readiness** | Full-stack build already underway; complete venture documentation (GTM, brand system, platform policies, financial model); co-investment ~$9,500 |
 | **Social/economic impact** | Price transparency for consumers; formalizes informal social sellers into registered merchants with tools, records, and delivery infrastructure; jobs via courier partnerships |
 | **Innovation** | Shared master-SKU catalog (first for the market), Best Value ranking, barcode-first listing, anti-fraud incentive design |
