@@ -288,7 +288,7 @@ The incoming data stream is structured to directly substantiate the remaining 3 
 
 ## 7. Survey Results — n=199 (Sep–Oct 2026)
 
-**Dataset:** [`../assets/evidence/market-validation-survey-oct2026.csv`](../assets/evidence/market-validation-survey-oct2026.csv)
+**Dataset:** [`assets/evidence/market-validation-survey-oct2026.csv`](assets/evidence/market-validation-survey-oct2026.csv)
 **Sample:** 179 shoppers + 20 merchants. Language split: 168 Arabic / 21 English / 10 Kurdish — *Kurdish (Badînî) respondents underrepresented relative to Duhok's population; treat Kurdish-specific figures as directional only.*
 
 ### 7.1 Shopper Findings (n=179)

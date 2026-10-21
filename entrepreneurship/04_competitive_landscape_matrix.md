@@ -89,7 +89,7 @@ Online retail in Iraq and the Kurdistan Region is polarized between two flawed m
 * **Operating Model:** Open third-party marketplace where any registered merchant can upload photo listings and descriptions.
 * **Key Vulnerabilities:**
   * **Multi-Listing Duplication Chaos:** Because iBazzar lacks a Single-SKU grouping architecture, every seller creates an isolated listing for the exact same item. A search for a Xiaomi power bank displays dozens of redundant, unlinked cards.
-  * **Arbitrary Price Disparities Inside the Same App:** Competitors exploit buyer confusion on identical items. As documented in verified repository evidence ([`assets/evidence/price-variation/Screenshot_20260920_130923.jpg`](assets/evidence/price-variation/Screenshot_20260920_130923.jpg)), one seller lists a Xiaomi 165W power bank for **60,000 IQD** while another lists it on an unlinked page for **70,000 IQD** on the exact same app.
+  * **Arbitrary Price Disparities Inside the Same App:** Competitors exploit buyer confusion on identical items. As documented in verified repository evidence ([`assets/evidence/xiaomi-power-bank/Screenshot_20260920_130923.jpg`](assets/evidence/xiaomi-power-bank/Screenshot_20260920_130923.jpg)), one seller lists a Xiaomi 165W power bank for **60,000 IQD** while another lists it on an unlinked page for **70,000 IQD** on the exact same app — and the same Miswag search shows one Anker power bank at **100,000–200,000 IQD** simultaneously ([`assets/evidence/Anker-Power-Bank/`](assets/evidence/Anker-Power-Bank/)).
   * **Zero Algorithmic Best-Value Guidance:** Shoppers must scroll through pages of duplicate cards without any automated indicator of who offers the best combination of price, delivery speed, and rating.
   * **Inconsistent Product Data:** Merchant uploads lack standardized specifications, dimensions, and live stock tracking.
 * **Cheapify Advantage:** Strict **Single-SKU architecture** (one master page per barcode/model) paired with the **Best Value Algorithm** (chip highlighting the lowest price and fastest delivery), completely eliminating duplicate clutter.
@@ -179,4 +179,4 @@ By rejecting predatory 10%–15% commissions and adopting **Progressive Marginal
 * **Market Sizing & Institutional Citations:** [`02_market_opportunity_and_sizing.md`](02_market_opportunity_and_sizing.md)
 * **Dual Buyer & Merchant Personas:** [`03_customer_and_merchant_personas.md`](03_customer_and_merchant_personas.md)
 * **Platform Fee Structure & Monetization:** [`../platform/fee_structure_and_monetization.md`](../platform/fee_structure_and_monetization.md)
-* **Physical Evidence of Competitor Price Disparities:** [`assets/evidence/price-variation/`](assets/evidence/price-variation/)
+* **Physical Evidence of Competitor Price Disparities:** [`assets/evidence/`](assets/evidence/)

@@ -15,7 +15,7 @@ While the transaction process suffers from many operational headaches, the **pri
 
 The exact same product sells at wildly conflicting, arbitrary prices depending on which shop, Instagram page, or marketplace app a buyer checks:
 
-* **Massive Price Disparities:** The identical item might sell for **25,000 IQD** on one page and **40,000 IQD** on another with zero baseline or justification. In high-ticket electronics, [documented evidence](assets/evidence/price-variation) shows identical monitors varying from **116,721 IQD to 163,350 IQD** (~47,000 IQD gap for the exact same model).
+* **Massive Price Disparities:** The identical item might sell for **25,000 IQD** on one page and **40,000 IQD** on another with zero baseline or justification. In high-ticket electronics, [documented evidence](assets/evidence) shows identical monitors varying from **116,721 IQD to 163,350 IQD** (~47,000 IQD gap) — and one identical Anker power bank spanning **90,000 to 200,000 IQD (~122% spread)** across channels (see `02` §5.4).
 * **Intra-App Duplication Chaos:** Even inside existing multi-seller apps (like iBazzar), competing merchants list the exact same Xiaomi power bank at **60,000 IQD vs. 70,000 IQD** on separate unlinked pages, exploiting buyer ignorance.
 * **Buyer Overpayment & Anxiety:** Consumers live with constant paranoia that they were overcharged simply because they didn't message enough pages or negotiate hard enough.
 

@@ -88,7 +88,7 @@ Cross-References:
 
 **Merchants — "Orders, not interrogations":**
 
-- **Merchant dashboard** — free catalog, order, inventory & pricing tools in one place (their #3 headache: own-app cost; settlement transparency per `fee_structure_and_monetization.md` §7)
+- Merchant dashboard — free catalog, order, inventory & pricing tools in one place (their #3 headache: own-app cost; settlement transparency per `fee_structure_and_monetization.md` §7)
 - Automated order pipeline replaces 50–100 daily price-DMs (their #1 headache)
 - Progressive fee 5/3/1.5% marginal — effective ~3.8% at typical prices vs. incumbents' 10–15%
 - Bio link becomes a revenue channel they own: `getcheapify.com/@store`

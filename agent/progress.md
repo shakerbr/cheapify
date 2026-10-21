@@ -6,6 +6,13 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-20] — Evidence Archive Restructured & Expanded (founder) + Repo Wired
+* **Founder restructured** screenshot evidence into `entrepreneurship/assets/evidence/<case>/` folders — 6 documented cases:
+  * **Anker A1695 25K/165W (flagship):** 90,000–200,000 IQD across IG sellers, iBazzar (134k), Miswag — **122% spread**, incl. 100k vs 200k *inside Miswag's own search grid*. Corrections applied post-review: `225624.jpg` = **iBazzar** (not Amal); ASUS `132436.jpg` = **Elryan**; ASUS `132423.jpg` = **Amal — platform now defunct** (flagged as historical capture everywhere)
+  * ASUS monitor 116,721–163,350 (40%, 3 sources) · Newal VAC-3510 95k vs 133,250 (40%, IG cheaper) · Hoco HX80 25k vs 35,280 (41%, IG cheaper) · Xiaomi 165W 60k vs 70k intra-app · +2 "DM for price" no-price posts (qualitative)
+  * Survey CSV moved to `entrepreneurship/assets/evidence/`; **per-folder extraction notes** (`README.md` per case) + **master analysis** at `assets/evidence/README.md` cataloging **15 distinct market defects** (price spread, duplicates, hidden prices, price ranges, unstructured captions, fake anchors, obscured sellers, delivery bundling, sparse reviews, thin listings, slow delivery, manual ordering, AI-content sellers, BNPL-on-inflation, competitor self-admission) each mapped to Cheapify's mechanism
+* **Path syncs:** all `assets/evidence/price-variation/` references updated in `01`, `02`, `04`; `02` §5.4 rewritten with all 6 cases; `05` dataset path updated; `rules.md`/`preferences.md` example paths corrected; `active-tasks` item closed.
+
 ### [2026-10-20] — Pillar 4 Complete: Business Modeling (All 4 Pillars Built)
 
 * **Created `business-modeling/` — three documents:**

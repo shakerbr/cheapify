@@ -61,7 +61,7 @@ This file documents the specific ways, working habits, and styling preferences r
       - **Phase 3 (Nationwide All-Iraq Coverage):** Scaling to Baghdad, Basra, Kirkuk, Najaf, Karbala, and all Iraqi governorates. Covering the whole of Iraq is the core venture destination.
 
 13. **Strictly Relative Links in Repository Documents:**
-    - Always format internal markdown links using relative paths (e.g., `assets/evidence/price-variation/...`), NEVER absolute filesystem paths or `file:///` URLs.
+    - Always format internal markdown links using relative paths (e.g., `assets/evidence/<case>/...` under `entrepreneurship/`), NEVER absolute filesystem paths or `file:///` URLs.
 
 14. **Dedicated Directory for Semi-General Artifacts (`platform/`):**
     - Cross-cutting, semi-general platform specifications that span across multiple pillars (such as fee structures, algorithm logic, and logistics protocols) must be housed in a dedicated directory like `platform/`, keeping specific pillar folders (e.g. `entrepreneurship/`) uncluttered and focused strictly on curriculum deliverables.

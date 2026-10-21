@@ -208,16 +208,42 @@ Every metric, market assumption, and demographic statistic in this document is s
 
 ### 5.4 Documented Real-Market Price Disparity Evidence
 
-All price variation claims are backed by physical evidence and verified real-world screenshots stored directly in the project repository at [`assets/evidence/price-variation/`](assets/evidence/price-variation/):
+All price variation claims are backed by physical evidence and verified real-world screenshots stored directly in the project repository under [`assets/evidence/`](assets/evidence/), organized per case — per-screenshot extraction notes inside each folder, and a full **15-issue market-defect catalog** in [`assets/evidence/README.md`](assets/evidence/README.md). Six documented cases, Sep–Oct 2026:
 
-1. **ASUS VA24EHF 24" 100Hz Gaming Monitor (Exact Same Model):**
+1. **Anker A1695 Power Bank 25,000mAh 165W (Exact Same SKU — flagship case, Oct 20, 2026):** the single most dramatic example — the identical product spans **110,000 IQD (~122% spread)** across channels.
 
-   * **Marketplace Listing (Miswag):** **163,350 IQD** — Verified via [`Screenshot_20260920_132358_Miswag.jpg`](assets/evidence/price-variation/Screenshot_20260920_132358_Miswag.jpg).
-   * **Competing Retail Store A:** **135,000 IQD** — Verified via [`Screenshot_20260920_132436_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132436_Gallery.jpg).
-   * **Competing Retail Store B (Lowest Market Offer):** **116,721 IQD** — Verified via [`Screenshot_20260920_132423_Gallery.jpg`](assets/evidence/price-variation/Screenshot_20260920_132423_Gallery.jpg).
+   * **Instagram sellers:** 95,000 IQD ([dream_1phone](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225511_Instagram.jpg), incl. delivery) · 99,000 IQD ([mrphoneiraq](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225529_Instagram.jpg)) · 90,000–120,000 IQD range quoted ([panomobi](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225543_Instagram.jpg)) · 100,000 IQD ([damas_for_mobiles](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225550_Instagram.jpg))
+   * **iBazzar app:** **134,000 IQD** + installment push (10×16,221) + a literal *"Found Cheaper? Tell us!"* feature — [`Screenshot_20261020_225624.jpg`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225624.jpg)
+   * **Miswag same-platform spread:** 100,000 IQD (DNA Iraq) · 121,000 IQD (Shopini) · 137,200 IQD · **200,000 IQD (Class For Mobile)** — [`grid`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225751_Miswag.jpg), [`grid 2`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225824_Miswag.jpg)
+   * **Documented Price Gap:** **90,000 → 200,000 IQD** — a buyer paying the worst listed price overpays ~122% (~$73) for the identical device.
+
+2. **ASUS VA24EHF 24" 100Hz Gaming Monitor (Exact Same Model, Sep 20, 2026):**
+
+   * **Marketplace Listing (Miswag):** **163,350 IQD** — Verified via [`Screenshot_20260920_132358_Miswag.jpg`](assets/evidence/asus-monitor/Screenshot_20260920_132358_Miswag.jpg).
+   * **Elryan app:** **135,000 IQD** — Verified via [`Screenshot_20260920_132436_Gallery.jpg`](assets/evidence/asus-monitor/Screenshot_20260920_132436_Gallery.jpg).
+   * **Amal store app (Lowest Market Offer — platform now defunct):** **116,721 IQD** — Verified via [`Screenshot_20260920_132423_Gallery.jpg`](assets/evidence/asus-monitor/Screenshot_20260920_132423_Gallery.jpg) (COD checkout). *Historical capture: Amal has since shut down.*
    * **Documented Price Gap:** **46,629 IQD (~$31 USD / ~40% markup)** for the exact same identical manufacturer SKU.
-2. **Xiaomi 165W Power Bank (Intra-App Duplication on iBazzar):**
 
-   * **Seller 1 Listing:** **60,000 IQD** — Verified via [`Screenshot_20260920_130923.jpg`](assets/evidence/price-variation/Screenshot_20260920_130923.jpg).
+3. **Newal VAC-3510 Vacuum Cleaner (Instagram vs. Marketplace, Oct 21, 2026):**
+
+   * **Instagram seller (ghadeer_3130):** **95,000 IQD** — [`Screenshot_20261021_120338_Instagram.jpg`](assets/evidence/vaccum-cleaner-vac3510/Screenshot_20261021_120338_Instagram.jpg).
+   * **Miswag (official Newal seller):** **133,250 IQD** — [`Screenshot_20261021_120334_Miswag.jpg`](assets/evidence/vaccum-cleaner-vac3510/Screenshot_20261021_120334_Miswag.jpg).
+   * **Documented Price Gap:** **38,250 IQD (~40%)** — and the social seller is *cheaper* than the marketplace, proving prices are opaque in both directions.
+
+4. **Hoco HX80 Portable Coffee Machine (Instagram vs. Marketplace, Oct 21, 2026):**
+
+   * **Instagram seller (xiaomi.iq / Shomy Diwaniya):** **25,000 IQD** — [`Screenshot_20261021_123421_Instagram.jpg`](assets/evidence/portable-coffee-hx80/Screenshot_20261021_123421_Instagram.jpg).
+   * **Miswag (hoco seller):** **35,280 IQD** — [`Screenshot_20261021_123409_Miswag.jpg`](assets/evidence/portable-coffee-hx80/Screenshot_20261021_123409_Miswag.jpg).
+   * **Documented Price Gap:** **10,280 IQD (~41%)** on a small everyday appliance.
+
+5. **Xiaomi 165W Power Bank (Intra-App Duplication on iBazzar, Sep 20, 2026):**
+
+   * **Seller 1 Listing:** **60,000 IQD** — Verified via [`Screenshot_20260920_130923.jpg`](assets/evidence/xiaomi-power-bank/Screenshot_20260920_130923.jpg).
    * **Seller 2 Listing:** **70,000 IQD** on the exact same app on an unlinked duplicate page.
    * **Documented Price Gap:** **10,000 IQD (16.7% markup)** within the same platform due to lack of a Single-SKU grouping system.
+
+6. **"DM for Price" — Prices Withheld Entirely (Oct 21, 2026):**
+
+   * **LePresso 4-in-1 portable coffee maker (luzineiq):** full spec post, **no price listed** — ordering only via "call now" phone number; a commenter is literally asking "how much is it?" — [`Screenshot_20261021_122639_Instagram.jpg`](assets/evidence/no-price-dm-for-price/Screenshot_20261021_122639_Instagram.jpg).
+   * **De'Longhi Magnifica Evo (hotiqdeals):** promotional post, **no price** — order via WhatsApp/direct message only — [`Screenshot_20261021_122946_Instagram.jpg`](assets/evidence/no-price-dm-for-price/Screenshot_20261021_122946_Instagram.jpg).
+   * **Evidence type:** qualitative — documents the hidden-price commerce model the platform replaces, corroborating the survey finding (46% of shoppers rank "DM just to ask price" a top-2 annoyance).

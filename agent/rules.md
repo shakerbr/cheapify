@@ -29,7 +29,7 @@ These are the strict, mandatory rules set by the user. The AI agent must adhere 
    - Do NOT rely on or treat archived pitch decks as final. Build all 4 pillars from the ground up first (1. Entrepreneurship, 2. Marketing, 3. Finance Management, 4. Business Modeling). The final presentation will be assembled only once all 4 pillars are complete.
 
 9. **Strictly Relative Links in Repository Documents:**
-   - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `../entrepreneurship/...`).
+   - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `../entrepreneurship/...`). Field evidence lives in `entrepreneurship/assets/evidence/`.
 
 10. **No Emojis — Icons Only:**
     - NEVER use emojis anywhere. Use vector icons (custom per brand spec, or free CDN libraries: Lucide, Phosphor, Heroicons, Iconify).
