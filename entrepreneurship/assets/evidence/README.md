@@ -16,6 +16,16 @@ Real-market screenshot evidence collected Sep–Oct 2026 supporting the problem 
 
 **Spread holds at every price point:** ~17–122% regardless of ticket size, and it cuts *both* ways — social sellers undercut marketplaces on 2 of 5 cases. The problem is opacity, not any single channel being "expensive."
 
+**Platform UI signatures** (for attributing future captures — filenames are not reliable):
+
+| Platform | Visual markers |
+| :--- | :--- |
+| **Miswag** | Red accent; brand chip → title → "Seller Delivery"/"Free Delivery" → red `-%` badge beside strikethrough → Aqsat Mall installment row → red "Add to Cart" pill; search grids show seller-name chips + bottom nav (Home/Categories/Cart/Account) |
+| **iBazzar** | Light UI; "Sort \| Filter" bar; blue "Free delivery" text; product page has "Found Cheaper? Tell us!", "Installment Available — 10 Months" row, photo counter, "Search Electronics" header |
+| **Elryan** | White cards, category-header back nav, bilingual AR/EN titles, product-code chip (e.g. "MON9"), outline "Buy Now" + quantity stepper |
+| **Amal** *(defunct)* | Purple theme; checkout stepper Cart→Delivery→Payment; "Sold By: Amal"; coupon field |
+| **Instagram/social** | Native IG/TikTok post chrome — Follow button, caption text, action rail |
+
 ## 2. Hidden-Price Evidence ("DM for Price")
 
 | Case | Folder | What it shows |
@@ -30,7 +40,7 @@ Beyond price spread, the screenshots document **14 distinct market defects**:
 | # | Issue | Where observed | Cheapify's answer |
 | :--- | :--- | :--- | :--- |
 | 1 | **Cross-channel price spread** — same SKU, radically different prices across IG/stores/marketplaces | All 5 product cases (17–122%) | Single-SKU master page with all offers side-by-side |
-| 2 | **Intra-platform duplicate listings** — same SKU as disconnected listings *inside one marketplace* | Miswag Anker grid (100k vs 200k same page); iBazzar Xiaomi (60k vs 70k) | Exact-barcode + multi-signal dedup; one page per SKU, offers compete on it |
+| 2 | **Intra-platform duplicate listings** — same SKU as disconnected listings *inside one marketplace* — **documented on TWO of the three live competitors** | Miswag Anker grid (100k vs 200k same page); iBazzar Xiaomi grid (60k vs 70k same page) | Exact-barcode + multi-signal dedup; one page per SKU, offers compete on it |
 | 3 | **Prices entirely hidden** — "DM/call for price" | no-price-dm-for-price/ (both posts) | Price is a structured field, always shown |
 | 4 | **Price ranges sold as prices** — seller quotes "90–120k" instead of a number | Anker / panomobi IG post | Exact offer price required at listing; variants priced individually |
 | 5 | **Prices as unstructured prose** — numbers buried in caption text, unsearchable | All 4 Anker IG posts; vacuum IG; coffee IG | Structured price field + audit vs. social price (Rule 1) |

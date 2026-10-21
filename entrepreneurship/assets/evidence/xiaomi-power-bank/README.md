@@ -6,7 +6,7 @@
 
 | File | Source | Price | Details visible |
 | :--- | :--- | :--- | :--- |
-| `Screenshot_20260920_130923.jpg` | Miswag search grid ("xiaomi power") | **60,000 IQD and 70,000 IQD** | The same "Xiaomi 165W Power Bank 10000mAh" appears as two separate listings in a single results grid — different sellers, different prices, both "Seller Delivery" |
+| `Screenshot_20260920_130923.jpg` | **iBazzar** search grid ("xiaomi power bank") | **60,000 IQD and 70,000 IQD** | The same "Xiaomi 165W Power Bank 10000mAh" appears as two separate tiles in one results grid — both "Free delivery," no seller chips shown; grid also mixes in other Xiaomi models (30K at 48,640 "20% Off", 67W/20K at 60,000) amid discount ribbons |
 
 ## Issues Documented
 
@@ -16,4 +16,4 @@
 
 ## Verdict
 
-The prototype of the problem Cheapify's Single-SKU catalog solves: on Miswag, the same power bank is two disconnected products. On Cheapify it's one master page with two competing offers — Best Value picks the 60,000 one automatically.
+The prototype of the problem Cheapify's Single-SKU catalog solves: on iBazzar, the same power bank is two disconnected products. On Cheapify it's one master page with two competing offers — Best Value picks the 60,000 one automatically.
