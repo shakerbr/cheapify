@@ -31,8 +31,8 @@ Cross-References:
 │   (OTP/msg)     │   monitoring    │ • Delivery in   │   referrals     │   (IG/FB: 85%   │
 │ • Founder's     │ • Trilingual    │  hours, tracked │   (credit-only) │   of n=20; 75%  │
 │   Circle stores │   content/brand │                 │ • Support via   │   interested;   │
-│ • GIZ/CAPA      │                 │ MERCHANTS:      │   WhatsApp      │   13 pilot      │
-│   program       │ KEY RESOURCES   │ • Free catalog  │ • Weekly        │   signups)      │
+│ • GIZ/CAPA      │                 │ MERCHANTS:      │   WhatsApp      │   ~8 pilot      │
+│   program       │ KEY RESOURCES   │ • Free catalog  │ • Weekly        │   leads)        │
 │                 │                 │  tools — no     │   settlement    │                 │
 │ COST STRUCTURE  │ • Single-SKU    │  dev cost       │   statement     │ • Phase 2+:     │
 │                 │   master        │ • DM relief —   │                 │   Erbil, Mosul, │
@@ -49,8 +49,8 @@ Cross-References:
 │                 │  (app+dashboard)│  catalog, stock,│   notifications │                 │
 │                 │ • Trilingual    │  orders, prices │                 │                 │
 │                 │   brand system  │ • Verified      │                 │                 │
-│                 │ • Waitlist: 74  │  seller badge   │                 │                 │
-│                 │   shoppers / 13 │                 │                 │                 │
+│                 │ • Waitlist: ~52 │  seller badge   │                 │                 │
+│                 │   shoppers / ~8 │                 │                 │                 │
 │                 │   merchants     │                 │                 │                 │
 ├─────────────────┴─────────────────┼─────────────────┴─────────────────┴─────────────────┤
 │ REVENUE STREAMS                   │                                                 │
@@ -74,7 +74,7 @@ Cross-References:
 | Segment | Evidence | Why first |
 | :--- | :--- | :--- |
 | **Duhok social shoppers** — buy via Instagram/Facebook DMs today | Survey n=179: 97% notice price gaps, 88% would use a comparison app, 41% left beta contacts | Core problem is measured, not assumed |
-| **Duhok social sellers** — IG/FB-first merchants, no dev budget | Survey n=20: 85% sell via IG/FB, 75% platform-interested, 13 pilot signups | Supply side pre-validated; cohort exists on paper |
+| **Duhok social sellers** — IG/FB-first merchants, no dev budget | Survey n=20: 85% sell via IG/FB, 75% platform-interested, ~8 valid pilot leads | Supply side pre-validated; cohort exists on paper |
 | Phase 2+: Erbil, Mosul, Sulaymaniyah, Baghdad, Basra | Identical social-commerce patterns per market sizing | Same playbook, bigger pools |
 
 ### 2. Value Propositions
@@ -128,12 +128,12 @@ Cross-References:
 | Resource | Status | Notes |
 | :--- | :--- | :--- |
 | **Single-SKU master catalog** | Being built — merchant-created, barcode-first, dedup-defended | *The moat* — compounds with every listing; no competitor offers it locally |
-| Merchant network + their social audiences | 13 pilot signups (survey), Founder's Circle 20-store target | Supply side = acquisition channel |
+| Merchant network + their social audiences | ~8 valid pilot leads (survey), Founder's Circle 20-store target | Supply side = acquisition channel |
 | Courier contract (Fast Delivery) | Quote verified (2,500/3,500/~4,500) — **unsigned** | Single gate to delivery margin |
 | Platform surface: shopper app + **merchant dashboard** | In progress | The merchant's daily ops UI — catalog, pricing, orders, settlement, reliability score |
 | Founder full-stack build | In progress | Cash-efficient, but real economic value (~$9,500 co-investment incl. equipment + labor) |
 | Trilingual brand system (EN/AR/KU, IBM Plex Sans Arabic) | Complete — brandbook published | Local-language trust signal |
-| **Waitlist** | 74 shoppers + 13 merchants (survey, Oct 2026) | Pre-seeded launch demand, zero CAC |
+| **Waitlist** | ~52 actionable shopper + ~8 merchant contacts (survey, Oct 2026 — quality-audited) | Pre-seeded launch demand, zero CAC |
 | Verification + reliability-score data | System designed | Becomes the trust moat over time |
 
 ### 7. Key Activities
@@ -174,7 +174,7 @@ Cross-References:
 ## What the Canvas Proves About the Model
 
 1. **The moat is the catalog, not the app.** Anyone can build a marketplace app; a dedup-defended single-SKU catalog with communal improvement is structurally hard to copy and compounds daily.
-2. **Supply and demand bootstrap each other.** Merchants bring audiences (bio links); the waitlist brings orders (74 contacts) — the cold-start problem is partially solved before launch.
+2. **Supply and demand bootstrap each other.** Merchants bring audiences (bio links); the waitlist brings orders (~52 actionable contacts) — the cold-start problem is partially solved before launch.
 3. **Every reward is engineered against fraud and churn.** Credits-only, transaction-gated, expiry-bounded — the model pays for delivered orders, never for signups.
 4. **The unit economics work at small scale.** +1,015 IQD/order against ~652k burn = break-even at ~1 order/store/day — no growth-at-all-costs dependency.
 5. **The single critical dependency is named:** registration → courier contract → delivery margin. Everything else is parallel work, not sequential risk.

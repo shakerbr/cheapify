@@ -297,7 +297,7 @@ The incoming data stream is structured to directly substantiate the remaining 3 
 | :--- | :--- | :--- |
 | Notice price differences on the same item | **97%** (39% "always, large gaps" + 58% "sometimes") | Core problem confirmed — variation is visible to nearly everyone |
 | Would use a side-by-side price comparison app | **88% yes** (50% "definitely" + 38% "probably"), 10% maybe, **2% prefer DMs** | Demand intent is overwhelming; the DM habit is the minority |
-| Left contact for beta access | **74 shoppers (41%)** | Instant waitlist seed — real acquisition asset, zero CAC |
+| Left contact for beta access | **74 raw entries → ~52 actionable** (38 phones + 14 IG handles; rest were names/refusals) | Waitlist seed — zero CAC, ~29% of shoppers |
 | Top annoyances (top-2 picks) | Unverified sellers & duplicate clutter ~52% · "found it cheaper after buying" ~47% · "DM just to ask Price?" ~46% · delivery delays ~27% | Validates all four problem pillars — trust, regret, interrogation tax, friction |
 
 ### 7.2 Merchant Findings (n=20)
@@ -306,12 +306,12 @@ The incoming data stream is structured to directly substantiate the remaining 3 
 | :--- | :--- | :--- |
 | Sell via Instagram/Facebook | **85%** | Stage-1 targeting (social sellers first) confirmed correct |
 | Would test unified-listing platform | **75% yes**, 15% maybe, 10% no | Strong merchant pull, not just push |
-| Signed up for the 5–10 pilot shops | **13 (65%)** | The founding cohort *already exists* — exceeds the 10-store target |
+| Signed up for the 5–10 pilot shops | **13 raw → ~8–9 valid store leads** (filtered refusals/duplicate) | Founding cohort pipeline exists — inside the 5–10 target |
 | Top headaches | "Price?" DM replies ~55% · random competition & price conflicts ~45% · cost of own app/site ~35% · manual delivery coordination ~35% | Merchant pain mirrors the product design — DM relief, price intelligence, free tooling, dispatch automation |
 
 ### 7.3 What This Changes
 
 - **Replaces the "85% DM ghost" assumption** with measured intent: 88% app-positive, 2% DM-loyal.
-- **Waitlist is not hypothetical** — 74 shopper contacts + 13 merchant contacts are real, dated, in the dataset.
+- **Waitlist is not hypothetical** — ~52 actionable shopper contacts + ~8 merchant leads are real, dated, in the dataset. Full extraction (incl. cross-tabs and contact-quality audit): [`assets/evidence/survey-analysis.md`](assets/evidence/survey-analysis.md).
 - **Merchant recruitment is partially done** — the pilot cohort target (5–10) is met on paper with 3 spares.
 - **Caveat kept honest:** intent ≠ behavior. Survey "yes" becomes truth only when converted — which is what the concierge pilot and Phase-A content measure next.

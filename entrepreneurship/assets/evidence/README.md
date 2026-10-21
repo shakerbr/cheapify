@@ -66,7 +66,8 @@ Beyond price spread, the screenshots document **14 distinct market defects**:
 
 | File | Contents |
 | :--- | :--- |
-| [`market-validation-survey-oct2026.csv`](market-validation-survey-oct2026.csv) | n=199 responses (179 shoppers / 20 merchants), trilingual EN/AR/KU — analyzed in `../../05_market_validation_survey.md` §7 |
+| [`market-validation-survey-oct2026.csv`](market-validation-survey-oct2026.csv) | n=199 responses (179 shoppers / 20 merchants), trilingual EN/AR/KU — summary in `../../05_market_validation_survey.md` §7 |
+| [`survey-analysis.md`](survey-analysis.md) | **Full deep analysis** — per-question normalization, contact-quality audit (52 actionable beta / ~8 valid pilot leads), cross-tabs, cohort view, limitations |
 
 ---
 

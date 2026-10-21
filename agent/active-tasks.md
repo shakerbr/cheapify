@@ -27,9 +27,9 @@ This document tracks immediate actionable tasks, active work items, and current 
 * [x] Add Dual-Persona Deep-Dive: Consumer (Ahmad) & Merchant (Kak Kawa) ([03_customer_and_merchant_personas.md](../entrepreneurship/03_customer_and_merchant_personas.md))
 * [x] Add Competitive Landscape Matrix: Direct/indirect competitors (Miswag, Elryan, iBazzar, Instagram commerce) vs Cheapify ([04_competitive_landscape_matrix.md](../entrepreneurship/04_competitive_landscape_matrix.md))
 * [x] Add Trilingual Market Validation Survey Framework (Kurdish Badini, Arabic, English) ([05_market_validation_survey.md](../entrepreneurship/05_market_validation_survey.md))
-* [x] Deploy survey + analyze results — **n=199 (179 shoppers / 20 merchants)**: 97% notice price gaps, 88% app intent, 74 beta contacts, 13 pilot-merchant signups (05 §7; CSV in `entrepreneurship/assets/evidence/`)
+* [x] Deploy survey + analyze results — **n=199 (179 shoppers / 20 merchants)**: 97% notice price gaps, 88% app intent, ~52 actionable beta contacts, ~8 valid pilot-merchant leads (contact-quality-audited; `survey-analysis.md` in `entrepreneurship/assets/evidence/`, summary in 05 §7)
 * [x] Price-variation screenshot evidence restored & expanded — `entrepreneurship/assets/evidence/` now holds **6 documented cases** incl. flagship Anker 122% spread + DM-for-price proofs; index at `assets/evidence/README.md`
-* [ ] Extract & contact the 13 pilot-merchant candidates + 74 shopper beta contacts from survey responses → founding-cohort outreach list *(deferred by founder — will do later)*
+* [ ] Extract & contact the ~8 pilot-merchant leads + ~52 actionable shopper contacts from survey responses → founding-cohort outreach list *(deferred by founder — will do later)*
 * [ ] Second survey wave (deferred — later): Kurdish-boosted via Meta ads; ask AOV, COD preference, delivery-fee tolerance (gaps survey 1 left)
 * [x] Synthesize Value Proposition Canvas (VPC), Innovation & Founder-Market Fit ([06_value_proposition_and_founder_fit.md](../entrepreneurship/06_value_proposition_and_founder_fit.md))
 

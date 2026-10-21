@@ -6,6 +6,12 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-21] — Survey Deep-Analysis + Contact-Quality Audit (corrections applied)
+* Wrote full analysis at `entrepreneurship/assets/evidence/survey-analysis.md`: per-question normalization across 3 language blocks, frequency/awareness/intent cross-tabs, language cohorts, limitations.
+* **Audit corrections propagated to all docs:** raw counts overstated leads — beta "74" → **~52 actionable** (38 phone + 14 IG handles; rest = names/refusals); pilot "13" → **~8–9 valid store leads** (refusals, one "keep it up" message, عالم الأطفال duplicate removed). Fixed in `05` §7, `04`, `03`, `business-modeling/01`+`03`, `active-tasks`.
+* **Insight:** app-intent is highest (93%) among shoppers who *always* see price gaps — pain-awareness predicts demand.
+* Platform UI attributions corrected per founder: Anker 225624 = **iBazzar** (not Amal), ASUS 132436 = **Elryan**, ASUS 132423 = **Amal (defunct — flagged everywhere)**; Xiaomi grid confirmed **iBazzar** → intra-app duplication now documented on 2 of 3 live competitors. UI-signature legend added to evidence README.
+
 ### [2026-10-20] — Evidence Archive Restructured & Expanded (founder) + Repo Wired
 * **Founder restructured** screenshot evidence into `entrepreneurship/assets/evidence/<case>/` folders — 6 documented cases:
   * **Anker A1695 25K/165W (flagship):** 90,000–200,000 IQD across IG sellers, iBazzar (134k), Miswag — **122% spread**, incl. 100k vs 200k *inside Miswag's own search grid*. Corrections applied post-review: `225624.jpg` = **iBazzar** (not Amal); ASUS `132436.jpg` = **Elryan**; ASUS `132423.jpg` = **Amal — platform now defunct** (flagged as historical capture everywhere)
