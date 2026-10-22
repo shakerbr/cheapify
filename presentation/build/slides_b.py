@@ -169,67 +169,55 @@ def competitors(sl, ctx):
 def growth(sl, ctx):
     sh = sl.shapes
     an = Anim()
-    left = [("handshake", "I sign the first 20 stores in person",
-             "Bazaar visits, Instagram outreach, a 45-second demo video"),
-            ("gift", "A founding offer they can't ignore",
-             "0% commission in month 1 + their products in our paid ads"),
-            ("link", "Their followers come too",
-             "Store link in bio and in replies to “price?” comments")]
-    right = [("megaphone", "Targeted ads across Duhok",
-              "Facebook, Instagram, TikTok — real products, real prices"),
-             ("clapperboard", "Short videos", "“The old way vs the Cheapify way”"),
-             ("graduation-cap", "Campus & workplace deals", "UoD, AUK, Nawroz and office hubs"),
-             ("users", "Waitlist & referrals",
-              "~52 contacts ready · credits only after a delivered order")]
+    C = (6.67, 4.75)
+    R = 1.35
+    ringg = group(sh)
+    oval(ringg.shapes, C[0], C[1], R, line=BLUE, lw=2.5)
+    pic_contain(ringg.shapes, A("cheapify-logo.png"), C[0] - 0.30, C[1] - 0.386, 0.60, 0.771)
+    node_def = [((C[0], C[1] - R), "More stores"), ((C[0] + R, C[1]), "Lower prices"),
+                ((C[0], C[1] + R), "More shoppers"), ((C[0] - R, C[1]), "More orders")]
+    nodes = []
+    for (nx, ny), lbl in node_def:
+        g = group(sh)
+        card(g.shapes, nx - 0.85, ny - 0.25, 1.70, 0.50)
+        text(g.shapes, nx - 0.85, ny - 0.25, 1.70, 0.50, lbl, size=12.5, bold=True, align="c",
+             anchor="m")
+        nodes.append(g)
+    chevs = []
+    for ang in (45, -45, -135, 135):
+        th = math.radians(ang)
+        px, py = C[0] + R * math.cos(th), C[1] - R * math.sin(th)
+        rot = math.degrees(math.atan2(math.cos(th), math.sin(th)))
+        g = group(sh)
+        ch = rect(g.shapes, px - 0.11, py - 0.14, 0.22, 0.28, fill=BLUE, shape=MSO_SHAPE.CHEVRON)
+        ch.rotation = rot
+        chevs.append(g)
 
-    def column(x0, title, rows, w):
-        h = grp_text(sh, x0, 2.72, 4.0, 0.34, title, size=16, bold=True, color=BLUE, anchor="m")
+    def column(x0, title, rows):
+        h = grp_text(sh, x0, 2.70, 3.0, 0.34, title, size=16, bold=True, color=BLUE, anchor="m")
         gs = []
-        for i, (ic, a, b) in enumerate(rows):
-            y = 3.16 + i * 0.82
+        for i, (ic, lbl) in enumerate(rows):
+            y = 3.20 + i * 0.75
             g = group(sh)
-            oval(g.shapes, x0 + 0.25, y + 0.30, 0.25, fill=BLUE12)
-            icon_c(g.shapes, ic, BLUE, x0 + 0.25, y + 0.30, 0.28)
-            text(g.shapes, x0 + 0.70, y + 0.02, w - 0.7, 0.30, a, size=15, bold=True, anchor="m")
-            text(g.shapes, x0 + 0.70, y + 0.34, w - 0.7, 0.26, b, size=12, color=INK60, anchor="m")
+            oval(g.shapes, x0 + 0.25, y + 0.25, 0.25, fill=BLUE12)
+            icon_c(g.shapes, ic, BLUE, x0 + 0.25, y + 0.25, 0.28)
+            text(g.shapes, x0 + 0.65, y, 2.4, 0.50, lbl, size=13, bold=True, anchor="m")
             gs.append(g)
         return h, gs
 
-    hl, rl = column(0.79, "Stores", left, 5.61)
-    hr, rr = column(6.93, "Shoppers", right, 5.61)
-
-    # loop strip
-    labels = ["More stores", "Lower prices", "More shoppers", "More orders"]
-    wid = [1.20, 1.25, 1.45, 1.25]
-    gap = 0.62
-    total = sum(wid) + gap * 3
-    x = (SLIDE_W - total) / 2
-    pieces = []
-    xs = []
-    for k, (lb, w) in enumerate(zip(labels, wid)):
-        g = group(sh)
-        text(g.shapes, x, 6.34, w, 0.28, lb, size=13, bold=True, align="c", anchor="m")
-        pieces.append(g)
-        xs.append((x, w))
-        x += w
-        if k < 3:
-            a = group(sh)
-            ar = rect(a.shapes, x + 0.14, 6.40, 0.34, 0.16, fill=BLUE, shape=MSO_SHAPE.RIGHT_ARROW)
-            pieces.append(a)
-            x += gap
-    ret = group(sh)
-    x1 = xs[0][0] + xs[0][1] / 2
-    x2 = xs[3][0] + xs[3][1] / 2
-    line(ret.shapes, x2, 6.66, x2, 6.84, BLUE, 1.5)
-    line(ret.shapes, x2, 6.84, x1, 6.84, BLUE, 1.5)
-    line(ret.shapes, x1, 6.84, x1, 6.72, BLUE, 1.5)
-    tri = rect(ret.shapes, x1 - 0.07, 6.65, 0.14, 0.10, fill=BLUE,
-               shape=MSO_SHAPE.ISOSCELES_TRIANGLE)
-    pieces.append(ret)
-    an.add([[fx(hl), fx(hr)]], auto=True)
-    an.add(stagger(rl, "fade"))
-    an.add(stagger(rr, "fade"))
-    an.add(stagger(pieces, "fade", 60, 150))
+    hl, rl = column(0.79, "Stores", [("handshake", "Signed in person"), ("gift", "0% in month 1"),
+                                      ("rocket", "Free ads"), ("link", "Their followers")])
+    hr, rr = column(9.45, "Shoppers", [("megaphone", "Targeted ads"),
+                                        ("clapperboard", "Short videos"),
+                                        ("graduation-cap", "Campus deals"), ("users", "Referrals")])
+    al = group(sh)
+    rect(al.shapes, 4.00, 4.64, 0.40, 0.22, fill=BLUE, shape=MSO_SHAPE.RIGHT_ARROW)
+    ar = group(sh)
+    rect(ar.shapes, 8.95, 4.64, 0.40, 0.22, fill=BLUE, shape=MSO_SHAPE.LEFT_ARROW)
+    an.add([[fx(ringg)]], auto=True)
+    an.add([[fx(hl)]] + stagger(rl, "fade", 60, 150) + [[fx(al)]])
+    an.add([[fx(hr), fx(ar)]] + stagger(rr, "fade", 60, 150))
+    an.add(stagger(nodes, "zoom") + [[fx(c, "fade", 80 * i, 250) for i, c in enumerate(chevs)]])
     return an
 
 
@@ -237,47 +225,28 @@ def growth(sl, ctx):
 def finance(sl, ctx):
     sh = sl.shapes
     an = Anim()
-    tiles = []
-    for i, (big, tail, sub) in enumerate([("~585", " orders / month", "break-even · about 20 a day"),
-                                           ("1,115 IQD", "", "profit per delivered order")]):
-        y = 2.70 + i * 1.02
-        g = group(sh)
-        card(g.shapes, 0.79, y, 3.86, 0.92)
-        runs = [(big, dict(size=24, bold=True, font="Comfortaa"))]
-        if tail:
-            runs.append((tail, dict(size=14, bold=True, font="Comfortaa")))
-        text(g.shapes, 1.00, y + 0.08, 3.5, 0.44, [runs], anchor="m")
-        text(g.shapes, 1.00, y + 0.54, 3.5, 0.30, sub, size=12, color=INK60)
-        tiles.append(g)
+    pill = group(sh)
+    rect(pill.shapes, 0.79, 2.62, 5.90, 0.40, fill=BLUE12, radius=0.20)
+    text(pill.shapes, 0.79, 2.62, 5.90, 0.40, "Break-even ≈ 585 orders / month · about 20 a day",
+         size=14, bold=True, align="c", anchor="m")
 
-    # milestone table as three adjacent native tables (label | Fast | Planned)
-    ty = 4.82
-    t_label = table(sl, 0.79, ty, 1.36, ["", "", "", ""][:1], [["Lowest cash point"], ["Monthly break-even"],
-                    ["All losses recovered"]], [1], row_h=0.50, size=11.5)
-    t_fast = table(sl, 2.15, ty, 1.25, ["Fast"], [["−$1,800 (month 2)"], ["Month 3"], ["Month 6"]],
-                   [1], row_h=0.50, size=11.5, align=["r"])
-    t_plan = table(sl, 3.40, ty, 1.25, ["Planned"], [["−$2,180 (month 3)"], ["Month 4"], ["Month 8"]],
-                   [1], row_h=0.50, size=11.5, align=["r"])
-    for t in (t_label, t_fast, t_plan):
-        t.table.rows[0].height = E(0.34)
-
-    PX0, PX1 = 5.60, 12.30
+    PX0, PX1 = 1.50, 12.30
     X = lambda i: PX0 + i * (PX1 - PX0) / 12
-    Y = lambda v: 3.05 + (3500 - v) * (6.55 - 3.05) / 6500
+    Y = lambda v: 3.20 + (3500 - v) * (6.70 - 3.20) / 6500
     axes = group(sh)
     for v, lab in ((3000, "+$3k"), (2000, "+$2k"), (1000, "+$1k"), (0, "$0"), (-1000, "−$1k"),
                    (-2000, "−$2k"), (-3000, "−$3k")):
         if v != 0:
             line(axes.shapes, PX0, Y(v), PX1, Y(v), NEUTRAL, 0.5)
-        text(axes.shapes, 4.90, Y(v) - 0.11, 0.6, 0.22, lab, size=10, color=INK60, align="r",
+        text(axes.shapes, 0.85, Y(v) - 0.11, 0.55, 0.22, lab, size=10, color=INK60, align="r",
              anchor="m")
     line(axes.shapes, PX0, Y(0), PX1, Y(0), INK, 1.0)
     for idx, lab in ((0, "Start"), (2, "Launch"), (4, "M2"), (6, "M4"), (8, "M6"), (10, "M8"),
                      (12, "M10")):
-        text(axes.shapes, X(idx) - 0.4, 6.62, 0.8, 0.22, lab, size=10, color=INK60, align="c",
+        text(axes.shapes, X(idx) - 0.4, 6.78, 0.8, 0.22, lab, size=10, color=INK60, align="c",
              anchor="m")
     legend = group(sh)
-    lx = 9.55
+    lx = 10.00
     for lbl, col, lw, dash in (("Fast", BLUE, 3.0, None), ("Planned", INK, 2.5, None),
                                ("Slow", INK35, 1.5, MSO_LINE.DASH)):
         line(legend.shapes, lx, 2.76, lx + 0.32, 2.76, col, lw, dash)
@@ -298,18 +267,31 @@ def finance(sl, ctx):
         oval(g.shapes, X(idx), Y(series[idx]), 0.075, fill=color, line=WHITE, lw=1.0)
         return g
 
-    pl = D.CHART_PLANNING
-    fa = D.CHART_FAST
+    def label(idx, series, txt, color, box, anchor_pt):
+        """pill box=(x0, y0, w); leader from the dot to anchor_pt (point on pill edge)."""
+        g = group(sh)
+        bx, by, bw = box
+        line(g.shapes, X(idx), Y(series[idx]), anchor_pt[0], anchor_pt[1], color, 1.0)
+        rect(g.shapes, bx, by, bw, 0.26, fill=color, radius=0.13)
+        text(g.shapes, bx, by, bw, 0.26, txt, size=11, bold=True, color=WHITE, align="c",
+             anchor="m")
+        return g
+
+    pl, fa, sp = D.CHART_PLANNING, D.CHART_FAST, D.CHART_SLOW
     plan_segs = segs(pl, INK, 2.5)
     plan_dots = [dot(i, pl, INK) for i in (5, 6, 10)]
+    plan_pills = [label(5, pl, "Lowest −$2,180", INK, (4.00, 6.40, 1.45), (5.45, 6.48)),
+                  label(6, pl, "Break-even · month 4", INK, (7.95, 6.20, 1.85), (7.95, 6.33)),
+                  label(10, pl, "Recovered · month 8", INK, (8.80, 4.50, 1.80), (9.60, 4.76))]
     fast_segs = segs(fa, BLUE, 3.0)
     fast_dots = [dot(i, fa, BLUE) for i in (4, 5, 8)]
+    fast_pills = [label(5, fa, "Break-even · month 3", BLUE, (4.55, 5.30, 1.85), (5.60, 5.56)),
+                  label(8, fa, "Recovered · month 6", BLUE, (6.60, 3.80, 1.80), (8.40, 3.93))]
     arrow = group(sh)
-    tri = rect(arrow.shapes, X(9) - 0.09, Y(fa[9]) - 0.30, 0.18, 0.22, fill=BLUE,
-               shape=MSO_SHAPE.ISOSCELES_TRIANGLE)
+    rect(arrow.shapes, X(9) - 0.09, Y(fa[9]) - 0.30, 0.18, 0.22, fill=BLUE,
+         shape=MSO_SHAPE.ISOSCELES_TRIANGLE)
     text(arrow.shapes, X(9) + 0.14, Y(fa[9]) - 0.30, 1.2, 0.22, "keeps rising", size=10.5,
          color=BLUE, bold=True, anchor="m")
-    sp = D.CHART_SLOW
     slow = group(sh)
     fb = slow.shapes.build_freeform(E(X(0)), E(Y(sp[0])), scale=1.0)
     fb.add_line_segments([(E(X(i)), E(Y(sp[i]))) for i in range(1, 13)], close=False)
@@ -319,15 +301,15 @@ def finance(sl, ctx):
     ff.line.width = Pt(1.5)
     ff.line.dash_style = MSO_LINE.DASH
     no_effect(ff)
-    slow_lbl = grp_text(sh, X(12) - 2.05, 5.48, 2.05, 0.46,
+    slow_lbl = grp_text(sh, X(12) - 2.05, 5.40, 2.05, 0.46,
                         ["Slow case: profitable", "every month from month 7"], size=10.5,
                         color=INK60, align="r", anchor="b")
 
-    an.add(stagger(tiles + [t_label], "fade"), auto=True)
-    an.add([[fx(axes), fx(legend), fx(t_plan)]] + stagger(plan_segs, "appear", 25) +
-           stagger(plan_dots, "zoom", 25, 150))
+    an.add([[fx(pill)]], auto=True)
+    an.add([[fx(axes), fx(legend)]] + stagger(plan_segs, "appear", 25) +
+           stagger(plan_dots, "zoom", 25, 150) + stagger(plan_pills, "fade"))
     an.add(stagger(fast_segs, "appear", 25) + stagger(fast_dots, "zoom", 25, 150) +
-           [[fx(arrow, "fade"), fx(t_fast)]])
+           [[fx(arrow)]] + stagger(fast_pills, "fade"))
     an.add([[fx(slow), fx(slow_lbl)]])
     return an
 
