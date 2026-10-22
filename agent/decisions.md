@@ -140,3 +140,11 @@ This file records key decisions, their context, rationale, and consequences for 
 * **Context:** The platform needed consolidated operational policies before finance work could proceed — returns, shipping economics, packaging standards, and payment rails feed unit economics; listing/dedup rules govern catalog integrity.
 * **Decision:** Adopt [`../platform/operational_policies.md`](../platform/operational_policies.md): two-class return policy (fault → merchant pays; remorse → customer pays 3k leg; 48h window); flat 3,000 IQD Duhok shipping inside Doorstep Total with one free re-attempt; mandatory opaque sealed packaging + security tape on orders ≥50k IQD; COD primary with weekly merchant settlement and Phase-3 e-wallets (FIB/FastPay/Qi) optional-prepaid; with listing/catalog governance split into a sibling doc [`../platform/catalog_governance.md`](../platform/catalog_governance.md): consolidated 8-rule listing policy and four-layer duplicate defense (barcode hard-block → fuzzy match → community/QA flags → merge process).
 * **Open data needed:** true courier costs, COD remittance terms, inter-city tariff, return-rate baseline — all feed Pillar 3.
+
+### ADR-014: Incentives Counted Once — Per-Order Contribution Corrected to +1,115 IQD
+
+* **Date:** 2026-10-21
+* **Status:** Accepted
+* **Context:** `finance/01` §5.2 listed a −600 IQD per-order incentive accrual while the same incentives were already budgeted as the fixed, policy-capped Growth Incentives pool (225,000 IQD/mo) in the monthly burn. The line items summed to −935 IQD while the stated total was −425 IQD (contribution ~+1,015).
+* **Decision:** Count incentives once — as the capped monthly pool in fixed burn, matching the referral spec's monthly guardrail. Per-order variable costs = WhatsApp 90 + OTP 25 + returns 20 + failed-delivery re-attempts 200 = 335 IQD → contribution **+1,115 IQD/order** at 25,000 IQD AOV.
+* **Consequences:** Break-even ~585 orders/mo (~20/day; ~709/mo at the 790k M6+ burn). Planning ramp: trough −3.27M IQD (~$2,180) at M3, break-even month M4, full recovery M8. Upside trough ~$1,800 (M2); floor trough ~$2,750 (M6), first green M7, recovery ~M20. No-contract break-even ~1,060/mo. The $7,500 ask is unchanged (peak-need line ~$2,200; contingency $800). Underlying assumptions (AOV, re-attempt rate, contract signature) remain unverified.

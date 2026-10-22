@@ -208,7 +208,7 @@ In compliance with **Preference 24**, Cheapify is a **broad mass-market consumer
 flowchart TD
     A["Stage 1: Multi-Channel Awareness\n• Merchant Bio Links on Facebook/Instagram/TikTok\n• Sponsored Video Ad Campaigns (Meta & TikTok)\n• Viral 'DM Hell vs. Cheapify' Contrast Reels\n• Local Community & Workplace Groups"]
     --> B["Stage 2: Acquisition & App Install\n• Direct Link-in-Bio Web Landing\n• Smart Banner Prompt to Install Mobile App\n• Real Local Price Disparity Infographics"]
-    --> C["Stage 3: Activation (First Purchase)\n• Passwordless Phone OTP Login\n• Side-by-Side Single-SKU Comparison\n• 100% Cash on Delivery (COD) Guarantee\n• Same-Day Local Delivery (1–3h / 3,000 IQD)"]
+    --> C["Stage 3: Activation (First Purchase)\n• Passwordless Phone OTP Login\n• Side-by-Side Single-SKU Comparison\n• Cash on Delivery from launch (card soon after)\n• Same-Day Local Delivery (1–3h / 3,000 IQD)"]
     --> D["Stage 4: Retention & Referral\n• Automated WhatsApp / Push Delivery Updates\n• Physical Unboxing QR Code Voucher\n• 'Report a Price Variation' Bounty"]
 ```
 
@@ -303,7 +303,7 @@ In strict compliance with **Preference 12**, Cheapify expands geographically in 
 - **Operational Focus:** Expand platform infrastructure to Baghdad (Karrada, Mansour, Shorja), Basra, Kirkuk, and Southern governorates.
 - **Milestones:**
   - Nationwide marketing campaigns in Iraqi Arabic across Facebook, Instagram, and TikTok.
-  - Full electronic payment adoption (FIB, FastPay, Qi Card) alongside standard COD.
+  - Card / e-wallet payments (FIB, FastPay, Qi Card, Visa/Mastercard) already live from shortly after launch; cash on delivery remains available.
   - National distribution network covering all 18 Iraqi governorates.
 
 ---

@@ -14,7 +14,7 @@
 | :--- | :--- | :--- |
 | **Dev-phase burn** (pre-launch) | ~210,000 IQD/mo (~$140) | §2 note — AI tools + SaaS + audience ads |
 | **Operating burn** (post-launch) | 652,000 IQD (~$435); 790k from M6 | `01` §4 |
-| Contribution per delivered order | ~+1,015 IQD | `01` §5.3 |
+| Contribution per delivered order | ~+1,115 IQD | `01` §5.3 (corrected — ADR-014) |
 | Startup one-time | ~1.7M IQD | `01` §3 |
 | Orders/mo ramp | planning (conservative) curve | §2 |
 | Merchant ramp | 10 → 25 stores | §2 |
@@ -45,23 +45,23 @@ Note — *per-store load stays modest (~10–80 orders/mo), which is the honest 
 
 ## 3. Monthly Cash Flow Table
 
-IQD. Burn = 210k (Phase A) → 652k (launch→M5) → 790k (M6+, scale). Contribution = orders × ~1,015 (table products rounded at 1,025 for readability — delta <10k IQD/mo, immaterial).
+IQD. Burn = 210k (Phase A) → 652k (launch→M5) → 790k (M6+, scale). Contribution = orders × ~1,115.
 
 | Month | Orders | Contribution | Burn | **Net cash flow** | Cumulative |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Startup | — | — | −1,700,000 | −1,700,000 | **−1,700,000** |
 | M-2 | 0 | 0 | −210,000 | −210,000 | −1,910,000 |
 | M-1 | 0 | 0 | −210,000 | −210,000 | **−2,120,000** ← launch day |
-| M1 | 100 | +102,500 | −652,000 | −549,500 | −2,669,500 |
-| M2 | 225 | +230,625 | −652,000 | −421,375 | −3,090,875 |
-| M3 | 400 | +410,000 | −652,000 | −242,000 | −3,332,875 |
-| M4 | 600 | +615,000 | −652,000 | −37,000 | **−3,369,875** ← trough |
-| M5 | 1,000 | +1,025,000 | −652,000 | **+373,000** ← first green | −2,996,875 |
-| M6 | 1,350 | +1,383,750 | −790,000 | +593,750 | −2,403,125 |
-| M7 | 1,600 | +1,640,000 | −790,000 | +850,000 | −1,553,125 |
-| M8 | 1,850 | +1,896,250 | −790,000 | +1,106,250 | −446,875 |
-| **M9** | 2,000 | +2,050,000 | −790,000 | +1,260,000 | **+813,125** ← all-loss recovered |
-| M10–12 | ~2,100 | ~+2,152,500 | −790,000 | +1.36M/mo | → ~+5M |
+| M1 | 100 | +111,500 | −652,000 | −540,500 | −2,660,500 |
+| M2 | 225 | +250,875 | −652,000 | −401,125 | −3,061,625 |
+| M3 | 400 | +446,000 | −652,000 | −206,000 | **−3,267,625** ← trough |
+| M4 | 600 | +669,000 | −652,000 | **+17,000** ← first green (break-even) | −3,250,625 |
+| M5 | 1,000 | +1,115,000 | −652,000 | +463,000 | −2,787,625 |
+| M6 | 1,350 | +1,505,250 | −790,000 | +715,250 | −2,072,375 |
+| M7 | 1,600 | +1,784,000 | −790,000 | +994,000 | −1,078,375 |
+| **M8** | 1,850 | +2,062,750 | −790,000 | +1,272,750 | **+194,375** ← all-loss recovered |
+| M9 | 2,000 | +2,230,000 | −790,000 | +1,440,000 | +1,634,375 |
+| M10–12 | ~2,100 | ~+2,341,500 | −790,000 | +1.55M/mo | → ~+6.3M |
 
 ---
 
@@ -69,9 +69,9 @@ IQD. Burn = 210k (Phase A) → 652k (launch→M5) → 790k (M6+, scale). Contrib
 
 | Milestone | Month | What it means |
 | :--- | :--- | :--- |
-| **Cash-flow positive** | **M5** (~1,000 orders/mo) | Cheapify covers its own monthly burn — losses stop growing |
-| **Peak loss** | **M4** (cumulative −3,369,875) | Deepest hole: ~3.37M IQD (~$2,250) total invested before recovery |
-| **Full recovery** | **M9** (~2,000 orders/mo) | Cumulative cash positive — all losses paid back |
+| **Cash-flow positive** | **M4** (~600 orders/mo, just above the ~585 break-even; M5 is the first clearly positive month) | Cheapify covers its own monthly burn — losses stop growing |
+| **Peak loss** | **M3** (cumulative −3,267,625) | Deepest hole: ~3.27M IQD (~$2,180) total invested before recovery |
+| **Full recovery** | **M8** (~1,850 orders/mo) | Cumulative cash positive — all losses paid back |
 
 ---
 
@@ -81,25 +81,25 @@ The aggressive curve — assumes founding merchants push hard and Cheapify captu
 
 | Month | Orders (upside) | Net cash flow | Cumulative |
 | :--- | :--- | :--- | :--- |
-| Startup → M-1 | 0 | −1,910,000 total | −2,120,000 at launch |
-| M1 | 200 | −447,000 | −2,567,000 |
-| M2 | 450 | −190,750 | **−2,757,750** ← trough |
-| M3 | 800 | **+168,000** ← first green | −2,589,750 |
-| M4 | 1,200 | +578,000 | −2,011,750 |
-| M5 | 2,000 | +1,398,000 | −613,750 |
-| **M6** | 2,700 | +1,977,500 | **+1,363,750** ← recovery |
-| M7–M8 | 3,200–3,700 | +2.5–3.0M/mo | +3.85M → +6.86M |
-| M9–M12 | 3,700–4,200 | +3.0–3.5M/mo | → +18M+ |
+| Startup → M-1 | 0 | −2,120,000 total | −2,120,000 at launch |
+| M1 | 200 | −429,000 | −2,549,000 |
+| M2 | 450 | −150,250 | **−2,699,250** ← trough |
+| M3 | 800 | **+240,000** ← first green | −2,459,250 |
+| M4 | 1,200 | +686,000 | −1,773,250 |
+| M5 | 2,000 | +1,578,000 | −195,250 |
+| **M6** | 2,700 | +2,220,500 | **+2,025,250** ← recovery |
+| M7–M8 | 3,200–3,700 | +2.8–3.3M/mo | +4.80M → +8.14M |
+| M9–M12 | 3,700–4,200 | +3.3–3.9M/mo | → +20M+ |
 
 Planning vs. upside:
 
 | Milestone | Planning ramp | Upside (2×) ramp | Delta |
 | :--- | :--- | :--- | :--- |
-| Cash-flow positive | M5 | M3 | −2 mo |
-| Peak loss | −3.37M (~$2,250) | −2.76M (~$1,840) | −610k IQD |
-| Full recovery | ~M9 | M6 | −3 mo |
+| Cash-flow positive | M4 | M3 | −1 mo |
+| Peak loss | −3.27M (~$2,180) | −2.70M (~$1,800) | −570k IQD |
+| Full recovery | ~M8 | M6 | −2 mo |
 
-**Read:** the plan is sized for the planning ramp; upside only accelerates the milestones by ~2–3 months and saves ~$400. Bounded difference either way — that's what "low-risk envelope" means.*
+**Read:** the plan is sized for the planning ramp; upside only accelerates the milestones by ~1–2 months and saves ~$380. Bounded difference either way — that's what "low-risk envelope" means.*
 
 ---
 
@@ -109,19 +109,19 @@ The floor case: orders crawl. ~5 orders/store at launch, adoption stays weak:
 
 | Month | Orders (floor) | Net cash flow | Cumulative |
 | :--- | :--- | :--- | :--- |
-| M1 | 50 | −600,750 | −2,720,750 |
-| M2 | 115 | −534,125 | −3,254,875 |
-| M3 | 200 | −447,000 | −3,701,875 |
-| M4 | 300 | −344,500 | −4,046,375 |
-| M5 | 500 | −139,500 | −4,185,875 |
-| M6 | 675 | −98,125 | **−4,284,000** ← trough |
-| M7 | 800 | **+30,000** ← first green | −4,254,000 |
-| M8 | 925 | +158,125 | −4,095,875 |
-| M9+ | ~1,000 | +235,000/mo | −3,860,875 → recovery ~M20+ |
+| M1 | 50 | −596,250 | −2,716,250 |
+| M2 | 115 | −523,775 | −3,240,025 |
+| M3 | 200 | −429,000 | −3,669,025 |
+| M4 | 300 | −317,500 | −3,986,525 |
+| M5 | 500 | −94,500 | −4,081,025 |
+| M6 | 675 | −37,375 | **−4,118,400** ← trough |
+| M7 | 800 | **+102,000** ← first green | −4,016,400 |
+| M8 | 925 | +241,375 | −3,775,025 |
+| M9+ | ~1,000 | +325,000/mo | −3,450,025 → recovery ~M20 |
 
-*(Note: the M6 burn bump to 790k raises the break-even threshold from ~642 to ~771 orders/mo — which is why floor-ramp positivity lands at M7, not earlier.)*
+*(Note: the M6 burn bump to 790k raises the break-even threshold from ~585 to ~709 orders/mo — which is why floor-ramp positivity lands at M7, not earlier.)*
 
-**Read:** even at a crawl the venture doesn't hit a failure cliff — it degrades to a slow grind: peak hole ~4.28M IQD (~$2,850), losses stop growing at M7, recovery stretches past M20. The monthly loss is always capped by burn (~$435–525/mo), never by an order-volume cliff. **If the floor case is what reality looks like, the concierge pilot (§6.1) reveals it for ~30–50k IQD — before scale, not after.**
+**Read:** even at a crawl the venture doesn't hit a failure cliff — it degrades to a slow grind: peak hole ~4.12M IQD (~$2,750), losses stop growing at M7, recovery ~M20. The monthly loss is always capped by burn (~$435–525/mo), never by an order-volume cliff. **If the floor case is what reality looks like, the concierge pilot (§6.1) reveals it for ~30–50k IQD — before scale, not after.**
 
 ---
 
@@ -129,20 +129,20 @@ The floor case: orders crawl. ~5 orders/store at launch, adoption stays weak:
 
 ```
 Monthly break-even = Operating burn ÷ Contribution/order
-                   = 652,000 ÷ ~1,015
-                   = ~642 orders/month  (~21 orders/day)
+                   = 652,000 ÷ ~1,115
+                   = ~585 orders/month  (~20 orders/day)
 ```
 
-**Important honesty note:** ~642 orders is total platform volume, not per-store. It means ~4 top merchants at full velocity, ~10 decent ones, or all 20+ at half-throttle. The pilot target of 150 orders/store/mo is aggressive; the realistic path is more stores at moderate velocity.
+**Important honesty note:** ~585 orders is total platform volume, not per-store. It means ~4 top merchants at full velocity, ~10 decent ones, or all 20+ at half-throttle. The pilot target of 150 orders/store/mo is aggressive; the realistic path is more stores at moderate velocity.
 
 ### Sensitivity — break-even under different assumptions
 
 | If... | Contribution/order | Break-even orders/mo |
 | :--- | :--- | :--- |
-| Baseline | ~+1,015 | ~642 |
-| Courier at list price (no contract) = 3,000 | +525 | ~1,240 |
-| AOV drops to 20,000 | +725 | ~900 |
-| Incentives run 2× hot | +725 | ~900 |
+| Baseline | ~+1,115 | ~585 |
+| Courier at list price (no contract) = 3,000 | +615 | ~1,060 |
+| AOV drops to 20,000 | +965 | ~676 |
+| Incentive pool doubled (450k/mo) | +1,115 (burn 877k) | ~787 |
 | Surroundings charged flat city fee instead of zone fees | −500 to −1,500/order on those orders | **Zone fees required — see policies §2** |
 
 ### 5.1 Levers to lower break-even — `[OPTIONS — not adopted]`
@@ -151,9 +151,9 @@ Ways to pull break-even down if needed. Recorded as options only — none applie
 
 | Lever | Effect | New break-even | Tradeoff |
 | :--- | :--- | :--- | :--- |
-| Commission 3.8% → 4.5% (still ≪ 10–15% incumbents) | Contribution → ~1,200 | ~540/mo | Slightly dulls the sharpest pitch to merchants — revisit at Phase 2, not now |
-| Trim operating burn → ~520k (smaller ads test, tighter incentive cap) | — | ~480/mo combined w/ 4.5% | Slower growth inputs |
-| Non-order revenue (merchant featured placements, Phase 2) | +100k/mo | ~350/mo combined | Post-pilot only; don't build model on it |
+| Commission 3.8% → 4.5% (still ≪ 10–15% incumbents) | Contribution → ~1,290 | ~505/mo | Slightly dulls the sharpest pitch to merchants — revisit at Phase 2, not now |
+| Trim operating burn → ~520k (smaller ads test, tighter incentive cap) | — | ~405/mo combined w/ 4.5% | Slower growth inputs |
+| Non-order revenue (merchant featured placements, Phase 2) | +100k/mo | ~325/mo combined | Post-pilot only; don't build model on it |
 | **Preferred lever: order velocity** | — | unchanged | Positive contribution means more orders always help — grow via founding stores' bio-link audiences at ~zero CAC rather than restructuring fees |
 
 **Why none adopted:** with positive unit economics the model doesn't need a lower break-even — it needs the volume curve to be real. Fee hikes are kept in reserve; burn trims would slow the very acquisition that makes the curve real.
@@ -162,11 +162,11 @@ Ways to pull break-even down if needed. Recorded as options only — none applie
 
 ## 6. What the Cash Flow Actually Says
 
-1. **The courier number is now real** — Fast Delivery: 2,500/3,500/4,500 contract rates vs. 3,000/4,000/5,000 zone fees → +500 margin uniform across zones, *but only once the contract is signed* (unsigned: margin 0 in-city, break-even ~1,240/mo). Registration → contract → margin is now a critical path.
-2. **Peak funding need ~3.37M IQD (~$2,250)** under the planning ramp — ~2.76M (~$1,840) if the upside case lands.
-3. **Cash-positive in Month 5** — deliberately un-aggressive; if traction beats the plan it arrives M3 (§4.1).
-4. **Recovery by ~M9** — under the planning curve; upside pulls it to M6.
-5. **The real risk isn't the math — it's the volume curve.** The planning ramp already assumes only ~10–80 platform orders/merchant/mo (a slice of merchant volume, not all of it); the floor case (§4.2) shows even a ~5-order/store crawl degrades to a slow grind (~$2,850 peak), not a cliff. The true question — "can 20 stores each route ~1 order/day through the app?" — is what the concierge pilot (§6.1) answers cheaply, before scale.
+1. **The courier number is now real** — Fast Delivery: 2,500/3,500/4,500 contract rates vs. 3,000/4,000/5,000 zone fees → +500 margin uniform across zones, *but only once the contract is signed* (unsigned: margin 0 in-city, break-even ~1,060/mo). Registration → contract → margin is now a critical path.
+2. **Peak funding need ~3.27M IQD (~$2,180)** under the planning ramp — ~2.70M (~$1,800) if the upside case lands.
+3. **Cash-positive in Month 4** (break-even; clearly positive from M5) — deliberately un-aggressive; if traction beats the plan it arrives M3 (§4.1).
+4. **Recovery by ~M8** — under the planning curve; upside pulls it to M6.
+5. **The real risk isn't the math — it's the volume curve.** The planning ramp already assumes only ~10–80 platform orders/merchant/mo (a slice of merchant volume, not all of it); the floor case (§4.2) shows even a ~5-order/store crawl degrades to a slow grind (~$2,750 peak), not a cliff. The true question — "can 20 stores each route ~1 order/day through the app?" — is what the concierge pilot (§6.1) answers cheaply, before scale.
 
 ### 6.1 Validation Experiments — How to De-Risk Before Scaling `[ACTION ITEMS]`
 
@@ -193,4 +193,4 @@ Documents can't reduce traction risk — only real-world tests can. Three cheap 
 | Merchant velocity (A9) | n=1 interview: ~30/mo total | Orders ramp realism — more interviews |
 | Phase A ad efficiency | First boosted-post CPC/CPM data | Dev-burn realism |
 
-**Bottom line:** peak exposure ranges ~2.76M–4.28M IQD (~$1,840–2,850) from upside to floor ramp — bounded and survivable at every speed, because the loss ceiling is burn (~$435/mo), not order volume. The venture's risk is **traction, not cash**, and the §6.1 experiments are the only real de-risking lever: they convert assumptions into data before scale. Everything else is tuning.
+**Bottom line:** peak exposure ranges ~2.70M–4.12M IQD (~$1,800–2,750) from upside to floor ramp — bounded and survivable at every speed, because the loss ceiling is burn (~$435/mo), not order volume. The venture's risk is **traction, not cash**, and the §6.1 experiments are the only real de-risking lever: they convert assumptions into data before scale. Everything else is tuning.

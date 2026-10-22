@@ -108,7 +108,7 @@ The table below contrasts Cheapify directly against the 4 alternatives across cr
 | **Algorithmic Deal Ranking** | None (Haggling via chat) | Miswag algorithm / Sponsored | None (Single price) | None (Manual scrolling through duplicates) | **3-Tier Hierarchy: Price (P0) > Delivery (P1) > Rating (P2)** |
 | **Variant & Spec Selectors** | Omitted (Requires asking in chat) | Standard | Standard | Inconsistent / Free text | **Structured Variant Chips (Color, Size, Dimensions)** |
 | **Checkout Experience** | 6-part chat interrogation (3h lag) | Web / App checkout | Web checkout | App checkout | **1-Click Self-Service Checkout (<30 seconds)** |
-| **Supported Local Payments** | Cash on Delivery (COD) only | COD, FIB, ZainCash | COD, FIB, Visa/Mastercard | COD, FastPay | **COD + Local E-Wallets (FIB, FastPay, Qi Card)** |
+| **Supported Local Payments** | Cash on Delivery (COD) only | COD, FIB, ZainCash | COD, FIB, Visa/Mastercard | COD, FastPay | **COD from launch; card / e-wallet (FIB, FastPay, Qi Card, Visa/Mastercard) shortly after** |
 | **Delivery Speed (Duhok/Pilot)** | 1–2 days (Unscheduled taxi) | 2–4 days (Baghdad hub) | 2–3 days (Erbil warehouse) | 1–2 days (Local courier) | **Same-Day / Next-Day Intra-City (local courier partner)** |
 | **Delivery Tariff (Intra-City)** | 3,000 – 5,000 IQD (Unregulated) | 5,000 – 6,000 IQD (Inter-city) | 5,000 IQD | 3,000 – 4,000 IQD | **Flat 3,000 IQD (~$2 USD) Standard Tariff** |
 | **Merchant Take-Rate / Fee** | 0% direct (High time/labor cost) | High (10% – 15% commission) | N/A (Closed 1P retail) | Variable listing/commission fee | **[Progressive Marginal Tiering](../platform/fee_structure_and_monetization.md) (5% / 3% / 1.5%)** |
@@ -151,7 +151,7 @@ Unlike regional competitors that spend large capital on external software develo
 Cheapify avoids the capital-intensive trap of buying delivery fleets or leasing expensive central fulfillment warehouses. By integrating directly with established local 3PL courier networks (e.g., Fast Delivery locally; ZMC Express inter-city), Cheapify achieves:
 
 * **Immediate Intra-City Scalability:** Standard 3,000 IQD door-to-door delivery inside Duhok with zero vehicle maintenance liability.
-* **Seamless COD Net Settlement:** Automated weekly cash remittance and platform fee withholding at source, eliminating merchant payment defaults.
+* **Seamless Net Settlement:** The courier transfers collected cash electronically to Cheapify; the platform fee is withheld at source and the merchant is paid automatically after the 48-hour return window, eliminating merchant payment defaults.
 
 ### 4.4 Merchant Margin Protection vs. Legacy Monopolies
 

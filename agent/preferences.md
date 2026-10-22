@@ -153,3 +153,10 @@ This file documents the specific ways, working habits, and styling preferences r
     - Approved improvements to existing listings earn a **250 IQD micro-bounty** — master pages are shared infrastructure, and edits are QA-approved proposals, never direct edits.
     - Listing creation is **barcode-first** (scan → auto-fill name/specs from product databases; guided template for unbranded goods).
     - **No platform-seeded catalog** (founder decision): Cheapify staff never pre-create product pages; the catalog spine is 100% merchant-built.
+
+33. **Pitch Deck Design (GIZ Final Pitch):**
+    - Any number of slides is fine — the hard constraint is total runtime: the full pitch must fit in under 6 minutes.
+    - Understandable at a glance: minimal text, visuals first, one idea per slide.
+    - Animations and step-by-step animated sequences are encouraged to explain mechanisms (e.g., how Best Value ranks offers, how an order flows).
+    - Follow the GIZ proposed section order where it serves the story; deviations are allowed when they make the pitch clearer.
+    - Do NOT reuse the archived decks' styling (old, discarded). The only template elements carried over are the German Cooperation (GIZ) + CAPA/AUK logo header and the CAPA/AUK contact footer: both appear on the cover and Thank-You slides; content slides carry only the header, slightly smaller — exactly as in `archive/program-giz-cheapify/Presentation-stuff/Modified template.pptx`.

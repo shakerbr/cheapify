@@ -7,7 +7,7 @@
 | File | Source | Price | Details visible |
 | :--- | :--- | :--- | :--- |
 | `Screenshot_20261021_123409_Miswag.jpg` | Miswag (seller "hoco") | **35,280 IQD** — "was 42,000, −16%" | Discount-anchored price; "Seller Delivery"; a "Size" variant selector on a coffee machine — sloppy listing taxonomy |
-| `Screenshot_20261021_123421_Instagram.jpg` | Instagram · xiaomi.iq ("Shomy Diwaniya" shop, Duhok) | **25,000 IQD** | Clean fixed price (25 الف) on a video post; physical shop address given (سوق الديوانية); ordering still DM/visit-based |
+| `Screenshot_20261021_123421_Instagram.jpg` | Instagram · xiaomi.iq ("شاومي الديوانية" / Xiaomi Diwaniya shop, Diwaniya) | **25,000 IQD** | Clean fixed price (25 الف) on a video post; physical shop address given (الديوانية، سوق العروبة — Diwaniya, Al-Uruba market); ordering still DM/visit-based |
 
 ## Issues Documented
 

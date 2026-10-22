@@ -6,6 +6,18 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-21] — Final Pitch Deck Built + Evidence Re-Verification
+
+* **Deck:** `presentation/Cheapify-GIZ-Pitch.pptx` (14 main slides + 7 appendix) and static `Cheapify-GIZ-Pitch.pdf`, built from the Modified template (GIZ/CAPA header on all slides, contact footer on cover/closing only). Fade/Zoom/Appear/Fade-out animations only, step-by-step builds, timed script in notes and `presentation/speaker-script.md` (~5:00 at 140 wpm). Rebuild: `presentation/build/build_deck.py` (`--static` for the PDF variant).
+* **Market size:** verified DataReportal Digital 2026 Iraq (39.6M internet users, 83.8%) and ECDB Iraq e-commerce 2025 (US$1.32B); used on the Target Market slide. The $2.5–3.5B TAM in `entrepreneurship/02` could not be verified and was kept off slides.
+* **Evidence corrections (re-checked against screenshots):** panomobi Anker post is 90,000 discounted from 120,000 (not a range; dated Apr 24); Miswag grid `225751` contains two "Anker Zolo" listings (120,000 model unconfirmed, 52,250 different model) plus A1695 at 137,200 and 135,000; Instagram Anker posts dated Apr–Oct 2026; HX80 Instagram seller is in Diwaniya, not Duhok; vacuum listed by Miswag as VAC351004. The "price ranges" defect was removed — catalog now 14 defects.
+
+### [2026-10-21] — Finance Model Corrected (ADR-014) + Pitch Deck Green-Lit
+
+* **Finance correction:** the per-order incentive accrual (−600) double-counted the capped incentive pool already in monthly burn; `finance/01` line items summed to −935 vs. the stated −425. Counted once → variable −335, **contribution +1,115 IQD/order**, break-even **~585/mo (~20/day)**. Planning: trough −3.27M (~$2,180) M3, break-even M4, recovery M8; upside ~$1,800; floor ~$2,750. Synced `finance/01–04`, canvas, SOPs, risk matrix. $7,500 ask unchanged.
+* **Also fixed:** `finance/04` KPI said 3,000 orders *per month* (→ 3,000+ in the first 6 months; ~1,350/mo by M6); the canvas "promoted placement" revenue line contradicted the non-pay-to-play Best Value rule (→ off-platform social-ad showcases, ranking never for sale); stale survey counts in canvas/SOPs (41% / 13 → ~52 actionable / ~8 valid leads); `02` sensitivity rows recomputed.
+* **Pitch rules updated (founder):** slide count flexible, total under 6 minutes; minimal text, visuals + step-by-step animations; archived deck styling not reused — only the template's GIZ/CAPA header + CAPA/AUK footer (full on cover/closing, smaller header only on content slides). Recorded in rules.md (13), AGENTS.MD, preferences.md (33), roadmap, active-tasks.
+
 ### [2026-10-21] — Survey Deep-Analysis + Contact-Quality Audit (corrections applied)
 * Wrote full analysis at `entrepreneurship/assets/evidence/survey-analysis.md`: per-question normalization across 3 language blocks, frequency/awareness/intent cross-tabs, language cohorts, limitations.
 * **Audit corrections propagated to all docs:** raw counts overstated leads — beta "74" → **~52 actionable** (38 phone + 14 IG handles; rest = names/refusals); pilot "13" → **~8–9 valid store leads** (refusals, one "keep it up" message, عالم الأطفال duplicate removed). Fixed in `05` §7, `04`, `03`, `business-modeling/01`+`03`, `active-tasks`.

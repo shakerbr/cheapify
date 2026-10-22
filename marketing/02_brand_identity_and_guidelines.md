@@ -60,7 +60,7 @@ A brand is not merely a logo, a font, or a color palette; as defined in *The Bra
 
 Our brand identity system is engineered to bridge corporate strategy with customer emotion:
 
-- **The Business Strategy:** Aggregate fragmented supply, index prices across stores, optimize 3PL logistics, and reconcile weekly Cash-on-Delivery settlements.
+- **The Business Strategy:** Aggregate fragmented supply, index prices across stores, optimize 3PL logistics, and settle every order electronically (the courier transfers collected cash; merchants are paid after the 48-hour return window).
 - **The Customer Gut Feeling:** *"I am in control. I am never being overcharged. Shopping is fast, honest, and exciting."*
 - **The Merchant Gut Feeling:** *"Cheapify respects my business, brings me real buying customers without extra ad spend, and makes my store look professional."*
 

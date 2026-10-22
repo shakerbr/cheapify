@@ -102,7 +102,7 @@ flowchart LR
 
 #### Phase 1: Pilot Launchpad (Duhok Metropolitan Area)
 
-* **Geography:** Duhok City, Semel, and Zakho trade hub (~1.45M population).
+* **Geography:** Duhok City, Semel, and Zakho trade hub (1.06M population in the 2024 census: Duhok 497,029 + Zakho 398,876 + Semel 166,319 = 1,062,224; the whole Duhok governorate has 1,599,871).
 * **Strategic Rationale:** Compact commercial center (Bazaar St, Malta, KRO district) allows fast, in-person merchant onboarding. High concentration of university students (UoD, AUK, DPU) who are vocal, price-sensitive deal-seekers.
 * **Pilot Targets (Months 1–6):**
   * **Verified Pilot Merchants:** 5 to 10 local stores spanning tech accessories, student study gear, and small lifestyle goods.
@@ -180,9 +180,26 @@ Every metric, market assumption, and demographic statistic in this document is s
 | :--- | :---: | :--- | :--- |
 | **Iraq Total Population** | **~44.5 Million** | [World Bank Iraq Data](https://data.worldbank.org/country/iraq) / [Iraq Ministry of Planning](https://mop.gov.iq/) | Official 2024–2025 census estimates; median age ~21 years with >60% under 30. |
 | **KRI Regional Population** | **~6.2 Million** | [Kurdistan Region Statistics Office (KRSO)](https://krso.gov.krd/) | Official demographic bulletin for Kurdistan Region governorates (Erbil, Sulaymaniyah, Duhok). |
-| **Duhok Pilot Population** | **~1.45 Million** | [KRSO Duhok Governorate Census](https://krso.gov.krd/) | Population across Duhok city, Semel, and Zakho metropolitan commercial zones. |
+| **Duhok Launch-Area Population** | **1,062,224 (~1.06M)** | [2024 national census, Iraqi Ministry of Planning](https://peregraf.com/en/news/10297) via Peregraf; district table: [citypopulation.de](https://www.citypopulation.de/en/iraq/admin/11__dah%C5%ABk/) | Duhok district 497,029 + Zakho 398,876 + Semel 166,319 (2024 census). |
+| **Duhok Governorate Population** | **1,599,871 (~1.60M)** | [2024 national census, Iraqi Ministry of Planning](https://peregraf.com/en/news/10297) via Peregraf; district table: [citypopulation.de](https://www.citypopulation.de/en/iraq/admin/11__dah%C5%ABk/) | 80% urban. Iraq total in the same census: 46,118,793. |
+| **Duhok Internet Users — estimate** | **≈ 1.34M governorate · ≈ 0.89M launch area** | Population-share estimate (see 5.1.1) | Not an official figure. |
+| **Duhok Online Shopping per Year — estimate** | **≈ $46M governorate · ≈ $30M launch area** | Population-share estimate (see 5.1.1) | Not an official figure. |
 | **Internet & Mobile Penetration** | **75.3% (33.5M users)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) (in partnership with We Are Social & Kepios) | 42.1 Million cellular mobile connections (94.6% of population); 33.5 Million internet users. |
 | **Active Social Media Users** | **31.2 Million (70.1%)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) | Primary channels for online discovery: Facebook (19.5M), Instagram (17.8M), TikTok (21.4M). |
+
+#### 5.1.1 How the Duhok estimates are derived
+
+No official Duhok-level internet-user or e-commerce figures exist, so the rows marked *estimate* apply Iraq-wide rates to Duhok's share of the national population. Iraq-wide inputs: 39.6M internet users, 83.8% of the population ([DataReportal, Digital 2026: Iraq](https://datareportal.com/reports/digital-2026-iraq), data late 2025) and US$1,317M e-commerce revenue in 2025 ([ECDB](https://ecdb.com/resources/sample-data/market/iq/all)).
+
+| Estimate | Calculation | Result |
+| :--- | :--- | :--- |
+| Governorate internet users | 1,599,871 × 83.8% | ≈ 1.34M |
+| Launch-area internet users | 1,062,224 × 83.8% | ≈ 0.89M |
+| Governorate online shopping | 3.47% of Iraq (1,599,871 ÷ 46,118,793) × $1,317M | ≈ $46M / year |
+| Launch-area online shopping | 2.30% of Iraq (1,062,224 ÷ 46,118,793) × $1,317M | ≈ $30M / year |
+| Break-even share of launch-area online shopping | 585 orders × 25,000 IQD × 12 ÷ 1,500 = ≈ $117,000 / year ÷ $30M | ≈ 0.4% |
+
+Duhok is 80% urban, so these Iraq-average estimates are likely conservative.
 
 ---
 
@@ -192,7 +209,7 @@ Every metric, market assumption, and demographic statistic in this document is s
 | :--- | :---: | :--- | :--- |
 | **Total Iraqi E-Commerce Market (TAM)** | **$2.5B – $3.0B USD** | [KAPITA Research — E-Commerce in Iraq Report](https://kapita.iq/research) & [GIZ Private Sector Development (PSD)](https://www.giz.de/en/worldwide/97547.html) | Aggregates formal platforms and informal social media retail. 12M–15M active shoppers spending $180–$220 annually; growing at ~16% CAGR. |
 | **Informal Social Commerce Share** | **>80% of Transactions** | [International Trade Centre (ITC) — E-Commerce Ecosystem in Iraq](https://intracen.org/) & [KAPITA Iraq E-Commerce Guide](https://kapita.iq/) | More than 8 out of 10 online retail orders are placed via direct messages on Instagram, Facebook, and TikTok without web checkouts. |
-| **Cash on Delivery (COD) Share** | **85% – 90%** | [Central Bank of Iraq (CBI) Financial Inclusion Bulletins](https://cbi.iq/) & [KAPITA Payments in Iraq Report](https://kapita.iq/) | Cash on delivery remains the dominant trust mechanism; digital wallets (FIB, FastPay, Qi Card) are growing at >40% YoY among university youth. |
+| **Cash on Delivery (COD) Share** | **85% – 90%** | [Central Bank of Iraq (CBI) Financial Inclusion Bulletins](https://cbi.iq/) & [KAPITA Payments in Iraq Report](https://kapita.iq/) | Cash on delivery remains the dominant trust mechanism; digital wallets (FIB, FastPay, Qi Card) are growing at >40% YoY among university youth. Cheapify launches with cash on delivery and adds card / e-wallet payment shortly after launch. |
 | **Electronics & Accessories Share (SAM)** | **25% – 30% of Non-Grocery GMV** | [Trade.gov (U.S. Commercial Service) — Iraq E-Commerce Overview](https://www.trade.gov/country-commercial-guides/iraq-ecommerce) | Consumer technology, smart accessories, and personal electronics form the largest single category of standardized imported retail goods in Iraq. |
 
 ---
@@ -208,13 +225,13 @@ Every metric, market assumption, and demographic statistic in this document is s
 
 ### 5.4 Documented Real-Market Price Disparity Evidence
 
-All price variation claims are backed by physical evidence and verified real-world screenshots stored directly in the project repository under [`assets/evidence/`](assets/evidence/), organized per case — per-screenshot extraction notes inside each folder, and a full **15-issue market-defect catalog** in [`assets/evidence/README.md`](assets/evidence/README.md). Six documented cases, Sep–Oct 2026:
+All price variation claims are backed by physical evidence and verified real-world screenshots stored directly in the project repository under [`assets/evidence/`](assets/evidence/), organized per case — per-screenshot extraction notes inside each folder, and a full **14-issue market-defect catalog** in [`assets/evidence/README.md`](assets/evidence/README.md). Six documented cases, Sep–Oct 2026:
 
 1. **Anker A1695 Power Bank 25,000mAh 165W (Exact Same SKU — flagship case, Oct 20, 2026):** the single most dramatic example — the identical product spans **110,000 IQD (~122% spread)** across channels.
 
-   * **Instagram sellers:** 95,000 IQD ([dream_1phone](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225511_Instagram.jpg), incl. delivery) · 99,000 IQD ([mrphoneiraq](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225529_Instagram.jpg)) · 90,000–120,000 IQD range quoted ([panomobi](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225543_Instagram.jpg)) · 100,000 IQD ([damas_for_mobiles](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225550_Instagram.jpg))
+   * **Instagram sellers:** 95,000 IQD ([dream_1phone](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225511_Instagram.jpg), incl. delivery) · 99,000 IQD ([mrphoneiraq](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225529_Instagram.jpg)) · 90,000 IQD, discounted from 120,000; post dated Apr 24, 2026 ([panomobi](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225543_Instagram.jpg)) · 100,000 IQD ([damas_for_mobiles](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225550_Instagram.jpg))
    * **iBazzar app:** **134,000 IQD** + installment push (10×16,221) + a literal *"Found Cheaper? Tell us!"* feature — [`Screenshot_20261020_225624.jpg`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225624.jpg)
-   * **Miswag same-platform spread:** 100,000 IQD (DNA Iraq) · 121,000 IQD (Shopini) · 137,200 IQD · **200,000 IQD (Class For Mobile)** — [`grid`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225751_Miswag.jpg), [`grid 2`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225824_Miswag.jpg)
+   * **Miswag same-platform spread:** 100,000 (DNA Iraq) · 121,000 (Shopini) · 135,000 · 137,200 · **200,000 (Class For Mobile)** — [`grid`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225751_Miswag.jpg), [`grid 2`](assets/evidence/Anker-Power-Bank/Screenshot_20261020_225824_Miswag.jpg)
    * **Documented Price Gap:** **90,000 → 200,000 IQD** — a buyer paying the worst listed price overpays ~122% (~$73) for the identical device.
 
 2. **ASUS VA24EHF 24" 100Hz Gaming Monitor (Exact Same Model, Sep 20, 2026):**
@@ -232,7 +249,7 @@ All price variation claims are backed by physical evidence and verified real-wor
 
 4. **Hoco HX80 Portable Coffee Machine (Instagram vs. Marketplace, Oct 21, 2026):**
 
-   * **Instagram seller (xiaomi.iq / Shomy Diwaniya):** **25,000 IQD** — [`Screenshot_20261021_123421_Instagram.jpg`](assets/evidence/portable-coffee-hx80/Screenshot_20261021_123421_Instagram.jpg).
+   * **Instagram seller (xiaomi.iq — Xiaomi Diwaniya shop, Diwaniya):** **25,000 IQD** — [`Screenshot_20261021_123421_Instagram.jpg`](assets/evidence/portable-coffee-hx80/Screenshot_20261021_123421_Instagram.jpg).
    * **Miswag (hoco seller):** **35,280 IQD** — [`Screenshot_20261021_123409_Miswag.jpg`](assets/evidence/portable-coffee-hx80/Screenshot_20261021_123409_Miswag.jpg).
    * **Documented Price Gap:** **10,280 IQD (~41%)** on a small everyday appliance.
 

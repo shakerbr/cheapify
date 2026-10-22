@@ -26,7 +26,7 @@ This document formalizes that alignment using two core frameworks:
 │  [ PRODUCTS & SERVICES ]                     │       │  [ CUSTOMER JOBS ]                           │
 │  • Single-SKU comparison catalog             │       │  • Find a reliable product online            │
 │  • 1-Click checkout (<30s)                   │       │  • Compare prices across shops               │
-│  • Cash on Delivery + FIB / FastPay          │       │  • Check available colors and sizes          │
+│  • Cash on delivery, card soon               │       │  • Check available colors and sizes          │
 │  • Automated 3PL delivery tracking           │       │  • Receive package without getting scammed   │
 │                                              │  ◄──► │                                              │
 │  [ PAIN RELIEVERS ]                          │       │  [ CUSTOMER PAINS ]                          │
@@ -64,7 +64,7 @@ This document formalizes that alignment using two core frameworks:
 │  • Turnkey Merchant Dashboard                   │       │  • Sell physical bazaar stock online            │
 │  • 1-Tap inventory and variant sync             │       │  • Reach digital buyers in Duhok & KRI          │
 │  • Automated WhatsApp order dispatch            │       │  • Manage stock without overselling             │
-│  • Weekly COD cash reconciliation               │       │  • Coordinate delivery couriers                 │
+│  • Automatic payout after 48h                   │       │  • Coordinate delivery couriers                 │
 │                                                 │  ◄──► │                                                 │
 │  [ PAIN RELIEVERS ]                             │       │  [ MERCHANT PAINS ]                             │
 │  • 0 Repetitive "Price?" chat interrogations    │       │  • 3–5 hours daily wasted on casual tire-kickers│
@@ -75,7 +75,7 @@ This document formalizes that alignment using two core frameworks:
 │  [ GAIN CREATORS ]                              │       │  [ MERCHANT GAINS ]                             │
 │  • 100% pre-qualified, packed-ready orders      │       │  • Healthy profit margins preserved             │
 │  • Win "Best Value" badge with fair pricing     │       │  • Organized fulfillment pipeline               │
-│  • Automated courier pickups at shop door       │       │  • Guaranteed weekly liquidity via COD sync     │
+│  • Automated courier pickups at shop door       │       │  • Payout 48h after delivery                    │
 └─────────────────────────────────────────────────┘       └─────────────────────────────────────────────────┘
 ```
 
@@ -87,7 +87,7 @@ This document formalizes that alignment using two core frameworks:
 | **Merchant Job (Operational)** | Track orders and stock without making fulfillment errors. | **Turnkey Merchant Operations Dashboard:** Live inventory toggle, kanban order pipeline, and revenue tracking. | Replaces paper notebooks and messy WhatsApp chat histories. |
 | **Merchant Pain** | Answering 50 repetitive DMs daily while attending walk-in customers in the bazaar. | **Automated Order Dispatch:** Customer orders are confirmed with exact variant, address, and payment method. | Eliminates interrogation fatigue; merchant only receives actionable orders. |
 | **Merchant Pain** | Platforms like Miswag taking 10%–15%, wiping out slim 15% retail margins. | **[Progressive Marginal Tiering](../platform/fee_structure_and_monetization.md) (5%/3%/1.5%):** Saves 58%–86% in fees. | Preserves merchant profits, incentivizing lowest bazaar prices. |
-| **Merchant Gain** | Hassle-free shipping and dependable cash flow. | **Weekly 3PL Cash Reconciliation:** Courier collects cash, Cheapify nets fees, merchant gets weekly cash. | Predictable liquidity to restock high-turnover inventory quickly. |
+| **Merchant Gain** | Hassle-free shipping and dependable cash flow. | **Automatic Electronic Payout:** Courier collects cash and transfers it electronically to Cheapify, Cheapify nets its fee, and the merchant is paid automatically 48 hours after delivery (once the return window closes). | Predictable, fully electronic payouts to restock high-turnover inventory quickly. |
 
 ---
 
@@ -149,7 +149,7 @@ In incubator evaluations (GIZ / CAPA), venture success is fundamentally determin
 
 #### 3. Resilience & Cultural Grounding (Navigating Local Friction)
 
-* **Overcoming Cash-on-Delivery (COD) Skepticism:** The founder designs automated weekly reconciliation workflows tailored specifically to Iraqi cash habits rather than forcing unviable Western credit card payment models.
+* **Overcoming Cash-on-Delivery (COD) Skepticism:** Cash on delivery stays available from launch; the founder designs the flow so the courier handles the cash and Cheapify only receives electronic transfers, with card / e-wallet payment added shortly after launch.
 * **Bilingual / Trilingual Communication:** Engineering the platform and validation research natively across **Kurdish (Badînî)**, **Arabic**, and **English** ensures direct rapport with local bazaar merchants and university students alike.
 
 ---

@@ -26,15 +26,15 @@ Both must hold *simultaneously* — Cheapify's design makes them unusually favor
 
 ### 2.1 Revenue per shopper
 
-From `01` §5.3: contribution per delivered order = **~+1,015 IQD** (fee 950 + delivery margin 500 − variable 425, at AOV 25,000).
+From `01` §5.3: contribution per delivered order = **~+1,115 IQD** (fee 950 + delivery margin 500 − variable 335, at AOV 25,000).
 
 | Parameter | Working value | Source |
 | :--- | :--- | :--- |
 | Orders per active shopper / month | **1.5** `[ASSUMPTION]` | Iraqi social-commerce cadence |
-| Monthly contribution / active shopper | **~1,520 IQD** | ~1,015 × 1.5 |
+| Monthly contribution / active shopper | **~1,670 IQD** | ~1,115 × 1.5 |
 | Expected active lifespan | **12 months** `[ASSUMPTION]` | Conservative for pilot |
 | Retention haircut | **×0.6** `[ASSUMPTION]` | Churn-adjusted active months |
-| **Shopper LTV (12-mo)** | **≈ 11,100 IQD (~$7.40)** | 1,540 × 12 × 0.6 |
+| **Shopper LTV (12-mo)** | **≈ 12,000 IQD (~$8.00)** | 1,670 × 12 × 0.6 |
 
 ### 2.2 Shopper CAC by channel
 
@@ -49,7 +49,7 @@ From `01` §5.3: contribution per delivered order = **~+1,015 IQD** (fee 950 + d
 ### 2.3 The verdict
 
 ```
-LTVₛ ≈ 11,100 IQD   vs   CACₛ ≈ 1,500 IQD   →   LTV:CAC ≈ 7.4 : 1
+LTVₛ ≈ 12,000 IQD   vs   CACₛ ≈ 1,500 IQD   →   LTV:CAC ≈ 8 : 1
 Payback: ~1–2 delivered orders
 ```
 
@@ -102,19 +102,21 @@ A founding store *costs* ~65,000 IQD against ~103,000 LTV — still positive (~1
 
 The pool cap (225,000 IQD/mo in `01` §4) bounds worst-case incentive spend to ~7.5% of pilot-stage revenue — acceptable for a growth-phase subsidy, and it shrinks proportionally as volume grows.
 
+Because incentives are budgeted as this capped pool (fixed burn), they are not deducted again in per-order contribution (ADR-014).
+
 ---
 
 ## 5. Sensitivity: What Breaks the Model
 
 | Variable | Model breaks if | Current assumption |
 | :--- | :--- | :--- |
-| A1 courier cost | >3,425 IQD → delivery margin gone | 2,500 `[ASSUMPTION]` |
-| A5 AOV | <15,000 IQD → contribution/order ~−200 | 25,000 `[ASSUMPTION]` |
-| Order frequency | <0.8/mo → LTVₛ falls below referral CAC | 1.5 `[ASSUMPTION]` |
-| A10 incentive payout | >40 credits/100 orders → pool bleeds | 20 `[ASSUMPTION]` |
-| Blended CACₛ | >11,000 IQD → LTV:CAC <1 | ~1,500 |
+| A1 courier cost | >3,000 IQD → delivery margin gone; >3,615 IQD → contribution per order turns negative | 2,500 (quote-verified, contract unsigned) |
+| A5 AOV | Never negative per order (delivery margin covers variable cost); at 10,000 IQD contribution ~665 → break-even ~980/mo | 25,000 `[ASSUMPTION]` |
+| Order frequency | <~0.37/mo → LTVₛ falls below the 3,000 IQD referral CAC | 1.5 `[ASSUMPTION]` |
+| A10 incentive payout | Above the 225k/mo pool cap → rewards queue or get re-tuned; doubling the pool → break-even ~787/mo | 20 per 100 orders, capped by pool |
+| Blended CACₛ | >~12,000 IQD → LTV:CAC <1 | ~1,500 |
 
-**Single most important validation:** A1 courier cost — same conclusion as `01` §8. Everything else is second-order.
+**Single most important validation:** signing the courier contract (A1 is quote-verified but unsigned) — then real AOV and order frequency from the concierge pilot.
 
 ---
 
@@ -122,7 +124,7 @@ The pool cap (225,000 IQD/mo in `01` §4) bounds worst-case incentive spend to ~
 
 | Side | LTV | CAC | Ratio | Payback | Health |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Shopper | ~11,100 IQD | ~1,500 IQD | **~7.4 : 1** | 1–2 orders | Strong |
+| Shopper | ~12,000 IQD | ~1,500 IQD | **~8 : 1** | 1–2 orders | Strong |
 | Merchant (normal) | ~102,900 IQD | ~5–10k IQD | **~10–20 : 1** | <1 month | Strong |
 | Merchant (founding) | ~103,000 + audience | ~65,000 IQD | ~1.6 : 1 standalone | ~5 months | Justified by audience |
 

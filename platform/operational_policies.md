@@ -22,14 +22,18 @@ Each policy is marked **[Policy]** (decided rule) or **[Assumption]** (proposed 
 
 | Class | Trigger | Who pays return leg | Merchant consequence |
 | :--- | :--- | :--- | :--- |
-| **Fault return** | Wrong item, defective, or not-as-described | **Merchant** (courier cost deducted from settlement) | Reliability-score deduction |
+| **Fault return** | Wrong item, defective, or not-as-described | **Merchant** (courier cost deducted from the merchant's payout, or settled electronically if already paid out) | Reliability-score deduction |
 | **Remorse return** | Customer changed mind, item unused | **Customer** (3,000 IQD Duhok courier fee) | None — neutral event |
 
 Rules:
 
 - **Window:** 48 hours from delivery confirmation. Items must be unused, in original packaging.
 - **Process:** customer taps "Report issue" → photo evidence for fault claims → Cheapify dispatches return courier → merchant inspects on receipt → refund released.
-- **Refund mechanics [Assumption]:** for COD orders, refund issued as platform credit or merchant-arranged cash/e-wallet handback. *(Decision needed: credit-only vs. cash — recommend platform credit for remorse, cash for fault.)*
+- **Refund mechanics [Policy]:**
+  - **Card orders:** refunded to the original card or e-wallet.
+  - **Cash orders, change of mind:** Cheapify platform credit.
+  - **Cash orders, faulty item:** electronic transfer to the shopper's card or e-wallet; if the shopper has none, the courier hands cash back at return pickup and nets it from its next transfer to Cheapify `[TO CONFIRM AT CONTRACT SIGNING]`.
+  - Refunds raised inside the 48-hour window are deducted before the merchant payout.
 
 - **Merchant protection:** serial returners (>30% return rate across 10+ orders) get flagged and lose remorse-return privilege.
 - **No doorstep negotiation:** the courier never adjudicates condition — everything goes through the in-app flow. This protects couriers from disputes and produces data.
@@ -53,7 +57,7 @@ Rules:
 Failed deliveries [Policy]:
 
 - One free re-attempt next day; second failure → parcel returns to merchant, customer account flagged.
-- Customers with ≥3 failed COD deliveries lose COD privilege (prepaid-only or account suspension).
+- Customers with ≥3 failed COD deliveries lose COD privilege (card-only or account suspension).
 
 **[Assumption] Inter-city (Phase 2+):** ZMC-style linehaul estimated 5,000–8,000 IQD per parcel — *needs quotes*. Regional delivery fee becomes a separate published tariff, never blended into item price.
 
@@ -77,13 +81,21 @@ Failed deliveries [Policy]:
 
 [Policy] Phase 1–2 (Duhok + regional):
 
-- **COD is the primary and default method** — cash collected by the courier at handover.
+- **Cash on delivery is available from launch and is never removed** — cash is collected by the courier at handover.
+- **Card / e-wallet payment** (local gateway, e.g. FIB, FastPay, Qi Card, Visa/Mastercard) is added **shortly after launch**, once the payment-gateway account is approved (this requires business registration). Card payments go to Cheapify's payment account at checkout.
+- **Cheapify never collects or handles cash.** All money between Cheapify and businesses (merchants, couriers, partners) moves electronically.
 - **Platform credit** (referral/catalog rewards) auto-applies at checkout before the COD amount is computed.
 - **Prohibited:** any arrangement where the customer pays the merchant directly outside the platform — bypassing destroys the fee model, the Best Value integrity, and the reliability score's meaning.
 
-**[Assumption] Settlement cycle:** courier remits collected cash; Cheapify settles merchant balances **weekly** (every Sunday) via bank transfer or e-wallet, minus commission, return legs, and credit usage. *Confirm courier remittance terms — some couriers settle the merchant directly and invoice the platform its fee share; either works, but the contract must fix who holds cash when.*
+**[Policy] Settlement flow:**
 
-**[Policy] Phase 3 e-wallets:** FIB, FastPay, Qi Card added as optional prepayment — never required. Prepaid orders get priority-dispatch flag as incentive.
+- **Cash orders:** the courier collects the cash and transfers the **full collected amount electronically to Cheapify** within the deadline in the courier contract (target: within 24 hours of delivery) `[TO CONFIRM AT CONTRACT SIGNING]`.
+- **Card orders:** the shopper's payment goes to Cheapify's payment account at checkout.
+- **Split:** Cheapify keeps its fee and delivery margin, pays the courier its contracted rate electronically (on the contract's payment cycle), and pays the merchant the item price minus the fee.
+- **Merchant payout:** automatic and electronic, **once the 48-hour return window after delivery closes** (for cash orders, also after the courier's transfer has arrived). No weekly cycle.
+- **Payment account:** every merchant must link a payment account (bank card or e-wallet) during onboarding — required to receive payouts and to settle amounts owed after payout (e.g. a fault-return courier leg).
+
+**[Open] Card processing fees:** not yet quoted `[OPEN — gateway quote needed]`. The +1,115 IQD per-order contribution in the finance model is the cash-on-delivery case.
 
 ---
 
@@ -92,6 +104,7 @@ Failed deliveries [Policy]:
 | Item | Needed input | Blocks |
 | :--- | :--- | :--- |
 | ~~True Duhok courier cost~~ — **done** (Fast Delivery) | Contract signature | Shipping margin — verified |
-| Refund rail for COD | Courier remittance terms | Return policy mechanics |
+| Courier transfer deadline and cash-refund netting | Courier contract terms | Settlement and refund mechanics |
+| Card processing fees | Payment-gateway quote | Card-order contribution |
 | Inter-city tariff | ZMC inter-city quote | Phase 2 Doorstep Total |
 | Return-rate baseline | Pilot data (est. 3–5%) | Pillar 3 cash flow |

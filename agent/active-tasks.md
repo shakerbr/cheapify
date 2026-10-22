@@ -6,8 +6,8 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ## Current Active Focus
 
-* **Active Pillar:** All 4 pillars complete — next deliverable is the **final pitch deck** (`presentation/`, 6-min limit, ~7–9 slides)
-* **Lead File:** `business-modeling/` docs finalized; deck assembly per `agent/roadmap.md` sequence
+* **Active Pillar:** All 4 pillars complete — **final pitch deck in progress** (`presentation/`, under 6 minutes total, slide count flexible)
+* **Lead File:** `presentation/` deck build; finance model corrected to +1,115 IQD/order (ADR-014)
 
 ---
 
@@ -63,7 +63,17 @@ This document tracks immediate actionable tasks, active work items, and current 
 * [x] 3 Core SOPs — merchant onboarding, 3PL order flow→settlement, returns/refunds ([02_core_sops.md](../business-modeling/02_core_sops.md))
 * [x] Operational risk matrix — 17 risks scored L×I, top risks R4 bypass/R1 traction/R2+R11 contract chain ([03_operational_risk_matrix.md](../business-modeling/03_operational_risk_matrix.md))
 
+### Milestone 5: Final Pitch Deck (`presentation/`)
+
+* [x] Read all pillars, evidence and template; slide plan approved by founder
+* [x] Finance model corrected — contribution +1,115 IQD/order, break-even ~585/mo (ADR-014)
+* [x] Verify market-size figures before use on slides — deck uses DataReportal Digital 2026 (39.6M internet users) + ECDB 2025 (US$1.32B e-commerce); the $2.5–3.5B TAM in `entrepreneurship/02` is unverified and kept off slides
+* [x] Build deck from template (header/footer only), animations, speaker script, backup slides, PDF — `presentation/Cheapify-GIZ-Pitch.pptx` (14 main + 7 appendix), rebuild via `presentation/build/build_deck.py`
+* [x] QA renders (LibreOffice) — no overflow; script ~5:00 at 140 wpm
+* [ ] Founder run-through in PowerPoint / Google Slides (animations verified in LibreOffice only; install Inter + IBM Plex Sans Arabic on the presenting machine)
+* [ ] Correct the unverified TAM figure in `entrepreneurship/02` (pending founder OK)
+
 ### Program Constraints (from GIZ updates)
 
 * Ranked awards: 1st > 2nd > 3rd prize amounts (envelope unknown) — tiered ask in `finance/04` maps to any rank outcome.
-* **Pitch deck hard limit: 6 minutes** — final deliverable must be designed to ~7–9 slides / 6-min runtime.
+* **Pitch deck hard limit: under 6 minutes** — slide count flexible (founder update, Oct 21, 2026).

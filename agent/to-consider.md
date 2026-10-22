@@ -19,7 +19,7 @@
 | Return Policy | Two-class model: fault → merchant pays; remorse → customer pays; 48h window | [`../platform/operational_policies.md`](../platform/operational_policies.md) §1 (ADR-013) |
 | Shipping Policy | Flat 3,000 IQD inside Doorstep Total; one free re-attempt | §2 (ADR-013) |
 | Packaging Policy | Sealed opaque mailer + waybill; security tape ≥50k IQD | §3 (ADR-013) |
-| Payment Methods | COD primary, weekly settlement; Phase-3 e-wallets optional | §4 (ADR-013) |
+| Payment Methods | COD from launch, card / e-wallet shortly after; courier transfers cash electronically; merchant payout automatic after the 48h return window | §4 (ADR-013) |
 | Listing Making Process | Barcode-first create/claim flow, QA gate <2h | [`../platform/catalog_governance.md`](../platform/catalog_governance.md) §1 (ADR-013) |
 | Listing Rules & Policies | 8-rule enforceable listing standard | [`../platform/catalog_governance.md`](../platform/catalog_governance.md) §2 (ADR-013) |
 | Listing Matching / Dedup | 4-layer defense: barcode block → fuzzy match → flags → merge | [`../platform/catalog_governance.md`](../platform/catalog_governance.md) §3 (ADR-013) |

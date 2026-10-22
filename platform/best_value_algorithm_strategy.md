@@ -561,7 +561,7 @@ export function evaluateBestValueOffers(
 
 - **Pillar 1 (Entrepreneurship):** Harmonizes with the Single-SKU catalog architecture ([01_problem_solution_value.md](../entrepreneurship/01_problem_solution_value.md)) and Persona incentives ([03_customer_and_merchant_personas.md](../entrepreneurship/03_customer_and_merchant_personas.md)).
 - **Pillar 2 (Marketing):** Provides the core commercial narrative for merchant onboarding ("Cheapify protects local Duhok shops from out-of-city dumping") and consumer acquisition campaigns ("Never pay a surprise shipping markup again").
-- **Pillar 3 (Finance Management):** Directly drives unit economics by standardizing 3PL parcel tariffs (3,000 IQD) and anchoring COD weekly settlement calculations.
+- **Pillar 3 (Finance Management):** Directly drives unit economics by standardizing 3PL parcel tariffs (3,000 IQD) and anchoring order-level payout calculations.
 - **Pillar 4 (Business Modeling):** Forms the core defensible technology asset within the Value Proposition and Key Activities blocks of the Business Model Canvas.
 
 

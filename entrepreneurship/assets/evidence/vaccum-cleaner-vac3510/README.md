@@ -9,6 +9,8 @@
 | `Screenshot_20261021_120334_Miswag.jpg` | Miswag (official "Newal" seller) | **133,250 IQD** — "was 205,000, −35%" | Inflated anchor price (205,000 never plausibly real); installment upsell pushed ("Aqsat Mall — 10 installments of 15,783"); Seller Delivery |
 | `Screenshot_20261021_120338_Instagram.jpg` | Instagram · ghadeer_3130 | **95,000 IQD** | TikTok-format video post; price as a graphic badge; post labeled **"AI content"** — AI-generated seller marketing; fixed price given but ordering is still via engagement/DM |
 
+*Model naming note:* Miswag lists the product as "VAC351004 Vacuum Cleaner" while the Instagram post says "VAC-3510" — the same Newal 2000W design under two names.
+
 ## Issues Documented
 
 - **40% spread (38,250 IQD)** — and this time the *informal* channel is the cheaper one: opacity cuts in both directions

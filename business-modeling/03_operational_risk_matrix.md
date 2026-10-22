@@ -20,15 +20,15 @@ Cross-References:
 | ID | Risk | Cat. | L | I | Score | Mitigation | Early-warning signal | Status |
 | :--- | :--- | :--- | :-: | :-: | :-: | :--- | :--- | :--- |
 | R1 | **Traction shortfall** — order volume lands below even the floor ramp (~25%) | Market | 3 | 5 | **15 H** | Planning ramp already halved; floor case modeled (loss ceiling = ~$435/mo burn, no cliff); ~52-shopper actionable waitlist seeded; concierge pilot tests conversion pre-scale; monthly cohort review vs. floor curve | Week-over-week orders below floor line; waitlist conversion <20% | Open — the venture's #1 risk |
-| R2 | **Courier contract unsigned/delayed** — +500 IQD/order delivery margin evaporates | Partner | 3 | 4 | **12 M** | Contract open per founder; zone fees hold margin only under contract; ZMC second quote = fallback + leverage; zero-margin passthrough survivable (break-even ~1,240/mo, bounded) | Registration stalling; renegotiated rates | Open — critical path via R11 |
-| R3 | **COD cash custody failure** — courier remittance terms unfavorable or cash delayed | Financial | 3 | 4 | **12 M** | Contract must fix custody + remittance cycle [Assumption in `operational_policies.md` §4]; weekly settlement default; Phase-3 e-wallets reduce cash exposure | First remittance late; reconciliation gaps | Open — contract language decides |
+| R2 | **Courier contract unsigned/delayed** — +500 IQD/order delivery margin evaporates | Partner | 3 | 4 | **12 M** | Contract open per founder; zone fees hold margin only under contract; ZMC second quote = fallback + leverage; zero-margin passthrough survivable (break-even ~1,060/mo, bounded) | Registration stalling; renegotiated rates | Open — critical path via R11 |
+| R3 | **Courier transfers cash late / fails to transfer** — cash collected on delivery is not transferred to Cheapify on time | Financial | 3 | 4 | **12 M** | Courier contract sets a transfer deadline (target 24h after delivery) `[TO CONFIRM AT CONTRACT SIGNING]`; per-order reconciliation; merchants are paid only after the money arrives (and after the 48h return window); card payments (added shortly after launch) reduce cash exposure; Cheapify never handles cash | First transfer late; reconciliation gaps | Open — contract language decides |
 | R4 | **Platform bypass (disintermediation)** — merchant + shopper take deals to DMs to dodge commission | Integrity | 4 | 4 | **16 H** | Fee kept low enough that bypass isn't worth it (~3.8% eff.); no contacts on packaging [Policy]; credits only spendable on-platform; reliability score counts only platform orders; Best Value only rewards compliant sellers | Merchants active but order-flat; same-SKU price drift vs. social pages | Mitigated by design — monitor |
 | R5 | **Referral/credit fraud** — farming, self-referral, fake COD orders | Integrity | 3 | 3 | **9 M** | 7-layer anti-fraud stack: transaction-gated rewards, OTP identity, credit-only, velocity caps, heuristics, courier signal, manual review | Flagged-account rate >5%; delivery-failure clusters | Mitigated by design |
 | R6 | **Merchant fraud** — counterfeits, mislabeled condition, bait-and-switch | Integrity | 3 | 4 | **12 M** | Verification gate; Rule 5 honest-condition labeling; fault returns auto-trigger + reliability deduction; prohibited-goods list (Rule 7) | Fault-return rate per merchant >baseline; photo-evidence patterns | Mitigated — enforced via SOP-3 |
 | R7 | **Failed deliveries** — "buyer not home" pattern (confirmed real by merchant interview) | Operational | 4 | 3 | **12 M** | One free re-attempt; 3 failures → COD privilege revoked; address confirmation at checkout; WhatsApp pre-delivery notification | Failed-delivery rate >10% of attempts | Mitigated by policy |
 | R8 | **Catalog pollution** — duplicate listings, junk-creation farming for credits | Operational | 3 | 3 | **9 M** | Four-layer dedup (barcode hard-block → multi-signal match → community flags → merge); credit revoked on post-existing duplicates; 10 listings/day cap | Duplicate-flag rate rising; creation spikes | Mitigated by design |
 | R9 | **CAC above model** — ads underperform, bio links don't convert | Market | 3 | 3 | **9 M** | $20 paid-ad test planned before scale spend; referral channel as fallback; CAC:LTV reviewed monthly vs. ≥3:1 floor | Test CPC/CPM >targets; bio-link CTR low | Open — ad test pending |
-| R10 | **Grant not awarded / lower rank** — envelope smaller than ask | Financial | 4 | 3 | **12 M** | Tiered ask maps to any rank ($7.5k/$4.5k/$2.5k); worst-case runway $2,250–2,850 within founder buffer; venture survives unfunded, slower | Non-selection; rank below 3rd | Open — pitch decides |
+| R10 | **Grant not awarded / lower rank** — envelope smaller than ask | Financial | 4 | 3 | **12 M** | Tiered ask maps to any rank ($7.5k/$4.5k/$2.5k); worst-case runway $2,180–2,750 within founder buffer; venture survives unfunded, slower | Non-selection; rank below 3rd | Open — pitch decides |
 | R11 | **Registration/legal delay** — blocks courier contract → blocks delivery margin (gateway to R2) | Regulatory | 3 | 4 | **12 M** | Registration is identified critical-path; ~$1,000 budgeted; process startable now, parallel to build | Registration stuck >30 days | Open — sequential gate |
 | R12 | **Founder key-person dependency** — illness, burnout, competing demands | Team | 2 | 5 | **10 M** | This repo externalizes all knowledge — SOPs, policies, model, brand; documentation-first culture makes the venture legible to a successor/partner | Velocity drops; single-point bottlenecks observed | Partially mitigated |
 | R13 | **Competitor response** — Miswag/Elryan push into Duhok or poach merchants via affiliate deals (precedent: interviewee already runs a competitor's affiliate bio link) | Competitive | 2 | 4 | **8 M** | First-mover on single-SKU catalog; local focus incumbents lack; Founder's Circle locks early supply; affiliate displacement needs better economics — founding perks priced to win the bio slot | Competitor Duhok marketing; merchant poaching reports | Open — monitor |
@@ -76,7 +76,7 @@ IMPACT
 
 | Review | Contents | Trigger |
 | :--- | :--- | :--- |
-| **Weekly (pilot)** | Orders vs. floor ramp, delivery success %, fault-return rate | Every Sunday settlement |
+| **Weekly (pilot)** | Orders vs. floor ramp, delivery success %, fault-return rate | Every Sunday review (ops cadence, not a payout cycle) |
 | **Monthly** | CAC:LTV vs. 3:1 floor, flagged-account rate, merchant activation (10-order gate), burn vs. budget | Month close |
 | **Gate reviews** | Contract signed? Registration filed? Concierge pilot data in? | Before growth spend unlocks |
 | **Re-score** | Full matrix re-rating | Quarterly, or on any risk event |
@@ -90,7 +90,7 @@ IMPACT
 | Item | Needed | Resolves |
 | :--- | :--- | :--- |
 | Real order velocity | Concierge pilot (10–20 orders) | R1, R16 |
-| Remittance/custody terms | Courier contract negotiation | R3 |
+| Courier transfer deadline and cash-refund netting | Courier contract negotiation | R3 |
 | Second courier quote | ZMC Express inquiry | R2 (leverage) |
 | Real CPM/CPC | ~$20 Meta ad test | R9 |
 | Kurdish demand signal | Kurdish-boosted survey wave | R15 |

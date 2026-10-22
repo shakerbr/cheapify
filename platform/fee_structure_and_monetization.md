@@ -170,9 +170,9 @@ export function calculateCheapifyFee(priceIQD: number): { feeIQD: number; effect
 
 ---
 
-## 7. Cash Settlement & Courier Reconciliation Workflow
+## 7. Payment & Settlement Workflow
 
-In Iraq, where **85%+ of e-commerce volume relies on Cash on Delivery (COD)**, platform fees cannot be collected via merchant credit cards. Instead, Cheapify operates an automated net-settlement mechanism via our 3PL courier partnership:
+In Iraq, where **85%+ of e-commerce volume relies on Cash on Delivery (COD)**, platform fees cannot be collected via merchant credit cards. Cheapify therefore nets its fee at source. **Cheapify never collects or handles cash** — all money between Cheapify and businesses moves electronically. Cash on delivery is available from launch; card / e-wallet payment is added shortly after launch, once the payment-gateway account is approved.
 
 ```mermaid
 sequenceDiagram
@@ -182,18 +182,24 @@ sequenceDiagram
     participant Cheapify as Cheapify Core Ledger
     participant Merchant as Bazaar Merchant (Kak Kawa)
 
-    Customer->>Courier: Pays Cash on Delivery (Product Price + 3,000 IQD Delivery)
-    Courier->>Cheapify: Remits collected COD funds weekly via bank/office transfer
-    Cheapify->>Cheapify: Automatically deducts Progressive Platform Fee (e.g., 680 IQD)
-    Cheapify->>Merchant: Disburses Net Merchant Payout (Price - Platform Fee) via FIB / FastPay / Cash
-    Cheapify->>Merchant: Sends automated WhatsApp settlement statement & updates Dashboard
+    Customer->>Courier: Pays cash on delivery (Product Price + 3,000 IQD Delivery)
+    Courier->>Cheapify: Transfers the full collected amount electronically (contract deadline, target 24h)
+    Cheapify->>Cheapify: Deducts Progressive Platform Fee (e.g., 680 IQD) and keeps the delivery margin
+    Cheapify->>Courier: Pays contracted courier rate electronically (contract payment cycle)
+    Note over Cheapify,Merchant: 48-hour return window after delivery closes
+    Cheapify->>Merchant: Automatic electronic payout (Price - Platform Fee) to the merchant's linked payment account
+    Cheapify->>Merchant: Sends automated WhatsApp payout statement & updates Dashboard
 ```
+
+Card orders skip the courier transfer: the shopper pays Cheapify's payment account at checkout, and the same split and payout rules apply.
 
 ### Advantages of Automated Net Reconciliation
 
-1. **Zero Merchant Invoicing Friction:** Merchants never receive an overdue bill or pay out of pocket; fees are deducted at source from gross collected COD balances.
-2. **Transparent Dashboard Visibility:** The merchant's dashboard displays the exact gross price, Cheapify fee, courier fee, and net balance credited for every order ID.
-3. **Weekly Liquidity:** Guaranteed weekly payout disbursements give bazaar retailers reliable cash flow to restock inventory quickly.
+1. **Zero Merchant Invoicing Friction:** Merchants never receive an overdue bill or pay out of pocket; fees are deducted at source from the gross collected balance.
+2. **Transparent Dashboard Visibility:** The merchant's dashboard displays the exact gross price, Cheapify fee, courier fee, and net payout for every order ID.
+3. **Payout After the Return Window:** The payout is released automatically once the 48-hour return window closes (for cash orders, also after the courier's transfer has arrived), so Cheapify never has to claw money back. Every merchant must link a payment account (bank card or e-wallet) during onboarding to receive payouts.
+
+**Open:** card processing fees are not yet quoted `[OPEN — gateway quote needed]`; the per-order contribution in the finance model is the cash-on-delivery case.
 
 ---
 
@@ -213,5 +219,6 @@ sequenceDiagram
 | :--- | :--- | :--- |
 | Incumbent commissions 10–15% (Miswag, Elryan) | Unverified benchmark | Confirm via their merchant terms/outreach |
 | Merchant gross margins 15–25% | Generic estimate | Real margins from onboarded Duhok sellers |
-| 85%+ COD share of e-commerce volume | Regional estimate | Validate vs. FIB/FastPay/Qi adoption data |
-| Net-settlement mechanics via 3PL | Proposed | Courier contract remittance terms |
+| 85%+ COD share of e-commerce volume | Regional estimate | Validate vs. FIB/FastPay/Qi adoption data (card payments follow shortly after launch) |
+| Net-settlement mechanics via 3PL | Proposed | Courier contract transfer deadline (target 24h) |
+| Card processing fees | Not yet quoted | Payment-gateway quote |

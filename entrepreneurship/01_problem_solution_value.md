@@ -76,7 +76,7 @@ Every product on Cheapify has a standardized master page:
 ### 2.3 Instant, 1-Click Ordering
 
 * A buyer selects their preferred color/measure, picks their chosen seller, and checks out in under 30 seconds.
-* **Supported Local Checkout:** Cash on Delivery (COD) as the primary trust builder, along with local e-wallets (FastPay, FIB, Qi Card).
+* **Supported Local Checkout:** Cash on Delivery (COD) from launch as the primary trust builder; card / e-wallet payment (FIB, FastPay, Qi Card, Visa/Mastercard) shortly after launch.
 * **Automated Dispatch:** No human messaging needed. The seller gets an automated fulfillment sheet with the exact SKU, color, size, customer address, and courier pickup time.
 
 ### 2.4 Centralized Merchant Operations Dashboard

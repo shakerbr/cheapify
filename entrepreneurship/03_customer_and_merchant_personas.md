@@ -58,7 +58,7 @@ Cheapify is a dual-sided marketplace. To succeed in the Iraqi retail environment
 | **Price Check** | Sends 4 DMs to 4 different pages asking *"How much?"*. | Instantly sees 3 verified Duhok sellers side by side with live IQD prices. |
 | **Variant Check** | Asks: *"What colors are available?"* Waits 2 hours for reply: *"Only black."* | Selects the "Black" or "Silver" variant chip; out-of-stock colors are disabled. |
 | **Decision** | Worries he is still overpaying. Purchases out of fatigue. | Sees the **"Best Value"** chip on TechZone Duhok (14,000 IQD). |
-| **Checkout** | Types out his phone number, address, and directions in chat. | Clicks "Order Now", chooses COD or FIB, and finishes in 25 seconds. |
+| **Checkout** | Types out his phone number, address, and directions in chat. | Clicks "Order Now", chooses cash on delivery (card / e-wallet shortly after launch), and finishes in 25 seconds. |
 | **Outcome** | Stressful, wasted hours, lingering feeling of overpaying. | Feels **smart, relieved, and empowered** knowing he got the best local deal. |
 
 ---
@@ -111,5 +111,5 @@ How Cheapify harmonizes the opposing incentives of buyers and merchants:
 | :--- | :--- | :--- | :--- |
 | **Pricing** | Lowest possible transparent price without haggling. | Maintain healthy profit margin without destructive commission fees. | **[Progressive Marginal Tiering](../platform/fee_structure_and_monetization.md):** 5% / 3% / 1.5% take-rate preserves merchant profit margins so sellers can offer their lowest bazaar prices. |
 | **Information** | Full specs, accurate measurements, exact available colors. | Stop wasting hours typing the same specs into chat threads. | **Single-SKU Master Page:** Specs created once; merchants simply attach their price & stock. |
-| **Ordering** | 1-click checkout with Cash on Delivery or local e-wallet. | Confirmed, serious orders with accurate address and phone number. | **Automated Order Dispatch:** Replaces casual tire-kickers with prepaid/confirmed orders. |
+| **Ordering** | 1-click checkout with cash on delivery (card / e-wallet shortly after launch). | Confirmed, serious orders with accurate address and phone number. | **Automated Order Dispatch:** Replaces casual tire-kickers with confirmed orders. |
 | **Trust** | Assurance that the seller is legitimate and products are genuine. | Fair recognition for honest pricing, fast delivery, and good service. | **Verified Partner Badge & Rating Engine:** Good merchants win the "Best Value" spot. |
