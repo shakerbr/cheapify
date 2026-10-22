@@ -236,20 +236,34 @@ class Fx:
         self.shape = shape
         self.kind = kind
         self.delay = delay
-        self.dur = dur if dur is not None else {"fade": 450, "zoom": 400, "appear": 1,
-                                                  "fadeout": 450}[kind]
+        self.dur = dur if dur is not None else {"fade": 300, "zoom": 300, "appear": 1,
+                                                  "fadeout": 250}[kind]
 
 
 def fx(shape, kind="fade", delay=0, dur=None):
     return Fx(shape, kind, delay, dur)
 
 
-def stagger(shapes, kind="fade", delay=150, first_delay=None):
-    out = []
-    for i, s in enumerate(shapes):
-        d = delay if (i or first_delay is None) else first_delay
-        out.append([fx(s, kind, d)])
-    return out
+def stagger(shapes, kind="fade", gap=None, dur=None, start=0):
+    """One step of withEffects with cumulative delays (4+ items: 150 ms / 25 ms; else 250 / 80)."""
+    many = len(shapes) >= 4
+    gap = gap if gap is not None else (25 if many else 80)
+    dur = dur if dur is not None else (150 if many else 250)
+    if kind == "appear":
+        dur = 1
+    return [[fx(s, kind, start + i * gap, dur) for i, s in enumerate(shapes)]]
+
+
+def pair_stagger(pairs, kind="fade", gap=None, dur=None):
+    """Like stagger() but each item is a list of shapes sharing one delay."""
+    many = len(pairs) >= 4
+    gap = gap if gap is not None else (25 if many else 80)
+    dur = dur if dur is not None else (150 if many else 250)
+    step = []
+    for i, grp in enumerate(pairs):
+        for s in grp:
+            step.append(fx(s, kind, i * gap, dur))
+    return [step]
 
 
 def together(*effects):
@@ -266,6 +280,21 @@ class Anim:
         if steps and isinstance(steps[0], Fx):
             steps = [steps]
         self.groups.append((auto, [s for s in steps if s]))
+
+    def apply_state(self, upto):
+        """QA: remove shapes whose entrance happens after click `upto` and exits up to it."""
+        for gi, (auto, steps) in enumerate(self.groups):
+            for step in steps:
+                for e in step:
+                    el = e.shape._element
+                    parent = el.getparent()
+                    if parent is None:
+                        continue
+                    if e.kind == "fadeout":
+                        if gi <= upto:
+                            parent.remove(el)
+                    elif gi > upto:
+                        parent.remove(el)
 
     def build(self, slide):
         if not self.groups:
@@ -407,3 +436,49 @@ def finalize_slide(slide, anim=None, transition=True):
         clr.addnext(tr)
     if anim is not None:
         anim.build(slide)
+
+
+# ---------------------------------------------------------------- arcs / gauges
+def _geom_adj(shape, vals):
+    av = shape._element.spPr.find(qn("a:prstGeom")).find(qn("a:avLst"))
+    for ch in list(av):
+        av.remove(ch)
+    for name, val in vals:
+        etree.SubElement(av, qn("a:gd"), name=name, fmla=f"val {int(val)}")
+
+
+def arc(parent, cx, cy, ro, ri, a0, a1, fill):
+    sp = parent.add_shape(MSO_SHAPE.BLOCK_ARC, E(cx - ro), E(cy - ro), E(2 * ro), E(2 * ro))
+    _geom_adj(sp, (("adj1", (a0 % 360) * 60000), ("adj2", (a1 % 360) * 60000),
+                   ("adj3", (ro - ri) / (2 * ro) * 100000)))
+    sp.fill.solid()
+    sp.fill.fore_color.rgb = rgb(fill)
+    sp.line.fill.background()
+    no_effect(sp)
+    return sp
+
+
+def donut(parent, cx, cy, ro, ri, fill):
+    sp = parent.add_shape(MSO_SHAPE.DONUT, E(cx - ro), E(cy - ro), E(2 * ro), E(2 * ro))
+    _geom_adj(sp, (("adj", (ro - ri) / (2 * ro) * 100000),))
+    sp.fill.solid()
+    sp.fill.fore_color.rgb = rgb(fill)
+    sp.line.fill.background()
+    no_effect(sp)
+    return sp
+
+
+def pie_slice(parent, cx, cy, r, a0, a1, fill):
+    sp = parent.add_shape(MSO_SHAPE.PIE, E(cx - r), E(cy - r), E(2 * r), E(2 * r))
+    _geom_adj(sp, (("adj1", (a0 % 360) * 60000), ("adj2", (a1 % 360) * 60000)))
+    sp.fill.solid()
+    sp.fill.fore_color.rgb = rgb(fill)
+    sp.line.fill.background()
+    no_effect(sp)
+    return sp
+
+
+def gauge(parent, cx, cy, d, pct, color=BLUE, track=NEUTRAL, thick=0.14):
+    ro = d / 2
+    donut(parent, cx, cy, ro, ro - thick, track)
+    arc(parent, cx, cy, ro, ro - thick, 270, 270 + 360 * pct, color)

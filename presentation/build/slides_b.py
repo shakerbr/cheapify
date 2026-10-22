@@ -18,7 +18,7 @@ def model(sl, ctx, mode="anim"):
     an = Anim()
     top = group(sh)
     text(top.shapes, 0.79, 2.70, 8.5, 0.32,
-         [[("Shopper pays 28,000 IQD at the door", dict(size=16, bold=True)),
+         [[("Shopper pays 28,000 IQD", dict(size=16, bold=True)),
            ("   (25,000 item + 3,000 Duhok delivery)", dict(size=12, color=INK60))]],
          anchor="m")
     base = group(sh)
@@ -65,17 +65,52 @@ def model(sl, ctx, mode="anim"):
              font="Comfortaa", align="c", anchor="m")
         text(g.shapes, x - 0.2, 6.60, 1.6, 0.25, cap, size=11, color=INK60, align="c")
         cols.append(g)
-    big = grp_text(sh, 6.90, 4.95, 5.64, 0.85, "≈ 1,100 IQD", size=44, bold=True,
-                   font="Comfortaa", anchor="m")
-    bigsub = grp_text(sh, 6.90, 5.85, 5.4, 0.6,
-                      "kept per delivered order after messaging, failed-delivery and return costs",
-                      size=13, color=INK60)
+    BASE, SC = 6.55, 1.70 / 1450.0
+    wf_head = group(sh)
+    text(wf_head.shapes, 6.90, 4.28, 3.2, 0.26, "Per order, after costs", size=13, bold=True,
+         anchor="m")
+    steps = [("Our share", 1450, None, INK), ("Messages", 90, "−90", RED),
+             ("Logins", 25, "−25", RED), ("Returns", 20, "−20", RED),
+             ("Re-delivery", 200, "−200", RED)]
+    cols_wf = []
+    run = 1450
+    prev_level = None
+    for k, (cat, val, lab, col) in enumerate(steps):
+        x = 7.05 + k * 0.92
+        g = group(sh)
+        if k == 0:
+            top, bot = BASE - 1450 * SC, BASE
+            lbl = "1,450"
+        else:
+            top = BASE - run * SC
+            bot = BASE - (run - val) * SC
+            if bot - top < 0.06:
+                bot = top + 0.06
+            lbl = lab
+            run -= val
+        if prev_level is not None:
+            line(g.shapes, x - 0.30, prev_level, x, prev_level, INK35, 1.0)
+        rect(g.shapes, x, top, 0.62, bot - top, fill=col)
+        text(g.shapes, x - 0.15, top - 0.28, 0.92, 0.24, lbl, size=11, bold=True, align="c",
+             anchor="m")
+        text(g.shapes, x - 0.15, 6.60, 0.92, 0.20, cat, size=10, color=INK60, align="c")
+        prev_level = bot if k else top
+        cols_wf.append(g)
+    px_ = 7.05 + 5 * 0.92
+    prof = group(sh)
+    line(prof.shapes, px_ - 0.30, prev_level, px_, prev_level, INK35, 1.0)
+    rect(prof.shapes, px_, BASE - 1115 * SC, 0.62, 1115 * SC, fill=BLUE)
+    text(prof.shapes, px_ - 0.45, BASE - 1115 * SC - 0.42, 1.52, 0.38, "1,115 IQD", size=20,
+         bold=True, font="Comfortaa", color=BLUE, align="c", anchor="m")
+    text(prof.shapes, px_ - 0.15, 6.60, 0.92, 0.20, "Profit", size=10, color=INK60, align="c")
     if mode == "anim":
         an.add([[fx(top), fx(base)]], auto=True)
         an.add([[fx(segM), fx(lM)]])
         an.add([[fx(segC), fx(lC)]])
         an.add([[fx(segH), fx(lH), fx(callout)]])
-        an.add([[fx(fee_title)]] + stagger(cols, "zoom", 150) + [[fx(big, "zoom", 200), fx(bigsub, "fade", 200)]])
+        an.add([[fx(fee_title)]] + stagger(cols, "zoom"))
+        wf = [[fx(wf_head)] + [fx(c, "fade", i * 80, 250) for i, c in enumerate(cols_wf)]]
+        an.add(wf + [[fx(prof, "zoom", 80)]])
     return an
 
 
@@ -84,17 +119,18 @@ def competitors(sl, ctx):
     sh = sl.shapes
     an = Anim()
     cx = [5.30, 6.90, 8.50, 10.10, 11.70]
-    rows_y = [3.45, 4.20, 4.95, 5.70]
+    rows_y = [3.70, 4.42, 5.14, 5.86]
+    RH = 0.72
     base = group(sh)
     for (lbl, _), y in zip(D.COMP_ROWS, rows_y):
-        text(base.shapes, 0.79, y, 3.5, 0.75, lbl, size=15, bold=True, anchor="m")
+        text(base.shapes, 0.79, y, 3.5, RH, lbl, size=15, bold=True, anchor="m")
     for i in range(4):
-        text(base.shapes, cx[i] - 0.8, 2.80, 1.6, 0.55, D.COMP_COLS[i], size=13, bold=True,
+        text(base.shapes, cx[i] - 0.8, 2.82, 1.6, 0.55, D.COMP_COLS[i], size=13, bold=True,
              align="c", anchor="m")
     for y in rows_y[:-1]:
-        line(base.shapes, 0.79, y + 0.75, 10.70, y + 0.75, NEUTRAL, 0.75)
+        line(base.shapes, 0.79, y + RH, 10.70, y + RH, NEUTRAL, 0.75)
     line(base.shapes, 0.79, rows_y[0] - 0.03, 10.70, rows_y[0] - 0.03, NEUTRAL, 0.75)
-    line(base.shapes, 0.79, rows_y[-1] + 0.75, 10.70, rows_y[-1] + 0.75, NEUTRAL, 0.75)
+    line(base.shapes, 0.79, rows_y[-1] + RH, 10.70, rows_y[-1] + RH, NEUTRAL, 0.75)
 
     mk = {"yes": ("circle-check", INK60), "partly": ("contrast", INK60), "no": ("circle-x", RED)}
     comp_cols = []
@@ -102,168 +138,197 @@ def competitors(sl, ctx):
         g = group(sh)
         for ri, (_, vals) in enumerate(D.COMP_ROWS):
             name, col = mk[vals[ci]]
-            icon_c(g.shapes, name, col, cx[ci], rows_y[ri] + 0.375, 0.36)
+            icon_c(g.shapes, name, col, cx[ci], rows_y[ri] + RH / 2, 0.36)
         comp_cols.append(g)
-    # cheapify column
     ch = group(sh)
-    rect(ch.shapes, 10.90, 2.70, 1.60, 3.80, fill=BLUE12, line=BLUE, lw=1.5, radius=0.14)
-    pic_contain(ch.shapes, A("cheapify-logo.png"), 10.98, 2.88, 0.22, 0.30)
-    text(ch.shapes, 11.24, 2.80, 1.2, 0.55, "Cheapify", size=13, bold=True, color=BLUE,
-         anchor="m")
+    rect(ch.shapes, 10.90, 2.67, 1.60, 3.99, fill=BLUE12, line=BLUE, lw=1.5, radius=0.14)
+    pic_contain(ch.shapes, A("cheapify-logo.png"), cx[4] - 0.21, 2.84, 0.42, 0.54)
+    text(ch.shapes, 10.95, 3.40, 1.5, 0.26, "Cheapify", size=13, bold=True, font="Comfortaa",
+         color=BLUE, align="c", anchor="m")
     marks = []
     for ri, (_, vals) in enumerate(D.COMP_ROWS):
         name, col = mk[vals[4]]
         col = GREEN if vals[4] == "yes" else col
         g = group(sh)
-        icon_c(g.shapes, name, col, cx[4], rows_y[ri] + 0.375, 0.36)
+        icon_c(g.shapes, name, col, cx[4], rows_y[ri] + RH / 2, 0.36)
         marks.append(g)
     leg = group(sh)
     x = 0.79
     for name, col, lbl in (("circle-check", INK60, "yes"), ("contrast", INK60, "partly"),
                            ("circle-x", RED, "no")):
-        icon(leg.shapes, name, col, x, 6.60, 0.22)
-        text(leg.shapes, x + 0.30, 6.58, 0.8, 0.26, lbl, size=11, color=INK60, anchor="m")
+        icon(leg.shapes, name, col, x, 6.74, 0.22)
+        text(leg.shapes, x + 0.30, 6.72, 0.8, 0.26, lbl, size=11, color=INK60, anchor="m")
         x += 1.25
     an.add([[fx(base), fx(leg)]], auto=True)
-    an.add([[fx(comp_cols[0])]] + [[fx(c, delay=200)] for c in comp_cols[1:]])
-    an.add([[fx(ch, "zoom")]] + stagger(marks, "zoom", 120))
+    an.add(stagger(comp_cols, "fade"))
+    an.add([[fx(ch, "zoom")]] + stagger(marks, "zoom"))
     return an
 
 
-# ------------------------------------------------------------------ 10 growth
+# ------------------------------------------------------------------ 11 growth
 def growth(sl, ctx):
     sh = sl.shapes
     an = Anim()
-    C = (3.90, 4.75)
-    R = 1.55
-    ringg = group(sh)
-    oval(ringg.shapes, C[0], C[1], R, line=BLUE, lw=2.0)
-    pic_contain(ringg.shapes, A("cheapify-logo.png"), C[0] - 0.275, C[1] - 0.354, 0.55, 0.707)
-    nodes_def = [((3.90, 3.20), "store", "A store joins", 135),
-                 ((6.00, 4.75), "link", "Adds its Cheapify link to its bio", 45),
-                 ((3.90, 6.30), "users", "Its followers order on Cheapify", -45),
-                 ((1.80, 4.75), "trending-up", "More orders bring more stores", -135)]
-    nodes, tris = [], []
-    for (nx, ny), ic, t, ang in nodes_def:
+    left = [("handshake", "I sign the first 20 stores in person",
+             "Bazaar visits, Instagram outreach, a 45-second demo video"),
+            ("gift", "A founding offer they can't ignore",
+             "0% commission in month 1 + their products in our paid ads"),
+            ("link", "Their followers come too",
+             "Store link in bio and in replies to “price?” comments")]
+    right = [("megaphone", "Targeted ads across Duhok",
+              "Facebook, Instagram, TikTok — real products, real prices"),
+             ("clapperboard", "Short videos", "“The old way vs the Cheapify way”"),
+             ("graduation-cap", "Campus & workplace deals", "UoD, AUK, Nawroz and office hubs"),
+             ("users", "Waitlist & referrals",
+              "~52 contacts ready · credits only after a delivered order")]
+
+    def column(x0, title, rows, w):
+        h = grp_text(sh, x0, 2.72, 4.0, 0.34, title, size=16, bold=True, color=BLUE, anchor="m")
+        gs = []
+        for i, (ic, a, b) in enumerate(rows):
+            y = 3.16 + i * 0.82
+            g = group(sh)
+            oval(g.shapes, x0 + 0.25, y + 0.30, 0.25, fill=BLUE12)
+            icon_c(g.shapes, ic, BLUE, x0 + 0.25, y + 0.30, 0.28)
+            text(g.shapes, x0 + 0.70, y + 0.02, w - 0.7, 0.30, a, size=15, bold=True, anchor="m")
+            text(g.shapes, x0 + 0.70, y + 0.34, w - 0.7, 0.26, b, size=12, color=INK60, anchor="m")
+            gs.append(g)
+        return h, gs
+
+    hl, rl = column(0.79, "Stores", left, 5.61)
+    hr, rr = column(6.93, "Shoppers", right, 5.61)
+
+    # loop strip
+    labels = ["More stores", "Lower prices", "More shoppers", "More orders"]
+    wid = [1.20, 1.25, 1.45, 1.25]
+    gap = 0.62
+    total = sum(wid) + gap * 3
+    x = (SLIDE_W - total) / 2
+    pieces = []
+    xs = []
+    for k, (lb, w) in enumerate(zip(labels, wid)):
         g = group(sh)
-        card(g.shapes, nx - 1.0, ny - 0.475, 2.0, 0.95)
-        icon(g.shapes, ic, BLUE, nx - 0.88, ny - 0.16, 0.32)
-        text(g.shapes, nx - 0.45, ny - 0.40, 1.38, 0.80, t, size=13, bold=True, anchor="m")
-        nodes.append(g)
-        th = math.radians(ang)
-        px, py = C[0] + R * math.cos(th), C[1] - R * math.sin(th)
-        dx, dy = math.sin(th), math.cos(th)
-        rot = math.degrees(math.atan2(dx, -dy))
-        tg = group(sh)
-        tri = rect(tg.shapes, px - 0.10, py - 0.10, 0.20, 0.20, fill=BLUE,
-                   shape=MSO_SHAPE.ISOSCELES_TRIANGLE)
-        tri.rotation = rot
-        tris.append(tg)
-    cap = grp_text(sh, 2.40, 6.82, 3.0, 0.24, "≈ zero cost to acquire these shoppers", size=11,
-                   color=INK60, align="c", anchor="m")
-    phases = []
-    for i, (a, b, c) in enumerate([("Phase 1 · Months 1–6", "Duhok", "20 founding stores · 3,000+ orders"),
-                                    ("Phase 2 · Months 7–15", "Erbil · Mosul · Sulaymaniyah", "75 stores"),
-                                    ("Phase 3 · Month 16+", "All of Iraq", "300+ stores")]):
-        y = 2.80 + i * 1.15
-        g = group(sh)
-        card(g.shapes, 8.00, y, 4.54, 1.00)
-        text(g.shapes, 8.20, y + 0.10, 4.1, 0.22, a, size=11, color=BLUE, anchor="m")
-        text(g.shapes, 8.20, y + 0.32, 4.1, 0.32, b, size=16, bold=True, anchor="m")
-        text(g.shapes, 8.20, y + 0.66, 4.1, 0.24, c, size=12, color=INK60, anchor="m")
-        phases.append(g)
-    chip = group(sh)
-    rect(chip.shapes, 8.00, 6.30, 4.54, 0.45, fill=BLUE12, radius=0.22)
-    text(chip.shapes, 8.10, 6.30, 4.34, 0.45, "Founding stores: 0% commission in month 1 + free ads",
-         size=11, bold=True, align="c", anchor="m")
-    an.add([[fx(ringg)]], auto=True)
-    an.add([[fx(nodes[0]), fx(tris[0])]])
-    an.add([[fx(nodes[1]), fx(tris[1])]])
-    an.add([[fx(nodes[2]), fx(tris[2]), fx(cap)]])
-    an.add([[fx(nodes[3]), fx(tris[3])]])
-    an.add(stagger(phases, "fade", 150) + [[fx(chip)]])
+        text(g.shapes, x, 6.34, w, 0.28, lb, size=13, bold=True, align="c", anchor="m")
+        pieces.append(g)
+        xs.append((x, w))
+        x += w
+        if k < 3:
+            a = group(sh)
+            ar = rect(a.shapes, x + 0.14, 6.40, 0.34, 0.16, fill=BLUE, shape=MSO_SHAPE.RIGHT_ARROW)
+            pieces.append(a)
+            x += gap
+    ret = group(sh)
+    x1 = xs[0][0] + xs[0][1] / 2
+    x2 = xs[3][0] + xs[3][1] / 2
+    line(ret.shapes, x2, 6.66, x2, 6.84, BLUE, 1.5)
+    line(ret.shapes, x2, 6.84, x1, 6.84, BLUE, 1.5)
+    line(ret.shapes, x1, 6.84, x1, 6.72, BLUE, 1.5)
+    tri = rect(ret.shapes, x1 - 0.07, 6.65, 0.14, 0.10, fill=BLUE,
+               shape=MSO_SHAPE.ISOSCELES_TRIANGLE)
+    pieces.append(ret)
+    an.add([[fx(hl), fx(hr)]], auto=True)
+    an.add(stagger(rl, "fade"))
+    an.add(stagger(rr, "fade"))
+    an.add(stagger(pieces, "fade", 60, 150))
     return an
 
 
-# ------------------------------------------------------------------ 11 finance
+# ------------------------------------------------------------------ 12 finance
 def finance(sl, ctx):
     sh = sl.shapes
     an = Anim()
-    kpis = []
-    for i, (big, tail, sub) in enumerate([("~585", " orders / month", "break-even · about 1 order per store per day"),
-                                           ("~1,115 IQD", "", "kept per delivered order"),
-                                           ("Month 4", "", "monthly break-even (planning case)")]):
-        y = 2.75 + i * 1.35
+    tiles = []
+    for i, (big, tail, sub) in enumerate([("~585", " orders / month", "break-even · about 20 a day"),
+                                           ("1,115 IQD", "", "profit per delivered order")]):
+        y = 2.70 + i * 1.02
         g = group(sh)
-        card(g.shapes, 0.79, y, 3.30, 1.22)
+        card(g.shapes, 0.79, y, 3.86, 0.92)
         runs = [(big, dict(size=24, bold=True, font="Comfortaa"))]
         if tail:
             runs.append((tail, dict(size=14, bold=True, font="Comfortaa")))
-        text(g.shapes, 1.00, y + 0.14, 3.0, 0.50, [runs], anchor="m")
-        text(g.shapes, 1.00, y + 0.70, 3.0, 0.40, sub, size=12, color=INK60)
-        kpis.append(g)
+        text(g.shapes, 1.00, y + 0.08, 3.5, 0.44, [runs], anchor="m")
+        text(g.shapes, 1.00, y + 0.54, 3.5, 0.30, sub, size=12, color=INK60)
+        tiles.append(g)
 
-    PX0, PX1 = 4.90, 12.30
+    # milestone table as three adjacent native tables (label | Fast | Planned)
+    ty = 4.82
+    t_label = table(sl, 0.79, ty, 1.36, ["", "", "", ""][:1], [["Lowest cash point"], ["Monthly break-even"],
+                    ["All losses recovered"]], [1], row_h=0.50, size=11.5)
+    t_fast = table(sl, 2.15, ty, 1.25, ["Fast"], [["−$1,800 (month 2)"], ["Month 3"], ["Month 6"]],
+                   [1], row_h=0.50, size=11.5, align=["r"])
+    t_plan = table(sl, 3.40, ty, 1.25, ["Planned"], [["−$2,180 (month 3)"], ["Month 4"], ["Month 8"]],
+                   [1], row_h=0.50, size=11.5, align=["r"])
+    for t in (t_label, t_fast, t_plan):
+        t.table.rows[0].height = E(0.34)
+
+    PX0, PX1 = 5.60, 12.30
     X = lambda i: PX0 + i * (PX1 - PX0) / 12
-    Y = lambda v: 3.05 + (2500 - v) * (6.55 - 3.05) / 5500
+    Y = lambda v: 3.05 + (3500 - v) * (6.55 - 3.05) / 6500
     axes = group(sh)
-    for v, lab in ((2000, "+$2k"), (1000, "+$1k"), (0, "$0"), (-1000, "−$1k"), (-2000, "−$2k"),
-                   (-3000, "−$3k")):
+    for v, lab in ((3000, "+$3k"), (2000, "+$2k"), (1000, "+$1k"), (0, "$0"), (-1000, "−$1k"),
+                   (-2000, "−$2k"), (-3000, "−$3k")):
         if v != 0:
             line(axes.shapes, PX0, Y(v), PX1, Y(v), NEUTRAL, 0.5)
-        text(axes.shapes, 4.20, Y(v) - 0.11, 0.6, 0.22, lab, size=10, color=INK60, align="r",
+        text(axes.shapes, 4.90, Y(v) - 0.11, 0.6, 0.22, lab, size=10, color=INK60, align="r",
              anchor="m")
     line(axes.shapes, PX0, Y(0), PX1, Y(0), INK, 1.0)
-    text(axes.shapes, PX0 + 0.05, Y(0) - 0.26, 1.5, 0.22, "break-even line", size=10, color=INK60,
-         align="l", anchor="m")
     for idx, lab in ((0, "Start"), (2, "Launch"), (4, "M2"), (6, "M4"), (8, "M6"), (10, "M8"),
                      (12, "M10")):
         text(axes.shapes, X(idx) - 0.4, 6.62, 0.8, 0.22, lab, size=10, color=INK60, align="c",
              anchor="m")
-    pl = D.CHART_PLANNING
-    segs = []
-    for i in range(12):
+    legend = group(sh)
+    lx = 9.55
+    for lbl, col, lw, dash in (("Fast", BLUE, 3.0, None), ("Planned", INK, 2.5, None),
+                               ("Slow", INK35, 1.5, MSO_LINE.DASH)):
+        line(legend.shapes, lx, 2.76, lx + 0.32, 2.76, col, lw, dash)
+        text(legend.shapes, lx + 0.40, 2.64, 0.8, 0.24, lbl, size=11, anchor="m")
+        lx += 1.0 if lbl != "Planned" else 1.25
+
+    def segs(series, color, lw):
+        out = []
+        for i in range(len(series) - 1):
+            g = group(sh)
+            c = line(g.shapes, X(i), Y(series[i]), X(i + 1), Y(series[i + 1]), color, lw)
+            c.line._get_or_add_ln().set("cap", "rnd")
+            out.append(g)
+        return out
+
+    def dot(idx, series, color):
         g = group(sh)
-        c = line(g.shapes, X(i), Y(pl[i]), X(i + 1), Y(pl[i + 1]), BLUE, 3.0)
-        ln = c.line._get_or_add_ln()
-        ln.set("cap", "rnd")
-        segs.append(g)
-    sl_pts = D.CHART_SLOW
+        oval(g.shapes, X(idx), Y(series[idx]), 0.075, fill=color, line=WHITE, lw=1.0)
+        return g
+
+    pl = D.CHART_PLANNING
+    fa = D.CHART_FAST
+    plan_segs = segs(pl, INK, 2.5)
+    plan_dots = [dot(i, pl, INK) for i in (5, 6, 10)]
+    fast_segs = segs(fa, BLUE, 3.0)
+    fast_dots = [dot(i, fa, BLUE) for i in (4, 5, 8)]
+    arrow = group(sh)
+    tri = rect(arrow.shapes, X(9) - 0.09, Y(fa[9]) - 0.30, 0.18, 0.22, fill=BLUE,
+               shape=MSO_SHAPE.ISOSCELES_TRIANGLE)
+    text(arrow.shapes, X(9) + 0.14, Y(fa[9]) - 0.30, 1.2, 0.22, "keeps rising", size=10.5,
+         color=BLUE, bold=True, anchor="m")
+    sp = D.CHART_SLOW
     slow = group(sh)
-    fb = slow.shapes.build_freeform(E(X(0)), E(Y(sl_pts[0])), scale=1.0)
-    fb.add_line_segments([(E(X(i)), E(Y(sl_pts[i]))) for i in range(1, 13)], close=False)
+    fb = slow.shapes.build_freeform(E(X(0)), E(Y(sp[0])), scale=1.0)
+    fb.add_line_segments([(E(X(i)), E(Y(sp[i]))) for i in range(1, 13)], close=False)
     ff = fb.convert_to_shape()
     ff.fill.background()
     ff.line.color.rgb = rgb(INK35)
-    ff.line.width = Pt(2.0)
+    ff.line.width = Pt(1.5)
     ff.line.dash_style = MSO_LINE.DASH
     no_effect(ff)
+    slow_lbl = grp_text(sh, X(12) - 2.05, 5.48, 2.05, 0.46,
+                        ["Slow case: profitable", "every month from month 7"], size=10.5,
+                        color=INK60, align="r", anchor="b")
 
-    def marker(idx, vals, color, label, lx, ly, lw, align, leader_to=None, color_txt=INK, lh=0.24):
-        g = group(sh)
-        cx, cy = X(idx), Y(vals[idx])
-        if leader_to is not None:
-            line(g.shapes, cx, cy, cx, leader_to, color, 1.0)
-        oval(g.shapes, cx, cy, 0.08, fill=color, line=WHITE, lw=1.0)
-        text(g.shapes, lx, ly, lw, lh, label, size=11, bold=True, color=color_txt, align=align,
-             anchor="m")
-        return g
-
-    m3 = marker(5, pl, RED, "Lowest point −$2,180 (month 3)", 5.20, 4.15, 2.76, "r", 4.42, RED)
-    m4 = marker(6, pl, BLUE, "Monthly break-even (month 4)", 8.70, 4.15, 2.30, "l", 4.42, BLUE)
-    m8 = marker(10, pl, INK, "All losses recovered (month 8)", 7.9, 3.55, 3.13, "r", 3.82, INK)
-    ms = group(sh)
-    cx, cy = X(8), Y(sl_pts[8])
-    oval(ms.shapes, cx, cy, 0.08, fill=INK35, line=WHITE, lw=1.0)
-    line(ms.shapes, cx + 0.06, cy - 0.06, cx + 0.16, cy - 0.30, INK35, 1.0)
-    text(ms.shapes, cx + 0.18, 5.62, 2.2, 0.40,
-         ["Worst case −$2,750", "(half-speed growth)"], size=11, bold=True, color=INK60, anchor="m")
-
-    an.add([[fx(kpis[0])]] + [[fx(k, delay=150)] for k in kpis[1:]], auto=True)
-    an.add([[fx(axes)]] + [[fx(s, "appear", 70)] for s in segs[:5]] + [[fx(m3, "zoom")]])
-    an.add([[fx(segs[5], "appear")], [fx(m4, "zoom")]])
-    an.add([[fx(s, "appear", 70)] for s in segs[6:]] + [[fx(m8, "zoom")]])
-    an.add([[fx(slow), fx(ms, "zoom")]])
+    an.add(stagger(tiles + [t_label], "fade"), auto=True)
+    an.add([[fx(axes), fx(legend), fx(t_plan)]] + stagger(plan_segs, "appear", 25) +
+           stagger(plan_dots, "zoom", 25, 150))
+    an.add(stagger(fast_segs, "appear", 25) + stagger(fast_dots, "zoom", 25, 150) +
+           [[fx(arrow, "fade"), fx(t_fast)]])
+    an.add([[fx(slow), fx(slow_lbl)]])
     return an
 
 
@@ -310,33 +375,32 @@ def funding(sl, ctx):
              lw=0.75, radius=0.04)
         text(lg.shapes, 5.12, y, 2.45, 0.30, label, size=12, anchor="m")
         text(lg.shapes, 7.55, y, 0.65, 0.30, f"${usd:,}", size=13, bold=True, align="r", anchor="m")
-        steps.append([fx(g, delay=150), fx(lg, delay=150)])
-    callout = group(sh)
-    rect(callout.shapes, 8.60, 5.98, 3.94, 0.94, fill=BLUE12, radius=0.12)
-    icon(callout.shapes, "code", BLUE, 8.76, 6.10, 0.28)
-    text(callout.shapes, 9.14, 6.04, 3.30, 0.46, "Built in-house: $0 to developers · $0 salaries",
-         size=13, bold=True, anchor="m")
-    text(callout.shapes, 9.14, 6.52, 3.30, 0.34,
-         "Founder in-kind contribution ≈ $9,500 (equipment + build time)", size=10.5,
-         color=INK60, anchor="t")
-    tt = grp_text(sh, 8.60, 2.80, 3.94, 0.30, "Every rank funds a complete plan", size=15,
-                  bold=True, anchor="m")
-    tiers = []
-    for i, (a, b) in enumerate([("1st · $7,500", "Full plan: launch + growth marketing"),
-                                 ("2nd · $4,500", "Launch, registration and pilot; slower growth"),
-                                 ("3rd · $2,500", "Covers the launch gap; growth stays organic")]):
-        y = 3.25 + i * 0.90
+        steps.append([g, lg])
+    tt = grp_text(sh, 8.60, 2.80, 3.94, 0.30, "Each amount has a job", size=15, bold=True,
+                  anchor="m")
+    steps_def = [("$7,500 — Grow fast", "+ growth marketing and founding-store kits → aims for the fast case", 0.22),
+                 ("$4,500 — Launch properly", "+ hand-run pilot, company registration (unlocks the courier contract and card payments), larger reserve", 0.14),
+                 ("$2,500 — Reach break-even safely", "Covers the cash gap until monthly break-even", 0.06)]
+    cards = []
+    for i, (a, b, w) in enumerate(steps_def):
+        y = 3.20 + i * 1.03
         g = group(sh)
-        card(g.shapes, 8.60, y, 3.94, 0.80)
-        text(g.shapes, 8.80, y + 0.08, 3.6, 0.28, a, size=15, bold=True, color=BLUE, anchor="m")
-        text(g.shapes, 8.80, y + 0.40, 3.6, 0.34, b, size=12, color=INK60, anchor="t")
-        tiers.append(g)
+        card(g.shapes, 8.60, y, 3.94, 0.95)
+        rect(g.shapes, 8.60, y + 0.14, w, 0.67, fill=BLUE)
+        text(g.shapes, 8.88, y + 0.07, 3.60, 0.28, a, size=15, bold=True, color=BLUE, anchor="m")
+        text(g.shapes, 8.88, y + 0.37, 3.60, 0.54, b, size=11, color=INK60, anchor="t")
+        cards.append(g)
+    callout = group(sh)
+    rect(callout.shapes, 8.60, 6.36, 3.94, 0.62, fill=BLUE12, radius=0.12)
+    icon(callout.shapes, "code", BLUE, 8.76, 6.53, 0.28)
+    text(callout.shapes, 9.14, 6.38, 3.32, 0.58,
+         "No salaries. No developers. I build the platform myself.", size=13, bold=True, anchor="m")
     an.add([[fx(center, "zoom")]], auto=True)
-    for e in steps[0]:
-        e.delay = 0
-    an.add(steps)
+    an.add(pair_stagger(steps))
+    an.add([[fx(tt), fx(cards[2])]])
+    an.add([[fx(cards[1])]])
+    an.add([[fx(cards[0])]])
     an.add([[fx(callout)]])
-    an.add([[fx(tt)]] + stagger(tiers, "fade", 150))
     return an
 
 
@@ -346,7 +410,7 @@ def next_steps(sl, ctx):
     an = Anim()
     ln = group(sh)
     c = line(ln.shapes, 1.20, 4.40, 12.10, 4.40, NEUTRAL, 3.0)
-    xs = [1.60, 4.15, 6.70, 9.25, 11.80]
+    xs = [1.95, 4.35, 6.75, 9.15, 11.40]
     items = []
     for i, ((when, title, sub), x) in enumerate(zip(D.TIMELINE, xs)):
         n = group(sh)
@@ -354,13 +418,13 @@ def next_steps(sl, ctx):
         text(n.shapes, x - 0.21, 4.19, 0.42, 0.42, str(i + 1), size=13, bold=True, color=WHITE,
              align="c", anchor="m")
         w = group(sh)
-        text(w.shapes, x - 1.15, 3.70, 2.30, 0.30, when, size=13, bold=True, color=BLUE,
+        text(w.shapes, x - 1.10, 3.70, 2.20, 0.30, when, size=13, bold=True, color=BLUE,
              align="c", anchor="m")
         cd = group(sh)
-        card(cd.shapes, x - 1.15, 4.75, 2.30, 1.55)
-        text(cd.shapes, x - 1.00, 4.88, 2.0, 0.70, title.replace(": ", ":\n").split("\n"),
+        card(cd.shapes, x - 1.10, 4.75, 2.20, 1.55)
+        text(cd.shapes, x - 1.00, 4.88, 2.04, 0.70, title.replace(": ", ":\n").split("\n"),
              size=14, bold=True)
-        text(cd.shapes, x - 1.00, 5.62, 2.0, 0.60, sub, size=11.5, color=INK60)
+        text(cd.shapes, x - 1.00, 5.62, 2.04, 0.60, sub, size=11.5, color=INK60)
         items.append((n, w, cd))
     kpi = group(sh)
     icon(kpi.shapes, "chart-column", BLUE, 0.79, 6.60, 0.26)
@@ -371,8 +435,7 @@ def next_steps(sl, ctx):
     for i, (n, w, cd) in enumerate(items):
         step = [fx(n, "zoom"), fx(w), fx(cd)]
         an.add([step])
-    # KPI strip fades after node 5 within the last click group
-    an.groups[-1][1].append([fx(kpi, delay=200)])
+    an.groups[-1][1].append([fx(kpi, delay=80)])
     return an
 
 
@@ -394,7 +457,7 @@ def thanks(sl, ctx):
     t6 = text(sh, 0, 5.75, SLIDE_W, 0.28, "Shakir Bashar · Founder", size=13, color=INK60,
               align="c", anchor="m")
     an = Anim()
-    an.add([[fx(logo, "zoom")], [fx(t, delay=0) for t in (t1, t2, t3, t4, t5, t6)]], auto=True)
+    an.add([[fx(logo, "zoom")], [fx(t) for t in (t1, t2, t3, t4, t5, t6)]], auto=True)
     return an
 
 
@@ -494,18 +557,21 @@ def appendix(sl, key, ctx):
         text(sh, 0.79, 6.45, 11.75, 0.30, d["note"], size=12, color=INK60)
     elif key == "A6":
         target = table(sl, 0.79, 2.75, 11.75, d["header"], d["rows"], [2.6, 6.2], row_h=0.70)
+    elif key == "A8":
+        target = table(sl, 0.79, 2.75, 11.75, d["header"], d["rows"], [2.3, 1.6, 3.6, 1.9], row_h=0.46)
+        text(sh, 0.79, 6.10, 11.75, 0.50, d["note"], size=12, color=INK60)
     elif key == "A7":
         g = group(sh)
         n = len(d["steps"])
-        xs = [1.76 + i * 1.96 for i in range(n)]
+        xs = [1.60 + i * 1.69 for i in range(n)]
         line(g.shapes, xs[0], 3.30, xs[-1], 3.30, NEUTRAL, 3.0)
         for i, (s, x) in enumerate(zip(d["steps"], xs)):
             oval(g.shapes, x, 3.30, 0.26, fill=BLUE)
             text(g.shapes, x - 0.26, 3.04, 0.52, 0.52, str(i + 1), size=14, bold=True, color=WHITE,
                  align="c", anchor="m")
-            text(g.shapes, x - 0.9, 3.75, 1.8, 0.70, s, size=13, bold=True, align="c")
+            text(g.shapes, x - 0.78, 3.75, 1.56, 0.80, s, size=13, bold=True, align="c")
         for i, ln in enumerate(d["lines"]):
-            text(g.shapes, 0.79, 5.00 + i * 0.42, 11.75, 0.30, ln, size=12, color=INK60)
+            text(g.shapes, 0.79, 4.95 + i * 0.40, 11.75, 0.30, ln, size=12, color=INK60)
         target = g
     an.add([[fx(target)]], auto=True)
     return an

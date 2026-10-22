@@ -210,7 +210,6 @@ Card orders skip the courier transfer: the shopper pays Cheapify's payment accou
 * **Customer & Merchant Personas:** [`../entrepreneurship/03_customer_and_merchant_personas.md`](../entrepreneurship/03_customer_and_merchant_personas.md)
 * **Architectural Decisions Log:** [`../agent/decisions.md`](../agent/decisions.md) (ADR-005)
 
-
 ---
 
 ## Appendix — Open Items Requiring Real-World Data

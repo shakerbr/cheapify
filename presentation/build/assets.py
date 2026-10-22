@@ -87,6 +87,30 @@ def build_evidence():
     im = Image.open(EVID / "Anker-Power-Bank/Screenshot_20261020_225624.jpg").convert("RGB").crop(crop)
     im.save(OUT / "product-anker.png")
 
+
+    ig = "vaccum-cleaner-vac3510/Screenshot_20261021_120338_Instagram.jpg"
+    ms = "vaccum-cleaner-vac3510/Screenshot_20261021_120334_Miswag.jpg"
+    ad = (0, 428, 1080, 1506)
+    pr = (0, 260, 1080, 1896)
+    left = Image.open(EVID / ig).convert("RGB").crop(ad)
+    right = Image.open(EVID / ms).convert("RGB").crop(pr)
+    H = left.height
+    rw = round(right.width * H / right.height)
+    right = right.resize((rw, H), Image.LANCZOS)
+    gap = 40
+    comp = Image.new("RGB", (left.width + gap + rw, H), (244, 246, 248))
+    comp.paste(left, (0, 0))
+    comp.paste(right, (left.width + gap, 0))
+    comp.save(OUT / "ev-vacuum-fakedeal.jpg", quality=92)
+    k = H / right.height * (right.height / (pr[3] - pr[1]))
+    k = H / (pr[3] - pr[1])
+    ox = left.width + gap
+    meta["ev-vacuum-fakedeal"] = {
+        "size": comp.size,
+        "rings": [[776, 686 - ad[1], 976, 866 - ad[1]],
+                  [round(ox + 24 * k), round((1706 - pr[1]) * k), round(ox + 1056 * k), round((1872 - pr[1]) * k)]],
+    }
+
     (OUT / "ev-meta.json").write_text(json.dumps(meta, indent=1))
     return meta
 

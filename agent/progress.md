@@ -6,6 +6,12 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-22] — Payment Model Updated + Pitch Deck v2 (founder review)
+
+* **Payment model (founder decision):** Cheapify never handles cash; courier collects COD cash and transfers it electronically to Cheapify; card/e-wallet added shortly after launch (money to Cheapify at checkout); merchants paid automatically after the 48h return window; every merchant links a payment account. Synced across platform policies, fee structure §7, SOPs, canvas, risk matrix (R3 → late courier transfer), entrepreneurship/marketing docs; card processing fee logged as open assumption A13.
+* **Duhok sizing:** 2024 census — launch area (Duhok + Semel + Zakho) 1,062,224, governorate 1,599,871 (replaces unverified "~1.45M"); population-share estimates ≈0.89M internet users / ≈$30M online shopping per year; break-even ≈0.4% of that.
+* **Deck v2:** 15 main + 8 appendix slides; new Target market (Duhok in numbers) and Target customers slides; vacuum fake-deal evidence replaces "Found Cheaper?"; Elryan ✗ one page per product; growth rebuilt (stores + shoppers + loop); Fast/Planned/Slow chart with milestone table; funding shown as $2,500/$4,500/$7,500 jobs (no ranks, no in-kind line); animations ~4× faster; `presentation/presenter-guide.md` with script, key numbers, calculations, Q&A, references. Script ~5:11 at 140 wpm.
+
 ### [2026-10-21] — Final Pitch Deck Built + Evidence Re-Verification
 
 * **Deck:** `presentation/Cheapify-GIZ-Pitch.pptx` (14 main slides + 7 appendix) and static `Cheapify-GIZ-Pitch.pdf`, built from the Modified template (GIZ/CAPA header on all slides, contact footer on cover/closing only). Fade/Zoom/Appear/Fade-out animations only, step-by-step builds, timed script in notes and `presentation/speaker-script.md` (~5:00 at 140 wpm). Rebuild: `presentation/build/build_deck.py` (`--static` for the PDF variant).

@@ -34,12 +34,12 @@ PRES = ROOT / "presentation"
 TEMPLATE = ROOT / "archive/program-giz-cheapify/Presentation-stuff/Modified template.pptx"
 OUT_PPTX = PRES / "Cheapify-GIZ-Pitch.pptx"
 OUT_PDF = PRES / "Cheapify-GIZ-Pitch.pdf"
-OUT_SCRIPT = PRES / "speaker-script.md"
+OUT_GUIDE = PRES / "presenter-guide.md"
 WPM = 140
 
-MAIN = ["cover", "problem", "evidence", "solution", "value", "market", "product", "model",
-        "competitors", "growth", "finance", "funding", "next", "thanks"]
-APPX = ["A1", "A2", "A3", "A4", "A5", "A6", "A7"]
+MAIN = ["cover", "problem", "evidence", "solution", "value", "market", "customers", "product",
+        "model", "competitors", "growth", "finance", "funding", "next", "thanks"]
+APPX = ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8"]
 
 
 class Ctx:
@@ -63,9 +63,16 @@ def add_header(slide, header):
         slide.shapes._spTree.append(new)
 
 
-def set_notes(slide, seconds, body):
-    tf = slide.notes_slide.notes_text_frame
-    tf.text = f"Time: ~{seconds}s\n{body}"
+def notes_text(key):
+    d = D.SLIDES[key]
+    txt = f"Time: ~{d['seconds']}s\n{d['notes']}"
+    if d["keynums"]:
+        txt += "\n\nKey numbers:\n" + "\n".join(f"{n} — {D.SRC[src]}" for n, _, src in d["keynums"])
+    return txt
+
+
+def set_notes(slide, key):
+    slide.notes_slide.notes_text_frame.text = notes_text(key)
 
 
 def build(static=False, qa_states=False, out=OUT_PPTX):
@@ -97,7 +104,8 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
     order["problem"] = content("problem", reuse=s_content)
     anims["problem"] = slides_a.problem(order["problem"], ctx)
     for key, fn in (("evidence", slides_a.evidence), ("solution", None), ("value", slides_a.value),
-                    ("market", slides_a.market), ("product", None), ("model", None),
+                    ("market", slides_a.market), ("customers", slides_a.customers),
+                    ("product", None), ("model", None),
                     ("competitors", slides_b.competitors), ("growth", slides_b.growth),
                     ("finance", slides_b.finance), ("funding", slides_b.funding),
                     ("next", slides_b.next_steps)):
@@ -120,23 +128,28 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
         order[k] = sl
         anims[k] = slides_b.appendix(sl, k, ctx)
 
-    # QA-only intermediate states
+    # QA-only intermediate states: (slide key, label, last click shown)
     extra = []
     if qa_states:
-        sl = content("qa4", label="QA state", headline="Solution — chaos state")
-        slides_a.solution(sl, ctx, "chaos")
-        extra.append(sl)
-        for k in range(5):
-            sl = content(f"qa7_{k}", label="QA state", headline=f"Product — screen {k + 1}")
-            slides_a.product(sl, ctx, "state", k)
+        specs = [("solution", "chaos", 0)] + [("product", f"screen {k + 1}", k) for k in range(5)] + [
+            ("model", "before segments", 0), ("model", "after click 5", 5),
+            ("finance", "after click 1", 1), ("finance", "final", 3),
+            ("funding", "step 1 ($2,500)", 2), ("funding", "step 2 ($4,500)", 3),
+            ("funding", "step 3 ($7,500)", 4)]
+        builders = {"solution": slides_a.solution, "product": slides_a.product,
+                    "model": slides_b.model, "finance": slides_b.finance,
+                    "funding": slides_b.funding}
+        for key, lab, upto in specs:
+            d = D.SLIDES[key]
+            sl = content(f"qa_{key}_{lab}", label=d["label"], headline=d["headline"],
+                         foot=d.get("footnote"))
+            an = builders[key](sl, ctx) if key in ("finance", "funding") else builders[key](sl, ctx, "anim")
+            an.apply_state(upto)
             extra.append(sl)
-        sl = content("qa8", label="QA state", headline="Business model — bar only")
-        slides_b.model(sl, ctx, "bar")
-        extra.append(sl)
 
     # notes, transitions, animations
     for key in MAIN:
-        set_notes(order[key], D.SLIDES[key]["seconds"], D.SLIDES[key]["notes"])
+        set_notes(order[key], key)
     for k in APPX:
         order[k].notes_slide.notes_text_frame.text = D.APPENDIX_NOTE
     for key, sl in order.items():
@@ -169,33 +182,72 @@ def words(txt):
     return len(re.sub(r"\[click\]", " ", txt).split())
 
 
-def write_script():
+def section_name(key):
+    return D.SLIDES[key].get("label") or {"cover": "Cover", "thanks": "Thank you"}[key]
+
+
+def fmt_time(sec):
+    return f"{sec // 60}:{sec % 60:02d}"
+
+
+def write_guide():
     rows = []
     tot_t = tot_w = 0
+    cum = 0
     for i, key in enumerate(MAIN, 1):
         d = D.SLIDES[key]
-        sect = d.get("label") or {"cover": "Cover", "thanks": "Thank you"}[key]
         w = words(d["notes"])
         est = round(w / WPM * 60)
-        rows.append((i, sect, d["seconds"], w, est))
+        cum += est
+        rows.append((i, section_name(key), d["seconds"], w, est, cum))
         tot_t += d["seconds"]
         tot_w += w
-    lines = ["# Cheapify — Final Pitch Speaker Script", "",
-             "Hard limit: under 6 minutes. `[click]` marks an animation click; the first animation "
-             "of each slide plays automatically when the slide appears.", "",
-             "## Timing", "",
-             "| Slide | Section | Target (s) | Words | Est. at 140 wpm (s) |",
-             "| :--- | :--- | :--- | :--- | :--- |"]
-    for r in rows:
-        lines.append(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} | {r[4]} |")
-    lines.append(f"| | **Total** | **{tot_t}** | **{tot_w}** | **{round(tot_w / WPM * 60)}** |")
-    lines += ["", f"Target total: {tot_t // 60} min {tot_t % 60} s. Estimated at 140 words per "
-                  f"minute: {round(tot_w / WPM * 60)} s.", "", "## Script", ""]
+    est_total = round(tot_w / WPM * 60)
+    L = ["# Cheapify — Presenter Guide", "",
+         "Final pitch for the GIZ Youth Entrepreneurship Program. Hard limit: under 6 minutes.", "",
+         "## How to use this guide", "",
+         "- **Say** is the exact script for each slide; `[click]` marks an animation click, and the "
+         "first animation of each slide plays automatically when the slide appears.",
+         "- **Key numbers** and **How it's calculated** are your cheat sheet if you are asked where a "
+         "figure comes from.",
+         "- **If they ask** has short, ready answers for likely questions; the appendix slides are "
+         "backups to show only when asked.", "",
+         "## Timing", "",
+         "| Slide | Section | Target (s) | Words | Est. at 140 wpm (s) | Cumulative (est.) |",
+         "| :--- | :--- | :--- | :--- | :--- | :--- |"]
+    for r_ in rows:
+        L.append(f"| {r_[0]} | {r_[1]} | {r_[2]} | {r_[3]} | {r_[4]} | {fmt_time(r_[5])} |")
+    L.append(f"| | **Total** | **{tot_t}** | **{tot_w}** | **{est_total}** | **{fmt_time(est_total)}** |")
+    L += ["", f"Estimated delivery time at 140 words per minute: {fmt_time(est_total)} "
+              f"(target budget {fmt_time(tot_t)}).", ""]
     for i, key in enumerate(MAIN, 1):
         d = D.SLIDES[key]
-        sect = d.get("label") or {"cover": "Cover", "thanks": "Thank you"}[key]
-        lines += [f"### Slide {i} — {sect}", "", f"*Time: ~{d['seconds']}s*", "", d["notes"], ""]
-    OUT_SCRIPT.write_text("\n".join(lines).rstrip() + "\n")
+        L += [f"## Slide {i} — {section_name(key)}", "", "### Say", "", f"*Time: ~{d['seconds']}s*", "",
+              d["notes"], "", "### Key numbers", ""]
+        if d["keynums"]:
+            L += ["| Number | What it means | Source |", "| :--- | :--- | :--- |"]
+            for n, m, src in d["keynums"]:
+                L.append(f"| {n} | {m} | {D.SRC[src]} [{src}] |")
+        else:
+            L.append("No figures on this slide.")
+        L += ["", "### How it's calculated", ""]
+        if d["calc"]:
+            L += [f"- {c}" for c in d["calc"]]
+        else:
+            L.append("No derived numbers on this slide.")
+        L += ["", "### If they ask", ""]
+        if d["qa"]:
+            for q, a in d["qa"]:
+                L += [f"- **Q: {q}** A: {a}"]
+        else:
+            L.append("No expected questions for this slide.")
+        L.append("")
+    L += ["## Appendix slides", ""]
+    for k in APPX:
+        L.append(f"- **{k} — {D.APPENDIX[k]['headline']}:** {D.APPENDIX_WHEN[k]}")
+    L += ["", "## References", ""]
+    L += [f"{i}. {ref}" for i, ref in enumerate(D.REFERENCES, 1)]
+    OUT_GUIDE.write_text("\n".join(L).rstrip() + "\n")
     return rows, tot_t, tot_w
 
 
@@ -217,8 +269,8 @@ def main():
     build(static=True, qa_states=a.qa_states, out=st)
     pdf = convert_pdf(st, qa)
     shutil.copy(pdf, OUT_PDF)
-    rows, tt, tw = write_script()
-    print(OUT_PPTX, OUT_PDF, OUT_SCRIPT, f"target={tt}s words={tw}")
+    rows, tt, tw = write_guide()
+    print(OUT_PPTX, OUT_PDF, OUT_GUIDE, f"target={tt}s words={tw}")
 
 
 if __name__ == "__main__":
