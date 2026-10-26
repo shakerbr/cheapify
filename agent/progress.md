@@ -6,6 +6,27 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-26] — Teacher Review of Deck v3 + v4 Spec + Handover Sync
+
+* **Teacher review (Mr. Omed) of deck v3, and the founder's response:**
+  * Cover must not show the logo/name — reveal Cheapify at the Solution slide. *Accepted* → clean title cover.
+  * Problem slides need an explicit statement and less visual crowding. *Accepted.*
+  * Solution statement must be more explicit. *Accepted.*
+  * Value proposition and competitor slides: good. *No change.*
+  * Duhok market: expansion roadmap belongs to Growth; "0.4%" is not explicit — use a number. *Accepted* → "~390 regular shoppers".
+  * Target customers: be more specific; budget-conscious buyers; "family" is not a customer. *Accepted* → behavior-based segments.
+  * Product slide not needed. *Accepted* → cut.
+  * Fee tiers belong in Growth. *Rejected by founder* — they are the revenue stream; stay on Business Model.
+  * Business model slide crowded after the per-order breakdown. *Accepted* → remove the 28,000 split bar.
+  * Growth slide needs numbers. *Accepted* → numbers inside the fuel items + roadmap strip.
+  * Finance: wants real numbers — monthly spending, when the money comes back; no reserved money in the fund. *Accepted* → ADR-015, headline "Profitable from month 4. Everything earned back by month 8."
+  * Did not view the "what now" slide. *Kept* (required GIZ section), shortened.
+  * Founder notes: CAPA logo smaller than GIZ (as in `archive/GIZ-assets/template.jpg`); animations slightly slower.
+* **v4 spec** written with a 10-point visual quality bar and saved to [`presentation/build/specs/deck-spec-v4.md`](../presentation/build/specs/deck-spec-v4.md) (awaiting founder approval). Template logo proportions measured from `template.jpg`.
+* **Corrected:** GTM shared-trait line (97% notice price gaps; 88% would use a comparison app — not "88% notice"); `deck_data.py` restored after an editor save overwrote it with a stale copy.
+* **Everything moved inside the project (rule 15):** deck specs v1–v4 → `presentation/build/specs/`; QA renders → `tmp/deck-qa/`; review crops → `tmp/review/`; audit sheets → `tmp/audit/`; new project venv `tmp/venv/` from pinned `presentation/build/requirements.txt`; `build_deck.py` QA default now `tmp/deck-qa`; new `.gitignore` (`tmp/`, `__pycache__/`, Office lock files) and tracked `.pyc` files removed from git; `presentation/build/README.md` documents setup and build. Static build verified from the new venv.
+* **Handover:** `AGENTS.MD` current-state section, rule 14 (no deck changes without approval), preferences 33–34 (deck + funding rules from the review), `active-tasks.md` rewritten with next steps, `to-consider.md` open finance topics.
+
 ### [2026-10-26] — Finance Deep Audit + Grant Ask Rebuilt (ADR-015)
 
 * **Verified sources:** KRI registration (Decree 119/2017 + Chamber of Commerce schedule), FIB/Qi merchant fees and the CBI 1% card-fee cap, CBI official exchange rate 1,500/1,510/1,520 (7 Oct 2026; parallel ~1,685 in Duhok).

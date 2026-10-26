@@ -43,3 +43,10 @@ These are the strict, mandatory rules set by the user. The AI agent must adhere 
 13. **GIZ Program Constraints — Ranked Awards & 6-Minute Pitch:**
     - Program awards are **ranked** (1st > 2nd > 3rd prize amounts); funding asks must be structured to degrade gracefully across ranks.
     - The final pitch presentation has a **hard 6-minute limit** — any number of slides is allowed, but the full pitch must be delivered in under 6 minutes (founder update, Oct 21, 2026 — replaces the earlier ~7–9-slide cap).
+
+14. **No Presentation Changes Without Founder Approval:**
+    - Do NOT modify the pitch deck (`presentation/`: slides, layout, animations, build code) until the proposed changes have been discussed with the founder, the founder understands exactly what will be done, and the founder gives an explicit green light. Propose first (written spec), build only after approval. Doc and finance fixes may be made when asked, but their deck impact must still be proposed before building.
+
+15. **Everything Stays Inside the Project Directory:**
+    - Every project-related artifact — specs, drafts, data, scripts, virtualenvs, renders, review images, scratch files — MUST live inside the project directory. Never write project work to the system `/tmp` or anywhere outside the project.
+    - Durable artifacts go in their proper tracked folder (e.g. deck specs → `presentation/build/specs/`). Scratch and generated work goes in the project's git-ignored `tmp/` folder (`tmp/venv/`, `tmp/deck-qa/`, `tmp/review/`, …). Create any other folders needed inside the project.

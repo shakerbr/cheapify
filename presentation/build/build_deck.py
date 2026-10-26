@@ -5,8 +5,9 @@
     python build/build_deck.py --static   # only the static (no animation) PPTX
     python build/build_deck.py --qa-states  # also render intermediate-state slides
 
-Run with the venv that has python-pptx 1.0.2 (see presentation/README notes in the script header
-of the build log): /tmp/cheapify-deck-venv/bin/python
+Run from the project root with the project venv (see presentation/build/README.md):
+    tmp/venv/bin/python presentation/build/build_deck.py
+QA renders go to tmp/deck-qa/ inside the project.
 """
 import argparse
 import copy
@@ -253,7 +254,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--static", action="store_true", help="build only the static PPTX")
     ap.add_argument("--qa-states", action="store_true")
-    ap.add_argument("--qa-dir", default="/tmp/cheapify-deck-qa")
+    ap.add_argument("--qa-dir", default=str(ROOT / "tmp" / "deck-qa"))
     a = ap.parse_args()
     qa = Path(a.qa_dir)
     qa.mkdir(parents=True, exist_ok=True)

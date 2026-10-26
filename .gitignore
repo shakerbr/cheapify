@@ -1,0 +1,10 @@
+# Project scratch space: venv, QA renders, review crops (kept inside the project, not in git)
+tmp/
+
+# Python
+__pycache__/
+*.pyc
+
+# Office lock files
+.~lock.*#
+~$*

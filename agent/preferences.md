@@ -160,3 +160,17 @@ This file documents the specific ways, working habits, and styling preferences r
     - Animations and step-by-step animated sequences are encouraged to explain mechanisms (e.g., how Best Value ranks offers, how an order flows).
     - Follow the GIZ proposed section order where it serves the story; deviations are allowed when they make the pitch clearer.
     - Do NOT reuse the archived decks' styling (old, discarded). The only template elements carried over are the German Cooperation (GIZ) + CAPA/AUK logo header and the CAPA/AUK contact footer: both appear on the cover and Thank-You slides; content slides carry only the header, slightly smaller — exactly as in `archive/program-giz-cheapify/Presentation-stuff/Modified template.pptx`.
+    - **The CAPA/AUK logo is smaller than the German Cooperation logo**, in the proportions of `archive/GIZ-assets/template.jpg` (CAPA ≈ 0.68× the German Cooperation logo's width; exact sizes in the v4 spec §1).
+    - **Visual over text, always:** when slides drift into text cards or tables, restore illustrations (circles, avatars, waterfalls, flywheels, charts with on-curve labels). The founder rejected text-heavy redesigns.
+    - **Visual perfection is the bar:** "no matter how many slides it takes, make it visually perfect" — no half-empty slides, no visual crowding, one focal point per slide (full checklist: v4 spec §0).
+    - **Animations:** click-by-click; long sequences fast but not rushed (~40 ms stagger / ~220 ms effect after the founder's "a little slower" note).
+    - **Story rules from the teacher review (accepted by the founder):** the cover shows no product name or logo — Cheapify is revealed on the Solution slide; the cover is a clean title cover (no problem statement); problem slides carry an explicit problem statement; the solution headline states the outcome explicitly; numbers beat bare percentages (e.g. "~390 regular shoppers", not "0.4%"); target customers are behavior-based and budget-conscious ("Household budget buyers", never "Families"); expansion roadmap belongs to Growth, not Market; the Product slide is cut.
+    - **Founder disagreements kept:** fee tiers (5% / 3% / 1.5%) stay on the Business Model slide (they are the revenue stream), not Growth; the "Funding is done — what now?" slide stays (required GIZ section), kept short.
+    - **Every on-slide number** must have its source and calculation in the speaker notes and `presenter-guide.md`, plus ready answers to likely judge questions — slides stay clean; detail lives in the notes.
+
+34. **Finance & Funding Presentation:**
+    - No unallocated "reserve" or "contingency" lines in the grant ask — every dollar has one named, computed use, and each cost is funded only once (ADR-015).
+    - Show both break-even points and name them clearly: monthly break-even (month 4) and cumulative recovery / payback (month 8).
+    - Judges want "how much is spent, each month, and when it comes back" — keep a month-by-month release schedule.
+    - Prefer verified public sources (official fee schedules, central-bank rates, provider price pages) over estimates; label estimates as estimates. Exact derived numbers are fine; round numbers are fine when the derivation is shown.
+    - Profit must stay strong: present card/e-wallet fees with their offsets (pre-paid orders remove failed-delivery cost), never as an unexplained drag.

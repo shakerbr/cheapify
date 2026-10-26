@@ -34,6 +34,18 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
    - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `entrepreneurship/...`).
 13. **GIZ Program Constraints — Ranked Awards & 6-Minute Pitch:**
    - Awards are ranked (1st > 2nd > 3rd); funding plans must scale across ranks. The final pitch is hard-capped at 6 minutes — any slide count is fine as long as the presentation fits that runtime.
+14. **No Presentation Changes Without Founder Approval:**
+   - Do NOT modify the pitch deck until the proposed changes are discussed, understood by the founder, and explicitly approved. Propose first (written spec), build only after the green light.
+15. **Everything Stays Inside the Project Directory:**
+   - All project artifacts (specs, drafts, data, scripts, venvs, renders, scratch files) live inside the project — never in the system `/tmp` or elsewhere. Durable work goes in tracked folders (deck specs → `presentation/build/specs/`); scratch/generated work goes in the git-ignored `tmp/` (`tmp/venv/`, `tmp/deck-qa/`, …).
+
+---
+
+### Current State (read this first)
+
+- **Now:** pitch deck v4 spec is written and **awaiting founder approval** — [presentation/build/specs/deck-spec-v4.md](presentation/build/specs/deck-spec-v4.md). Next steps and open decisions: [agent/active-tasks.md](agent/active-tasks.md).
+- **Finance (ADR-015):** grant ask **$6,150** (tiers $6,150 / $3,950 / $2,610); +1,115 IQD per delivered order; break-even ~585 orders/month (~390 regular shoppers); monthly break-even month 4, all losses recovered month 8; USD at the CBI official 1,500 IQD.
+- **Deck build:** `tmp/venv/bin/python presentation/build/build_deck.py` generates the PPTX, PDF and `presentation/presenter-guide.md` (never edit the guide by hand — edit `deck_data.py`). Setup, layout and options: [presentation/build/README.md](presentation/build/README.md). Deck specs v1–v4: `presentation/build/specs/`.
 
 ---
 
@@ -53,7 +65,7 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
 ### Cross-Cutting Platform Specifications (`platform/`)
 
 Semi-general operational, economic, and technical specifications shared across pillars:
-- **Platform Fee Structure & Monetization:** [platform/fee_structure_and_monetization.md](platform/fee_structure_and_monetization.md) — Progressive Marginal Tiering (5% Tier 1, 3% Tier 2, 1.5% Tier 3), mathematical elimination of the cliff effect, multi-category simulations, and weekly COD reconciliation workflow.
+- **Platform Fee Structure & Monetization:** [platform/fee_structure_and_monetization.md](platform/fee_structure_and_monetization.md) — Progressive Marginal Tiering (5% Tier 1, 3% Tier 2, 1.5% Tier 3), mathematical elimination of the cliff effect, multi-category simulations, and the payment/settlement workflow (courier remits COD electronically; merchant payout after the 48-hour return window; FIB/Qi fees).
 - **Hybrid "Best Value" Algorithm Strategy:** [platform/best_value_algorithm_strategy.md](platform/best_value_algorithm_strategy.md) — Total Landed Cost ($P_{\text{total}} = P_{\text{item}} + D_{\text{tariff}}$), proximity advantage protecting local bazaar shops, 3-tier deterministic hierarchy, diagnostic merchant dashboard, and TypeScript engine.
 
 ---
@@ -61,9 +73,10 @@ Semi-general operational, economic, and technical specifications shared across p
 ### Active Development: 4 Program Pillars
 
 - **1. Entrepreneurship (Complete):** [01_problem_solution_value.md](entrepreneurship/01_problem_solution_value.md) | [02_market_opportunity_and_sizing.md](entrepreneurship/02_market_opportunity_and_sizing.md) | [03_customer_and_merchant_personas.md](entrepreneurship/03_customer_and_merchant_personas.md) | [04_competitive_landscape_matrix.md](entrepreneurship/04_competitive_landscape_matrix.md) | [05_market_validation_survey.md](entrepreneurship/05_market_validation_survey.md) | [06_value_proposition_and_founder_fit.md](entrepreneurship/06_value_proposition_and_founder_fit.md) — Built 100% from ground zero.
-- **2. Marketing (Active Focus):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete) | [02_brand_identity_and_guidelines.md](marketing/02_brand_identity_and_guidelines.md) (Complete — Strict PMS colors, outline logo mark, Comfortaa+Inter+IBM Plex typography, dual-tier taglines) | [brandbook/index.html](brandbook/index.html) (Complete — interactive HTML brandbook) | [03_pre_launch_content_plan.md](marketing/03_pre_launch_content_plan.md) + [04_launch_content_calendar.md](marketing/04_launch_content_calendar.md) (Complete — two-phase trilingual social content strategy).
-- **3. Finance Management (In Progress):** [01_operational_budget.md](finance/01_operational_budget.md) + [02_unit_economics.md](finance/02_unit_economics.md) + [03_cash_flow_and_breakeven.md](finance/03_cash_flow_and_breakeven.md) (Complete — assumption-driven models v1; awaiting real quotes) + [04_funding_request.md](finance/04_funding_request.md) (GIZ grant ask — tiered $7,500/$4,500/$2,500). Past coursework files in `archive/finance-management/` are archived reference assignments only, not final budget figures.
-- **4. Business Modeling (Later):** 9-Block Business Model Canvas, core SOPs, and operational risk matrix.
+- **2. Marketing (Strategy complete; launch execution open):** [01_two_sided_gtm_strategy.md](marketing/01_two_sided_gtm_strategy.md) (Complete) | [02_brand_identity_and_guidelines.md](marketing/02_brand_identity_and_guidelines.md) (Complete — Strict PMS colors, outline logo mark, Comfortaa+Inter+IBM Plex typography, dual-tier taglines) | [brandbook/index.html](brandbook/index.html) (Complete — interactive HTML brandbook) | [03_pre_launch_content_plan.md](marketing/03_pre_launch_content_plan.md) + [04_launch_content_calendar.md](marketing/04_launch_content_calendar.md) (Complete — two-phase trilingual social content strategy).
+- **3. Finance Management (Complete — remaining real-world quotes listed in agent/active-tasks.md):** [01_operational_budget.md](finance/01_operational_budget.md) + [02_unit_economics.md](finance/02_unit_economics.md) + [03_cash_flow_and_breakeven.md](finance/03_cash_flow_and_breakeven.md) + [04_funding_request.md](finance/04_funding_request.md) (GIZ grant ask — $6,150 / $3,950 / $2,610, ADR-015). Past coursework files in `archive/finance-management/` are archived reference assignments only, not final budget figures.
+- **4. Business Modeling (Complete):** [01_business_model_canvas.md](business-modeling/01_business_model_canvas.md) | [02_core_sops.md](business-modeling/02_core_sops.md) | [03_operational_risk_matrix.md](business-modeling/03_operational_risk_matrix.md).
+- **Final Pitch Deck (In Progress):** `presentation/` — deck, PDF, presenter guide; build code and v4 spec in `presentation/build/`.
 
 ### Archive & Reference Materials
 
