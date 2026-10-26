@@ -261,6 +261,7 @@ REFERENCES = [
     "Go-to-market plan (segments, merchant profile, channels) — `../marketing/01_two_sided_gtm_strategy.md`",
     "KRI company registration & Chamber of Commerce fees — Decree 119/2017 (`https://xizmet.gov.krd/en/service/moti-01-en`) and Chamber schedule (`https://krg.eregulations.org/media/Chamber%20of%20commerce%20fees_1.pdf`)",
     "FIB & Qi Card merchant payment fees — FIB (`https://fib.iq/fees-and-charges/`), CBI 1% MDR cap (`https://cbi.iq/news/view/2454`), Qi 2026 0%-commission initiative",
+    "Central Bank of Iraq exchange rate, 7 Oct 2026 (1,500 / 1,510 / 1,520 IQD per USD) — https://cbi.iq/news/view/3355",
 ]
 
 # -------- slide 4
