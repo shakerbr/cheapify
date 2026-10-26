@@ -65,7 +65,7 @@ IQD. Burn = 210k (Phase A) → 652k (launch→M5) → 790k (M6+, scale). Contrib
 | M9 | 2,000 | +2,230,000 | −790,000 | +1,440,000 | +1,634,375 |
 | M10–12 | ~2,100 | ~+2,341,500 | −790,000 | +1.55M/mo | → ~+6.3M |
 
-> Note on the founding stores' 0%-commission first month: the incentive pool cannot absorb it (catalog-creation bounties fill the pool at launch — `01` §4), so it is funded as its own grant line (~190,000 IQD / ~$127, `04` §2 line 5). Without the grant, the waiver would deepen the low point from −3.27M (~$2,180) to −3.46M (~$2,305); M8 still finishes cumulative-positive (+4,375 IQD), so neither break-even (M4) nor recovery (M8) moves.
+> Note on the founding stores' 0%-commission first month: the incentive pool cannot absorb it (catalog-creation bounties fill the pool at launch — `01` §4), so it is funded as its own grant line (~190,000 IQD / ~$130, `04` §2 line 4). Without the grant, the waiver would deepen the low point from −3.27M (~$2,180) to −3.46M (~$2,305); M8 still finishes cumulative-positive (+4,375 IQD), so neither break-even (M4) nor recovery (M8) moves.
 >
 > What the low point is made of: startup 1.70M + development months 0.42M + operating losses M1–M3 1.15M (~$765). The grant funds each part once (`04` §2).
 
@@ -127,7 +127,7 @@ The floor case: orders arrive at **half the planned pace** (50 vs. 100 in M1, 67
 
 > Note: the M6 burn step-up to 790k applies by calendar in every scenario (`01` §4) — conservative here, since the slow case reaches only 675 orders in M6. It raises the break-even threshold from ~585 to ~709 orders/mo, which is why the slow case turns positive at M7, not M6.
 >
-> Operating losses after launch in this case: M1–M6 sum to **1,998,400 IQD (~$1,332)** — the size of the grant's runway line (`04` §2 line 6).
+> Operating losses after launch in this case: M1–M6 sum to **1,998,400 IQD (~$1,332, rounded to $1,340)** — the size of the grant's runway line (`04` §2 line 5).
 
 Read: even at a crawl the venture doesn't hit a failure cliff — it degrades to a slow grind: peak hole ~4.12M IQD (~$2,750), losses stop growing at M7, recovery ~M20. The monthly loss is always capped by burn (~$435–525/mo), never by an order-volume cliff. **If the floor case is what reality looks like, the concierge pilot (§6.1) reveals it for ~30–50k IQD — before scale, not after.**
 
@@ -175,7 +175,7 @@ Ways to pull break-even down if needed. Recorded as options only — none applie
 3. **Cash-positive in Month 4** (break-even; clearly positive from M5) — deliberately un-aggressive; if traction beats the plan it arrives M3 (§4.1).
 4. **Recovery by ~M8** — under the planning curve; upside pulls it to M6.
 5. **The real risk isn't the math — it's the volume curve.** The planning ramp already assumes only ~10–80 platform orders/merchant/mo (a slice of merchant volume, not all of it); the floor case (§4.2) shows even a ~5-order/store crawl degrades to a slow grind (~$2,750 peak), not a cliff. The true question — "can 20 stores each route ~1 order/day through the app?" — is what the concierge pilot (§6.1) answers cheaply, before scale.
-6. **Working-capital / COD float is protected by policy:** on cash orders (85–90% of volume), paying merchants before the courier remits COD cash would tie up ~2.5M IQD (~$1,650) per 5 days of courier delay at 600 orders/mo (15M IQD GMV). [`operational_policies.md`](../platform/operational_policies.md) §4 prevents this cash trap by releasing COD merchant payouts only *after both the 48-hour return window closes and the courier's electronic transfer has arrived* (contract target: ≤24 hours). The 1M IQD legal company capital (`04` §2 line 3) stays in the company account as working capital for float and refunds.
+6. **Working-capital / COD float is protected by policy:** on cash orders (85–90% of volume), paying merchants before the courier remits COD cash would tie up ~2.5M IQD (~$1,650) per 5 days of courier delay at 600 orders/mo (15M IQD GMV). [`operational_policies.md`](../platform/operational_policies.md) §4 prevents this cash trap by releasing COD merchant payouts only *after both the 48-hour return window closes and the courier's electronic transfer has arrived* (contract target: ≤24 hours), so COD orders are self-funding and require zero idle working-capital reserve.
 
 ### 6.1 Validation Experiments — How to De-Risk Before Scaling `[ACTION ITEMS]`
 

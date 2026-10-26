@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Rebuild the Cheapify GIZ pitch deck.
+"""Rebuild the Cheapify GIZ pitch deck (v4).
 
-    python build/build_deck.py            # animated PPTX + static PDF + speaker script
+    python build/build_deck.py            # animated PPTX + static PDF + presenter guide
     python build/build_deck.py --static   # only the static (no animation) PPTX
     python build/build_deck.py --qa-states  # also render intermediate-state slides
 
@@ -28,19 +28,20 @@ import assets  # noqa: E402
 import deck_data as D  # noqa: E402
 import slides_a  # noqa: E402
 import slides_b  # noqa: E402
-from deckkit import content_frame, finalize_slide, footnote  # noqa: E402
+from deckkit import content_frame, embed_fonts, finalize_slide, footnote, resize_headers  # noqa: E402
 
 ROOT = HERE.parents[1]
 PRES = ROOT / "presentation"
+FONTS_DIR = PRES / "assets" / "fonts"
 TEMPLATE = ROOT / "archive/program-giz-cheapify/Presentation-stuff/Modified template.pptx"
 OUT_PPTX = PRES / "Cheapify-GIZ-Pitch.pptx"
 OUT_PDF = PRES / "Cheapify-GIZ-Pitch.pdf"
 OUT_GUIDE = PRES / "presenter-guide.md"
 WPM = 140
 
-MAIN = ["cover", "problem", "evidence", "solution", "value", "market", "customers", "product",
-        "model", "competitors", "growth", "finance", "funding", "next", "thanks"]
-APPX = ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8"]
+MAIN = ["cover", "problem", "evidence", "solution", "value", "market", "customers",
+        "model", "competitors", "growth", "finance", "funding", "thanks"]
+APPX = ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9"]
 
 
 class Ctx:
@@ -77,10 +78,13 @@ def set_notes(slide, key):
 
 
 def build(static=False, qa_states=False, out=OUT_PPTX):
-    meta = assets.build_all()
+    assets.build_all()
     slides_a.ASSETS = assets.OUT
     prs = Presentation(str(TEMPLATE))
     s_cover, s_content, s_thanks = list(prs.slides)
+    resize_headers(s_cover, cover=True)
+    resize_headers(s_thanks, cover=True)
+    resize_headers(s_content, cover=False)
     layout = s_content.slide_layout
     header = snapshot_header(s_content)
     ctx = Ctx(static)
@@ -94,28 +98,26 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
         sl = reuse if reuse is not None else prs.slides.add_slide(layout)
         if reuse is None:
             add_header(sl, header)
-        content_frame(sl, label, headline)
+        f_shapes = content_frame(sl, label, headline)
         if foot:
             footnote(sl, foot)
-        return sl
+        return sl, f_shapes
 
-    # main deck
+    # main deck (13 slides)
     order["cover"] = s_cover
     anims["cover"] = slides_a.cover(s_cover, ctx)
-    order["problem"] = content("problem", reuse=s_content)
+    order["problem"], _ = content("problem", reuse=s_content)
     anims["problem"] = slides_a.problem(order["problem"], ctx)
     for key, fn in (("evidence", slides_a.evidence), ("solution", None), ("value", slides_a.value),
                     ("market", slides_a.market), ("customers", slides_a.customers),
-                    ("product", None), ("model", None),
-                    ("competitors", slides_b.competitors), ("growth", slides_b.growth),
-                    ("finance", slides_b.finance), ("funding", slides_b.funding),
-                    ("next", slides_b.next_steps)):
-        sl = content(key)
+                    ("model", None), ("competitors", slides_b.competitors),
+                    ("growth", slides_b.growth), ("finance", slides_b.finance),
+                    ("funding", slides_b.funding)):
+        sl, f_shapes = content(key)
         order[key] = sl
         if key == "solution":
-            anims[key] = slides_a.solution(sl, ctx, "static" if static else "anim")
-        elif key == "product":
-            anims[key] = slides_a.product(sl, ctx, "static" if static else "anim")
+            anims[key] = slides_a.solution(sl, ctx, "static" if static else "anim",
+                                           frame_shapes=f_shapes)
         elif key == "model":
             anims[key] = slides_b.model(sl, ctx, "static" if static else "anim")
         else:
@@ -123,26 +125,43 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
     order["thanks"] = s_thanks
     anims["thanks"] = slides_b.thanks(s_thanks, ctx)
 
-    # appendix
+    # appendix (A1-A9)
     for k in APPX:
-        sl = content(k, label="Appendix", headline=D.APPENDIX[k]["headline"])
+        sl, _ = content(k, label="Appendix", headline=D.APPENDIX[k]["headline"])
         order[k] = sl
         anims[k] = slides_b.appendix(sl, k, ctx)
 
     # QA-only intermediate states: (slide key, label, last click shown)
     extra = []
     if qa_states:
-        specs = [("market", f"after click {k}", k) for k in (0, 1, 2)] + [
-            ("model", "after click 4", 4), ("model", "after click 5", 5)] + [
-            ("growth", f"after click {k}", k) for k in (0, 1, 2)] + [
-            ("finance", "after click 1", 1), ("finance", "after click 2", 2)]
-        builders = {"market": slides_a.market, "model": slides_b.model,
-                    "growth": slides_b.growth, "finance": slides_b.finance}
+        specs = (
+            [("problem", f"after click {k}", k) for k in (-1, 0, 1, 2)] +
+            [("solution", f"after click {k}", k) for k in (0, 1, 2, 3)] +
+            [("market", f"after click {k}", k) for k in (0, 1, 2)] +
+            [("model", f"after click {k}", k) for k in (0, 1)] +
+            [("growth", f"after click {k}", k) for k in (0, 1, 2, 3)] +
+            [("finance", f"after click {k}", k) for k in (1, 2)] +
+            [("funding", f"after click {k}", k) for k in (1, 3, 5)]
+        )
+        builders = {
+            "problem": slides_a.problem,
+            "solution": slides_a.solution,
+            "market": slides_a.market,
+            "model": slides_b.model,
+            "growth": slides_b.growth,
+            "finance": slides_b.finance,
+            "funding": slides_b.funding,
+        }
         for key, lab, upto in specs:
             d = D.SLIDES[key]
-            sl = content(f"qa_{key}_{lab}", label=d["label"], headline=d["headline"],
-                         foot=d.get("footnote"))
-            an = builders[key](sl, ctx, "anim") if key == "model" else builders[key](sl, ctx)
+            sl, f_shapes = content(f"qa_{key}_{lab}", label=d["label"], headline=d["headline"],
+                                   foot=d.get("footnote"))
+            if key == "solution":
+                an = builders[key](sl, ctx, "anim", frame_shapes=f_shapes)
+            elif key == "model":
+                an = builders[key](sl, ctx, "anim")
+            else:
+                an = builders[key](sl, ctx)
             an.apply_state(upto)
             extra.append(sl)
 
@@ -167,6 +186,7 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
     for sl in seq:
         lst.append(by_part[sl.part])
     prs.save(str(out))
+    embed_fonts(out, FONTS_DIR, TEMPLATE)
     return out
 
 

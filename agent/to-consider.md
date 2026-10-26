@@ -9,7 +9,6 @@
 ## Open Topics
 
 - **Platform fee on returned orders** — keep the 950 IQD fee or refund it? Refunding costs ~38 IQD/order (break-even ~605/mo). Policy is silent today (`platform/operational_policies.md` §1, `finance/01` §8).
-- **Company capital deposit** — can the 1M IQD legal minimum be used as working capital once registered? (`finance/04` §7)
 - **Legal-name language** — register the legal trade name in Kurdish/Arabic (Chamber fee ~540k) vs. English (~1,140k)? The grant budgets the English name; the Kurdish/Arabic option saves ~$400.
 - **Catalog-bounty saturation at launch** — founding stores' SKU-creation bounties will exceed the 225k/mo pool; claims queue as a deferred credit liability. Consider a launch-month cap or paying founding stores' bounties inside the founding package.
 

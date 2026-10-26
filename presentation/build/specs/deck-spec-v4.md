@@ -21,29 +21,29 @@ Every slide must pass all of these before it ships:
 
 ## 1. Global changes
 
-- **Header logos to the template's proportions** (measured from `archive/GIZ-assets/template.jpg`):
-  - Cover + thank-you (exact template): German Cooperation 2.60 × 1.45 in at (0.47, 0.40); CAPA/AUK 1.76 × 0.47 in, right edge 12.88 in, top 1.23 in.
-  - Content slides (same ratio at 75%): German Cooperation 1.95 × 1.09 in at (0.47, 0.30); CAPA/AUK 1.32 × 0.35 in, right edge 12.88 in, top 0.92 in.
-  - Today CAPA is ~1.7× wider than the German Cooperation logo on content slides; after the change it is ~0.68× its width, as in the template.
+- **Header logos to the template's proportions** (measured from `archive/GIZ-assets/template.jpg` while locking exact native image aspect ratios: `789:442` for German Cooperation and `905:276` for CAPA):
+  - Cover + thank-you (exact template): German Cooperation 2.60 × 1.46 in at (0.47, 0.40); CAPA/AUK 1.76 × 0.54 in, right edge 12.88 in, top 1.20 in.
+  - Content slides (same ratio at 75%): German Cooperation 1.95 × 1.09 in at (0.47, 0.30); CAPA/AUK 1.32 × 0.40 in, right edge 12.88 in, top 0.90 in.
+  - Today CAPA is ~1.7× wider than the German Cooperation logo on content slides; after the change it is ~0.68× its width, as in the template, with 100% native aspect ratio preserved.
 - **Animation pacing ~1.5× slower:** stagger 25 → 40 ms, effect 150 → 220 ms; single reveals 300 ms. Still click-by-click.
 - **Runtime ≤ 5:40** at 140 wpm (current notes: 5:30; cutting slide 8 saves ~23 s; the funding script is 48 s and comes down to ~30 s → target ~5:00, leaving room for natural pauses).
-- **Fonts:** Comfortaa is embedded. Inter and IBM Plex Sans Arabic must be installed on the presenting computer; ship the PDF as the fallback.
+- **Fonts:** All three font families — **Comfortaa**, **Inter**, and **IBM Plex Sans Arabic** (Regular + Bold) — are embedded directly into the `.pptx` (`ppt/fonts/*.fntdata` via `<p:embeddedFontLst>`) from project-local TTF files in `presentation/assets/fonts/`. Do not re-save the output `.pptx` in ONLYOFFICE (it strips embedded fonts); ship the PDF and `presentation/assets/fonts/` as fallback.
 - **Pre-flight check on the presenting computer:** open the PPTX, click through every slide once, confirm fonts and animations.
 
 ## 2. Main slides
 
-### Slide 1 — Cover (clean title — founder choice C1)
+### Slide 1 — Cover (program title + small hook — founder choice)
 
-- No product name, no logo, no problem statement (slide 2 owns the problem; slide 4 reveals Cheapify).
-- Centered stack: "Final Pitch" (Comfortaa, large) · "Youth Entrepreneurship Program" · thin blue rule · "Shakir Bashar · Founder" · date of the pitch.
+- No product name, no logo (slide 2 owns the problem; slide 4 reveals Cheapify).
+- Centered stack: **"Youth Entrepreneurship Program"** (Comfortaa bold, large `38 pt`) · **"One product, ten prices."** (`18 pt` Comfortaa, Brand Blue subtitle) · thin blue rule · "Shakir Bashar · Founder" · "4 November 2026".
 - Exact template header sizes + the CAPA footer bar (cover template). Generous, balanced white space is intended here (rule 4 doesn't apply to the cover).
-- Script (~6 s): name + "I'm here to show you a problem every shopper in Duhok has."
+- Script (~6 s): name + "I'm here to show you a problem every online shopper in Kurdistan and Iraq faces."
 
 ### Slide 2 — Problem
 
-- Headline (the problem statement): **"In Duhok, you can't know the real price before you buy."**
+- Headline (the problem statement, shown alone when the slide opens): **"Online in Iraq, you can't know the real price before you buy."**
 - Visual: the Miswag screenshot alone, large (~60% of the slide width), the two listings side by side.
-- Clicks: (1) ring on 100,000 IQD → (2) ring on 200,000 IQD → (3) a "2× the price — same power bank" bracket between them.
+- Clicks: (1) Miswag screenshot + model context appear → (2) ring on 100,000 IQD → (3) ring on 200,000 IQD → (4) a "2× the price — same power bank" bracket and callout.
 - Right side, one line under the image: "Same search. Same screen. Same model." No dot plot (the six-case price table stays in the appendix).
 - Footnote: "Miswag app, 20 Oct 2026. Seller names blurred."
 
@@ -59,8 +59,10 @@ Every slide must pass all of these before it ships:
 ### Slide 4 — Solution (the reveal)
 
 - Click 0 (auto): Cheapify logo + name zoom in, centered, with "The bright side of choosing." — the first time the brand appears.
-- Click 1: logo/name fade out; headline appears: **"Cheapify puts every seller's real price for the same product on one page."**
-- Clicks 2–3: scattered duplicate listings collapse into one product page; seller rows sort by doorstep total; the green Best Value badge lands on the winner.
+- Click 1: logo/name fade out; headline appears alone: **"Cheapify puts every seller's real price for the same product on one page."**
+- Click 2: 7 scattered duplicate listings appear.
+- Click 3: scattered listings collapse into one product page; seller rows sort by doorstep total.
+- Click 4: the green Best Value badge lands on the winner + right rail with three rules.
 - Right rail keeps three icons: lowest doorstep total · fastest delivery · best seller rating — "Ranking can't be bought."
 
 ### Slide 5 — Value proposition
@@ -78,13 +80,17 @@ Every slide must pass all of these before it ships:
 ### Slide 7 — Who we serve
 
 - Headline: **"Budget-conscious shoppers who already compare prices."**
-- Three shopper avatars with behavior labels and age tags (tag: "targeting plan"):
-  - "Time-poor professionals" · 23–38 · icon briefcase.
-  - "Household budget buyers" · 26–48 · icon shopping basket. ("Families" removed.)
-  - "Students & deal hunters" · 18–24 · icon graduation cap.
-- Under each avatar, one "buys" chip: "chargers, perfume, gadgets" · "kitchen, home, personal care" · "cables, earbuds, gaming".
-- One ring gauge for shoppers: **97% notice big price gaps** (the 88% "would use it" moves to the notes).
-- Merchant side unchanged: phone profile (Instagram · Facebook · TikTok, 1.5k–50k followers, 20–150 products) + rings 85% sell on IG/FB · 75% want to try.
+- Two balanced side-by-side cards (Shoppers on the left, Merchants on the right):
+  - **Left card — Shoppers (tag: "targeting plan"):** three horizontal segment rows with icon badge, behavior label, what they buy, and right-aligned age pill:
+    - "Time-poor professionals" · "Chargers, perfume, gadgets" · 23–38 · icon briefcase.
+    - "Household budget buyers" · "Kitchen, home, personal care" · 26–48 · icon shopping basket. ("Families" removed.)
+    - "Students & deal hunters" · "Cables, earbuds, gaming" · 18–24 · icon graduation cap.
+    - Bottom footer strip with ring gauge: **97% notice big price gaps** (179 surveyed shoppers; the 88% "would use it" stays in the notes).
+  - **Right card — Merchants (tag: "Duhok social shops"):** three structured profile rows mirroring the left card:
+    - "Social-commerce sellers" · "Sell via DMs with digital photos ready" · IG · FB · TikTok.
+    - "1,500 – 50,000 followers" · "Active local audience per page" · 20–150 products.
+    - "20 founding stores at launch" · "Signed in person · 0% fee in month 1" · ~8 leads ready.
+    - Bottom footer strip with two ring gauges: **85% sell on IG / FB** · **75% want to try** (20 surveyed merchants).
 - Footnote: "Age groups are our targeting plan — the survey did not ask age. Survey n=199 (179 shoppers, 20 merchants), Sep–Oct 2026."
 
 ### (former slide 8) Product — **cut (founder choice C2)**
@@ -124,28 +130,20 @@ Every slide must pass all of these before it ships:
 
 ### Slide 13 — Funding
 
-- Headline: **"What $6,150 makes possible."**
-- Visual 1 (main): a horizontal timeline bar M0 → M6 where five colored blocks drop in, in the real order, one per click: Pilot $100 → Register the company $1,670 → Launch 20 stores $840 → Runway to break-even $1,340 → Growth push $2,200. The bar's months show *when* each is spent.
-- Visual 2 (small, right): "Less? Still a plan." — $3,950 launches at the planned pace · $2,610 still launches.
+- Headline: **"What $5,480 makes possible."**
+- Visual 1 (main): a horizontal timeline bar M0 → M6 where five colored blocks drop in, in the real order, one per click: Pilot $100 → Register the company $1,000 → Launch 20 stores $840 → Runway to break-even $1,340 → Growth push $2,200. The bar's months show *when* each is spent.
+- Visual 2 (small, right): "Less? Still a plan." — $3,280 launches with slow-case runway · $2,710 minimum self-funding launch.
 - Bottom bar: "No salaries. No developers. I build the platform myself."
 - Footnote: "Registration: official KRI fee schedule · USD at the CBI rate of 1,500 IQD."
 - Script trimmed to ~30 s; all derivations and challenge answers already in the notes/guide (`deck_data.py`).
 
-### Slide 14 — Funding is done — what now?
+### (former slide 14) Funding is done — what now? — **cut (founder choice)**
 
-- Headline: **"Grant → pilot → launch → profit."**
-- Fix the order (pilot before registration) and add payback; five larger icon nodes filling the slide width and height:
-  1. M0 · "Hand-run pilot — 15–20 real orders"
-  2. M0–M1 · "Register + sign the courier"
-  3. M1 · "20 founding stores go live"
-  4. M4 · "Monthly break-even"
-  5. M8 · "All losses recovered → Erbil · Mosul · Sulaymaniyah"
-- Bottom line kept: "We report monthly: orders · sales · active stores · repeat orders · delivery time."
-- ~15 s.
+- Removed from the main deck (its milestones `M0 pilot` → `M0–M1 registration` → `M1 20 stores` → `M4 monthly break-even` → `M8 payback & expansion` are already shown on the Growth, Financial feasibility, and Funding slides; monthly KPI reporting is kept in the Funding Q&A notes). Saves ~15 s; main deck is now **13 slides** (`cover` .. `thanks`).
 
 ### Slide 15 — Thank you
 
-- No content change. Exact template header sizes; logo allowed here.
+- Minimal & clean closing: Cheapify logo · **"Thank you"** · **"The bright side of choosing."** · `getcheapify.com` · "Shakir Bashar · Founder" (Arabic and Kurdish slogans removed per founder review). Exact template header sizes + CAPA footer.
 
 ## 3. Appendix (backup, shown only if asked)
 

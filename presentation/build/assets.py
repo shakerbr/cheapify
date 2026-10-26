@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 import cairosvg
-from PIL import Image, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[2]
 EVID = ROOT / "entrepreneurship" / "assets" / "evidence"
@@ -14,6 +14,21 @@ ICON_SVG = OUT / "icons" / "svg"
 ICON_OUT = OUT / "icons"
 BLUR_RADIUS = 14
 DARK_BG = (26, 27, 30)
+SURFACE_BG = (244, 246, 249)
+
+
+def _round_corners(im, radius=48, bg=SURFACE_BG):
+    """Apply smooth 4x-supersampled rounded corners onto `bg` (no added border)."""
+    w, h = im.size
+    scale = 4
+    mask = Image.new("L", (w * scale, h * scale), 0)
+    ImageDraw.Draw(mask).rounded_rectangle(
+        (0, 0, w * scale - 1, h * scale - 1), radius=radius * scale, fill=255
+    )
+    mask = mask.resize((w, h), Image.LANCZOS)
+    out = Image.new("RGB", (w, h), bg)
+    out.paste(im, (0, 0), mask)
+    return out
 
 
 def _blur(im, boxes):
@@ -40,7 +55,8 @@ def build_evidence():
     crop = (0, 1258, 1080, 2122)
     im = _crop_blur("Anker-Power-Bank/Screenshot_20261020_225824_Miswag.jpg", crop,
                     [(36, 2060, 308, 2125), (561, 2060, 756, 2125)])
-    im.save(OUT / "ev-miswag-anker.jpg", quality=92)
+    im = _round_corners(im, radius=44)
+    im.save(OUT / "ev-miswag-anker.jpg", quality=94)
     meta["ev-miswag-anker"] = {
         "size": im.size,
         "rings": [_rel((38, 1910, 232, 1956), crop), _rel((560, 1910, 757, 1956), crop)],
@@ -48,7 +64,8 @@ def build_evidence():
 
     crop = (0, 288, 1080, 1818)
     im = _crop_blur("xiaomi-power-bank/Screenshot_20260920_130923.jpg", crop, [])
-    im.save(OUT / "ev-ibazzar-xiaomi.jpg", quality=92)
+    im = _round_corners(im, radius=64)
+    im.save(OUT / "ev-ibazzar-xiaomi.jpg", quality=94)
     meta["ev-ibazzar-xiaomi"] = {
         "size": im.size,
         "rings": [_rel((567, 924, 775, 970), crop), _rel((48, 1700, 261, 1747), crop)],
@@ -60,16 +77,17 @@ def build_evidence():
     full = Image.open(EVID / src).convert("RGB")
     full = _blur(full, [(77, 134, 206, 257), (435, 868, 642, 922),
                         (40, 2022, 140, 2118), (168, 2018, 415, 2056)])
-    ad_im = full.crop(ad)
+    ad_im = _round_corners(full.crop(ad), radius=28, bg=DARK_BG)
     com_im = full.crop(com)
-    gap = 24
+    top_pad, gap, bot_pad = 18, 20, 10
     W = max(ad_im.width, com_im.width)
-    comp = Image.new("RGB", (W, ad_im.height + gap + com_im.height), DARK_BG)
-    ad_off = ((W - ad_im.width) // 2, 0)
-    com_off = ((W - com_im.width) // 2, ad_im.height + gap)
+    comp = Image.new("RGB", (W, top_pad + ad_im.height + gap + com_im.height + bot_pad), DARK_BG)
+    ad_off = ((W - ad_im.width) // 2, top_pad)
+    com_off = ((W - com_im.width) // 2, top_pad + ad_im.height + gap)
     comp.paste(ad_im, ad_off)
     comp.paste(com_im, com_off)
-    comp.save(OUT / "ev-instagram-noprice.jpg", quality=92)
+    comp = _round_corners(comp, radius=48)
+    comp.save(OUT / "ev-instagram-noprice.jpg", quality=94)
     meta["ev-instagram-noprice"] = {
         "size": comp.size,
         "rings": [_rel((158, 2062, 318, 2110), com, com_off)],
@@ -77,7 +95,8 @@ def build_evidence():
 
     crop = (0, 1131, 1080, 1774)
     im = _crop_blur("Anker-Power-Bank/Screenshot_20261020_225624.jpg", crop, [])
-    im.save(OUT / "ev-ibazzar-foundcheaper.jpg", quality=92)
+    im = _round_corners(im, radius=44)
+    im.save(OUT / "ev-ibazzar-foundcheaper.jpg", quality=94)
     meta["ev-ibazzar-foundcheaper"] = {
         "size": im.size,
         "rings": [_rel((34, 1488, 505, 1534), crop)],
@@ -85,6 +104,7 @@ def build_evidence():
 
     crop = (236, 308, 772, 1052)
     im = Image.open(EVID / "Anker-Power-Bank/Screenshot_20261020_225624.jpg").convert("RGB").crop(crop)
+    im = _round_corners(im, radius=32, bg=(255, 255, 255))
     im.save(OUT / "product-anker.png")
 
 
@@ -97,11 +117,13 @@ def build_evidence():
     H = left.height
     rw = round(right.width * H / right.height)
     right = right.resize((rw, H), Image.LANCZOS)
+    left = _round_corners(left, radius=56)
+    right = _round_corners(right, radius=56)
     gap = 40
-    comp = Image.new("RGB", (left.width + gap + rw, H), (244, 246, 248))
+    comp = Image.new("RGB", (left.width + gap + rw, H), SURFACE_BG)
     comp.paste(left, (0, 0))
     comp.paste(right, (left.width + gap, 0))
-    comp.save(OUT / "ev-vacuum-fakedeal.jpg", quality=92)
+    comp.save(OUT / "ev-vacuum-fakedeal.jpg", quality=94)
     k = H / right.height * (right.height / (pr[3] - pr[1]))
     k = H / (pr[3] - pr[1])
     ox = left.width + gap
@@ -118,6 +140,17 @@ def build_evidence():
 def build_logo():
     cairosvg.svg2png(url=str(ROOT / "assets" / "cheapify-logo.svg"),
                      write_to=str(OUT / "cheapify-logo.png"), output_width=1400)
+
+
+def footer_icon_paths(name):
+    """Return (svg_path, png_path) for a footer SVG icon (`footer-facebook`, etc.), rendering 512px PNG."""
+    svg_path = ICON_SVG / f"{name}.svg"
+    png_path = ICON_OUT / f"{name}.png"
+    if not png_path.exists() or svg_path.stat().st_mtime > png_path.stat().st_mtime:
+        ICON_OUT.mkdir(parents=True, exist_ok=True)
+        cairosvg.svg2png(url=str(svg_path), write_to=str(png_path),
+                         output_width=512, output_height=512)
+    return svg_path, png_path
 
 
 def icon_path(name, color):

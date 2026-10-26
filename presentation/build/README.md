@@ -8,7 +8,8 @@ Everything for the pitch deck lives inside the project. Nothing is kept outside 
 | :--- | :--- | :--- |
 | `build_deck.py` | Builds `../Cheapify-GIZ-Pitch.pptx`, `../Cheapify-GIZ-Pitch.pdf` and `../presenter-guide.md` | yes |
 | `deck_data.py` | All slide text: headlines, speaker notes, key numbers, calculations, Q&A, references | yes |
-| `deckkit.py`, `slides_a.py`, `slides_b.py`, `assets.py` | Drawing helpers, slide builders, evidence crops/icons | yes |
+| `deckkit.py`, `slides_a.py`, `slides_b.py`, `assets.py` | Drawing helpers, slide builders, evidence crops/icons, EOT font embedding | yes |
+| `../assets/fonts/` | Static `.ttf` files (`Comfortaa`, `Inter`, `IBM Plex Sans Arabic` — Regular + Bold) embedded into the `.pptx` | yes |
 | `specs/` | Deck specs v1–v4 (v4 = current, awaiting founder approval) | yes |
 | `requirements.txt` | Pinned Python dependencies | yes |
 | `../../tmp/venv/` | Project virtualenv | no (git-ignored) |
@@ -35,4 +36,4 @@ Options: `--static` (static PPTX only), `--qa-states` (also render intermediate 
 
 - Never edit `presenter-guide.md` by hand — edit `deck_data.py` and rebuild.
 - Do not change the deck without founder approval (`agent/rules.md` rule 14).
-- Fonts: Comfortaa is embedded; Inter and IBM Plex Sans Arabic must be installed on the presenting computer.
+- Fonts: `Comfortaa`, `Inter`, and `IBM Plex Sans Arabic` (Regular + Bold) are embedded directly into the `.pptx` from `../assets/fonts/` during build. Do not re-save the `.pptx` in ONLYOFFICE (which strips `<p:embeddedFontLst>`).
