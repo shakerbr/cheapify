@@ -181,22 +181,27 @@ To secure the first 20 high-quality social sellers in Duhok, Cheapify provides a
 
 ### 3.1 Target Consumer Segments (Broad Market Scope)
 
-In compliance with **Preference 24**, Cheapify is a **broad mass-market consumer platform**, not a niche student-only app. While university students represent an energetic launchpad, Cheapify acquires and serves three distinct high-value consumer segments:
+In compliance with **Preference 24**, Cheapify is a **broad mass-market consumer platform**, not a niche student-only app. While university students represent an energetic launchpad, Cheapify acquires and serves three distinct consumer segments — **defined by shopping behavior, not demographics.** The shared trait across all three is the one the survey measured: they already notice and compare prices (97% of 179 surveyed shoppers notice big price gaps on the same item; 88% would use a side-by-side comparison app; n=199 total). Cheapify converts existing price-comparing behavior into platform usage — budget-conscious buyers are the natural first adopters.
+
+*Age ranges below are targeting-plan assumptions for ad buying; the survey did not ask age.*
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ CHEAPIFY CORE CONSUMER AUDIENCE SEGMENTS                                                         │
+│ CHEAPIFY CORE CONSUMER AUDIENCE SEGMENTS (behavioral)                                            │
 ├──────────────────────────────────┬────────────────────────────────┬──────────────────────────────┤
-│ 1. Young Working Professionals   │ 2. Household & Family Shoppers │ 3. Smart Deal Hunters & Youth│
-│ (Ages 23 – 38)                   │ (Ages 26 – 48)                 │ (Ages 18 – 24)               │
+│ 1. Time-Poor Professionals       │ 2. Household Budget Buyers     │ 3. Smart Deal Hunters & Youth│
+│ (planning est. ages 23 – 38)     │ (planning est. ages 26 – 48)   │ (planning est. ages 18 – 24) │
 ├──────────────────────────────────┼────────────────────────────────┼──────────────────────────────┤
-│ • Civil servants, office staff,  │ • Married men & women managing │ • University & college       │
-│   private sector employees       │   family household purchases   │   students, budget shoppers  │
-│ • Purchases: Tech gear, gadgets, │ • Purchases: Kitchen gadgets,  │ • Purchases: Phone cables,   │
-│   smartwatches, perfumes, tools  │   home storage, personal care  │   fast chargers, gaming gear │
-│ • Motivation: Time efficiency,   │ • Motivation: Budget savings,  │ • Motivation: Refusal to     │
-│   no time to haggle in DMs,      │   reliable doorstep delivery,  │   overpay, seeking lowest    │
-│   guaranteed transparent price   │   verified quality             │   price in Duhok             │
+│ • Civil servants, office staff,  │ • The person who makes the     │ • University & college       │
+│   private sector employees       │   household's buying decisions │   students, budget shoppers  │
+│   who already buy online         │   (not "families" — a buyer):  │ • Purchases: Phone cables,   │
+│ • Purchases: Tech gear, gadgets, │   compares IG vs. bazaar price │   fast chargers, gaming gear │
+│   smartwatches, perfumes, tools  │   before every large purchase  │ • Motivation: Refusal to     │
+│ • Motivation: Time efficiency,   │ • Purchases: Kitchen gadgets,  │   overpay, seeking lowest    │
+│   no time to haggle in DMs,      │   home storage, personal care  │   price in Duhok             │
+│   guaranteed transparent price   │ • Motivation: Budget savings,  │                              │
+│                                  │   verified quality, reliable   │                              │
+│                                  │   doorstep delivery            │                              │
 └──────────────────────────────────┴────────────────────────────────┴──────────────────────────────┘
 ```
 

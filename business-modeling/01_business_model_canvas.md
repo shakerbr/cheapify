@@ -163,8 +163,8 @@ Cross-References:
 | :--- | :--- | :--- |
 | **Phase A dev burn** | ~210,000 IQD/mo | AI/SaaS tools + 75k audience-building ads |
 | **Launch operating burn** | ~652,000 IQD/mo → ~790k at M6+ | Support, ops, tools, ads at scale |
-| **Variable per order** | courier 2,500–4,500 (passed through) + ~50 IQD OTP/messaging + packaging | Margin holds via zone fees |
-| **Growth incentives pool** | Capped marketing line | Credit-only, transaction-gated (anti-fraud) |
+| **Variable per order** | **335 IQD** (WhatsApp 90 + OTP 25 + returns 20 + failed-delivery re-attempts 200); courier 2,500–4,500 vs. 3,000–5,000 zone fee yields **+500 IQD delivery margin** | Net contribution **~+1,115 IQD/order** |
+| **Growth incentives pool** | **225,000 IQD/mo** capped line (inside the 652k operating burn) | Non-withdrawable platform credits, transaction-gated; courier/redemption cash cost is bounded by this monthly cap |
 | **Registration + legal** | ~$1,000 one-time | Critical-path: unlocks courier contract → unlocks margin |
 | **Peak funding need** | 3.27M IQD (~$2,180) planning case; 4.12M (~$2,750) floor | `finance/03` — bounded by burn ceiling, not order volume |
 

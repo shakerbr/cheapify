@@ -176,5 +176,5 @@ All incentive credits draw from a single **Growth Incentives pool**, funded as a
 | :--- | :--- | :--- |
 | 3,000 IQD referral credit sufficiency | Untested incentive level | Post-launch referral uptake data; tune §8 |
 | 10-order merchant activation gate | Chosen threshold | Recalibrate after observing real seller ramp-up |
-| Monthly incentives pool cap | Unset | Set in [`../finance/01_operational_budget.md`](../finance/01_operational_budget.md) |
+| Monthly incentives pool cap | **225,000 IQD/mo (~$150/mo)** | Set in [`../finance/01_operational_budget.md`](../finance/01_operational_budget.md) §4; re-tune after pilot cohort data |
 | Referral fraud rate | Unknown locally | First 90 days of flagged-account data |

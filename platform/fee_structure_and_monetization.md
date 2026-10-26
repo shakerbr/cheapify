@@ -199,7 +199,11 @@ Card orders skip the courier transfer: the shopper pays Cheapify's payment accou
 2. **Transparent Dashboard Visibility:** The merchant's dashboard displays the exact gross price, Cheapify fee, courier fee, and net payout for every order ID.
 3. **Payout After the Return Window:** The payout is released automatically once the 48-hour return window closes (for cash orders, also after the courier's transfer has arrived), so Cheapify never has to claw money back. Every merchant must link a payment account (bank card or e-wallet) during onboarding to receive payouts.
 
-**Open:** card processing fees are not yet quoted `[OPEN — gateway quote needed]`; the per-order contribution in the finance model is the cash-on-delivery case.
+**Card / e-wallet fee structure (FIB & Qi — desk-verified):**
+- **SuperQi / Qi POS & app:** **0%** merchant commission under Qi Card's 2026 0%-commission initiative.
+- **First Iraqi Bank (FIB):** **0.3%** on in-app QR payments, **0.5%** on QR payment links, **1%** on online/in-app card gateway (`fib.iq/fees-and-charges/`).
+- **Central Bank of Iraq (CBI) cap:** Merchant Discount Rate is capped at **1%** nationwide (`cbi.iq`), and surcharging the customer is prohibited.
+- **Impact on Cheapify unit profit:** Pre-paid orders via FIB QR (0.3% ≈ 84 IQD on 28,000) or SuperQi (0%) eliminate doorstep refusal risk — saving the **200 IQD/order** failed-delivery allowance in the COD model. As a result, digital orders yield **~1,115–1,315 IQD/order**, keeping blended unit contribution **≥ +1,115 IQD/order**.
 
 ---
 
@@ -220,4 +224,4 @@ Card orders skip the courier transfer: the shopper pays Cheapify's payment accou
 | Merchant gross margins 15–25% | Generic estimate | Real margins from onboarded Duhok sellers |
 | 85%+ COD share of e-commerce volume | Regional estimate | Validate vs. FIB/FastPay/Qi adoption data (card payments follow shortly after launch) |
 | Net-settlement mechanics via 3PL | Proposed | Courier contract transfer deadline (target 24h) |
-| Card processing fees | Not yet quoted | Payment-gateway quote |
+| ~~Card processing fees~~ — **desk-verified** | FIB 0.3% QR / 1% card; Qi 0% 2026 promo; CBI 1% MDR cap | Confirm live contract terms at onboarding |

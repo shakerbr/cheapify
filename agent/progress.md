@@ -6,6 +6,12 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-10-26] — Finance Deep Audit + Grant Ask Rebuilt (ADR-015)
+
+* **Verified sources:** KRI registration (Decree 119/2017 + Chamber of Commerce schedule), FIB/Qi merchant fees and the CBI 1% card-fee cap, CBI official exchange rate 1,500/1,510/1,520 (7 Oct 2026; parallel ~1,685 in Duhok).
+* **Recomputed** every row of the planned, fast and slow cash tables — all exact. Found the runway double-counted startup costs already inside the low point; ask rebuilt to **$6,150** (pilot 100, registration 1,000, company capital 670, launch setup 710, founding offer 130, runway 1,340, marketing 2,200), tiers $6,150 / $3,950 / $2,610.
+* **Synced:** `finance/01` (exchange-rate section, pool saturation at launch, calendar M6 step-up, low-point composition, new open items), `finance/02` (A9 note), `finance/03` (shopper framing ~390 regular shoppers at break-even, slow case = half pace, pilot on the MVP before registration), `finance/04` (rewritten), risk matrix R1/R10, `deck_data.py` (funding script, numbers, Q&A; exchange-rate reference).
+
 ### [2026-10-22] — Payment Model Updated + Pitch Deck v2 (founder review)
 
 * **Payment model (founder decision):** Cheapify never handles cash; courier collects COD cash and transfers it electronically to Cheapify; card/e-wallet added shortly after launch (money to Cheapify at checkout); merchants paid automatically after the 48h return window; every merchant links a payment account. Synced across platform policies, fee structure §7, SOPs, canvas, risk matrix (R3 → late courier transfer), entrepreneurship/marketing docs; card processing fee logged as open assumption A13.

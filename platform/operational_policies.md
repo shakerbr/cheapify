@@ -95,7 +95,7 @@ Failed deliveries [Policy]:
 - **Merchant payout:** automatic and electronic, **once the 48-hour return window after delivery closes** (for cash orders, also after the courier's transfer has arrived). No weekly cycle.
 - **Payment account:** every merchant must link a payment account (bank card or e-wallet) during onboarding — required to receive payouts and to settle amounts owed after payout (e.g. a fault-return courier leg).
 
-**[Open] Card processing fees:** not yet quoted `[OPEN — gateway quote needed]`. The +1,115 IQD per-order contribution in the finance model is the cash-on-delivery case.
+**Card / e-wallet processing fees (FIB & Qi — desk-verified):** SuperQi is **0%** under Qi's 2026 merchant promo, FIB in-app QR is **0.3%** (~84 IQD on 28,000), and the Central Bank of Iraq caps card MDR at **1%** (`cbi.iq`, customer surcharge prohibited). Because pre-paid orders eliminate doorstep refusal risk — saving the **200 IQD/order** failed-delivery allowance — digital orders yield **≥ +1,115 IQD/order**, so the +1,115 IQD contribution holds across both COD and FIB/Qi orders.
 
 ---
 
@@ -105,6 +105,6 @@ Failed deliveries [Policy]:
 | :--- | :--- | :--- |
 | ~~True Duhok courier cost~~ — **done** (Fast Delivery) | Contract signature | Shipping margin — verified |
 | Courier transfer deadline and cash-refund netting | Courier contract terms | Settlement and refund mechanics |
-| Card processing fees | Payment-gateway quote | Card-order contribution |
+| ~~Card processing fees~~ — **desk-verified** (FIB 0.3% QR / 1% card; Qi 0% promo; CBI 1% cap) | Commercial onboarding after registration | None — unit contribution stays ≥ +1,115 IQD |
 | Inter-city tariff | ZMC inter-city quote | Phase 2 Doorstep Total |
 | Return-rate baseline | Pilot data (est. 3–5%) | Pillar 3 cash flow |

@@ -4,7 +4,7 @@
 
 **Pillar:** Finance Management (Pillar 3 — File 01)
 **Status:** Assumption-Driven Model v1 — every unverified figure is marked `[ASSUMPTION]`; replace with real quotes to finalize
-**Currency convention:** IQD primary, USD secondary. Exchange benchmark: **1 USD ≈ 1,500 IQD** (per [`../entrepreneurship/02_market_opportunity_and_sizing.md`](../entrepreneurship/02_market_opportunity_and_sizing.md))
+**Currency convention:** IQD primary, USD secondary. Exchange benchmark: **1 USD = 1,500 IQD** — see §1.1.
 Cross-References:
 - Order-lifecycle policies: [`../platform/operational_policies.md`](../platform/operational_policies.md)
 - Incentive pool (cost source): [`../platform/referral_and_growth_incentives.md`](../platform/referral_and_growth_incentives.md) §5
@@ -17,6 +17,19 @@ Cross-References:
 Cheapify's structural advantage is that the two most expensive lines in a normal startup — **software development and creative production — are $0** (founder-built, per [`../marketing/01_two_sided_gtm_strategy.md`](../marketing/01_two_sided_gtm_strategy.md) §6). The budget therefore concentrates entirely on: infrastructure, order-fulfillment economics, growth spend, and legal/compliance.
 
 > The model is built so any `[ASSUMPTION]` cell can be replaced by a real quote — the scenario tables in §5 recompute from it.
+
+### 1.1 Exchange Rate `[VERIFIED — Oct 2026]`
+
+| Rate | IQD per USD | Source |
+| :--- | :--- | :--- |
+| CBI purchase from Ministry of Finance | 1,500 | [CBI, 7 Oct 2026](https://cbi.iq/news/view/3355) |
+| CBI sale to banks | 1,510 | same |
+| CBI cash sale to the public | 1,520 | same (previous rate: 1,320) |
+| Parallel market (Duhok, 24 Oct 2026) | ~1,685 | [kakdolar.com](https://kakdolar.com/cities); Erbil/Baghdad ~1,677–1,685 |
+
+The model converts at **1,500**, the official base rate. All costs are in IQD, so a grant paid in dollars and converted at the bank rate (1,510) yields slightly *more* IQD than modeled.
+
+**Exposure:** tools billed in USD — Supabase, the AI assistant, SaaS, and part of paid ads (~337,500 IQD/mo of the 652k burn) — cost ~12% more if dollars must be bought at the parallel rate (~+42,000 IQD/mo). Pay them by FIB/Qi card at the official rate where possible.
 
 ---
 
@@ -38,7 +51,7 @@ All external figures live here. Replace values (not formulas) when real quotes a
 | A10 | Referral/incentive payout rate (per 100 orders) | **20 credits** `[ASSUMPTION]` | 10–30 | Post-launch data — paid from the capped Growth Incentives pool (§4), not per order |
 | A11 | Effective take-rate on AOV 25,000 | **3.8%** | computed | 500 + 3%×15,000 = 950 IQD → 3.8% |
 | A12 | Founding-merchant packaging kit subsidy | **~40,000 IQD per store** `[ASSUMPTION]` | 25k–60k | Print quotes |
-| A13 | Card / e-wallet processing fee (card orders only, added shortly after launch) | `[OPEN — gateway quote needed]` | not yet quoted | Payment-gateway quote; requires business registration |
+| A13 | Card / e-wallet processing fee (FIB & Qi, added shortly after launch) | **0% SuperQi promo · 0.3% FIB QR in-app · 0.5% FIB QR link · 1% card gateway (CBI cap)** `[DESK-VERIFIED]` | 0%–1% | FIB published schedule (`fib.iq/fees-and-charges/`); CBI MDR cap at 1%; Qi 2026 0% merchant initiative |
 
 ---
 
@@ -46,13 +59,13 @@ All external figures live here. Replace values (not formulas) when real quotes a
 
 | Item | Cost (IQD) | ~USD | Status |
 | :--- | :--- | :--- | :--- |
-| KRI business registration + Chamber of Commerce | 450,000–900,000 `[ASSUMPTION]` | $300–600 | Needs legal quote |
+| KRI business registration + Chamber of Commerce | **~695,000–1,295,000** `[DESK-VERIFIED]` | **$465–865** | Companies Reg. ~154.5k (`xizmet.gov.krd`, Decree 119/2017) + Chamber 540k Kurdish/Arabic name or 1,140k English trade name (`krg.eregulations.org`); lawyer filing adds ~200–300k if used |
 | Apple Developer Program (annual) | 148,500 | $99 | Known |
 | Google Play Developer (one-time) | 37,500 | $25 | Known |
 | Domain `getcheapify.com` (year 1) | 15,000 | ~$10 | **Already paid by founder** |
 | Founding-merchant packaging kits ×20 (A12) | 800,000 `[ASSUMPTION]` | ~$530 | Print quotes needed |
 | Initial thermal waybill/label stock | 75,000 `[ASSUMPTION]` | $50 | Print quote |
-| **Total startup** | **~1.48M–1.93M IQD** | **~$985–1,285** | |
+| **Total startup** | **~1.76M–2.56M IQD** | **~$1,170–1,710** | **~1.70M IQD baseline in `03`** = Kurdish/Arabic legal name (695k) + kits (800k) + app stores (186k) + labels (75k); **grant in `04`** funds the English trade-name option instead: registration 1.5M (incl. filing) + launch setup 1.061M = 2.56M |
 
 Design/brand/dev work: $0 — all in-house.
 
@@ -93,7 +106,10 @@ Costs that run regardless of order volume:
 | Founder labor | 0 | $0 | Sweat equity — real but uncosted |
 | **Monthly baseline burn** | **~652,000 IQD** | **~$435** | |
 
-*Burn phasing:* this baseline is the **operating** burn — ads test budget, incentive pool, OTP signups, WhatsApp line, and Supabase Pro activate at launch. During development/Phase A the real burn is ~210k/mo (AI tooling + SaaS + modest audience-building ad boosts). See `03` §1 for the split.
+*Burn phasing:*
+- **Dev / Phase A (M-2, M-1): ~210,000 IQD/mo (~$140)** — AI tooling (90k) + SaaS (30k) + modest audience-building ad boosts (75k) + contingency (15k). Founder-funded before the grant.
+- **Launch → M5 operating baseline: 652,000 IQD/mo (~$435)** — table above. The Growth Incentives pool will be **full from launch**: founding stores creating the first master SKUs earn 1,000 IQD per SKU (e.g. 20 stores × 50 SKUs ≈ 1M IQD of claims vs. a 225k cap). The cap bounds cash; claims above it queue to later months as a deferred credit liability. The founding stores' 0%-commission first month is therefore **not** absorbed by the pool — it is funded as its own grant line (~190,000 IQD, `04` §2 line 5).
+- **M6+ baseline: 790,000 IQD/mo (~$527)** — steps up by **+138,000 IQD/mo (~$92)** from **M6 by calendar, in every scenario** (conservative — applied even in the slow case at 675 orders): maps/geocoding & infra above free tier (+22,500 IQD), higher support/OTP baseline (+40,500 IQD), and expanded retention/organic marketing (+75,000 IQD). See `03` §1–3.
 
 ### 4.1 Software & AI Tooling Breakdown
 
@@ -146,7 +162,11 @@ What each delivered order actually costs vs. earns. **This table is the core of 
 | Incentives (A10) | 0 per order | Paid from the capped Growth Incentives pool — already a fixed 225,000 IQD/mo line in §4; charging it per order too would double-count |
 | **Variable cost per order** | **−335 IQD** (excl. delivery) | 90 + 25 + 20 + 200 |
 
-*Note: the +1,115 IQD/order contribution is the cash-on-delivery case; card processing fees (A13) are not yet quoted and are not included.*
+*Note on card / e-wallet orders (A13):* +1,115 IQD/order holds across both cash and digital payments — **card/wallet orders do not weaken profit:**
+- **SuperQi / Qi POS & app:** **0%** merchant fee under Qi's 2026 initiative → full **+1,115 IQD** (or **+1,315 IQD** because pre-paid orders eliminate the 200 IQD failed-delivery cost).
+- **FIB QR in-app:** **0.3%** (~84 IQD on 28,000) vs. **~0 failed-delivery cost** (saves ~200 IQD) → net contribution **~+1,231 IQD** (higher than COD).
+- **FIB / Qi online card gateway:** capped at **1%** by Central Bank of Iraq (~280 IQD on 28,000), offset by the ~200 IQD failed-delivery saving → **~+1,035 IQD** even if Cheapify absorbs the fee, or **+1,115 IQD** if passed to the seller of record. Across Iraq's 85–90% COD / 10–15% digital mix, blended contribution stays **≥ +1,115 IQD/order**.
+- **Outgoing payout transfers:** FIB P2P transfer fee is **0.1%** (~24 IQD on a 24,050 IQD merchant payout; courier settled in weekly batches). *Operational rule:* always disburse merchant payouts via standard P2P/automated transfer (0.1%) or Qi (0%), never via FIB's corporate Bulk Payments portal, which charges a 25,000 IQD minimum fee per batch.
 
 *Correction (Oct 21, 2026): earlier versions stated −425 / +1,015 IQD, but the line items summed to −935 because a −600 per-order incentive line double-counted the pool in §4. Counting incentives once gives −335 / +1,115 (ADR-014).*
 
@@ -168,7 +188,7 @@ Two sensitivities dominate:
 
 ## 6. Monthly Burn Scenarios
 
-*Authoritative timeline: [`03_cash_flow_and_breakeven.md`](03_cash_flow_and_breakeven.md) §3–4 — the table below mirrors its **planning (conservative) ramp**; `03` also carries the 2× upside scenario.*
+*Authoritative timeline: [`03_cash_flow_and_breakeven.md`](03_cash_flow_and_breakeven.md) §3–4 — the table below mirrors its **planned ramp**; `03` also carries the fast (2×) and slow (half-pace) scenarios.*
 
 | Scenario | Orders/mo | Merchants | Contribution | Burn | **Net** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -187,17 +207,15 @@ Burn phases: ~210k/mo during dev (AI tooling + SaaS + modest audience ads) → 6
 
 ## 7. Capital Requirement
 
-The number that matters is the **deepest cumulative cash hole**, computed month-by-month in `03`:
+The **deepest cumulative cash hole**, computed month-by-month in `03`, includes startup costs and the two development months — it is not only operating losses:
 
-| Scenario | Peak cumulative deficit | ~USD | When |
-| :--- | :--- | :--- | :--- |
-| Planning ramp (default) | −3.27M IQD | ~$2,180 | M3 |
-| Upside (2× ramp) | −2.70M IQD | ~$1,800 | M2 |
-| Slow-adoption floor (~25% ramp) | −4.12M IQD | ~$2,750 | M6 |
+| Scenario | Low point | ~USD | When | Of which operating losses after launch |
+| :--- | :--- | :--- | :--- | :--- |
+| Planned ramp (default) | −3.27M IQD | ~$2,180 | M3 | 1.15M (~$765) |
+| Fast (2× ramp) | −2.70M IQD | ~$1,800 | M2 | 0.58M (~$386) |
+| Slow (half the planned pace) | −4.12M IQD | ~$2,750 | M6 | 2.00M (~$1,332) |
 
-**Plan for ~$2,200–2,750 of founder-covered funds** before any grant — keeps the venture alive even at the slow-adoption floor. Anything beyond that (the `04` grant ask) buys speed: growth budget, registration, merchant materials, contingency — not survival.
-
-Deliberately small either way — the founder-built stack keeps this in "savings + small grant" territory rather than raise-dependent.
+Each low point = startup 1.70M + development months 0.42M + operating losses. The grant (`04`) funds the startup items (upgraded to the English trade name), the operating losses sized to the slow case, and the growth push — each part once (ADR-015). The founder funds the development months before the award.
 
 ---
 
@@ -209,6 +227,10 @@ Deliberately small either way — the founder-built stack keeps this in "savings
 | A4 return rate | Pilot data | Variable-cost line doubles if ~8% |
 | A8 ad CPM | $20 test campaign | Paid-CAC accuracy |
 | A5 AOV | Social-seller price survey | All contribution math |
-| Legal/registration | KRI registration quote | Startup line |
+| ~~Legal/registration~~ — **DESK-VERIFIED** (~695k–1.295M IQD official fees) | Confirm lawyer filing fee at registration | Startup line bounded within $1,000 grant allocation |
+| Lawyer + accountant appointment | KRI registration requires both — get quotes | The 75k/mo legal/accounting retainer (§4) may be low |
+| Company capital (1M IQD minimum) | Confirm whether usable as working capital once registered | Funded as `04` line 3 |
+| Platform fee on returned orders | Policy decision: is the 950 IQD fee kept or refunded on returns? | If refunded: 4% × 950 ≈ −38 IQD/order → contribution ~1,077, break-even ~605/mo |
+| USD-billed tools at parallel rate | Pay by card at the official rate where possible | Up to ~+42k IQD/mo burn (§1.1) |
 | Packaging/waybill print | Local print quotes | A12 + startup line |
 | A9 merchant velocity | Pilot data | Month-3/6 scenario realism |

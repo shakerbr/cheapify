@@ -23,9 +23,9 @@ E-commerce in Iraq is experiencing rapid consumer adoption, but it is fundamenta
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
 │ TOTAL ADDRESSABLE MARKET (TAM) — ALL IRAQ                              │
-│ Total Iraqi Retail E-Commerce Market Across All Consumer Categories    │
-│ $2.5 Billion – $3.5 Billion+ USD / year (~3.75T – 5.25T IQD)           │
-│ (44.5M Population · 33.5M+ Internet Users · All 18 Governorates)       │
+│ Formal e-commerce: ~$1.32B USD / year (ECDB, 2025)                     │
+│ Incl. informal social commerce: ~$2.5B – $3.0B USD (KAPITA, est.)     │
+│ (46.1M Population · 39.6M Internet Users · All 18 Governorates)       │
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │
                                     ▼
@@ -51,15 +51,14 @@ E-commerce in Iraq is experiencing rapid consumer adoption, but it is fundamenta
 
 ### 2.1 Total Addressable Market (TAM) — Iraq Nationwide
 
-* **Total Population:** ~44.5 Million across all 18 governorates.
-* **Internet Penetration:** ~75.3% (33.5+ Million active mobile internet users).
-* **Active Social Media Shoppers:** ~31.2 Million across Instagram, Facebook, and TikTok.
-* **Market Sizing Calculation:**
-  * Annual e-commerce and social commerce retail spending per active online buyer in Iraq ranges between **$180 and $250 USD / year (270,000 – 375,000 IQD)**.
-  * Across all retail consumer goods (electronics, home & living, fashion accessories, personal care, study, tools, gifts):
-    $$\text{TAM} \approx \mathbf{\$2.5 \text{ Billion to } \$3.5 \text{ Billion+ USD / year (~3.75 to 5.25 Trillion IQD)}}$$
+* **Total Population:** **46,118,793** (2024 national census, Iraqi Ministry of Planning).
+* **Internet Penetration:** **83.8% — 39.6M internet users** (DataReportal Digital 2026, data late 2025).
+* **Market Sizing (two sourced figures, kept separate):**
+  * **Formal e-commerce: ~$1.32B USD / year** — ECDB's 2025 measured revenue for Iraq's online retail ($1,317M).
+  * **Formal + informal social commerce: ~$2.5B – $3.0B USD / year** — KAPITA/GIZ estimate that also counts the DM-based social-selling trade Cheapify organizes. This is an estimate, not a measurement.
+  * Cheapify's pitch uses the conservative **~$1.3B** figure; the larger number is context for the informal trade the platform formalizes.
 
-  * The sector is compounding at **15% – 18% CAGR**, stimulated by nationwide 4G/5G mobile penetration and rapid digital banking adoption (FIB, FastPay, Qi Card).
+  * The sector is compounding at **~15–16% CAGR**, stimulated by nationwide 4G/5G mobile penetration and rapid digital banking adoption (FIB, FastPay, Qi Card).
 
 ---
 
@@ -178,14 +177,14 @@ Every metric, market assumption, and demographic statistic in this document is s
 
 | Statistic | Figure Used | Primary Institutional Source | Evidence & Report Details |
 | :--- | :---: | :--- | :--- |
-| **Iraq Total Population** | **~44.5 Million** | [World Bank Iraq Data](https://data.worldbank.org/country/iraq) / [Iraq Ministry of Planning](https://mop.gov.iq/) | Official 2024–2025 census estimates; median age ~21 years with >60% under 30. |
+| **Iraq Total Population** | **46,118,793 (2024 census)** | [2024 national census, Iraqi Ministry of Planning](https://peregraf.com/en/news/10297) via Peregraf | Official census count; median age ~21 years with >60% under 30. |
 | **KRI Regional Population** | **~6.2 Million** | [Kurdistan Region Statistics Office (KRSO)](https://krso.gov.krd/) | Official demographic bulletin for Kurdistan Region governorates (Erbil, Sulaymaniyah, Duhok). |
 | **Duhok Launch-Area Population** | **1,062,224 (~1.06M)** | [2024 national census, Iraqi Ministry of Planning](https://peregraf.com/en/news/10297) via Peregraf; district table: [citypopulation.de](https://www.citypopulation.de/en/iraq/admin/11__dah%C5%ABk/) | Duhok district 497,029 + Zakho 398,876 + Semel 166,319 (2024 census). |
 | **Duhok Governorate Population** | **1,599,871 (~1.60M)** | [2024 national census, Iraqi Ministry of Planning](https://peregraf.com/en/news/10297) via Peregraf; district table: [citypopulation.de](https://www.citypopulation.de/en/iraq/admin/11__dah%C5%ABk/) | 80% urban. Iraq total in the same census: 46,118,793. |
 | **Duhok Internet Users — estimate** | **≈ 1.34M governorate · ≈ 0.89M launch area** | Population-share estimate (see 5.1.1) | Not an official figure. |
 | **Duhok Online Shopping per Year — estimate** | **≈ $46M governorate · ≈ $30M launch area** | Population-share estimate (see 5.1.1) | Not an official figure. |
-| **Internet & Mobile Penetration** | **75.3% (33.5M users)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) (in partnership with We Are Social & Kepios) | 42.1 Million cellular mobile connections (94.6% of population); 33.5 Million internet users. |
-| **Active Social Media Users** | **31.2 Million (70.1%)** | [DataReportal — Digital 2024: Iraq](https://datareportal.com/reports/digital-2024-iraq) | Primary channels for online discovery: Facebook (19.5M), Instagram (17.8M), TikTok (21.4M). |
+| **Internet & Mobile Penetration** | **83.8% (39.6M users)** | [DataReportal — Digital 2026: Iraq](https://datareportal.com/reports/digital-2026-iraq) | Data end-2025: 39.6M internet users of 46.1M population. |
+| **Active Social Media Users** | **40.1M identities** | [DataReportal — Digital 2026: Iraq](https://datareportal.com/reports/digital-2026-iraq) | User identities, not unique persons. Primary channels for online discovery: Facebook, Instagram, TikTok. |
 
 #### 5.1.1 How the Duhok estimates are derived
 
@@ -207,7 +206,8 @@ Duhok is 80% urban, so these Iraq-average estimates are likely conservative.
 
 | Metric | Sizing Estimate | Primary Source & Industry Benchmarks | Methodological Rationale & Evidence |
 | :--- | :---: | :--- | :--- |
-| **Total Iraqi E-Commerce Market (TAM)** | **$2.5B – $3.0B USD** | [KAPITA Research — E-Commerce in Iraq Report](https://kapita.iq/research) & [GIZ Private Sector Development (PSD)](https://www.giz.de/en/worldwide/97547.html) | Aggregates formal platforms and informal social media retail. 12M–15M active shoppers spending $180–$220 annually; growing at ~16% CAGR. |
+| **Iraqi E-Commerce Market — formal** | **$1,317M USD (2025)** | [ECDB — Iraq e-commerce market](https://ecdb.com/resources/sample-data/market/iq/all) | Measured formal online-retail revenue; conservative headline figure used in the pitch. |
+| **Total incl. informal social commerce** | **$2.5B – $3.0B USD** | [KAPITA Research — E-Commerce in Iraq Report](https://kapita.iq/research) & [GIZ Private Sector Development (PSD)](https://www.giz.de/en/worldwide/97547.html) | Aggregate estimate including DM-based social selling; ~16% CAGR. Estimate, not a measurement. |
 | **Informal Social Commerce Share** | **>80% of Transactions** | [International Trade Centre (ITC) — E-Commerce Ecosystem in Iraq](https://intracen.org/) & [KAPITA Iraq E-Commerce Guide](https://kapita.iq/) | More than 8 out of 10 online retail orders are placed via direct messages on Instagram, Facebook, and TikTok without web checkouts. |
 | **Cash on Delivery (COD) Share** | **85% – 90%** | [Central Bank of Iraq (CBI) Financial Inclusion Bulletins](https://cbi.iq/) & [KAPITA Payments in Iraq Report](https://kapita.iq/) | Cash on delivery remains the dominant trust mechanism; digital wallets (FIB, FastPay, Qi Card) are growing at >40% YoY among university youth. Cheapify launches with cash on delivery and adds card / e-wallet payment shortly after launch. |
 | **Electronics & Accessories Share (SAM)** | **25% – 30% of Non-Grocery GMV** | [Trade.gov (U.S. Commercial Service) — Iraq E-Commerce Overview](https://www.trade.gov/country-commercial-guides/iraq-ecommerce) | Consumer technology, smart accessories, and personal electronics form the largest single category of standardized imported retail goods in Iraq. |

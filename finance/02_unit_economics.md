@@ -63,11 +63,11 @@ Healthy territory (≥3:1 is the usual bar). The number to watch is the **blende
 
 | Parameter | Working value | Source |
 | :--- | :--- | :--- |
-| Orders per merchant / month | **15** (A9) `[ASSUMPTION]` | Range 8–30 |
+| Orders per merchant / month | **15** (A9) `[ASSUMPTION]` | Range 8–30; deliberately below the `03` ramp average (~37/store at M4, ~67 at M6) to keep merchant LTV conservative — see `03` §2 |
 | Take-rate revenue / merchant / month | **14,250 IQD** | 15 × 950 |
 | Servicing cost / merchant / month | **~2,000 IQD** `[ASSUMPTION]` | Support, QA, ads infra share |
-| Monthly net / merchant | **~12,250 IQD** | |
-| **Merchant LTV (12-mo, churn-haircut ×0.7)** | **≈ 102,900 IQD (~$69)** | |
+| Monthly net / merchant (fee-only, conservative) | **~12,250 IQD** | Excludes the +165 IQD/order net delivery-margin surplus (500 margin − 335 variable); including it raises monthly net to ~14,725 IQD and 12-mo LTV to ~123,700 IQD (~$82) |
+| **Merchant LTV (12-mo, churn-haircut ×0.7)** | **≈ 102,900 IQD (~$69)** | Conservative fee-only figure |
 
 ### 3.2 Merchant CAC
 
@@ -93,12 +93,12 @@ A founding store *costs* ~65,000 IQD against ~103,000 LTV — still positive (~1
 
 ## 4. Where Incentives Fit the Math
 
-| Incentive | Booked as | Per-order drag (at A10) |
+| Incentive | Booked as | Per-order drag |
 | :--- | :--- | :--- |
-| Shopper referral credit | Shopper CAC | −30 IQD avg |
-| Merchant recruit bounty | Merchant CAC | — |
-| Catalog bounties | Content infrastructure | −10 IQD avg |
-| Delivery margin subsidy | Variable cost | ±500 sensitivity |
+| Shopper referral credit (3,000 IQD) | Shopper CAC (paid from 225k/mo fixed pool) | 0 per order (in fixed burn, `01` §4) |
+| Merchant recruit bounty (10,000 IQD) | Merchant CAC (paid from 225k/mo fixed pool) | 0 per order (in fixed burn, `01` §4) |
+| Catalog bounties (1,000 / 250 IQD) | Content infrastructure (paid from 225k/mo fixed pool) | 0 per order (in fixed burn, `01` §4) |
+| Delivery margin (+500 IQD) | Per-order revenue (`01` §5.2) | −500 if courier contract unsigned |
 
 The pool cap (225,000 IQD/mo in `01` §4) bounds worst-case incentive spend to ~7.5% of pilot-stage revenue — acceptable for a growth-phase subsidy, and it shrinks proportionally as volume grows.
 
@@ -134,7 +134,7 @@ Because incentives are budgeted as this capped pool (fixed burn), they are not d
 
 | Item | Needed input | Impact |
 | :--- | :--- | :--- |
-| True courier cost (A1) | Courier quote | Flips delivery margin |
+| ~~True courier cost (A1)~~ — **DONE** (Fast Delivery: 2,500/3,500/4,500) | Contract signature | Secures the +500 IQD delivery margin |
 | Order frequency | Pilot cohort data | Drives both LTVs |
 | Churn/retention | 90-day cohort | LTV haircut accuracy |
 | AOV distribution | Seller price survey | Contribution/order |

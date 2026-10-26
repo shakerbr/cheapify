@@ -309,14 +309,14 @@ def market(sl, ctx):
         text(g.shapes, 10.45, y - 0.04, 2.0, 0.38, num, size=20, bold=True, font="Comfortaa",
              anchor="m")
         text(g.shapes, 10.45, y + 0.35, 0.95, 0.22, lbl, size=11, color=INK60, anchor="m")
-        _pill(g.shapes, 11.40, y + 0.35, "estimate")
+        _pill(g.shapes, 11.62, y + 0.35, "estimate")
         return g
 
     s1 = stat(3.05, "wifi", "≈ 0.89M", "online")
     s2 = stat(3.85, "shopping-cart", "≈ $30M", "a year online")
     pie = group(sh)
     oval(pie.shapes, 10.475, 5.225, 0.475, fill=NEUTRAL)
-    pie_slice(pie.shapes, 10.475, 5.225, 0.475, 270, 275, BLUE)
+    pie_slice(pie.shapes, 10.475, 5.225, 0.475, 270, 276, BLUE)
     text(pie.shapes, 11.15, 4.88, 1.39, 0.34, "0.4%", size=18, bold=True, font="Comfortaa",
          color=BLUE, anchor="m")
     text(pie.shapes, 11.15, 5.24, 1.39, 0.5, "is all we need to break even", size=11,
@@ -377,12 +377,12 @@ def customers(sl, ctx):
          anchor="m")
     text(phone.shapes, PX + 0.64, PY + 0.48, 1.1, 0.18, "12.4k followers", size=8, color=INK60,
          anchor="m")
-    px = PX + 0.15
-    for lbl, w in (("Instagram", 0.60), ("Facebook", 0.56), ("TikTok", 0.46)):
+    px = PX + 0.13
+    for lbl, w in (("Instagram", 0.56), ("Facebook", 0.58), ("TikTok", 0.40)):
         rect(phone.shapes, px, PY + 0.84, w, 0.20, fill=BLUE12, radius=0.10)
         text(phone.shapes, px, PY + 0.84, w, 0.20, lbl, size=8, bold=True, color=INK, align="c",
              anchor="m")
-        px += w + 0.04
+        px += w + 0.02
     for r_ in range(3):
         for c_ in range(2):
             rect(phone.shapes, PX + 0.15 + c_ * 0.80, PY + 1.20 + r_ * 0.74, 0.74, 0.64,

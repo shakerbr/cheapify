@@ -25,7 +25,7 @@
 
 ## 2. Volume Ramp Assumptions `[ASSUMPTION]`
 
-**This is the planning scenario — deliberately conservative.** Cheapify captures only a share of each merchant's total volume (~10–30% early); aggressive targets live in the upside scenario (§4.1).
+**This is the planning scenario.** Orders come from **shoppers Cheapify acquires** (waitlist, ads, referrals, campus deals, merchants' followers) ordering across all stores — not from re-routing each merchant's existing DM sales. Aggressive targets live in the upside scenario (§4.1).
 
 | Month | Orders (planning) | Merchants live | Basis |
 | :--- | :--- | :--- | :--- |
@@ -39,7 +39,9 @@
 | M7–M8 | 1,600–1,850 | 22–24 | |
 | M9–M12 | ~2,000–2,100 | 25+ | Organic tail |
 
-Note — *per-store load stays modest (~10–80 orders/mo), which is the honest expectation when the platform captures a slice of each merchant's DM-era volume, not all of it. Upside scenario doubles these figures — see §4.1.*
+**Read it in shoppers, not stores.** At ~1.5 orders per active shopper per month (`02` §2.1), the ramp means ~67 active shoppers in M1, **~390 at break-even (M4)**, ~900 at M6 and ~1,330 at M9 — out of ~0.89M people online in the launch area.
+
+**Honest tension:** averaged per store, the ramp is ~37 orders/store at M4 and ~67 at M6 — more than the ~30 orders/month total the one interviewed merchant reported (A9, n=1). That is only consistent if the platform brings net-new shoppers rather than re-routing merchants' existing customers. If the pilot shows mostly re-routed orders, the fix is **more stores** (e.g. 50 stores × ~12 orders), not higher per-store velocity. The concierge pilot (§6.1) and the first months' new-vs-returning shopper split test this. The upside scenario doubles these figures — see §4.1.
 
 ---
 
@@ -63,15 +65,19 @@ IQD. Burn = 210k (Phase A) → 652k (launch→M5) → 790k (M6+, scale). Contrib
 | M9 | 2,000 | +2,230,000 | −790,000 | +1,440,000 | +1,634,375 |
 | M10–12 | ~2,100 | ~+2,341,500 | −790,000 | +1.55M/mo | → ~+6.3M |
 
+> Note on the founding stores' 0%-commission first month: the incentive pool cannot absorb it (catalog-creation bounties fill the pool at launch — `01` §4), so it is funded as its own grant line (~190,000 IQD / ~$127, `04` §2 line 5). Without the grant, the waiver would deepen the low point from −3.27M (~$2,180) to −3.46M (~$2,305); M8 still finishes cumulative-positive (+4,375 IQD), so neither break-even (M4) nor recovery (M8) moves.
+>
+> What the low point is made of: startup 1.70M + development months 0.42M + operating losses M1–M3 1.15M (~$765). The grant funds each part once (`04` §2).
+
 ---
 
 ## 4. The Three Milestones
 
 | Milestone | Month | What it means |
 | :--- | :--- | :--- |
-| **Cash-flow positive** | **M4** (~600 orders/mo, just above the ~585 break-even; M5 is the first clearly positive month) | Cheapify covers its own monthly burn — losses stop growing |
+| **Monthly break-even** | **M4** (~600 orders/mo, just above the ~585 break-even; M5 is the first clearly positive month) | Cheapify covers its own monthly burn — losses stop growing |
 | **Peak loss** | **M3** (cumulative −3,267,625) | Deepest hole: ~3.27M IQD (~$2,180) total invested before recovery |
-| **Full recovery** | **M8** (~1,850 orders/mo) | Cumulative cash positive — all losses paid back |
+| **Cumulative recovery ("payback")** | **M8** (~1,850 orders/mo) | Cumulative cash positive — every dinar of the peak hole earned back; this is the "when is the money back" milestone, distinct from monthly break-even |
 
 ---
 
@@ -103,9 +109,9 @@ Planning vs. upside:
 
 ---
 
-## 4.2 Slow-Adoption Floor — ~25% Ramp `[WORST CASE]`
+## 4.2 Slow Case — Half the Planned Pace `[WORST CASE]`
 
-The floor case: orders crawl. ~5 orders/store at launch, adoption stays weak:
+The floor case: orders arrive at **half the planned pace** (50 vs. 100 in M1, 675 vs. 1,350 in M6). ~5 orders/store at launch, adoption stays weak:
 
 | Month | Orders (floor) | Net cash flow | Cumulative |
 | :--- | :--- | :--- | :--- |
@@ -119,21 +125,23 @@ The floor case: orders crawl. ~5 orders/store at launch, adoption stays weak:
 | M8 | 925 | +241,375 | −3,775,025 |
 | M9+ | ~1,000 | +325,000/mo | −3,450,025 → recovery ~M20 |
 
-*(Note: the M6 burn bump to 790k raises the break-even threshold from ~585 to ~709 orders/mo — which is why floor-ramp positivity lands at M7, not earlier.)*
+> Note: the M6 burn step-up to 790k applies by calendar in every scenario (`01` §4) — conservative here, since the slow case reaches only 675 orders in M6. It raises the break-even threshold from ~585 to ~709 orders/mo, which is why the slow case turns positive at M7, not M6.
+>
+> Operating losses after launch in this case: M1–M6 sum to **1,998,400 IQD (~$1,332)** — the size of the grant's runway line (`04` §2 line 6).
 
-**Read:** even at a crawl the venture doesn't hit a failure cliff — it degrades to a slow grind: peak hole ~4.12M IQD (~$2,750), losses stop growing at M7, recovery ~M20. The monthly loss is always capped by burn (~$435–525/mo), never by an order-volume cliff. **If the floor case is what reality looks like, the concierge pilot (§6.1) reveals it for ~30–50k IQD — before scale, not after.**
+Read: even at a crawl the venture doesn't hit a failure cliff — it degrades to a slow grind: peak hole ~4.12M IQD (~$2,750), losses stop growing at M7, recovery ~M20. The monthly loss is always capped by burn (~$435–525/mo), never by an order-volume cliff. **If the floor case is what reality looks like, the concierge pilot (§6.1) reveals it for ~30–50k IQD — before scale, not after.**
 
 ---
 
 ## 5. Break-Even Analysis
 
-```
+```text
 Monthly break-even = Operating burn ÷ Contribution/order
                    = 652,000 ÷ ~1,115
                    = ~585 orders/month  (~20 orders/day)
 ```
 
-**Important honesty note:** ~585 orders is total platform volume, not per-store. It means ~4 top merchants at full velocity, ~10 decent ones, or all 20+ at half-throttle. The pilot target of 150 orders/store/mo is aggressive; the realistic path is more stores at moderate velocity.
+**Important honesty note:** ~585 orders is total platform volume, not per-store — it equals **~390 regular shoppers** ordering ~1.5 times a month. Spread across stores it is ~37 orders/store at 16 stores, or ~12/store at 50 stores. The realistic path is more stores at moderate velocity (see §2).
 
 ### Sensitivity — break-even under different assumptions
 
@@ -167,6 +175,7 @@ Ways to pull break-even down if needed. Recorded as options only — none applie
 3. **Cash-positive in Month 4** (break-even; clearly positive from M5) — deliberately un-aggressive; if traction beats the plan it arrives M3 (§4.1).
 4. **Recovery by ~M8** — under the planning curve; upside pulls it to M6.
 5. **The real risk isn't the math — it's the volume curve.** The planning ramp already assumes only ~10–80 platform orders/merchant/mo (a slice of merchant volume, not all of it); the floor case (§4.2) shows even a ~5-order/store crawl degrades to a slow grind (~$2,750 peak), not a cliff. The true question — "can 20 stores each route ~1 order/day through the app?" — is what the concierge pilot (§6.1) answers cheaply, before scale.
+6. **Working-capital / COD float is protected by policy:** on cash orders (85–90% of volume), paying merchants before the courier remits COD cash would tie up ~2.5M IQD (~$1,650) per 5 days of courier delay at 600 orders/mo (15M IQD GMV). [`operational_policies.md`](../platform/operational_policies.md) §4 prevents this cash trap by releasing COD merchant payouts only *after both the 48-hour return window closes and the courier's electronic transfer has arrived* (contract target: ≤24 hours). The 1M IQD legal company capital (`04` §2 line 3) stays in the company account as working capital for float and refunds.
 
 ### 6.1 Validation Experiments — How to De-Risk Before Scaling `[ACTION ITEMS]`
 
@@ -175,7 +184,7 @@ Documents can't reduce traction risk — only real-world tests can. Three cheap 
 | Experiment | Cost | What it proves |
 | :--- | :--- | :--- |
 | ~~**Courier quote**~~ — **DONE**: Fast Delivery 2,500/3,500/4,500 contracted | ~0 | Was the #1 unknown — now verified pending signature |
-| **Concierge pilot** — manually run 10–20 real orders before building the app: founding merchant posts products, you coordinate order + delivery by hand | ~30–50k IQD | Real AOV, real courier cost, real shopper willingness — replaces A1/A4/A5/A6 with data |
+| **Concierge pilot** — run 15–20 real orders by hand on the MVP, before registration and launch: founding merchant lists products, you coordinate order + delivery manually | ~150k IQD (`04` §2 line 1) | Real AOV, real courier cost, real shopper willingness, new-vs-re-routed shopper split — replaces A1/A4/A5/A6/A9 with data |
 | **Merchant audience audit** — ask the 10 founding stores their follower counts + engagement rates | ~0 | Measures the actual bio-link traffic pool = the true order source driving §2's ramp |
 
 **Rule:** run these before treating any projection above as more than an envelope. The finance docs' job is to size the bet; these tests decide whether the bet is real.

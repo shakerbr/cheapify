@@ -131,19 +131,17 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
     # QA-only intermediate states: (slide key, label, last click shown)
     extra = []
     if qa_states:
-        specs = [("solution", "chaos", 0)] + [("product", f"screen {k + 1}", k) for k in range(5)] + [
-            ("model", "before segments", 0), ("model", "after click 5", 5),
-            ("finance", "after click 1", 1), ("finance", "final", 3),
-            ("funding", "step 1 ($2,500)", 2), ("funding", "step 2 ($4,500)", 3),
-            ("funding", "step 3 ($7,500)", 4)]
-        builders = {"solution": slides_a.solution, "product": slides_a.product,
-                    "model": slides_b.model, "finance": slides_b.finance,
-                    "funding": slides_b.funding}
+        specs = [("market", f"after click {k}", k) for k in (0, 1, 2)] + [
+            ("model", "after click 4", 4), ("model", "after click 5", 5)] + [
+            ("growth", f"after click {k}", k) for k in (0, 1, 2)] + [
+            ("finance", "after click 1", 1), ("finance", "after click 2", 2)]
+        builders = {"market": slides_a.market, "model": slides_b.model,
+                    "growth": slides_b.growth, "finance": slides_b.finance}
         for key, lab, upto in specs:
             d = D.SLIDES[key]
             sl = content(f"qa_{key}_{lab}", label=d["label"], headline=d["headline"],
                          foot=d.get("footnote"))
-            an = builders[key](sl, ctx) if key in ("finance", "funding") else builders[key](sl, ctx, "anim")
+            an = builders[key](sl, ctx, "anim") if key == "model" else builders[key](sl, ctx)
             an.apply_state(upto)
             extra.append(sl)
 

@@ -41,12 +41,12 @@ def model(sl, ctx, mode="anim"):
     lC = group(sh)
     cx = xC + wC / 2
     line(lC.shapes, cx, 4.02, cx, 4.28, INK60, 1.0)
-    text(lC.shapes, 8.9, 4.12, cx - 0.08 - 8.9, 0.30, "Courier 2,500", size=13, bold=True,
+    text(lC.shapes, 8.9, 4.08, cx - 0.08 - 8.9, 0.30, "Courier 2,500", size=13, bold=True,
          align="r", anchor="m")
     lH = group(sh)
     hx = xH + wH / 2
-    line(lH.shapes, hx, 4.02, hx, 4.62, INK, 1.0)
-    text(lH.shapes, 10.4, 4.50, hx - 0.08 - 10.4, 0.30, "Cheapify 1,450", size=13, bold=True,
+    line(lH.shapes, hx, 4.02, hx, 4.52, INK, 1.0)
+    text(lH.shapes, 10.4, 4.40, hx - 0.08 - 10.4, 0.30, "Cheapify 1,450", size=13, bold=True,
          align="r", anchor="m")
     callout = grp_text(sh, 8.5, 2.70, 4.04, 0.40, "950 fee + 500 delivery margin", size=12,
                        color=INK60, align="r", anchor="m")
@@ -79,28 +79,28 @@ def model(sl, ctx, mode="anim"):
         x = 7.05 + k * 0.92
         g = group(sh)
         if k == 0:
-            top, bot = BASE - 1450 * SC, BASE
+            wtop, wbot = BASE - 1450 * SC, BASE
             lbl = "1,450"
         else:
-            top = BASE - run * SC
-            bot = BASE - (run - val) * SC
-            if bot - top < 0.06:
-                bot = top + 0.06
+            wtop = BASE - run * SC
+            wbot = BASE - (run - val) * SC
+            if wbot - wtop < 0.06:
+                wbot = wtop + 0.06
             lbl = lab
             run -= val
         if prev_level is not None:
             line(g.shapes, x - 0.30, prev_level, x, prev_level, INK35, 1.0)
-        rect(g.shapes, x, top, 0.62, bot - top, fill=col)
-        text(g.shapes, x - 0.15, top - 0.28, 0.92, 0.24, lbl, size=11, bold=True, align="c",
+        rect(g.shapes, x, wtop, 0.62, wbot - wtop, fill=col)
+        text(g.shapes, x - 0.15, wtop - 0.28, 0.92, 0.24, lbl, size=11, bold=True, align="c",
              anchor="m")
         text(g.shapes, x - 0.15, 6.60, 0.92, 0.20, cat, size=10, color=INK60, align="c")
-        prev_level = bot if k else top
+        prev_level = wbot if k else wtop
         cols_wf.append(g)
     px_ = 7.05 + 5 * 0.92
     prof = group(sh)
     line(prof.shapes, px_ - 0.30, prev_level, px_, prev_level, INK35, 1.0)
     rect(prof.shapes, px_, BASE - 1115 * SC, 0.62, 1115 * SC, fill=BLUE)
-    text(prof.shapes, px_ - 0.45, BASE - 1115 * SC - 0.42, 1.52, 0.38, "1,115 IQD", size=20,
+    text(prof.shapes, px_ - 0.31, BASE - 1115 * SC - 0.40, 1.24, 0.36, "1,115 IQD", size=18,
          bold=True, font="Comfortaa", color=BLUE, align="c", anchor="m")
     text(prof.shapes, px_ - 0.15, 6.60, 0.92, 0.20, "Profit", size=10, color=INK60, align="c")
     if mode == "anim":
@@ -174,8 +174,8 @@ def growth(sl, ctx):
     ringg = group(sh)
     oval(ringg.shapes, C[0], C[1], R, line=BLUE, lw=2.5)
     pic_contain(ringg.shapes, A("cheapify-logo.png"), C[0] - 0.30, C[1] - 0.386, 0.60, 0.771)
-    node_def = [((C[0], C[1] - R), "More stores"), ((C[0] + R, C[1]), "Lower prices"),
-                ((C[0], C[1] + R), "More shoppers"), ((C[0] - R, C[1]), "More orders")]
+    node_def = [((C[0], C[1] - R), "Lower prices"), ((C[0] + R, C[1]), "More shoppers"),
+                ((C[0], C[1] + R), "More orders"), ((C[0] - R, C[1]), "More stores")]
     nodes = []
     for (nx, ny), lbl in node_def:
         g = group(sh)
@@ -217,7 +217,7 @@ def growth(sl, ctx):
     an.add([[fx(ringg)]], auto=True)
     an.add([[fx(hl)]] + stagger(rl, "fade", 60, 150) + [[fx(al)]])
     an.add([[fx(hr), fx(ar)]] + stagger(rr, "fade", 60, 150))
-    an.add(stagger(nodes, "zoom") + [[fx(c, "fade", 80 * i, 250) for i, c in enumerate(chevs)]])
+    an.add(stagger([nodes[3], nodes[0], nodes[1], nodes[2]], "zoom") + [[fx(c, "fade", 80 * i, 250) for i, c in enumerate(chevs)]])
     return an
 
 
