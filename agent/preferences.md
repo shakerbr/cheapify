@@ -175,3 +175,7 @@ This file documents the specific ways, working habits, and styling preferences r
     - Judges want "how much is spent, each month, and when it comes back" — keep a month-by-month release schedule.
     - Prefer verified public sources (official fee schedules, central-bank rates, provider price pages) over estimates; label estimates as estimates. Exact derived numbers are fine; round numbers are fine when the derivation is shown.
     - Profit must stay strong: present card/e-wallet fees with their offsets (pre-paid orders remove failed-delivery cost), never as an unexplained drag.
+
+35. **Micro-Commit History Distribution:**
+    - When requested, organize the current worktree into at least 40 meaningful micro commits.
+    - Distribute those commits across 30 October, 31 October, 1 November, and 2 November 2026 using explicit commit dates, without rewriting or deleting existing commits.
