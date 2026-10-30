@@ -252,12 +252,14 @@ def resize_headers(slide, cover=False):
             old_footer_pics.append(sh)
         elif cover and sh.has_text_frame and sh.top > E(5.0):
             txt = sh.text_frame.text.strip()
+            for p in sh.text_frame.paragraphs:
+                p.alignment = PP_ALIGN.LEFT
             if txt == "capa.auk":
-                sh.left, sh.top = E(1.844), E(6.573)
+                sh.left, sh.top, sh.width, sh.height = E(1.844), E(6.573), E(1.209), E(0.228)
             elif txt == "CAPA AUK":
-                sh.left, sh.top = E(6.026), E(6.573)
+                sh.left, sh.top, sh.width, sh.height = E(6.026), E(6.573), E(1.292), E(0.228)
             elif txt == "capa@auk.edu.krd":
-                sh.left, sh.top = E(10.323), E(6.573)
+                sh.left, sh.top, sh.width, sh.height = E(10.323), E(6.573), E(2.301), E(0.228)
 
     if cover and old_footer_pics:
         for sh in old_footer_pics:
@@ -555,14 +557,35 @@ def gauge(parent, cx, cy, d, pct, color=BLUE, track=NEUTRAL, thick=0.14):
 
 
 # ---------------------------------------------------------------- font embedding
+# (family used in the build, unique family name written into the shipped .pptx,
+#  regular .ttf, bold .ttf). The shipped deck uses the unique names so an
+#  installed copy of the same family (e.g. a variable "Inter" on Windows) can
+#  never collide with the embedded font and garble the text.
 EMBED_FONTS = (
-    ("Comfortaa", "Comfortaa-regular.fntdata", "Comfortaa-Regular.ttf",
-     "Comfortaa-bold.fntdata", "Comfortaa-Bold.ttf"),
-    ("Inter", "Inter-regular.fntdata", "Inter-Regular.ttf",
-     "Inter-bold.fntdata", "Inter-Bold.ttf"),
-    ("IBM Plex Sans Arabic", "IBMPlexSansArabic-regular.fntdata", "IBMPlexSansArabic-Regular.ttf",
-     "IBMPlexSansArabic-bold.fntdata", "IBMPlexSansArabic-Bold.ttf"),
+    ("Comfortaa", "Cheapify Comfortaa", "Comfortaa-Regular.ttf", "Comfortaa-Bold.ttf"),
+    ("Inter", "Cheapify Inter", "Inter-Regular.ttf", "Inter-Bold.ttf"),
+    ("IBM Plex Sans Arabic", "Cheapify Plex Arabic",
+     "IBMPlexSansArabic-Regular.ttf", "IBMPlexSansArabic-Bold.ttf"),
 )
+
+
+def renamed_ttf(path, family, style):
+    """Return TTF bytes of `path` with its family renamed to `family` (style `style`)."""
+    import io
+    from fontTools.ttLib import TTFont
+
+    f = TTFont(str(path))
+    name = f["name"]
+    ps = family.replace(" ", "") + "-" + style
+    for nid in (1, 2, 3, 4, 6, 16, 17, 21, 22, 25):
+        name.removeNames(nameID=nid)
+    for nid, val in ((1, family), (2, style), (3, f"{ps};cheapify-deck"),
+                     (4, f"{family} {style}"), (6, ps)):
+        name.setName(val, nid, 3, 1, 0x409)
+        name.setName(val, nid, 1, 0, 0)
+    buf = io.BytesIO()
+    f.save(buf)
+    return buf.getvalue()
 NS_REL = "http://schemas.openxmlformats.org/package/2006/relationships"
 NS_R = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 NS_CT = "http://schemas.openxmlformats.org/package/2006/content-types"
@@ -615,27 +638,53 @@ def ttf_to_eot(ttf: bytes) -> bytes:
     return fixed + var_blob + ttf
 
 
-def embed_fonts(pptx_path, font_dir, template_pptx=None):
-    """Embed Comfortaa, Inter, and IBM Plex Sans Arabic (Regular + Bold) into pptx_path."""
+def embed_fonts(pptx_path, font_dir, template_pptx=None, rename=True):
+    """Embed Comfortaa, Inter, and IBM Plex Sans Arabic (Regular + Bold) into pptx_path.
+
+    rename=True (shipped deck): every font is embedded under a unique family name
+    ("Cheapify Inter", ...) and all text is retargeted to it, so a different
+    installed version of the same font on the presenting PC can't garble the text.
+    rename=False (QA/PDF build): original family names, rendered with locally
+    installed fonts by LibreOffice.
+    """
+    import re
+
     pptx_path = Path(pptx_path)
     font_dir = Path(font_dir)
-    tpl_fonts = {}
-    if template_pptx and Path(template_pptx).exists():
-        with zipfile.ZipFile(template_pptx) as tz:
-            for n in tz.namelist():
-                if n.startswith("ppt/fonts/") and n.endswith(".fntdata"):
-                    tpl_fonts[Path(n).name] = tz.read(n)
-
-    fnt_blobs = {}
-    for _, reg_fnt, reg_ttf, bold_fnt, bold_ttf in EMBED_FONTS:
-        for fnt_name, ttf_name in ((reg_fnt, reg_ttf), (bold_fnt, bold_ttf)):
-            if fnt_name in tpl_fonts:
-                fnt_blobs[f"ppt/fonts/{fnt_name}"] = tpl_fonts[fnt_name]
-            else:
-                fnt_blobs[f"ppt/fonts/{fnt_name}"] = ttf_to_eot((font_dir / ttf_name).read_bytes())
 
     with zipfile.ZipFile(pptx_path, "r") as zin:
         entries = {name: zin.read(name) for name in zin.namelist()}
+
+    fams = []  # (family written in the deck, regular .fntdata, bold .fntdata)
+    fnt_blobs = {}
+    for orig, deck_fam, reg_ttf, bold_ttf in EMBED_FONTS:
+        fam = deck_fam if rename else orig
+        stem = fam.replace(" ", "")
+        files = []
+        for style, ttf_name in (("Regular", reg_ttf), ("Bold", bold_ttf)):
+            src = font_dir / ttf_name
+            ttf = renamed_ttf(src, fam, style) if rename else src.read_bytes()
+            fnt = f"{stem}-{style.lower()}.fntdata"
+            fnt_blobs[f"ppt/fonts/{fnt}"] = ttf_to_eot(ttf)
+            files.append(fnt)
+        fams.append((fam, files[0], files[1]))
+
+        if rename:
+            pat = re.compile(rb'typeface="' + re.escape(orig.encode()) + rb'"')
+            rep = b'typeface="' + deck_fam.encode() + b'"'
+            for n in entries:
+                if n.startswith("ppt/") and n.endswith(".xml"):
+                    entries[n] = pat.sub(rep, entries[n])
+
+    # drop font parts left over from the template; ours are re-added below
+    for n in [n for n in entries if n.startswith("ppt/fonts/")]:
+        del entries[n]
+    rels_root = etree.fromstring(entries["ppt/_rels/presentation.xml.rels"])
+    for rel in rels_root.findall(f"{{{NS_REL}}}Relationship"):
+        if rel.get("Type") == FONT_REL_TYPE:
+            rels_root.remove(rel)
+    entries["ppt/_rels/presentation.xml.rels"] = etree.tostring(
+        rels_root, xml_declaration=True, encoding="UTF-8", standalone="yes")
 
     # 1. [Content_Types].xml
     ct_root = etree.fromstring(entries["[Content_Types].xml"])
@@ -716,7 +765,7 @@ def embed_fonts(pptx_path, font_dir, template_pptx=None):
         return rid
 
     rids = {}
-    for fam, reg_fnt, _, bold_fnt, _ in EMBED_FONTS:
+    for fam, reg_fnt, bold_fnt in fams:
         rids[fam] = (ensure_font_rel(reg_fnt), ensure_font_rel(bold_fnt))
     entries["ppt/_rels/presentation.xml.rels"] = etree.tostring(
         rels_root, xml_declaration=True, encoding="UTF-8", standalone="yes"
@@ -728,7 +777,7 @@ def embed_fonts(pptx_path, font_dir, template_pptx=None):
     for old in pres_root.findall(f"{{{NS_P}}}embeddedFontLst"):
         pres_root.remove(old)
     ef_lst = etree.Element(f"{{{NS_P}}}embeddedFontLst")
-    for fam, _, _, _, _ in EMBED_FONTS:
+    for fam, _, _ in fams:
         reg_rid, bold_rid = rids[fam]
         ef = etree.SubElement(ef_lst, f"{{{NS_P}}}embeddedFont")
         etree.SubElement(ef, f"{{{NS_P}}}font", typeface=fam)
