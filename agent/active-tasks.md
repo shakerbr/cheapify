@@ -58,3 +58,9 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 * Top 3 of 20 ventures funded; ranked awards (1st > 2nd > 3rd), envelope unknown — the tiers in `finance/04` §1 keep every amount a complete plan.
 * **Pitch hard limit: under 6 minutes** — slide count flexible.
+
+### Current Commit Task
+
+* [ ] Inventory and preserve every pending worktree file.
+* [ ] Create at least 40 meaningful micro commits across 30 Oct, 31 Oct, 1 Nov, and 2 Nov 2026.
+* [ ] Verify commit count, date distribution, clean worktree, and no existing commits were rewritten.
