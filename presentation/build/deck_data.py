@@ -71,7 +71,7 @@ SLIDES = {
         headline="Shoppers save. Merchants sell.",
         footnote=None,
         seconds=20,
-        notes="For shoppers: [click] every price side by side, an order in thirty seconds, and cash on delivery — or card. For merchants: [click] real orders instead of 'price?' messages, a free dashboard for stock and payouts, and a fair fee — about 3.8 percent on a typical order.",
+        notes="For shoppers: [click] every price side by side — no more checking ten pages; order in thirty seconds — no 'price?' DMs, no waiting; and cash on delivery or card with the doorstep total shown upfront. For merchants: [click] ready orders with address and variant instead of 'price?' interrogations, a free dashboard for stock, orders and payouts, and a fair fee — about 3.8 percent on a typical 25,000-dinar order.",
         keynums=[("≈ 3.8%", "Effective Cheapify fee on a typical 25,000 IQD order (950 IQD)", 7),
                  ("30 seconds", "Checkout design target for a shopper's order", 8)],
         calc=["Fee on 25,000 IQD: 5% × 10,000 + 3% × 15,000 = 500 + 450 = 950 IQD.",
@@ -103,7 +103,7 @@ SLIDES = {
         headline="Budget-conscious shoppers who already compare prices.",
         footnote="Age groups are our targeting plan — the survey did not ask age. Survey n=199 (179 shoppers, 20 merchants), Sep–Oct 2026.",
         seconds=22,
-        notes="Who are those 390 shoppers? Time-poor professionals, household budget buyers, and students and deal hunters — 97 percent of surveyed shoppers notice big price gaps, and 88 percent would use Cheapify. [click] On the supply side, Duhok's social-media shops: 85 percent sell on Instagram or Facebook, and 75 percent want to try Cheapify.",
+        notes="Who are those 390 shoppers? Time-poor professionals buying chargers, perfume and gadgets; household budget buyers shopping for kitchen, home and personal care; and students and deal hunters buying cables, earbuds and gaming gear — 97 percent of surveyed shoppers notice big price gaps, and 88 percent would use Cheapify. [click] On the supply side, Duhok's social-commerce sellers who sell via DMs with digital photos ready, have 1,500 to 50,000 followers across 20 to 150 products, and start with 20 founding stores signed in person with 0 percent fee in month one: 85 percent sell on Instagram or Facebook, and 75 percent want to try Cheapify.",
         keynums=[("97%", "Of 179 surveyed shoppers notice big price gaps on the same item (88% would use Cheapify)", 1),
                  ("23–38 · 26–48 · 18–24", "Targeting-plan age bands: time-poor professionals · household budget buyers · students & deal hunters", 8),
                  ("85% · 75%", "Of 20 surveyed merchants sell on IG/FB · want to try Cheapify (~8 valid pilot leads)", 1)],
@@ -183,7 +183,7 @@ SLIDES = {
         headline="What $5,480 makes possible.",
         footnote="Registration: official KRI fee schedule · USD at the CBI rate of 1,500 IQD.",
         seconds=30,
-        notes="We ask for 5,480 dollars, computed line by line with zero idle cash. [click] In month zero, 100 runs our pilot by hand, [click] and 1,000 registers the company. [click] In month one, 840 launches 20 founding stores with a free first month. [click] Across months one to six, 1,340 covers monthly losses even in the slow case, [click] and 2,200 powers our growth push. [click] Less still launches — [click] and I build the platform myself for zero salary.",
+        notes="We ask for 5,480 dollars, computed line by line with zero idle cash. [click] In month zero, 100 runs our 15-to-20-order pilot by hand, [click] and 1,000 covers official KRI and Chamber registration fees. [click] In month one, 840 launches 20 founding stores — 710 for kits and app stores plus 130 for a 0 percent first month. [click] Across months one to six, 1,340 covers monthly losses even in the slow case, [click] and 2,200 powers our 4-month growth push in ads and campus outreach. [click] Less still launches — [click] and I build the platform myself for zero salary.",
         keynums=[("$5,480 (≈ 8.2M IQD)", "Pilot $100 + Registration $1,000 + Launch 20 stores $840 + Runway $1,340 + Growth push $2,200 — zero idle cash, zero reserve", 7),
                  ("$100 · $1,000 · $840 · $1,340 · $2,200", "Five milestone blocks across M0 → M6 (exact 6-line derivation & monthly release in Appendix A9)", 7),
                  ("$3,280 · $2,710", "Smaller award tiers: $3,280 covers the full slow-case runway; $2,710 covers the planned-case runway to break-even", 7)],
@@ -256,14 +256,14 @@ CHAOS = [  # x, y, source, price text, is_dm
 ]
 SELLERS = [
     ("Store A · Duhok", "92,000", "+3,000", "95,000 IQD", "Today"),
-    ("Store D · Erbil", "91,000", "+5,000", "96,000 IQD", "1–2 days"),
+    ("Store D · Zakho", "91,000", "+5,000", "96,000 IQD", "1–2 days"),
     ("Store B · Duhok", "99,000", "+3,000", "102,000 IQD", "Today"),
     ("Store C · Duhok", "121,000", "+3,000", "124,000 IQD", "Today"),
 ]
 RANKING = [
     ("banknote", "Lowest doorstep total"),
     ("truck", "Fastest delivery"),
-    ("sparkle", "Best seller rating"),
+    ("star", "Best seller rating"),
 ]
 
 # -------- slide 9 (competitors)
@@ -271,7 +271,7 @@ COMP_COLS = ["Instagram / Facebook", "Miswag", "iBazzar", "Elryan", "Cheapify"]
 COMP_ROWS = [
     ("Prices shown upfront", ["partly", "yes", "yes", "yes", "yes"]),
     ("One page per product", ["no", "no", "no", "no", "yes"]),
-    ("Every seller compared on that page", ["no", "no", "no", "no", "yes"]),
+    ("Every seller compared", ["no", "no", "no", "no", "yes"]),
     ("Third-party sellers can join", ["yes", "yes", "yes", "no", "yes"]),
 ]
 
@@ -283,15 +283,15 @@ CHART_SLOW = [-1133, -1273, -1413, -1811, -2160, -2446, -2658, -2721, -2746, -26
 # -------- slide 12 (funding timeline blocks M0..M6)
 # (title, detail, usd, start_m, end_m, color_key)
 FUNDING_BLOCKS = [
-    ("Pilot", "15–20 hand-run orders", 100, 0.0, 0.85, "ORANGE"),
-    ("Register the company", "Official KRI & Chamber fees", 1000, 0.25, 1.35, "INK"),
+    ("Pilot", "15–20 hand-run orders", 100, 0.0, 0.85, "BLUE"),
+    ("Register the company", "Official KRI & Chamber fees", 1000, 0.15, 1.0, "INK"),
     ("Launch 20 stores", "Kits $710 + 0% M1 $130", 840, 1.0, 2.5, "BLUE50"),
     ("Runway to break-even", "Slow-case loss cap (M1–M6)", 1340, 1.0, 6.0, "INK60"),
     ("Growth push", "Ads & campus ($550/mo)", 2200, 2.8, 6.0, "BLUE"),
 ]
 FUNDING_TIERS = [
     ("$3,280", "Launches + slow-case runway", "Pilot + registration + 20 stores + full $1,340 slow-case runway"),
-    ("$2,710", "Minimum self-funding launch", "Pilot + registration + 20 stores + $770 planned-case runway"),
+    ("$2,710", "Launches + planned runway", "Pilot + registration + 20 stores + $770 planned-case runway"),
 ]
 
 # -------- slide 13 (next steps)
