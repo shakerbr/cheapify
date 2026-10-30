@@ -53,8 +53,11 @@ def build_evidence():
     meta = {}
 
     crop = (0, 1258, 1080, 2122)
-    im = _crop_blur("Anker-Power-Bank/Screenshot_20261020_225824_Miswag.jpg", crop,
-                    [(36, 2060, 308, 2125), (561, 2060, 756, 2125)])
+    im = Image.open(EVID / "Anker-Power-Bank/Screenshot_20261020_225824_Miswag.jpg").convert("RGB")
+    draw_anker = ImageDraw.Draw(im)
+    for bx in ((32, 2084, 340, 2125), (555, 2084, 820, 2125)):
+        draw_anker.rectangle(bx, fill=(252, 252, 252))
+    im = im.crop(crop)
     im = _round_corners(im, radius=44)
     im.save(OUT / "ev-miswag-anker.jpg", quality=94)
     meta["ev-miswag-anker"] = {
@@ -63,7 +66,14 @@ def build_evidence():
     }
 
     crop = (0, 288, 1080, 1818)
-    im = _crop_blur("xiaomi-power-bank/Screenshot_20260920_130923.jpg", crop, [])
+    raw_xiaomi = Image.open(EVID / "xiaomi-power-bank/Screenshot_20260920_130923.jpg").convert("RGB")
+    _round_corners(raw_xiaomi.crop((552, 912, 790, 982)), radius=14, bg=(255, 255, 255)).save(
+        OUT / "ev-mag-xiaomi-70k.png"
+    )
+    _round_corners(raw_xiaomi.crop((34, 1688, 272, 1758)), radius=14, bg=(255, 255, 255)).save(
+        OUT / "ev-mag-xiaomi-60k.png"
+    )
+    im = raw_xiaomi.crop(crop)
     im = _round_corners(im, radius=64)
     im.save(OUT / "ev-ibazzar-xiaomi.jpg", quality=94)
     meta["ev-ibazzar-xiaomi"] = {
@@ -77,6 +87,9 @@ def build_evidence():
     full = Image.open(EVID / src).convert("RGB")
     full = _blur(full, [(77, 134, 206, 257), (435, 868, 642, 922),
                         (40, 2022, 140, 2118), (168, 2018, 415, 2056)])
+    _round_corners(full.crop((148, 2052, 326, 2116)), radius=14, bg=DARK_BG).save(
+        OUT / "ev-mag-ig-dm.png"
+    )
     ad_im = _round_corners(full.crop(ad), radius=28, bg=DARK_BG)
     com_im = full.crop(com)
     top_pad, gap, bot_pad = 18, 20, 10
@@ -113,7 +126,14 @@ def build_evidence():
     ad = (0, 428, 1080, 1506)
     pr = (0, 260, 1080, 1896)
     left = Image.open(EVID / ig).convert("RGB").crop(ad)
-    right = Image.open(EVID / ms).convert("RGB").crop(pr)
+    ms_full = Image.open(EVID / ms).convert("RGB")
+    vac_p = ms_full.crop((48, 1732, 322, 1850))
+    vac_b = ms_full.crop((892, 1732, 1025, 1850))
+    vac_mag = Image.new("RGB", (vac_p.width + 18 + vac_b.width, vac_p.height), (255, 255, 255))
+    vac_mag.paste(vac_p, (0, 0))
+    vac_mag.paste(vac_b, (vac_p.width + 18, 0))
+    _round_corners(vac_mag, radius=18, bg=(255, 255, 255)).save(OUT / "ev-mag-vac-133k.png")
+    right = ms_full.crop(pr)
     H = left.height
     rw = round(right.width * H / right.height)
     right = right.resize((rw, H), Image.LANCZOS)
@@ -156,9 +176,10 @@ def footer_icon_paths(name):
 def icon_path(name, color):
     """Lucide icon recolored to hex `color` (no #), 256 px PNG; cached."""
     color = color.lstrip("#").upper()
+    svg_file = ICON_SVG / f"{name}.svg"
     out = ICON_OUT / f"{name}_{color}.png"
-    if not out.exists():
-        svg = (ICON_SVG / f"{name}.svg").read_text()
+    if not out.exists() or svg_file.stat().st_mtime > out.stat().st_mtime:
+        svg = svg_file.read_text()
         svg = svg.replace("currentColor", f"#{color}")
         cairosvg.svg2png(bytestring=svg.encode(), write_to=str(out),
                          output_width=256, output_height=256)
