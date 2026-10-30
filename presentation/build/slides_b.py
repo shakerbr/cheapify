@@ -212,7 +212,7 @@ def growth(sl, ctx):
         ("megaphone", "Targeted ads · $2,200"),
         ("clapperboard", "Short videos"),
         ("graduation-cap", "Campus deals · 3 universities"),
-        ("users", "Referrals · 52 on the waitlist"),
+        ("users", "Waitlist & referrals · 52 ready"),
     ])
     al = group(sh)
     rect(al.shapes, 4.18, 4.27, 0.38, 0.20, fill=BLUE, shape=MSO_SHAPE.RIGHT_ARROW)
@@ -273,13 +273,13 @@ def finance(sl, ctx):
                    (-2000, "−$2k"), (-3000, "−$3k")):
         if v != 0:
             line(axes.shapes, PX0, Y(v), PX1, Y(v), NEUTRAL, 0.5)
-        text(axes.shapes, 0.85, Y(v) - 0.11, 0.55, 0.22, lab, size=10, color=INK60, align="r",
+        text(axes.shapes, 0.76, Y(v) - 0.11, 0.55, 0.22, lab, size=10, color=INK60, align="r",
              anchor="m")
     line(axes.shapes, PX0, Y(0), PX1, Y(0), INK, 1.0)
     x_labels = ("Start", "M-1", "Launch", "M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9",
                 "M10")
     for idx, lab in enumerate(x_labels):
-        text(axes.shapes, X(idx) - 0.36, 6.75, 0.72, 0.22, lab, size=9.5, color=INK60, align="c",
+        text(axes.shapes, X(idx) - 0.36, 6.79, 0.72, 0.22, lab, size=9.5, color=INK60, align="c",
              anchor="m")
 
     legend = group(sh)
@@ -310,21 +310,25 @@ def finance(sl, ctx):
         oval(g.shapes, X(idx), Y(series[idx]), 0.075, fill=color, line=WHITE, lw=1.0)
         return g
 
-    def label(idx, series, txt, color, box, anchor_pt):
+    def label(idx, series, txt, color, box, anchor_pt, sz=10.5):
         g = group(sh)
-        bx, by, bw = box
+        if len(box) == 4:
+            bx, by, bw, bh = box
+        else:
+            bx, by, bw = box
+            bh = 0.26
         line(g.shapes, X(idx), Y(series[idx]), anchor_pt[0], anchor_pt[1], color, 1.0)
-        rect(g.shapes, bx, by, bw, 0.26, fill=color, radius=0.13)
-        text(g.shapes, bx, by, bw, 0.26, txt, size=10.5, bold=True, color=WHITE, align="c",
-             anchor="m")
+        rect(g.shapes, bx, by, bw, bh, fill=color, radius=bh / 2)
+        text(g.shapes, bx, by, bw, bh, txt, size=sz, bold=True, color=WHITE, align="c",
+             anchor="m", wrap=False)
         return g
 
     pl, fa, sp = D.CHART_PLANNING, D.CHART_FAST, D.CHART_SLOW
     plan_segs = segs(pl, BLUE, 3.0)
     plan_dots = [dot(i, pl, BLUE) for i in (5, 6, 10)]
     plan_pills = [
-        label(5, pl, "Lowest −$2,180 · month 3", BLUE, (3.40, 6.40, 2.05), (5.45, 6.48)),
-        label(6, pl, "Monthly break-even · month 4", BLUE, (7.55, 6.22, 2.25), (7.55, 6.32)),
+        label(5, pl, "Lowest −$2,180 · month 3", BLUE, (2.88, 6.40, 2.05), (4.93, 6.48)),
+        label(6, pl, "Monthly break-even · month 4", BLUE, (7.48, 6.27, 2.08, 0.22), (7.48, 6.38), sz=9.5),
         label(10, pl, "All losses recovered · month 8", BLUE, (8.95, 4.24, 2.32), (10.11, 4.50)),
     ]
     fast_segs = segs(fa, INK, 2.2)
@@ -377,7 +381,7 @@ def funding(sl, ctx):
     text(tl_frame.shapes, 3.55, 2.70, 5.10, 0.36, "When each dollar is spent (M0 → M6)",
          size=12, bold=True, color=INK60, align="r", anchor="m")
 
-    GX0, GX1 = 3.85, 8.65
+    GX0, GX1 = 3.25, 8.65
     mx = lambda m: GX0 + (m / 6.0) * (GX1 - GX0)
     for m in range(7):
         x = mx(m)
@@ -390,12 +394,8 @@ def funding(sl, ctx):
     for i, (title, detail, usd, m0, m1, ck) in enumerate(D.FUNDING_BLOCKS):
         y = 3.18 + i * 0.52
         g = group(sh)
-        text(g.shapes, 1.02, y + 0.01, 1.95, 0.22, title, size=12.5, bold=True, color=INK,
-             anchor="t", wrap=False)
-        text(g.shapes, 1.02, y + 0.24, 1.95, 0.20, detail, size=9.5, color=INK60,
-             anchor="t", wrap=False)
-        text(g.shapes, 2.95, y + 0.04, 0.78, 0.34, f"${usd:,}", size=13, bold=True,
-             font="Comfortaa", color=INK, align="r", anchor="m")
+        text(g.shapes, 1.02, y + 0.04, 2.15, 0.34, title, size=13, bold=True, color=INK,
+             anchor="m", wrap=False)
         bx = mx(m0)
         bw = max(0.55, mx(m1) - mx(m0))
         rect(g.shapes, bx, y + 0.06, bw, 0.32, fill=colors[ck], radius=0.08)
@@ -479,7 +479,7 @@ def thanks(sl, ctx):
     sh = sl.shapes
     w = 1.15
     logo, _ = pic_contain(sh, A("cheapify-logo.png"), (SLIDE_W - w) / 2, 1.95, w, w * 9 / 7)
-    t1 = text(sh, 0, 3.55, SLIDE_W, 0.80, "Thank you", size=48, bold=True, font="Comfortaa",
+    t1 = text(sh, 0, 3.55, SLIDE_W, 0.80, "Thank You", size=48, bold=True, font="Comfortaa",
               align="c", anchor="m")
     t2 = text(sh, 0, 4.42, SLIDE_W, 0.42, "The bright side of choosing.", size=20, color=BLUE,
               font="Comfortaa", align="c", anchor="m")
