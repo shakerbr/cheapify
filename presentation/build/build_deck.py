@@ -186,7 +186,7 @@ def build(static=False, qa_states=False, out=OUT_PPTX):
     for sl in seq:
         lst.append(by_part[sl.part])
     prs.save(str(out))
-    embed_fonts(out, FONTS_DIR, TEMPLATE)
+    embed_fonts(out, FONTS_DIR, TEMPLATE, rename=not static)
     return out
 
 
