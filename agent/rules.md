@@ -50,3 +50,7 @@ These are the strict, mandatory rules set by the user. The AI agent must adhere 
 15. **Everything Stays Inside the Project Directory:**
     - Every project-related artifact — specs, drafts, data, scripts, virtualenvs, renders, review images, scratch files — MUST live inside the project directory. Never write project work to the system `/tmp` or anywhere outside the project.
     - Durable artifacts go in their proper tracked folder (e.g. deck specs → `presentation/build/specs/`). Scratch and generated work goes in the project's git-ignored `tmp/` folder (`tmp/venv/`, `tmp/deck-qa/`, `tmp/review/`, …). Create any other folders needed inside the project.
+
+16. **Requested Micro-Commit Distribution:**
+    - For the current commit-organization task, create at least 40 meaningful micro commits distributed across 30 October, 31 October, 1 November, and 2 November 2026.
+    - Do not rewrite, delete, or amend existing commits; use explicit historical dates only for the new commits created for this request.
