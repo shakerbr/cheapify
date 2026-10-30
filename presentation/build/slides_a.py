@@ -29,17 +29,15 @@ def grp_text(parent, *a, **k):
 # ------------------------------------------------------------------ 1 cover
 def cover(sl, ctx):
     sh = sl.shapes
-    t1 = text(sh, 0, 2.82, SLIDE_W, 0.80, "Youth Entrepreneurship Program", size=38, bold=True,
+    t1 = text(sh, 0, 3.05, SLIDE_W, 0.80, "Youth Entrepreneurship Program", size=38, bold=True,
               font="Comfortaa", color=INK, align="c", anchor="m")
-    t2 = text(sh, 0, 3.66, SLIDE_W, 0.44, "One product, ten prices.", size=18,
-              color=BLUE, font="Comfortaa", align="c", anchor="m")
-    rule = rect(sh, (SLIDE_W - 2.40) / 2, 4.38, 2.40, 0.05, fill=BLUE)
-    f1 = text(sh, 0, 4.68, SLIDE_W, 0.38, "Shakir Bashar · Founder", size=18, bold=True,
+    rule = rect(sh, (SLIDE_W - 2.40) / 2, 4.12, 2.40, 0.05, fill=BLUE)
+    f1 = text(sh, 0, 4.44, SLIDE_W, 0.38, "Shakir Bashar", size=18, bold=True,
               color=INK, align="c", anchor="m")
-    f2 = text(sh, 0, 5.12, SLIDE_W, 0.32, "4 November 2026", size=13.5, color=INK60,
+    f2 = text(sh, 0, 4.88, SLIDE_W, 0.32, "4 November 2026", size=13.5, color=INK60,
               align="c", anchor="m")
     an = Anim()
-    an.add([[fx(t1, "fade"), fx(t2, "fade", 60)],
+    an.add([[fx(t1, "fade")],
             [fx(rule, "zoom"), fx(f1, "fade", 60), fx(f2, "fade", 90)]], auto=True)
     return an
 
@@ -116,6 +114,12 @@ def problem(sl, ctx):
 
 
 # ------------------------------------------------------------------ 3 evidence
+def _mag(parent, img_name, mx, my, mw, mh, lx0, ly0, lx1, ly1, bg=WHITE):
+    line(parent, lx0, ly0, lx1, ly1, RED, 1.75)
+    card(parent, mx, my, mw, mh, fill=bg, line=RED, lw=2.0, radius=0.14, shadow="elev2")
+    pic_contain(parent, A(img_name), mx + 0.05, my + 0.05, mw - 0.10, mh - 0.10)
+
+
 def evidence(sl, ctx):
     sh = sl.shapes
     an = Anim()
@@ -140,6 +144,14 @@ def evidence(sl, ctx):
         rg = group(sh)
         for box in M[key]["rings"]:
             ring(rg.shapes, geom, box)
+        if i == 0:
+            _mag(rg.shapes, "ev-mag-xiaomi-70k.png", 3.04, 3.51, 1.25, 0.44, 2.99, 3.75, 3.04, 3.75)
+            _mag(rg.shapes, "ev-mag-xiaomi-60k.png", 0.99, 4.34, 1.25, 0.44, 1.90, 4.88, 1.62, 4.78)
+        elif i == 1:
+            _mag(rg.shapes, "ev-mag-ig-dm.png", 6.38, 4.54, 1.24, 0.48, 6.18, 4.94, 6.38, 4.80,
+                 bg="1A1B1E")
+        elif i == 2:
+            _mag(rg.shapes, "ev-mag-vac-133k.png", 10.58, 4.04, 1.70, 0.50, 11.43, 4.65, 11.43, 4.54)
         rings.append(rg)
 
     bar = group(sh)
@@ -254,7 +266,7 @@ def value(sl, ctx):
     cols = [
         (0.95, "shopping-bag", "For shoppers", [
             ("eye", "Every price, side by side", "No more checking ten pages"),
-            ("message-circle-off", "Order in 30 seconds", "No “price?” DMs, no waiting"),
+            ("timer", "Order in 30 seconds", "No “price?” DMs, no waiting"),
             ("banknote", "Cash on delivery or card", "Doorstep total shown upfront")]),
         (7.05, "store", "For merchants", [
             ("package-check", "Orders, not interrogations", "Ready orders with address and variant"),
@@ -264,18 +276,19 @@ def value(sl, ctx):
     row_groups = []
     for x0, hic, htitle, rows in cols:
         g = group(sh)
-        oval(g.shapes, x0 + 0.275, 2.78 + 0.275, 0.275, fill=BLUE12)
-        icon_c(g.shapes, hic, BLUE, x0 + 0.275, 2.78 + 0.275, 0.30)
-        text(g.shapes, x0 + 0.75, 2.78, 4.5, 0.55, htitle, size=20, bold=True, anchor="m")
+        oval(g.shapes, x0 + 0.275, 2.76 + 0.275, 0.275, fill=BLUE)
+        icon_c(g.shapes, hic, WHITE, x0 + 0.275, 2.76 + 0.275, 0.30)
+        text(g.shapes, x0 + 0.75, 2.76, 4.5, 0.55, htitle, size=21, bold=True, font="Comfortaa",
+             color=BLUE, anchor="m")
+        line(g.shapes, x0, 3.50, x0 + 5.25, 3.50, NEUTRAL, 1.0)
         heads.append(g)
         rg = []
         for i, (ic, ph, sub) in enumerate(rows):
-            y = 3.70 + i * 1.0
+            y = 3.78 + i * 0.96
             r = group(sh)
             oval(r.shapes, x0 + 0.275, y + 0.275, 0.275, fill=BLUE12)
             icon_c(r.shapes, ic, BLUE, x0 + 0.275, y + 0.275, 0.30)
-            text(r.shapes, x0 + 0.75, y - 0.02, 4.9, 0.34, ph, size=18, bold=True, anchor="m")
-            text(r.shapes, x0 + 0.75, y + 0.34, 4.9, 0.28, sub, size=13, color=INK60, anchor="t")
+            text(r.shapes, x0 + 0.75, y, 4.9, 0.55, ph, size=19, bold=True, anchor="m")
             rg.append(r)
         row_groups.append(rg)
     an.add([[fx(heads[0]), fx(heads[1]), fx(div)]], auto=True)
@@ -394,9 +407,7 @@ def customers(sl, ctx):
         rect(r.shapes, 1.03, ry, 5.17, 0.62, fill=SURFACE, line=NEUTRAL, lw=0.75, radius=0.10)
         oval(r.shapes, 1.40, ry + 0.31, 0.22, fill=BLUE12)
         icon_c(r.shapes, ic, BLUE, 1.40, ry + 0.31, 0.24)
-        text(r.shapes, 1.74, ry + 0.06, 3.30, 0.26, nm, size=13, bold=True, color=INK, anchor="m",
-             wrap=False)
-        text(r.shapes, 1.74, ry + 0.32, 3.30, 0.22, buys, size=11, color=INK60, anchor="m",
+        text(r.shapes, 1.74, ry, 3.30, 0.62, nm, size=13.5, bold=True, color=INK, anchor="m",
              wrap=False)
         rect(r.shapes, 5.22, ry + 0.18, 0.80, 0.26, fill=BLUE, radius=0.13)
         text(r.shapes, 5.22, ry + 0.18, 0.80, 0.26, age, size=10.5, bold=True, color=WHITE,
@@ -407,10 +418,8 @@ def customers(sl, ctx):
     gauge(g97.shapes, 1.56, 6.18, 0.92, 0.97, thick=0.11)
     text(g97.shapes, 1.10, 5.96, 0.92, 0.44, "97%", size=14.5, bold=True, font="Comfortaa",
          align="c", anchor="m")
-    text(g97.shapes, 2.22, 5.88, 3.90, 0.30, "notice big price gaps on the same item",
+    text(g97.shapes, 2.22, 5.96, 3.90, 0.44, "notice big price gaps on the same item",
          size=13.5, bold=True, color=INK, anchor="m", wrap=False)
-    text(g97.shapes, 2.22, 6.20, 3.90, 0.24, "179 surveyed shoppers", size=11, color=INK60,
-         anchor="m")
 
     # Right card — Merchants (x=6.89..12.54, y=2.58..6.80)
     rcard = group(sh)
@@ -437,9 +446,7 @@ def customers(sl, ctx):
         rect(r.shapes, 7.13, ry, 5.17, 0.62, fill=SURFACE, line=NEUTRAL, lw=0.75, radius=0.10)
         oval(r.shapes, 7.50, ry + 0.31, 0.22, fill=BLUE12)
         icon_c(r.shapes, ic, BLUE, 7.50, ry + 0.31, 0.24)
-        text(r.shapes, 7.84, ry + 0.06, 2.75, 0.26, nm, size=13, bold=True, color=INK, anchor="m",
-             wrap=False)
-        text(r.shapes, 7.84, ry + 0.32, 2.75, 0.22, sub, size=11, color=INK60, anchor="m",
+        text(r.shapes, 7.84, ry, 2.75, 0.62, nm, size=13.5, bold=True, color=INK, anchor="m",
              wrap=False)
         rect(r.shapes, 10.62, ry + 0.18, 1.52, 0.26, fill=tfill, radius=0.13)
         text(r.shapes, 10.62, ry + 0.18, 1.52, 0.26, tag, size=10, bold=True, color=tcol,
@@ -447,17 +454,16 @@ def customers(sl, ctx):
         mrows.append(r)
 
     gs = []
-    for cx, tx, pct, lbl, sub in (
-        (7.64, 8.24, 0.85, "sell on IG / FB", "20 surveyed shops"),
-        (10.36, 10.96, 0.75, "want to try", "Cheapify at launch"),
+    for cx, tx, tw, pct, lbl in (
+        (7.50, 8.06, 1.38, 0.85, "sell on IG / FB"),
+        (9.88, 10.44, 1.85, 0.75, "want to try Cheapify"),
     ):
         g = group(sh)
         gauge(g.shapes, cx, 6.18, 0.92, pct, thick=0.11)
         text(g.shapes, cx - 0.46, 5.96, 0.92, 0.44, f"{int(pct * 100)}%", size=14.5, bold=True,
              font="Comfortaa", align="c", anchor="m")
-        text(g.shapes, tx, 5.88, 1.48, 0.30, lbl, size=13, bold=True, color=INK, anchor="m",
+        text(g.shapes, tx, 5.96, tw, 0.44, lbl, size=13, bold=True, color=INK, anchor="m",
              wrap=False)
-        text(g.shapes, tx, 6.20, 1.48, 0.24, sub, size=10.5, color=INK60, anchor="m", wrap=False)
         gs.append(g)
 
     an.add([[fx(lcard)]] + stagger(srows, "fade") + [[fx(g97, "zoom")]], auto=True)
