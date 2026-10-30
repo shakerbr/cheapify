@@ -36,4 +36,4 @@ Options: `--static` (static PPTX only), `--qa-states` (also render intermediate 
 
 - Never edit `presenter-guide.md` by hand — edit `deck_data.py` and rebuild.
 - Do not change the deck without founder approval (`agent/rules.md` rule 14).
-- Fonts: `Comfortaa`, `Inter`, and `IBM Plex Sans Arabic` (Regular + Bold) are embedded directly into the `.pptx` from `../assets/fonts/` during build. Do not re-save the `.pptx` in ONLYOFFICE (which strips `<p:embeddedFontLst>`).
+- Fonts: `Comfortaa`, `Inter`, and `IBM Plex Sans Arabic` (Regular + Bold) are embedded directly into the `.pptx` from `../assets/fonts/` during build. In the shipped deck they are renamed to `Cheapify Comfortaa`, `Cheapify Inter`, and `Cheapify Plex Arabic` (via `fonttools`), so a different version of the same font installed on the presenting PC (for example a variable `Inter`) can't clash with the embedded copy and garble the text. The QA/PDF build keeps the original names and uses locally installed fonts. Do not re-save the `.pptx` in ONLYOFFICE (which strips `<p:embeddedFontLst>`).
