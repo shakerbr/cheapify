@@ -38,6 +38,9 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
    - Do NOT modify the pitch deck until the proposed changes are discussed, understood by the founder, and explicitly approved. Propose first (written spec), build only after the green light.
 15. **Everything Stays Inside the Project Directory:**
    - All project artifacts (specs, drafts, data, scripts, venvs, renders, scratch files) live inside the project — never in the system `/tmp` or elsewhere. Durable work goes in tracked folders (deck specs → `presentation/build/specs/`); scratch/generated work goes in the git-ignored `tmp/` (`tmp/venv/`, `tmp/deck-qa/`, …).
+16. **Requested Micro-Commit Distribution:**
+   - For the current commit-organization task, create at least 40 meaningful micro commits distributed across 30 October, 31 October, 1 November, and 2 November 2026.
+   - Do not rewrite, delete, or amend existing commits; use explicit historical dates only for the new commits created for this request.
 
 ---
 
