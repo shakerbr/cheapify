@@ -16,18 +16,18 @@ Final pitch for the GIZ Youth Entrepreneurship Program. Hard limit: under 6 minu
 | 2 | Problem | 26 | 60 | 26 | 0:35 |
 | 3 | Problem · evidence | 30 | 69 | 30 | 1:05 |
 | 4 | Solution | 38 | 89 | 38 | 1:43 |
-| 5 | Value proposition | 20 | 46 | 20 | 2:03 |
-| 6 | Target market | 25 | 59 | 25 | 2:28 |
-| 7 | Target customers | 22 | 52 | 22 | 2:50 |
-| 8 | Business model | 27 | 64 | 27 | 3:17 |
-| 9 | Competitor analysis | 21 | 50 | 21 | 3:38 |
-| 10 | Growth strategy | 33 | 76 | 33 | 4:11 |
-| 11 | Financial feasibility | 30 | 69 | 30 | 4:41 |
-| 12 | Funding | 31 | 73 | 31 | 5:12 |
-| 13 | Thank you | 4 | 9 | 4 | 5:16 |
-| | **Total** | **316** | **738** | **316** | **5:16** |
+| 5 | Value proposition | 29 | 68 | 29 | 2:12 |
+| 6 | Target market | 25 | 59 | 25 | 2:37 |
+| 7 | Target customers | 45 | 104 | 45 | 3:22 |
+| 8 | Business model | 27 | 64 | 27 | 3:49 |
+| 9 | Competitor analysis | 21 | 50 | 21 | 4:10 |
+| 10 | Growth strategy | 33 | 76 | 33 | 4:43 |
+| 11 | Financial feasibility | 30 | 69 | 30 | 5:13 |
+| 12 | Funding | 40 | 94 | 40 | 5:53 |
+| 13 | Thank you | 4 | 9 | 4 | 5:57 |
+| | **Total** | **357** | **833** | **357** | **5:57** |
 
-Estimated delivery time at 140 words per minute: 5:16 (target budget 5:16).
+Estimated delivery time at 140 words per minute: 5:57 (target budget 5:57).
 
 ## Slide 1 — Cover
 
@@ -134,9 +134,9 @@ That's why I'm building Cheapify — the bright side of choosing. [click] Cheapi
 
 ### Say
 
-*Time: ~20s*
+*Time: ~29s*
 
-For shoppers: [click] every price side by side, an order in thirty seconds, and cash on delivery — or card. For merchants: [click] real orders instead of 'price?' messages, a free dashboard for stock and payouts, and a fair fee — about 3.8 percent on a typical order.
+For shoppers: [click] every price side by side — no more checking ten pages; order in thirty seconds — no 'price?' DMs, no waiting; and cash on delivery or card with the doorstep total shown upfront. For merchants: [click] ready orders with address and variant instead of 'price?' interrogations, a free dashboard for stock, orders and payouts, and a fair fee — about 3.8 percent on a typical 25,000-dinar order.
 
 ### Key numbers
 
@@ -190,9 +190,9 @@ We launch in Duhok city, Semel and Zakho. Iraq has 46.1 million people; [click] 
 
 ### Say
 
-*Time: ~22s*
+*Time: ~45s*
 
-Who are those 390 shoppers? Time-poor professionals, household budget buyers, and students and deal hunters — 97 percent of surveyed shoppers notice big price gaps, and 88 percent would use Cheapify. [click] On the supply side, Duhok's social-media shops: 85 percent sell on Instagram or Facebook, and 75 percent want to try Cheapify.
+Who are those 390 shoppers? Time-poor professionals buying chargers, perfume and gadgets; household budget buyers shopping for kitchen, home and personal care; and students and deal hunters buying cables, earbuds and gaming gear — 97 percent of surveyed shoppers notice big price gaps, and 88 percent would use Cheapify. [click] On the supply side, Duhok's social-commerce sellers who sell via DMs with digital photos ready, have 1,500 to 50,000 followers across 20 to 150 products, and start with 20 founding stores signed in person with 0 percent fee in month one: 85 percent sell on Instagram or Facebook, and 75 percent want to try Cheapify.
 
 ### Key numbers
 
@@ -331,9 +331,9 @@ Our monthly costs are 435 dollars, so we break even at 585 orders a month — ab
 
 ### Say
 
-*Time: ~31s*
+*Time: ~40s*
 
-We ask for 5,480 dollars, computed line by line with zero idle cash. [click] In month zero, 100 runs our pilot by hand, [click] and 1,000 registers the company. [click] In month one, 840 launches 20 founding stores with a free first month. [click] Across months one to six, 1,340 covers monthly losses even in the slow case, [click] and 2,200 powers our growth push. [click] Less still launches — [click] and I build the platform myself for zero salary.
+We ask for 5,480 dollars, computed line by line with zero idle cash. [click] In month zero, 100 runs our 15-to-20-order pilot by hand, [click] and 1,000 covers official KRI and Chamber registration fees. [click] In month one, 840 launches 20 founding stores — 710 for kits and app stores plus 130 for a 0 percent first month. [click] Across months one to six, 1,340 covers monthly losses even in the slow case, [click] and 2,200 powers our 4-month growth push in ads and campus outreach. [click] Less still launches — [click] and I build the platform myself for zero salary.
 
 ### Key numbers
 
