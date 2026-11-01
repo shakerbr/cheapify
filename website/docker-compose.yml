@@ -1,0 +1,33 @@
+services:
+  web:
+    build: .
+    image: cheapify-web:latest
+    container_name: cheapify-web
+    restart: always
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cheapify.rule=Host(`getcheapify.com`) || Host(`www.getcheapify.com`)"
+      - "traefik.http.routers.cheapify.entrypoints=websecure"
+      - "traefik.http.routers.cheapify.tls.certresolver=myresolver"
+      - "traefik.http.services.cheapify.loadbalancer.server.port=80"
+
+  api:
+    image: node:20-alpine
+    container_name: cheapify-api
+    restart: always
+    working_dir: /app
+    volumes:
+      - ./api:/app
+      - ./data:/app/data
+    command: node server.js
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
