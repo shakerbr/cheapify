@@ -61,6 +61,6 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ### Current Commit Task
 
-* [ ] Inventory and preserve every pending worktree file.
-* [ ] Create at least 40 meaningful micro commits across 30 Oct, 31 Oct, 1 Nov, and 2 Nov 2026.
-* [ ] Verify commit count, date distribution, clean worktree, and no existing commits were rewritten.
+* [x] Inventory and preserve every pending worktree file.
+* [x] Create at least 40 meaningful micro commits across 30 Oct, 31 Oct, 1 Nov, and 2 Nov 2026.
+* [x] Verify commit count, date distribution, clean worktree, and no existing commits were rewritten.
