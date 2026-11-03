@@ -35,7 +35,7 @@ Every slide must pass all of these before it ships:
 ### Slide 1 — Cover (program title + small hook — founder choice)
 
 - No product name, no logo (slide 2 owns the problem; slide 4 reveals Cheapify).
-- Centered stack: **"Youth Entrepreneurship Program"** (Comfortaa bold, large `38 pt`) · **"One product, ten prices."** (`18 pt` Comfortaa, Brand Blue subtitle) · thin blue rule · "Shakir Bashar · Founder" · "4 November 2026".
+- Centered stack: **"Youth Entrepreneurship Program"** (Comfortaa bold, large `38 pt`) · **"One product, ten prices."** (`18 pt` Comfortaa, Brand Blue subtitle) · thin blue rule · "Shakir Bashar · Founder" · "5 November 2026".
 - Exact template header sizes + the CAPA footer bar (cover template). Generous, balanced white space is intended here (rule 4 doesn't apply to the cover).
 - Script (~6 s): name + "I'm here to show you a problem every online shopper in Kurdistan and Iraq faces."
 

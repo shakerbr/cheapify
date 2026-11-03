@@ -34,7 +34,7 @@ def cover(sl, ctx):
     rule = rect(sh, (SLIDE_W - 2.40) / 2, 4.12, 2.40, 0.05, fill=BLUE)
     f1 = text(sh, 0, 4.44, SLIDE_W, 0.38, "Shakir Bashar", size=18, bold=True,
               color=INK, align="c", anchor="m")
-    f2 = text(sh, 0, 4.88, SLIDE_W, 0.32, "4 November 2026", size=13.5, color=INK60,
+    f2 = text(sh, 0, 4.88, SLIDE_W, 0.32, "5 November 2026", size=13.5, color=INK60,
               align="c", anchor="m")
     an = Anim()
     an.add([[fx(t1, "fade")],

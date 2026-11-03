@@ -12,7 +12,7 @@ Normal text is what you say, word for word. Everything else is a marked block th
 | ♪ | **VOICE** | How it should sound: speed, volume, mood. |
 | ◉ | **BEHAVIOUR** | Eyes, face and reactions: look, smile, wait. |
 
-Total: 601 spoken words, about 4:18 at 140 words per minute, 36 clicks. Hard cap: 6:00.
+Total: 606 spoken words, about 4:20 at 140 words per minute, 36 clicks. Hard cap: 6:00.
 
 Same script as a colour-coded page: [pitch-script.html](pitch-script.html).
 
@@ -236,39 +236,39 @@ If you sell: no more answering the same question all day, orders arrive ready, a
 
 ## Slide 6 — Target market
 
-*About 0:21 spoken, 3 clicks, running total 2:00*
+*About 0:19 spoken, 3 clicks, running total 1:58*
 
-> ♪ **VOICE** · Steady and building, like zooming in on a map.
+> ♪ **VOICE** · Steady and building, like zooming in on a map. Keep it one flowing sentence.
 
 > ◌ **AUTO** · The Iraq circle appears by itself.
 
-We start in Duhok. Iraq has 46 million people.
+Iraq is big. We start small,
 
 > ▶ **CLICK 1** · The Duhok governorate circle appears.
 
-Duhok governorate: 1.6 million.
+inside one governorate,
 
 > ▶ **CLICK 2** · The launch-area circle appears.
 
-Our launch area, over a million people, and roughly 30 million dollars a year of online shopping.
+in three cities, with over a million people and 30 million dollars of online shopping a year.
 
 > ▶ **CLICK 3** · The break-even card appears.
 
 > ♪ **VOICE** · Slow down. This is the small number that matters.
 
-To break even, we need just 390 regular shoppers.
+And we need just 390 regular shoppers to break even.
 
 > ■ **PAUSE** · 1 second.
 
 > ♪ **VOICE** · Almost a whisper, then a smile.
 
-Three hundred and ninety. Out of over a million.
+Less than half a percent of that market.
 
 ---
 
 ## Slide 7 — Target customers
 
-*About 0:18 spoken, 1 clicks, running total 2:18*
+*About 0:18 spoken, 1 clicks, running total 2:16*
 
 > ♪ **VOICE** · Clear and conversational. You are painting three quick portraits.
 
@@ -294,23 +294,23 @@ And the stores? Social-media sellers who already sell through DMs. Three in four
 
 ## Slide 8 — Business model
 
-*About 0:14 spoken, 2 clicks, running total 2:32*
+*About 0:18 spoken, 2 clicks, running total 2:34*
 
 > ♪ **VOICE** · Clear and measured. Money slide: do not rush.
 
 > ◌ **AUTO** · The fee panel appears by itself.
 
-We earn only when an order is delivered. On a typical order, we take about 1,450 dinars.
+How does Cheapify make money? A small fee, lighter on bigger orders. On a typical order, that's about 1,450 dinars for us.
 
 > ▶ **CLICK 1** · The costs appear.
 
-Our costs: 335.
+Out of that, we pay for messages, logins, returns and re-deliveries.
 
 > ▶ **CLICK 2** · The 1,115 result appears.
 
 > ♪ **VOICE** · Land the number with confidence.
 
-We keep 1,115 dinars on every delivered order.
+And we keep 1,115 dinars.
 
 > ■ **PAUSE** · 1 second.
 
@@ -322,7 +322,7 @@ No delivery, no fee.
 
 ## Slide 9 — Competitor analysis
 
-*About 0:15 spoken, 2 clicks, running total 2:47*
+*About 0:15 spoken, 2 clicks, running total 2:49*
 
 > ♪ **VOICE** · Fast and light. This is a quick slide.
 
@@ -344,7 +344,7 @@ Nobody else puts every seller on one page and compares them for you. Only Cheapi
 
 ## Slide 10 — Growth strategy
 
-*About 0:32 spoken, 4 clicks, running total 3:18*
+*About 0:32 spoken, 4 clicks, running total 3:21*
 
 > ♪ **VOICE** · Energetic. You are letting them in on the secret of how it starts.
 
@@ -382,35 +382,35 @@ Duhok first. Then Erbil, Mosul, Sulaymaniyah. Then all of Iraq.
 
 ## Slide 11 — Financial feasibility
 
-*About 0:25 spoken, 3 clicks, running total 3:44*
+*About 0:19 spoken, 3 clicks, running total 3:40*
 
 > ♪ **VOICE** · Calm and honest. You are earning trust with numbers.
 
 > ◌ **AUTO** · Three key tiles appear by themselves.
 
-Does the math work? Our costs are 435 dollars a month. We break even at about 585 orders, 390 regular shoppers.
+Does the math work? Let's follow the money.
 
 > ▶ **CLICK 1** · The planned curve appears.
 
-> ♪ **VOICE** · Slow and clear. A dip, a turn, a payback.
+> ♪ **VOICE** · Slow and clear. A dip, a turn, a payback. Keep it one flowing sentence.
 
-The planned path: the deepest dip is 2,180 dollars, in month three. Profitable from month four. Everything earned back by month eight.
+Planned: it dips, turns profitable in month four, and pays everything back by month eight,
 
 > ▶ **CLICK 2** · The fast curve appears.
 
-Faster growth? Month three, and month six.
+with a growth push, it's even sooner: month three and month six,
 
 > ▶ **CLICK 3** · The slow curve appears.
 
 > ♪ **VOICE** · Reassuring, with a smile.
 
-And at half speed? Still profitable from month seven.
+and even at half speed, we're profitable from month seven.
 
 ---
 
 ## Slide 12 — Funding
 
-*About 0:26 spoken, 7 clicks, running total 4:10*
+*About 0:27 spoken, 7 clicks, running total 4:07*
 
 > ♪ **VOICE** · Direct and sincere. No fluff. You are asking for support.
 
@@ -418,59 +418,69 @@ And at half speed? Still profitable from month seven.
 
 > ◌ **AUTO** · The timeline frame appears by itself.
 
-My ask: 5,480 dollars. And here's what it makes possible.
+5,480 dollars takes Cheapify from an idea to a business.
+
+> ♪ **VOICE** · From here, keep it one flowing sentence, with a small lift at each comma.
 
 > ▶ **CLICK 1** · The pilot block appears.
 
-100 dollars, to run our pilot by hand.
+A 100-dollar pilot to prove it,
 
 > ▶ **CLICK 2** · The registration block appears.
 
-1,000, to register the company officially.
+1,000 to make it official,
 
 > ▶ **CLICK 3** · The launch block appears.
 
-840, to launch 20 founding stores.
+840 to open with twenty stores,
 
 > ▶ **CLICK 4** · The runway block appears.
 
-1,340, to cover our losses, even at half speed.
+1,340 to keep us steady through slow months,
 
 > ▶ **CLICK 5** · The growth block appears.
 
-And 2,200 for a four-month growth push.
+and 2,200 for growth.
+
+> ■ **PAUSE** · 1 second.
 
 > ▶ **CLICK 6** · The "Less? Still a plan." card appears.
 
 > ♪ **VOICE** · Humble and positive.
 
-A smaller award? Still a plan.
+Even with less, there's still a plan.
 
 > ▶ **CLICK 7** · The "No salaries" bar appears.
 
-> ♪ **VOICE** · Proud, with a small smile.
+> ♪ **VOICE** · Proud, with a small smile. Slow down on "computer engineer".
 
-No salaries, no developers. I build the platform myself.
+> ◆ **ACTION** · Place a hand on your chest on "I".
+
+And the platform? I'm a computer engineer and software developer, so I build it all myself.
 
 ---
 
 ## Slide 13 — Thank you
 
-*About 0:08 spoken, 0 clicks, running total 4:18*
+*About 0:13 spoken, 0 clicks, running total 4:20*
 
 > ■ **PAUSE** · 1 second before you start. Slow everything down.
+
+> ◌ **AUTO** · The logo, "Thank You", the slogan, the website and the QR code appear together.
 
 > ♪ **VOICE** · Warm, quiet and sure. This is the last memory they keep.
 
 > ◉ **BEHAVIOUR** · Look at the crowd, not the screen.
 
-Remember that tiny voice?
+Remember that tiny voice, asking "Did I just overpay?"
 
-> ■ **PAUSE** · 2 seconds.
+> ■ **PAUSE** · 1 second.
 
-> ♪ **VOICE** · Bigger, brighter, a smile in the voice.
+> ♪ **VOICE** · Bigger, brighter, a smile in the voice. This is your ask.
 
-Soon, it can take a holiday.
+> ◆ **ACTION** · Open your hand toward the QR code on the right.
+
+Help me give it a holiday: scan the code and join the waitlist.
 
 > ♪ **VOICE** · Slow and proud.
 
@@ -480,6 +490,6 @@ Cheapify. The bright side of choosing.
 
 Thank you!
 
-> ◉ **BEHAVIOUR** · Stay silent for two seconds. Smile. Wait for the applause.
+> ◉ **BEHAVIOUR** · Stay silent, smile, and keep the slide up for at least five seconds so people can scan. Wait for the applause.
 
 ---

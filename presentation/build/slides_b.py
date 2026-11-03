@@ -477,19 +477,27 @@ def next_steps(sl, ctx):
 # ------------------------------------------------------------------ 14 thanks
 def thanks(sl, ctx):
     sh = sl.shapes
+    LX, LW = 0.55, 7.6
+    cx = LX + LW / 2
     w = 1.15
-    logo, _ = pic_contain(sh, A("cheapify-logo.png"), (SLIDE_W - w) / 2, 1.95, w, w * 9 / 7)
-    t1 = text(sh, 0, 3.55, SLIDE_W, 0.80, "Thank You", size=48, bold=True, font="Comfortaa",
+    logo, _ = pic_contain(sh, A("cheapify-logo.png"), cx - w / 2, 1.95, w, w * 9 / 7)
+    t1 = text(sh, LX, 3.55, LW, 0.80, "Thank You", size=48, bold=True, font="Comfortaa",
               align="c", anchor="m")
-    t2 = text(sh, 0, 4.42, SLIDE_W, 0.42, "The bright side of choosing.", size=20, color=BLUE,
+    t2 = text(sh, LX, 4.42, LW, 0.42, "The bright side of choosing.", size=20, color=BLUE,
               font="Comfortaa", align="c", anchor="m")
-    t5 = text(sh, 0, 5.12, SLIDE_W, 0.34, "getcheapify.com", size=17, bold=True, color=BLUE,
+    t5 = text(sh, LX, 5.12, LW, 0.34, "getcheapify.com", size=17, bold=True, color=BLUE,
               align="c", anchor="m")
-    t6 = text(sh, 0, 5.50, SLIDE_W, 0.30, "Shakir Bashar · Founder", size=13.5, color=INK60,
+    t6 = text(sh, LX, 5.50, LW, 0.30, "Shakir Bashar \u00b7 Founder", size=13.5, color=INK60,
               align="c", anchor="m")
+    CX, CY, CW, CH = 8.25, 2.15, 2.90, 3.35
+    qr = group(sh)
+    card(qr.shapes, CX, CY, CW, CH, shadow="elev2")
+    pic_box(qr.shapes, A("getcheapify-qr.png"), CX + 0.30, CY + 0.28, 2.30, 2.30)
+    text(qr.shapes, CX + 0.10, CY + 2.74, CW - 0.20, 0.34, "Scan to join the waitlist", size=12.5,
+         bold=True, color=INK, align="c", anchor="m", wrap=False)
     an = Anim()
     an.add([[fx(logo, "zoom")], [fx(t1, "fade", 60), fx(t2, "fade", 90)],
-            [fx(t5, "fade", 60), fx(t6, "fade", 60)]], auto=True)
+            [fx(t5, "fade", 60), fx(t6, "fade", 60), fx(qr, "zoom", 90)]], auto=True)
     return an
 
 
