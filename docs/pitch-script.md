@@ -6,12 +6,13 @@ Normal text is what you say, word for word. Everything else is a marked block th
 | :-- | :-- | :-- |
 | (plain text) | **SAY** | Say these words out loud. |
 | ▶ | **CLICK** | Press the clicker once. The next thing appears on the slide. |
+| ◌ | **AUTO** | Appears by itself when the slide starts. No click needed. |
 | ■ | **PAUSE** | Stop talking. Breathe. Let the room react. |
 | ◆ | **ACTION** | What your body does: walk, point, gesture. |
 | ♪ | **VOICE** | How it should sound: speed, volume, mood. |
 | ◉ | **BEHAVIOUR** | Eyes, face and reactions: look, smile, wait. |
 
-Total: 689 spoken words, about 4:55 at 140 words per minute, 36 clicks. Hard cap: 6:00.
+Total: 601 spoken words, about 4:18 at 140 words per minute, 36 clicks. Hard cap: 6:00.
 
 Same script as a colour-coded page: [pitch-script.html](pitch-script.html).
 
@@ -19,7 +20,7 @@ Same script as a colour-coded page: [pitch-script.html](pitch-script.html).
 
 ## Slide 1 — Cover
 
-*About 0:16 spoken, 0 clicks, running total 0:16*
+*About 0:17 spoken, 0 clicks, running total 0:17*
 
 > ◆ **ACTION** · Walk to the centre of the stage and stop. Plant both feet.
 
@@ -51,47 +52,47 @@ Me too.
 
 > ♪ **VOICE** · Back to full voice.
 
-I'm Shakir Bashar, and that voice is today's story.
+I'm Shakir Bashar, and that tiny voice is today's story.
 
 ---
 
 ## Slide 2 — Problem
 
-*About 0:22 spoken, 4 clicks, running total 0:39*
+*About 0:19 spoken, 4 clicks, running total 0:36*
 
 > ♪ **VOICE** · Slow down. Serious and clear. This is the key sentence of the whole pitch.
 
 Online in Iraq, you can't know the real price before you buy.
 
-> ▶ **CLICK 1** · The Miswag screen appears.
+> ▶ **CLICK 1** · The Miswag screenshot appears.
 
 > ♪ **VOICE** · Curious, like you are about to show a magic trick.
 
 > ◆ **ACTION** · Gesture to the screen with an open hand.
 
-Look: one power bank, the Anker 25,000, 165 watt, on Miswag's search screen. Same search, same model.
+Here's one power bank, on Miswag. Same search. Same screen. Same model.
 
-> ▶ **CLICK 2** · The 100,000 price appears.
+> ▶ **CLICK 2** · The first price, 100,000, is circled.
 
 > ♪ **VOICE** · Calm and matter of fact.
 
-One seller says 100,000 dinars.
+One seller: 100,000 dinars.
 
-> ▶ **CLICK 3** · The 200,000 price appears.
+> ▶ **CLICK 3** · The second price, 200,000, is circled.
 
 > ♪ **VOICE** · Voice goes up. Pure disbelief on "200,000".
 
 > ◆ **ACTION** · Point at the second price.
 
-Right beside it, another says 200,000.
+Right beside it: 200,000.
 
-> ▶ **CLICK 4** · The 2x bracket appears.
+> ▶ **CLICK 4** · The 2x bracket and the "2x the price" box appear.
 
 > ♪ **VOICE** · Flat and deadpan.
 
 Twice the price. Same power bank.
 
-> ■ **PAUSE** · 2 seconds. Let the number sink in.
+> ■ **PAUSE** · 2 seconds. Let it sink in.
 
 > ♪ **VOICE** · Dry humour. Small smile.
 
@@ -103,165 +104,213 @@ Somebody's having a very good day.
 
 ## Slide 3 — Problem · evidence
 
-*About 0:26 spoken, 4 clicks, running total 1:04*
+*About 0:15 spoken, 4 clicks, running total 0:51*
 
-> ♪ **VOICE** · Energy up. You are widening the story.
+> ♪ **VOICE** · Knowing and a little tired, like someone who has seen this too many times.
 
-And it's the whole market.
+> ◉ **BEHAVIOUR** · Let the headline sit on screen for a beat.
 
-> ▶ **CLICK 1** · Apps with duplicate listings appear.
+And it's not just one power bank. It's everywhere.
 
-Apps list the same item twice, at two prices.
+> ▶ **CLICK 1** · Card 1 appears: the same item listed twice inside one app, 60,000 and 70,000.
 
-> ▶ **CLICK 2** · The Instagram no-price post appears.
+> ♪ **VOICE** · Matter of fact. Keep it flowing, like one sentence.
 
-> ♪ **VOICE** · Imitate a seller's tone, slightly bored.
+The same product, at different prices...
 
-Instagram says "DM for price."
+> ▶ **CLICK 2** · Card 2 appears: an Instagram ad with no price, and one comment underneath: "How much?"
 
-> ▶ **CLICK 3** · The vacuum comparison appears.
+> ♪ **VOICE** · A little dry, a half smile.
 
-> ♪ **VOICE** · Incredulous. Slow down on both prices.
+...or no price at all...
 
-This vacuum: a marketplace calls 133,000 a big discount. Instagram sells it for 95,000.
+> ▶ **CLICK 3** · Card 3 appears: the vacuum with a red "-35%" sticker at 133,250, against 95,000 on Instagram.
 
-> ▶ **CLICK 4** · The survey numbers appear.
+> ♪ **VOICE** · Drop the voice on the last words, with a hint of sarcasm.
 
-> ♪ **VOICE** · Steady and factual. Let the numbers do the work.
+...or a discount that isn't one.
 
-Ninety-seven percent of the 179 shoppers we asked see this. And 55 percent of merchants say answering "how much?" is their top headache.
+> ■ **PAUSE** · 1 second.
 
-> ♪ **VOICE** · Softer, with a sigh.
+> ▶ **CLICK 4** · The 97% bar appears.
 
-Both sides are tired.
+> ♪ **VOICE** · Steady and factual. Let the number do the work.
+
+> ◉ **BEHAVIOUR** · Pause, nod slowly, and let some of them nod back.
+
+And almost everyone we asked, 97 percent, has seen it.
 
 ---
 
 ## Slide 4 — Solution
 
-*About 0:34 spoken, 4 clicks, running total 1:38*
+*About 0:29 spoken, 4 clicks, running total 1:20*
 
-> ■ **PAUSE** · 1 second before you start. This is the turning point.
+> ■ **PAUSE** · 1 second of silence after the last slide. Let the tension hang.
 
-> ♪ **VOICE** · Bright and confident. The mood lifts here.
+> ◆ **ACTION** · Take half a step forward.
 
 > ◉ **BEHAVIOUR** · Smile. Look at the far side of the room.
 
-So I'm building Cheapify. The bright side of choosing.
+> ♪ **VOICE** · Start curious and quiet, then let it bloom into bright and proud.
 
-> ▶ **CLICK 1** · The one-page idea appears.
+> ◌ **AUTO** · The logo, the name Cheapify and the slogan appear by themselves.
 
-Every seller's real price for the same product, on one page.
+So I asked myself: what if every price lived in one place? That's why I came up with Cheapify.
 
-> ▶ **CLICK 2** · The scattered products appear.
+> ■ **PAUSE** · 1 second. Let the logo sit.
 
-Today, one product is scattered everywhere.
+> ▶ **CLICK 1** · The logo fades out and the headline appears: "Cheapify puts every seller's real price for the same product on one page."
 
-> ▶ **CLICK 3** · The side-by-side sellers appear.
+> ♪ **VOICE** · Clear and simple, like explaining it to a friend.
 
-> ♪ **VOICE** · Clear and simple, like explaining to a friend.
+Cheapify puts every seller's real price...
 
-On Cheapify, every seller sits side by side with the doorstep total: item plus delivery.
+> ▶ **CLICK 2** · Scattered price cards appear: the same power bank, all over the place.
 
-> ▶ **CLICK 4** · The Best Value badge appears.
+> ♪ **VOICE** · Playfully annoyed. Let the mess sit for a moment.
 
-> ♪ **VOICE** · Proud and firm on "no store can pay to win it".
+...for the same product...
 
-Best Value goes to the lowest total, then fastest delivery, then best rating. And no store can pay to win it. You order in seconds, pay at your door, and the store is paid automatically 48 hours later.
+> ■ **PAUSE** · 1 second. Let them see the mess.
+
+> ▶ **CLICK 3** · The cards fade out and the one-page comparison table appears.
+
+> ◆ **ACTION** · Open both hands together, as if closing a book.
+
+> ♪ **VOICE** · Relief. Slower and satisfied.
+
+...on one page.
+
+> ■ **PAUSE** · 1 second. Let them read the table.
+
+> ▶ **CLICK 4** · The Best Value badge and the three ranking rules appear.
+
+> ♪ **VOICE** · Excited. You are revealing the clever part.
+
+And it doesn't stop there. It also chooses the Best Value for you.
+
+> ◆ **ACTION** · Point at the green Best Value badge, then sweep your hand down the three rules on the right.
+
+> ♪ **VOICE** · Count them off, one beat each.
+
+Based on the lowest total price, the fastest delivery, and the best-rated store.
+
+> ■ **PAUSE** · 1 second.
+
+> ♪ **VOICE** · Warm and a little cheeky. A smile in the voice.
+
+No more ten tabs to buy one power bank.
 
 ---
 
 ## Slide 5 — Value proposition
 
-*About 0:19 spoken, 2 clicks, running total 1:57*
+*About 0:19 spoken, 2 clicks, running total 1:39*
 
-> ♪ **VOICE** · Quick and upbeat.
+> ♪ **VOICE** · Warm and direct. Talk to the crowd, not the screen.
 
-What do you get? Shoppers:
+> ◌ **AUTO** · The two column headings, "For shoppers" and "For merchants", appear by themselves.
+
+> ◆ **ACTION** · Open one hand toward the audience as you ask.
+
+So what's in it for you?
+
+> ■ **PAUSE** · 1 second. Let them think about it.
 
 > ◆ **ACTION** · Hold out one hand for shoppers.
 
-> ▶ **CLICK 1** · The shopper benefits appear.
+> ▶ **CLICK 1** · The three shopper benefits appear.
 
-every price side by side, an order in thirty seconds, and no "price?" messages. Stores:
+If you shop: no more ten pages, no more "price?" and waiting, and the full price upfront.
 
-> ◆ **ACTION** · Hold out the other hand for stores.
+> ◆ **ACTION** · Hold out the other hand for merchants.
 
-> ▶ **CLICK 2** · The store benefits appear.
+> ▶ **CLICK 2** · The three merchant benefits appear.
 
-ready orders with address and variant, a free dashboard for stock and payouts, and a fair fee, about 3.8 percent on a typical 25,000-dinar order.
+> ♪ **VOICE** · Shift to a respectful, business-to-business tone.
+
+If you sell: no more answering the same question all day, orders arrive ready, and a small fee only on delivered orders.
 
 ---
 
 ## Slide 6 — Target market
 
-*About 0:23 spoken, 3 clicks, running total 2:20*
+*About 0:21 spoken, 3 clicks, running total 2:00*
 
 > ♪ **VOICE** · Steady and building, like zooming in on a map.
 
-We start in Duhok city, Semel and Zakho. Iraq has 46.1 million people.
+> ◌ **AUTO** · The Iraq circle appears by itself.
 
-> ▶ **CLICK 1** · Duhok governorate appears.
+We start in Duhok. Iraq has 46 million people.
 
-Duhok governorate, 1.6 million.
+> ▶ **CLICK 1** · The Duhok governorate circle appears.
 
-> ▶ **CLICK 2** · The launch area appears.
+Duhok governorate: 1.6 million.
 
-Our launch area, 1.06 million, about 890,000 of them online, spending roughly 30 million dollars a year.
+> ▶ **CLICK 2** · The launch-area circle appears.
 
-> ▶ **CLICK 3** · The break-even number appears.
+Our launch area, over a million people, and roughly 30 million dollars a year of online shopping.
+
+> ▶ **CLICK 3** · The break-even card appears.
 
 > ♪ **VOICE** · Slow down. This is the small number that matters.
 
-To break even, we need about 390 regular shoppers. That's 0.4 percent of that market.
+To break even, we need just 390 regular shoppers.
 
 > ■ **PAUSE** · 1 second.
 
-> ♪ **VOICE** · Almost a whisper, then smile.
+> ♪ **VOICE** · Almost a whisper, then a smile.
 
-Four-tenths of one percent.
+Three hundred and ninety. Out of over a million.
 
 ---
 
 ## Slide 7 — Target customers
 
-*About 0:30 spoken, 1 clicks, running total 2:50*
+*About 0:18 spoken, 1 clicks, running total 2:18*
 
-> ♪ **VOICE** · Conversational. You are introducing real people.
+> ♪ **VOICE** · Clear and conversational. You are painting three quick portraits.
 
-Who are those 390 people? Time-poor professionals buying chargers and gadgets. Household budget buyers shopping for the home. Students and deal hunters.
+> ◌ **AUTO** · The shoppers card appears by itself, with its three groups and the 97% gauge.
 
-> ♪ **VOICE** · Confident. These are your proof numbers.
+So who are those 390? People who already compare prices:
 
-Ninety-seven percent notice the price gaps, and 88 percent would use a comparison app.
+> ◆ **ACTION** · Point to the first row, then move your hand down one row per group.
 
-> ▶ **CLICK 1** · The merchant side appears.
+busy professionals with no time to hunt, households stretching a budget, and students chasing a deal.
 
-> ♪ **VOICE** · Switch to the stores' point of view. Warm and respectful.
+> ■ **PAUSE** · 1 second.
 
-And the stores? Duhok's social sellers, who already sell through DMs. Eighty-five percent sell on Instagram or Facebook, and 75 percent want to try Cheapify. We start with 20 founding stores, signed in person.
+> ▶ **CLICK 1** · The merchants card appears, with its three rows and the 85% and 75% gauges.
 
-> ◉ **BEHAVIOUR** · If you are running long, cut the last two sentences here.
+> ◆ **ACTION** · Turn your hand toward the merchants card.
+
+> ♪ **VOICE** · Brighter. This is the good news.
+
+And the stores? Social-media sellers who already sell through DMs. Three in four want to try Cheapify.
 
 ---
 
 ## Slide 8 — Business model
 
-*About 0:23 spoken, 2 clicks, running total 3:13*
+*About 0:14 spoken, 2 clicks, running total 2:32*
 
 > ♪ **VOICE** · Clear and measured. Money slide: do not rush.
 
-We earn only when an order is delivered. Fee: 5 percent on the first 10,000 dinars, 3 percent up to 100,000, 1.5 percent above. On a 25,000-dinar order, with delivery margin, we take 1,450 dinars.
+> ◌ **AUTO** · The fee panel appears by itself.
+
+We earn only when an order is delivered. On a typical order, we take about 1,450 dinars.
 
 > ▶ **CLICK 1** · The costs appear.
 
-Minus 335 for messages, logins and returns,
+Our costs: 335.
 
 > ▶ **CLICK 2** · The 1,115 result appears.
 
 > ♪ **VOICE** · Land the number with confidence.
 
-and we keep 1,115 per delivered order.
+We keep 1,115 dinars on every delivered order.
 
 > ■ **PAUSE** · 1 second.
 
@@ -273,127 +322,141 @@ No delivery, no fee.
 
 ## Slide 9 — Competitor analysis
 
-*About 0:15 spoken, 2 clicks, running total 3:28*
+*About 0:15 spoken, 2 clicks, running total 2:47*
 
 > ♪ **VOICE** · Fast and light. This is a quick slide.
 
-Who else is out there?
+> ◌ **AUTO** · The comparison table frame appears by itself.
 
-> ▶ **CLICK 1** · The competitor table appears.
+So what's already out there?
 
-Instagram hides prices. Miswag, iBazzar and Elryan show them, but the same product appears in several listings.
+> ▶ **CLICK 1** · The competitor columns appear: Instagram, Miswag, iBazzar, Elryan.
+
+Instagram hides prices. Miswag, iBazzar and Elryan show them, but one product, many separate listings.
 
 > ▶ **CLICK 2** · The Cheapify column appears.
 
-> ♪ **VOICE** · Confident and proud.
+> ♪ **VOICE** · Confident, a little cheeky.
 
-Only Cheapify puts every seller on one page, and does the comparing for you.
+Nobody else puts every seller on one page and compares them for you. Only Cheapify.
 
 ---
 
 ## Slide 10 — Growth strategy
 
-*About 0:27 spoken, 4 clicks, running total 3:55*
+*About 0:32 spoken, 4 clicks, running total 3:18*
 
-> ♪ **VOICE** · Energetic. This is the momentum slide.
+> ♪ **VOICE** · Energetic. You are letting them in on the secret of how it starts.
 
-We grow on two sides.
+> ◌ **AUTO** · The two-sides ring appears by itself.
+
+How does a marketplace start from nothing?
 
 > ▶ **CLICK 1** · The stores plan appears.
 
-Stores: I sign the first 20 in person, zero percent fee in month one, free ads.
+> ◆ **ACTION** · Gesture to the left column.
+
+With stores. Twenty, signed in person, no fees the first month, free ads, and each one brings its followers.
 
 > ▶ **CLICK 2** · The shoppers plan appears.
 
-Shoppers: targeted ads, short videos, campus deals at three universities, and referrals, starting from 52 people already on our waitlist.
+> ◆ **ACTION** · Gesture to the right column.
+
+And the shoppers: they need to know Cheapify exists, so ads, short videos, campus deals. And 52 people are already waiting for launch day.
 
 > ▶ **CLICK 3** · The flywheel appears.
 
 > ◆ **ACTION** · Draw a small circle in the air with your hand.
 
-Then the flywheel spins: more stores, lower prices, more shoppers.
+Now the wheel spins by itself. More stores, lower prices, more shoppers, more orders.
 
 > ▶ **CLICK 4** · The expansion roadmap appears.
 
+> ◆ **ACTION** · Move your hand left to right along the strip.
+
 > ♪ **VOICE** · Big and ambitious. Raise your voice on "all of Iraq".
 
-Duhok first, then Erbil, Mosul and Sulaymaniyah, then all of Iraq.
+Duhok first. Then Erbil, Mosul, Sulaymaniyah. Then all of Iraq.
 
 ---
 
 ## Slide 11 — Financial feasibility
 
-*About 0:24 spoken, 3 clicks, running total 4:19*
+*About 0:25 spoken, 3 clicks, running total 3:44*
 
 > ♪ **VOICE** · Calm and honest. You are earning trust with numbers.
 
-Does the math work? Our costs are 435 dollars a month, so we break even at 585 orders, about 390 shoppers.
+> ◌ **AUTO** · Three key tiles appear by themselves.
+
+Does the math work? Our costs are 435 dollars a month. We break even at about 585 orders, 390 regular shoppers.
 
 > ▶ **CLICK 1** · The planned curve appears.
 
-> ♪ **VOICE** · Slow and clear. Three milestones.
+> ♪ **VOICE** · Slow and clear. A dip, a turn, a payback.
 
-Planned pace: lowest point minus 2,180 dollars in month three, monthly break-even in month four, every loss recovered by month eight.
+The planned path: the deepest dip is 2,180 dollars, in month three. Profitable from month four. Everything earned back by month eight.
 
 > ▶ **CLICK 2** · The fast curve appears.
 
-Fast case: month three and month six.
+Faster growth? Month three, and month six.
 
 > ▶ **CLICK 3** · The slow curve appears.
 
-> ♪ **VOICE** · Reassuring.
+> ♪ **VOICE** · Reassuring, with a smile.
 
-Even at half speed, profitable from month seven.
+And at half speed? Still profitable from month seven.
 
 ---
 
 ## Slide 12 — Funding
 
-*About 0:24 spoken, 7 clicks, running total 4:44*
+*About 0:26 spoken, 7 clicks, running total 4:10*
 
 > ♪ **VOICE** · Direct and sincere. No fluff. You are asking for support.
 
 > ◉ **BEHAVIOUR** · Look at the judges, not the screen.
 
-My ask: 5,480 dollars. Every dollar has a job.
+> ◌ **AUTO** · The timeline frame appears by itself.
+
+My ask: 5,480 dollars. And here's what it makes possible.
 
 > ▶ **CLICK 1** · The pilot block appears.
 
-100 to run our pilot by hand.
+100 dollars, to run our pilot by hand.
 
 > ▶ **CLICK 2** · The registration block appears.
 
-1,000 for official registration.
+1,000, to register the company officially.
 
 > ▶ **CLICK 3** · The launch block appears.
 
-840 to launch 20 founding stores.
+840, to launch 20 founding stores.
 
 > ▶ **CLICK 4** · The runway block appears.
 
-1,340 to cover losses, even at half speed.
+1,340, to cover our losses, even at half speed.
 
 > ▶ **CLICK 5** · The growth block appears.
 
-2,200 for a four-month growth push.
+And 2,200 for a four-month growth push.
 
-> ▶ **CLICK 6** · The smaller-award line appears.
+> ▶ **CLICK 6** · The "Less? Still a plan." card appears.
 
 > ♪ **VOICE** · Humble and positive.
 
-Even a smaller award still launches Cheapify.
+A smaller award? Still a plan.
 
-> ▶ **CLICK 7** · The zero-salary line appears.
+> ▶ **CLICK 7** · The "No salaries" bar appears.
 
 > ♪ **VOICE** · Proud, with a small smile.
 
-And the platform? I build it myself, for zero salary.
+No salaries, no developers. I build the platform myself.
 
 ---
 
 ## Slide 13 — Thank you
 
-*About 0:12 spoken, 0 clicks, running total 4:55*
+*About 0:08 spoken, 0 clicks, running total 4:18*
 
 > ■ **PAUSE** · 1 second before you start. Slow everything down.
 
@@ -401,13 +464,13 @@ And the platform? I build it myself, for zero salary.
 
 > ◉ **BEHAVIOUR** · Look at the crowd, not the screen.
 
-Next time you see a price online, you'll ask: is this the real one?
+Remember that tiny voice?
 
 > ■ **PAUSE** · 2 seconds.
 
 > ♪ **VOICE** · Bigger, brighter, a smile in the voice.
 
-Soon, you won't have to.
+Soon, it can take a holiday.
 
 > ♪ **VOICE** · Slow and proud.
 
