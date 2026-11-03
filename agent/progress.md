@@ -6,6 +6,15 @@ A running chronological log of completed actions, file creations, and achieved m
 
 ## Chronological Entries
 
+### [2026-11-03] — Selected as Finalist for the Pitching Competition (5 November)
+
+* Program announcement: independent judges from outside AUK reviewed all 20 presentations and selected 10 for the pitching competition on **5 November 2026**; the founder (Shakir Bashar Hussein) is among the 10. All 20 participants receive completion certificates at graduation.
+* Founder update: **5 ranked awards** (previously 3). Synced `AGENTS.MD` rule 13, `agent/rules.md` 13, `agent/project-context.md`, `agent/active-tasks.md`, `finance/04` context line. Funding tiers unchanged; flagged to re-check the lowest tier once amounts are announced.
+* Founder decision: deck cover date ("4 November 2026") is left unchanged; no deck changes made.
+* Flagged: `presentation/presenter-guide.md` estimates 5:57 at 140 wpm (833 words) — only 3 s under the 6-minute cap.
+* Added [`docs/judge-qa-drill.md`](../docs/judge-qa-drill.md), a judge Q&A drill built from the presenter guide.
+* Founder: the generated presenter guide is left untouched but not used for delivery. Added [`docs/pitch-script.md`](../docs/pitch-script.md): spoken words and clicks only, storytelling tone for a 400+ audience, 689 words (~4:55 at 140 wpm), click counts match the deck's 13 slides. Reformatted with typed blocks (SAY plain; CLICK, PAUSE, ACTION, VOICE, BEHAVIOUR as marked blocks) plus a colour-coded [`docs/pitch-script.html`](../docs/pitch-script.html); both generated from `scripts/build_pitch_script.py` (edit that file, not the outputs).
+
 ### [2026-11-02] — Micro-Commit Organization Started
 
 * Recorded the founder's request to organize the current pending worktree into at least 40 meaningful micro commits distributed across 30 October, 31 October, 1 November, and 2 November 2026.

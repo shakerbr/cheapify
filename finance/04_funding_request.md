@@ -3,7 +3,7 @@
 ## Competitive Ask · Use of Funds · Co-Investment · Sustainability
 
 **Pillar:** Finance Management (Pillar 3 — File 04)
-**Context:** GIZ program funds the top 3 of 20 ventures. Grant sizes: unknown. Evaluation criteria: unpublished. Pitch format: **hard 6-minute limit**.
+**Context:** 10 of 20 ventures are finalists and 5 ranked awards will be given (updated 3 Nov 2026; previously top 3). Grant sizes: unknown. Evaluation criteria: unpublished. Pitch format: **hard 6-minute limit**.
 **Status:** Draft v2 — ask rebuilt bottom-up from the components of the [`03`](03_cash_flow_and_breakeven.md) cash table (ADR-015). All model figures remain `[ASSUMPTION]`-flagged unless marked verified.
 **Exchange rate:** 1 USD = 1,500 IQD — the Central Bank of Iraq official rate set on 7 Oct 2026 (1,500 purchase from the Ministry of Finance / 1,510 sale to banks / 1,520 cash sale to the public). See `01` §1.1.
 

@@ -33,7 +33,7 @@ Every AI agent working on **Cheapify** MUST follow these rules strictly:
 12. **Strictly Relative Links in Repository Documents:**
    - For links inside documents, never use absolute paths or `file:///` URLs (e.g. `file:///media/shakerbr/...`). Always use clean relative links (e.g. `assets/evidence/...` or `entrepreneurship/...`).
 13. **GIZ Program Constraints — Ranked Awards & 6-Minute Pitch:**
-   - Awards are ranked (1st > 2nd > 3rd); funding plans must scale across ranks. The final pitch is hard-capped at 6 minutes — any slide count is fine as long as the presentation fits that runtime.
+   - Awards are ranked (5 ranked awards among the 10 finalists, per founder, 3 Nov 2026; previously 3); funding plans must scale across ranks. Finalist pitching competition: 5 November 2026, judged by independent judges from outside AUK. The final pitch is hard-capped at 6 minutes — any slide count is fine as long as the presentation fits that runtime.
 14. **No Presentation Changes Without Founder Approval:**
    - Do NOT modify the pitch deck until the proposed changes are discussed, understood by the founder, and explicitly approved. Propose first (written spec), build only after the green light.
 15. **Everything Stays Inside the Project Directory:**

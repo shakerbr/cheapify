@@ -56,7 +56,10 @@ This document tracks immediate actionable tasks, active work items, and current 
 
 ### Program Constraints
 
-* Top 3 of 20 ventures funded; ranked awards (1st > 2nd > 3rd), envelope unknown — the tiers in `finance/04` §1 keep every amount a complete plan.
+* 10 of 20 ventures were selected by independent judges (from outside AUK) for the pitching competition on **5 November 2026**; per the founder, **5 ranked awards** (previously 3). Envelope unknown — the tiers in `finance/04` §1 ($5,480 / $3,280 / $2,710) were built for three ranks, so re-check that the lowest tier still works if the 4th/5th awards are smaller once amounts are announced.
+* Deck cover still reads "4 November 2026"; founder decided (3 Nov) NOT to change it.
+* Pitch-time check: `presentation/presenter-guide.md` currently estimates 833 words = 5:57 at 140 wpm (3 s under the hard cap), versus the 723 words / 5:10 noted earlier — rehearse against a timer.
+* Judge Q&A drill: [`docs/judge-qa-drill.md`](../docs/judge-qa-drill.md).
 * **Pitch hard limit: under 6 minutes** — slide count flexible.
 
 ### Current Commit Task
