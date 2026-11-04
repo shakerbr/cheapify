@@ -333,7 +333,7 @@ def market(sl, ctx):
 
     c1 = circle(2.35, 2.85, NEUTRAL, INK, "Iraq", "46.1M", 32, 13.5, "people")
     c2 = circle(5.80, 2.20, BLUE12, INK, "Duhok governorate", "1.60M", 28, 11.5, "people")
-    c3 = circle(8.65, 1.85, BLUE, WHITE, "Launch area", "1.06M", 25, 11.5, "people")
+    c3 = circle(8.65, 1.85, BLUE, WHITE, "Launch area", "≈ 890K", 25, 11.5, "online")
 
     def under(cx, lines):
         g = group(sh)
@@ -344,38 +344,44 @@ def market(sl, ctx):
     u1 = under(2.35, "39.6M online · $1.32B a year")
     u2 = under(5.80, "≈ 1.34M online · ≈ $46M a year")
     u3 = group(sh)
-    text(u3.shapes, 8.65 - 1.5, 5.95, 3.0, 0.26, "Duhok · Semel · Zakho", size=12, bold=True,
-         color=INK, align="c", anchor="m")
+    text(u3.shapes, 8.65 - 1.5, 5.95, 3.0, 0.50,
+         [[("Duhok · Semel · Zakho", {"size": 12, "bold": True, "color": INK})],
+          [("of 1.06M people", {"size": 11.5, "color": INK60})]],
+         align="c", anchor="t")
 
     t1 = group(sh)
     _tangents(t1.shapes, 2.35, 1.425, 5.80, 1.10, CY)
     t2 = group(sh)
     _tangents(t2.shapes, 5.80, 1.10, 8.65, 0.925, CY)
 
-    def stat(y, ic, num, lbl):
-        g = group(sh)
-        icon(g.shapes, ic, BLUE, 9.85, y + 0.06, 0.40)
-        text(g.shapes, 10.40, y - 0.04, 2.1, 0.38, num, size=21, bold=True, font="Comfortaa",
-             anchor="m")
-        text(g.shapes, 10.40, y + 0.35, 2.1, 0.22, lbl, size=11, color=INK60, anchor="m")
-        return g
-
-    s1 = stat(2.70, "wifi", "≈ 0.89M", "online")
-    s2 = stat(3.55, "shopping-cart", "≈ $30M", "a year online")
+    s2 = group(sh)
+    icon(s2.shapes, "shopping-cart", BLUE, 9.85, 2.86, 0.50)
+    text(s2.shapes, 10.50, 2.66, 2.05, 0.62, "≈ $30M", size=30, bold=True, font="Comfortaa",
+         anchor="m")
+    text(s2.shapes, 10.50, 3.28, 2.05, 0.46, ["spent online a year", "in the launch area"],
+         size=11, color=INK60, anchor="t")
 
     be = group(sh)
-    card(be.shapes, 9.85, 4.45, 2.69, 2.20, fill=BLUE12, line=BLUE, lw=1.5)
-    text(be.shapes, 10.00, 4.58, 2.39, 0.56, "~390", size=34, bold=True, font="Comfortaa",
+    card(be.shapes, 9.85, 3.92, 2.69, 2.78, fill=BLUE12, line=BLUE, lw=1.5)
+    text(be.shapes, 10.00, 4.02, 2.39, 0.56, "~390", size=34, bold=True, font="Comfortaa",
          color=BLUE, align="c", anchor="m")
-    text(be.shapes, 10.00, 5.16, 2.39, 0.48, ["regular shoppers", "to break even"], size=13.5,
+    text(be.shapes, 10.00, 4.60, 2.39, 0.48, ["regular shoppers", "to break even"], size=13.5,
          bold=True, color=INK, align="c", anchor="m")
-    text(be.shapes, 10.00, 5.76, 2.39, 0.72,
-         ["≈ 585 orders a month", "0.4% of launch-area online shopping"], size=10.5, color=INK60,
+    line(be.shapes, 10.05, 5.20, 12.34, 5.20, BLUE50, 1.0)
+    text(be.shapes, 10.00, 5.28, 2.39, 0.24, "≈ 585 orders a month", size=11, color=INK60,
+         align="c", anchor="m")
+    text(be.shapes, 10.00, 5.52, 2.39, 0.32, "≈ $117K a year", size=16, bold=True, color=INK,
+         font="Comfortaa", align="c", anchor="m")
+    text(be.shapes, 10.00, 5.84, 2.39, 0.22, "of orders through Cheapify", size=10.5, color=INK60,
+         align="c", anchor="m")
+    rect(be.shapes, 10.05, 6.18, 2.29, 0.13, fill=WHITE, line=BLUE50, lw=0.75, radius=0.06)
+    rect(be.shapes, 10.05, 6.18, 0.10, 0.13, fill=BLUE, radius=0.05)
+    text(be.shapes, 10.00, 6.38, 2.39, 0.24, "0.4% of ≈ $30M", size=11, bold=True, color=BLUE,
          align="c", anchor="m")
 
     an.add([[fx(c1, "zoom"), fx(u1, "zoom")]], auto=True)
     an.add([[fx(t1), fx(c2, "zoom"), fx(u2, "zoom")]])
-    an.add([[fx(t2), fx(c3, "zoom"), fx(u3, "zoom")]] + stagger([s1, s2], "fade"))
+    an.add([[fx(t2), fx(c3, "zoom"), fx(u3, "zoom")], [fx(s2, "fade", 120)]])
     an.add([[fx(be, "zoom")]])
     return an
 

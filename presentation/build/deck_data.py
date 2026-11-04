@@ -82,8 +82,8 @@ SLIDES = {
     ),
     "market": dict(
         label="Target market",
-        headline="Duhok first: about 1 million people.",
-        footnote="Population: 2024 national census (Ministry of Planning). Internet: DataReportal 2026. E-commerce: ECDB 2025. Duhok online figures (≈) = Iraq rate × population share.",
+        headline="Duhok first: about 890,000 people online.",
+        footnote="Population: 2024 census (Ministry of Planning). Internet: DataReportal 2026. E-commerce: ECDB 2025. Duhok online (≈) = Iraq rate × population share. Break-even: 585 × 25,000 IQD × 12 ÷ 1,500.",
         seconds=24,
         notes="We launch in Duhok city, Semel and Zakho. Iraq has 46.1 million people; [click] Duhok governorate has 1.6 million; [click] our launch area has 1.06 million — roughly 890,000 online, spending about 30 million dollars a year online. [click] We only need about 390 regular shoppers — around 585 orders a month, or 0.4 percent of that market — to break even.",
         keynums=[("46.1M · 1.60M · 1.06M", "People in Iraq · Duhok governorate · launch area (Duhok + Semel + Zakho)", 3),

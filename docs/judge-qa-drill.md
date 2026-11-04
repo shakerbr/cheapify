@@ -6,8 +6,8 @@ How to drill: read the question aloud, answer without looking, then compare. Re-
 
 ## Timing first
 
-- Current guide estimate: 833 words = 5:57 at 140 wpm — 3 seconds under the hard cap. Rehearse with a timer at least 3 times; a slow first slide or one extra click pause puts you over.
-- Decide now which sentence you drop if you are running long (suggestion: the second sentence on Slide 7, the longest at ~45 s).
+- Current script: about 600 spoken words plus 17 short pauses = roughly 4:40 at 140 words per minute, 5:20 at a slow storytelling pace of 120. The hard cap is 6:00, so you have room, but rehearse with a timer at least 3 times.
+- Decide now which line you drop if you are running long (suggestion: the second sentence on Slide 7, "And the stores? Social-media sellers who already sell through DMs. Three in four want to try Cheapify.").
 
 ## A. Opening and problem
 
@@ -59,5 +59,5 @@ How to drill: read the question aloud, answer without looking, then compare. Re-
 
 ## Last checks
 
-- Cover shows "4 November 2026" while the competition is 5 November; you chose to leave it. If a judge mentions it, one line: "The cover date is a typo; the pitch is today."
+- The cover now says "5 November 2026" and the Thank You slide has a QR code to getcheapify.com. Keep the slide up for at least five seconds at the end so people can scan.
 - Open the deck in the real presenting app once and click through every state; avoid re-saving in ONLYOFFICE (it can strip the embedded fonts).

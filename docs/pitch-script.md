@@ -12,7 +12,7 @@ Normal text is what you say, word for word. Everything else is a marked block th
 | ♪ | **VOICE** | How it should sound: speed, volume, mood. |
 | ◉ | **BEHAVIOUR** | Eyes, face and reactions: look, smile, wait. |
 
-Total: 606 spoken words, about 4:20 at 140 words per minute, 36 clicks. Hard cap: 6:00.
+Total: 609 spoken words, about 4:21 at 140 words per minute, 36 clicks. Hard cap: 6:00.
 
 Same script as a colour-coded page: [pitch-script.html](pitch-script.html).
 
@@ -58,7 +58,7 @@ I'm Shakir Bashar, and that tiny voice is today's story.
 
 ## Slide 2 — Problem
 
-*About 0:19 spoken, 4 clicks, running total 0:36*
+*About 0:16 spoken, 4 clicks, running total 0:33*
 
 > ♪ **VOICE** · Slow down. Serious and clear. This is the key sentence of the whole pitch.
 
@@ -66,31 +66,35 @@ Online in Iraq, you can't know the real price before you buy.
 
 > ▶ **CLICK 1** · The Miswag screenshot appears.
 
-> ♪ **VOICE** · Curious, like you are about to show a magic trick.
+> ♪ **VOICE** · Playful, like starting a game.
 
 > ◆ **ACTION** · Gesture to the screen with an open hand.
 
-Here's one power bank, on Miswag. Same search. Same screen. Same model.
+Spot the difference.
 
-> ▶ **CLICK 2** · The first price, 100,000, is circled.
+> ■ **PAUSE** · 2 seconds. Let them look.
+
+> ▶ **CLICK 2** · The 100,000 price, on the right product, is circled.
 
 > ♪ **VOICE** · Calm and matter of fact.
 
-One seller: 100,000 dinars.
+> ◆ **ACTION** · Point at the right product, the circled 100,000.
 
-> ▶ **CLICK 3** · The second price, 200,000, is circled.
+This one: 100,000 dinars.
+
+> ▶ **CLICK 3** · The 200,000 price, on the left product, is circled.
 
 > ♪ **VOICE** · Voice goes up. Pure disbelief on "200,000".
 
-> ◆ **ACTION** · Point at the second price.
+> ◆ **ACTION** · Point at the left product, the circled 200,000.
 
-Right beside it: 200,000.
+This one: 200,000.
 
 > ▶ **CLICK 4** · The 2x bracket and the "2x the price" box appear.
 
 > ♪ **VOICE** · Flat and deadpan.
 
-Twice the price. Same power bank.
+A hundred thousand more, for exactly the same thing.
 
 > ■ **PAUSE** · 2 seconds. Let it sink in.
 
@@ -104,7 +108,7 @@ Somebody's having a very good day.
 
 ## Slide 3 — Problem · evidence
 
-*About 0:15 spoken, 4 clicks, running total 0:51*
+*About 0:16 spoken, 4 clicks, running total 0:49*
 
 > ♪ **VOICE** · Knowing and a little tired, like someone who has seen this too many times.
 
@@ -138,13 +142,13 @@ The same product, at different prices...
 
 > ◉ **BEHAVIOUR** · Pause, nod slowly, and let some of them nod back.
 
-And almost everyone we asked, 97 percent, has seen it.
+And almost everyone we asked, 97 percent, has seen the price gaps.
 
 ---
 
 ## Slide 4 — Solution
 
-*About 0:29 spoken, 4 clicks, running total 1:20*
+*About 0:29 spoken, 4 clicks, running total 1:18*
 
 > ■ **PAUSE** · 1 second of silence after the last slide. Let the tension hang.
 
@@ -206,7 +210,7 @@ No more ten tabs to buy one power bank.
 
 ## Slide 5 — Value proposition
 
-*About 0:19 spoken, 2 clicks, running total 1:39*
+*About 0:19 spoken, 2 clicks, running total 1:36*
 
 > ♪ **VOICE** · Warm and direct. Talk to the crowd, not the screen.
 
@@ -222,7 +226,7 @@ So what's in it for you?
 
 > ▶ **CLICK 1** · The three shopper benefits appear.
 
-If you shop: no more ten pages, no more "price?" and waiting, and the full price upfront.
+If you shop: no more guessing, no more "price?" and waiting, and the full price upfront.
 
 > ◆ **ACTION** · Hold out the other hand for merchants.
 
@@ -236,7 +240,7 @@ If you sell: no more answering the same question all day, orders arrive ready, a
 
 ## Slide 6 — Target market
 
-*About 0:19 spoken, 3 clicks, running total 1:58*
+*About 0:23 spoken, 3 clicks, running total 1:59*
 
 > ♪ **VOICE** · Steady and building, like zooming in on a map. Keep it one flowing sentence.
 
@@ -248,15 +252,15 @@ Iraq is big. We start small,
 
 inside one governorate,
 
-> ▶ **CLICK 2** · The launch-area circle appears.
+> ▶ **CLICK 2** · The launch-area circle appears, with 890K online and the $30M a year.
 
-in three cities, with over a million people and 30 million dollars of online shopping a year.
+in three cities, with about 890,000 people online, spending about 30 million dollars a year.
 
-> ▶ **CLICK 3** · The break-even card appears.
+> ▶ **CLICK 3** · The break-even box appears, with the $117,000 a year.
 
 > ♪ **VOICE** · Slow down. This is the small number that matters.
 
-And we need just 390 regular shoppers to break even.
+And we need just 390 regular shoppers to break even: about 117,000 dollars a year in orders, out of 30 million.
 
 > ■ **PAUSE** · 1 second.
 
@@ -268,7 +272,7 @@ Less than half a percent of that market.
 
 ## Slide 7 — Target customers
 
-*About 0:18 spoken, 1 clicks, running total 2:16*
+*About 0:18 spoken, 1 clicks, running total 2:18*
 
 > ♪ **VOICE** · Clear and conversational. You are painting three quick portraits.
 
@@ -294,7 +298,7 @@ And the stores? Social-media sellers who already sell through DMs. Three in four
 
 ## Slide 8 — Business model
 
-*About 0:18 spoken, 2 clicks, running total 2:34*
+*About 0:18 spoken, 2 clicks, running total 2:36*
 
 > ♪ **VOICE** · Clear and measured. Money slide: do not rush.
 
@@ -322,7 +326,7 @@ No delivery, no fee.
 
 ## Slide 9 — Competitor analysis
 
-*About 0:15 spoken, 2 clicks, running total 2:49*
+*About 0:15 spoken, 2 clicks, running total 2:51*
 
 > ♪ **VOICE** · Fast and light. This is a quick slide.
 
@@ -344,7 +348,7 @@ Nobody else puts every seller on one page and compares them for you. Only Cheapi
 
 ## Slide 10 — Growth strategy
 
-*About 0:32 spoken, 4 clicks, running total 3:21*
+*About 0:32 spoken, 4 clicks, running total 3:22*
 
 > ♪ **VOICE** · Energetic. You are letting them in on the secret of how it starts.
 
@@ -382,7 +386,7 @@ Duhok first. Then Erbil, Mosul, Sulaymaniyah. Then all of Iraq.
 
 ## Slide 11 — Financial feasibility
 
-*About 0:19 spoken, 3 clicks, running total 3:40*
+*About 0:19 spoken, 3 clicks, running total 3:42*
 
 > ♪ **VOICE** · Calm and honest. You are earning trust with numbers.
 
@@ -410,7 +414,7 @@ and even at half speed, we're profitable from month seven.
 
 ## Slide 12 — Funding
 
-*About 0:27 spoken, 7 clicks, running total 4:07*
+*About 0:27 spoken, 7 clicks, running total 4:08*
 
 > ♪ **VOICE** · Direct and sincere. No fluff. You are asking for support.
 
@@ -462,7 +466,7 @@ And the platform? I'm a computer engineer and software developer, so I build it 
 
 ## Slide 13 — Thank you
 
-*About 0:13 spoken, 0 clicks, running total 4:20*
+*About 0:13 spoken, 0 clicks, running total 4:21*
 
 > ■ **PAUSE** · 1 second before you start. Slow everything down.
 
