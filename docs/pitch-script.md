@@ -12,7 +12,7 @@ Normal text is what you say, word for word. Everything else is a marked block th
 | ♪ | **VOICE** | How it should sound: speed, volume, mood. |
 | ◉ | **BEHAVIOUR** | Eyes, face and reactions: look, smile, wait. |
 
-Total: 609 spoken words, about 4:21 at 140 words per minute, 36 clicks. Hard cap: 6:00.
+Total: 601 spoken words, about 4:18 at 140 words per minute, 36 clicks. Hard cap: 6:00.
 
 Same script as a colour-coded page: [pitch-script.html](pitch-script.html).
 
@@ -58,7 +58,7 @@ I'm Shakir Bashar, and that tiny voice is today's story.
 
 ## Slide 2 — Problem
 
-*About 0:16 spoken, 4 clicks, running total 0:33*
+*About 0:21 spoken, 4 clicks, running total 0:38*
 
 > ♪ **VOICE** · Slow down. Serious and clear. This is the key sentence of the whole pitch.
 
@@ -70,7 +70,7 @@ Online in Iraq, you can't know the real price before you buy.
 
 > ◆ **ACTION** · Gesture to the screen with an open hand.
 
-Spot the difference.
+Here's one power bank, listed twice. Spot the difference.
 
 > ■ **PAUSE** · 2 seconds. Let them look.
 
@@ -80,35 +80,35 @@ Spot the difference.
 
 > ◆ **ACTION** · Point at the right product, the circled 100,000.
 
-This one: 100,000 dinars.
+Here: a hundred thousand dinars.
 
 > ▶ **CLICK 3** · The 200,000 price, on the left product, is circled.
 
-> ♪ **VOICE** · Voice goes up. Pure disbelief on "200,000".
+> ♪ **VOICE** · Voice goes up. Pure disbelief on "two hundred".
 
 > ◆ **ACTION** · Point at the left product, the circled 200,000.
 
-This one: 200,000.
+And here: two hundred thousand.
 
 > ▶ **CLICK 4** · The 2x bracket and the "2x the price" box appear.
 
 > ♪ **VOICE** · Flat and deadpan.
 
-A hundred thousand more, for exactly the same thing.
+Twice the price, for exactly the same thing.
 
-> ■ **PAUSE** · 2 seconds. Let it sink in.
+> ■ **PAUSE** · 1 second. Let it sink in.
 
-> ♪ **VOICE** · Dry humour. Small smile.
+> ♪ **VOICE** · Quieter, serious again. This is the point of the whole slide.
 
-Somebody's having a very good day.
+> ◉ **BEHAVIOUR** · Look at the crowd, not the screen.
 
-> ◉ **BEHAVIOUR** · Wait for the laugh. Do not talk over it.
+And nothing tells you which price is the real one.
 
 ---
 
 ## Slide 3 — Problem · evidence
 
-*About 0:16 spoken, 4 clicks, running total 0:49*
+*About 0:15 spoken, 4 clicks, running total 0:53*
 
 > ♪ **VOICE** · Knowing and a little tired, like someone who has seen this too many times.
 
@@ -142,13 +142,13 @@ The same product, at different prices...
 
 > ◉ **BEHAVIOUR** · Pause, nod slowly, and let some of them nod back.
 
-And almost everyone we asked, 97 percent, has seen the price gaps.
+And almost everyone we asked, 97 percent, has seen this.
 
 ---
 
 ## Slide 4 — Solution
 
-*About 0:29 spoken, 4 clicks, running total 1:18*
+*About 0:25 spoken, 4 clicks, running total 1:18*
 
 > ■ **PAUSE** · 1 second of silence after the last slide. Let the tension hang.
 
@@ -198,19 +198,13 @@ And it doesn't stop there. It also chooses the Best Value for you.
 
 > ♪ **VOICE** · Count them off, one beat each.
 
-Based on the lowest total price, the fastest delivery, and the best-rated store.
-
-> ■ **PAUSE** · 1 second.
-
-> ♪ **VOICE** · Warm and a little cheeky. A smile in the voice.
-
-No more ten tabs to buy one power bank.
+Based on the lowest final price, the fastest delivery, and the best-rated seller.
 
 ---
 
 ## Slide 5 — Value proposition
 
-*About 0:19 spoken, 2 clicks, running total 1:36*
+*About 0:19 spoken, 2 clicks, running total 1:37*
 
 > ♪ **VOICE** · Warm and direct. Talk to the crowd, not the screen.
 
@@ -226,7 +220,7 @@ So what's in it for you?
 
 > ▶ **CLICK 1** · The three shopper benefits appear.
 
-If you shop: no more guessing, no more "price?" and waiting, and the full price upfront.
+If you shop: No more guessing. No more "price?" and waiting. Just the real price, upfront.
 
 > ◆ **ACTION** · Hold out the other hand for merchants.
 
@@ -240,7 +234,7 @@ If you sell: no more answering the same question all day, orders arrive ready, a
 
 ## Slide 6 — Target market
 
-*About 0:23 spoken, 3 clicks, running total 1:59*
+*About 0:23 spoken, 3 clicks, running total 2:00*
 
 > ♪ **VOICE** · Steady and building, like zooming in on a map. Keep it one flowing sentence.
 
@@ -272,7 +266,7 @@ Less than half a percent of that market.
 
 ## Slide 7 — Target customers
 
-*About 0:18 spoken, 1 clicks, running total 2:18*
+*About 0:15 spoken, 1 clicks, running total 2:15*
 
 > ♪ **VOICE** · Clear and conversational. You are painting three quick portraits.
 
@@ -292,19 +286,19 @@ busy professionals with no time to hunt, households stretching a budget, and stu
 
 > ♪ **VOICE** · Brighter. This is the good news.
 
-And the stores? Social-media sellers who already sell through DMs. Three in four want to try Cheapify.
+And the stores? Social-media sellers who already sell through DMs.
 
 ---
 
 ## Slide 8 — Business model
 
-*About 0:18 spoken, 2 clicks, running total 2:36*
+*About 0:17 spoken, 2 clicks, running total 2:32*
 
 > ♪ **VOICE** · Clear and measured. Money slide: do not rush.
 
 > ◌ **AUTO** · The fee panel appears by itself.
 
-How does Cheapify make money? A small fee, lighter on bigger orders. On a typical order, that's about 1,450 dinars for us.
+How does Cheapify make money? A small fee, getting lighter on bigger orders. On a typical order, that's about 1,450 dinars for us.
 
 > ▶ **CLICK 1** · The costs appear.
 
@@ -316,17 +310,11 @@ Out of that, we pay for messages, logins, returns and re-deliveries.
 
 And we keep 1,115 dinars.
 
-> ■ **PAUSE** · 1 second.
-
-> ♪ **VOICE** · Short and punchy.
-
-No delivery, no fee.
-
 ---
 
 ## Slide 9 — Competitor analysis
 
-*About 0:15 spoken, 2 clicks, running total 2:51*
+*About 0:15 spoken, 2 clicks, running total 2:47*
 
 > ♪ **VOICE** · Fast and light. This is a quick slide.
 
@@ -348,7 +336,7 @@ Nobody else puts every seller on one page and compares them for you. Only Cheapi
 
 ## Slide 10 — Growth strategy
 
-*About 0:32 spoken, 4 clicks, running total 3:22*
+*About 0:33 spoken, 4 clicks, running total 3:20*
 
 > ♪ **VOICE** · Energetic. You are letting them in on the secret of how it starts.
 
@@ -366,7 +354,7 @@ With stores. Twenty, signed in person, no fees the first month, free ads, and ea
 
 > ◆ **ACTION** · Gesture to the right column.
 
-And the shoppers: they need to know Cheapify exists, so ads, short videos, campus deals. And 52 people are already waiting for launch day.
+And the shoppers: they need to know Cheapify exists, so ads, short videos, campus deals. And over 50 people are already on the waitlist.
 
 > ▶ **CLICK 3** · The flywheel appears.
 
@@ -380,13 +368,13 @@ Now the wheel spins by itself. More stores, lower prices, more shoppers, more or
 
 > ♪ **VOICE** · Big and ambitious. Raise your voice on "all of Iraq".
 
-Duhok first. Then Erbil, Mosul, Sulaymaniyah. Then all of Iraq.
+From there, we expand to Erbil, Mosul and Sulaymaniyah. Then all of Iraq.
 
 ---
 
 ## Slide 11 — Financial feasibility
 
-*About 0:19 spoken, 3 clicks, running total 3:42*
+*About 0:19 spoken, 3 clicks, running total 3:39*
 
 > ♪ **VOICE** · Calm and honest. You are earning trust with numbers.
 
@@ -414,7 +402,7 @@ and even at half speed, we're profitable from month seven.
 
 ## Slide 12 — Funding
 
-*About 0:27 spoken, 7 clicks, running total 4:08*
+*About 0:26 spoken, 7 clicks, running total 4:05*
 
 > ♪ **VOICE** · Direct and sincere. No fluff. You are asking for support.
 
@@ -428,19 +416,19 @@ and even at half speed, we're profitable from month seven.
 
 > ▶ **CLICK 1** · The pilot block appears.
 
-A 100-dollar pilot to prove it,
+We run a pilot to prove it,
 
 > ▶ **CLICK 2** · The registration block appears.
 
-1,000 to make it official,
+We make it official,
 
 > ▶ **CLICK 3** · The launch block appears.
 
-840 to open with twenty stores,
+We open with twenty stores,
 
 > ▶ **CLICK 4** · The runway block appears.
 
-1,340 to keep us steady through slow months,
+We stay steady in the slow months,
 
 > ▶ **CLICK 5** · The growth block appears.
 
@@ -466,7 +454,7 @@ And the platform? I'm a computer engineer and software developer, so I build it 
 
 ## Slide 13 — Thank you
 
-*About 0:13 spoken, 0 clicks, running total 4:21*
+*About 0:13 spoken, 0 clicks, running total 4:18*
 
 > ■ **PAUSE** · 1 second before you start. Slow everything down.
 
